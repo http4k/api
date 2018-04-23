@@ -1,0 +1,8 @@
+[http4k](../index.md) / [org.http4k.core.cookie](index.md) / [cookie](./cookie.md)
+
+# cookie
+
+`fun `[`Response`](../org.http4k.core/-response/index.md)`.cookie(cookie: `[`Cookie`](-cookie/index.md)`): `[`Response`](../org.http4k.core/-response/index.md) [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/core/cookie/CookieExtensions.kt#L9)
+`fun `[`Request`](../org.http4k.core/-request/index.md)`.cookie(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, value: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Request`](../org.http4k.core/-request/index.md) [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/core/cookie/CookieExtensions.kt#L19)
+`fun `[`Request`](../org.http4k.core/-request/index.md)`.cookie(new: `[`Cookie`](-cookie/index.md)`): `[`Request`](../org.http4k.core/-request/index.md) [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/core/cookie/CookieExtensions.kt#L21)
+`fun `[`Request`](../org.http4k.core/-request/index.md)`.cookie(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): `[`Cookie`](-cookie/index.md)`?` [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/core/cookie/CookieExtensions.kt#L27)

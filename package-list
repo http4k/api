@@ -1,0 +1,62 @@
+$dokka.format:gfm
+$dokka.linkExtension:md
+$dokka.location:org.http4k$appendIf(java.lang.StringBuilder, kotlin.Function0((kotlin.Boolean)), kotlin.Array((kotlin.String)))org.http4k/java.lang.-string-builder/append-if.md
+$dokka.location:org.http4k$appendIfNotBlank(java.lang.StringBuilder, kotlin.String, kotlin.Array((kotlin.String)))org.http4k/java.lang.-string-builder/append-if-not-blank.md
+$dokka.location:org.http4k$appendIfNotEmpty(java.lang.StringBuilder, kotlin.collections.List((kotlin.Any)), kotlin.Array((kotlin.String)))org.http4k/java.lang.-string-builder/append-if-not-empty.md
+$dokka.location:org.http4k$appendIfPresent(java.lang.StringBuilder, kotlin.Any, kotlin.Array((kotlin.String)))org.http4k/java.lang.-string-builder/append-if-present.md
+$dokka.location:org.http4k$asByteBuffer(kotlin.String)org.http4k/kotlin.-string/as-byte-buffer.md
+$dokka.location:org.http4k$asString(java.nio.ByteBuffer)org.http4k/java.nio.-byte-buffer/as-string.md
+$dokka.location:org.http4k$base64Decoded(kotlin.String)org.http4k/kotlin.-string/base64-decoded.md
+$dokka.location:org.http4k$base64Encode(kotlin.String)org.http4k/kotlin.-string/base64-encode.md
+$dokka.location:org.http4k$quoted(kotlin.String)org.http4k/kotlin.-string/quoted.md
+$dokka.location:org.http4k$unquoted(kotlin.String)org.http4k/kotlin.-string/unquoted.md
+$dokka.location:org.http4k$urlEncoded(kotlin.String)org.http4k/kotlin.-string/url-encoded.md
+$dokka.location:org.http4k.client$withAsyncApi(kotlin.Function1((org.http4k.core.Request, org.http4k.core.Response)))org.http4k.client/kotlin.-function1/with-async-api.md
+$dokka.location:org.http4k.contract$bind(kotlin.String, org.http4k.contract.ContractRoutingHttpHandler)org.http4k.contract/kotlin.-string/bind.md
+$dokka.location:org.http4k.contract$bindContract(kotlin.String, org.http4k.core.Method)org.http4k.contract/kotlin.-string/bind-contract.md
+$dokka.location:org.http4k.contract$div(kotlin.String, org.http4k.lens.PathLens((org.http4k.contract.div.A)))org.http4k.contract/kotlin.-string/div.md
+$dokka.location:org.http4k.contract$meta(kotlin.String, kotlin.Function1((org.http4k.contract.RouteMetaDsl, kotlin.Unit)))org.http4k.contract/kotlin.-string/meta.md
+$dokka.location:org.http4k.core$fromPathEncoded(kotlin.String)org.http4k.core/kotlin.-string/from-path-encoded.md
+$dokka.location:org.http4k.core$safeLong(kotlin.String)org.http4k.core/kotlin.-string/safe-long.md
+$dokka.location:org.http4k.core$toBody(kotlin.String)org.http4k.core/kotlin.-string/to-body.md
+$dokka.location:org.http4k.core$toParameters(kotlin.String)org.http4k.core/kotlin.-string/to-parameters.md
+$dokka.location:org.http4k.core$toPathEncoded(kotlin.String)org.http4k.core/kotlin.-string/to-path-encoded.md
+$dokka.location:org.http4k.core$toUrlEncoded(kotlin.collections.List((kotlin.Pair((kotlin.String, kotlin.String)))))org.http4k.core/kotlin.collections.-list/to-url-encoded.md
+$dokka.location:org.http4k.core$toUrlFormEncoded(kotlin.collections.List((kotlin.Pair((kotlin.String, kotlin.String)))))org.http4k.core/kotlin.collections.-list/to-url-form-encoded.md
+$dokka.location:org.http4k.core.body$toBody(kotlin.collections.List((kotlin.Pair((kotlin.String, kotlin.String)))))org.http4k.core.body/kotlin.collections.-list/to-body.md
+$dokka.location:org.http4k.routing$bind(kotlin.String, kotlin.Function1((org.http4k.core.Request, org.http4k.core.Response)))org.http4k.routing/kotlin.-string/bind.md
+$dokka.location:org.http4k.routing$bind(kotlin.String, kotlin.Function1((org.http4k.websocket.Websocket, kotlin.Unit)))org.http4k.routing/kotlin.-string/bind.md
+$dokka.location:org.http4k.routing$bind(kotlin.String, org.http4k.core.Method)org.http4k.routing/kotlin.-string/bind.md
+$dokka.location:org.http4k.routing$bind(kotlin.String, org.http4k.routing.RoutingHttpHandler)org.http4k.routing/kotlin.-string/bind.md
+$dokka.location:org.http4k.routing$bind(kotlin.String, org.http4k.routing.RoutingWsHandler)org.http4k.routing/kotlin.-string/bind.md
+$dokka.location:org.http4k.server$asServer(kotlin.Function1((org.http4k.core.Request, kotlin.Function1((org.http4k.websocket.Websocket, kotlin.Unit)))), org.http4k.server.WsServerConfig)org.http4k.server/kotlin.-function1/as-server.md
+$dokka.location:org.http4k.server$asServer(kotlin.Function1((org.http4k.core.Request, org.http4k.core.Response)), org.http4k.server.ServerConfig)org.http4k.server/kotlin.-function1/as-server.md
+$dokka.location:org.http4k.servlet$asServlet(kotlin.Function1((org.http4k.core.Request, org.http4k.core.Response)))org.http4k.servlet/kotlin.-function1/as-servlet.md
+$dokka.location:org.http4k.template$renderToResponse(kotlin.Function1((org.http4k.template.ViewModel, kotlin.String)), org.http4k.template.ViewModel, org.http4k.core.Status, org.http4k.core.ContentType)org.http4k.template/kotlin.-function1/render-to-response.md
+$dokka.location:org.http4k.template$then(kotlin.Function1((org.http4k.template.ViewModel, kotlin.String)), kotlin.Function1((org.http4k.template.ViewModel, kotlin.String)))org.http4k.template/kotlin.-function1/then.md
+$dokka.location:org.http4k.testing$testWsClient(kotlin.Function1((org.http4k.core.Request, kotlin.Function1((org.http4k.websocket.Websocket, kotlin.Unit)))), org.http4k.core.Request)org.http4k.testing/kotlin.-function1/test-ws-client.md
+org.http4k
+org.http4k.aws
+org.http4k.client
+org.http4k.contract
+org.http4k.core
+org.http4k.core.body
+org.http4k.core.cookie
+org.http4k.filter
+org.http4k.filter.cookie
+org.http4k.format
+org.http4k.hamkrest
+org.http4k.lens
+org.http4k.routing
+org.http4k.security
+org.http4k.server
+org.http4k.serverless
+org.http4k.serverless.lambda
+org.http4k.servlet
+org.http4k.template
+org.http4k.template.dust
+org.http4k.testing
+org.http4k.traffic
+org.http4k.util
+org.http4k.webdriver
+org.http4k.websocket

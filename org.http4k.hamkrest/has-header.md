@@ -1,0 +1,7 @@
+[http4k](../index.md) / [org.http4k.hamkrest](index.md) / [hasHeader](./has-header.md)
+
+# hasHeader
+
+`fun <T> hasHeader(lens: `[`HeaderLens`](../org.http4k.lens/-header-lens.md)`<`[`T`](has-header.md#T)`>, matcher: Matcher<`[`T`](has-header.md#T)`>): Matcher<`[`HttpMessage`](../org.http4k.core/-http-message/index.md)`>` [(source)](https://github.com/http4k/http4k/blob/master/http4k-testing-hamkrest/src/main/kotlin/org/http4k/hamkrest/httpMessage.kt#L14)
+`fun hasHeader(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, expected: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?): Matcher<`[`HttpMessage`](../org.http4k.core/-http-message/index.md)`>` [(source)](https://github.com/http4k/http4k/blob/master/http4k-testing-hamkrest/src/main/kotlin/org/http4k/hamkrest/httpMessage.kt#L16)
+`fun hasHeader(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, expected: `[`List`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?>): Matcher<`[`HttpMessage`](../org.http4k.core/-http-message/index.md)`>` [(source)](https://github.com/http4k/http4k/blob/master/http4k-testing-hamkrest/src/main/kotlin/org/http4k/hamkrest/httpMessage.kt#L18)
