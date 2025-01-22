@@ -1,7 +1,0 @@
-[http4k](../../../index.md) / [org.http4k.jsonrpc](../../index.md) / [MethodBindings](../index.md) / [Manual](index.md) / [handler](./handler.md)
-
-# handler
-
-`fun <IN, OUT : `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`> handler(paramsLens: `[`Mapping`](../../-mapping/index.md)`<NODE, IN>, resultLens: `[`Mapping`](../../-mapping/index.md)`<OUT, NODE>, fn: (IN) -> OUT): `[`JsonRpcHandler`](../../-json-rpc-handler.md)`<NODE, NODE>`
-`fun <IN, OUT : `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`> handler(paramsFieldNames: `[`Set`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`>, paramsLens: `[`Mapping`](../../-mapping/index.md)`<NODE, IN>, resultLens: `[`Mapping`](../../-mapping/index.md)`<OUT, NODE>, fn: (IN) -> OUT): `[`JsonRpcHandler`](../../-json-rpc-handler.md)`<NODE, NODE>`
-`fun <OUT : `[`Any`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`> handler(resultLens: `[`Mapping`](../../-mapping/index.md)`<OUT, NODE>, block: () -> OUT): `[`JsonRpcHandler`](../../-json-rpc-handler.md)`<NODE, NODE>`

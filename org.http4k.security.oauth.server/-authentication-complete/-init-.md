@@ -1,5 +1,0 @@
-[http4k](../../index.md) / [org.http4k.security.oauth.server](../index.md) / [AuthenticationComplete](index.md) / [&lt;init&gt;](./-init-.md)
-
-# &lt;init&gt;
-
-`AuthenticationComplete(authorizationCodes: `[`AuthorizationCodes`](../-authorization-codes/index.md)`, requestTracking: `[`AuthRequestTracking`](../-auth-request-tracking/index.md)`, idTokens: `[`IdTokens`](../-id-tokens/index.md)`, documentationUri: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`? = null)`

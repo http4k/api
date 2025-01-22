@@ -1,6 +1,0 @@
-[http4k](../index.md) / [org.http4k.filter](index.md) / [OpenTelemetryTracing](./-open-telemetry-tracing.md)
-
-# OpenTelemetryTracing
-
-`fun `[`ClientFilters`](-client-filters/index.md)`.OpenTelemetryTracing(tracer: Tracer = Http4kOpenTelemetry.tracer, spanNamer: (`[`Request`](../org.http4k.core/-request/index.md)`) -> `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` = { it.uri.toString() }, error: (`[`Request`](../org.http4k.core/-request/index.md)`, `[`Throwable`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`) -> `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` = { _, t -> t.localizedMessage }): `[`Filter`](../org.http4k.core/-filter.md)
-`fun `[`ServerFilters`](-server-filters/index.md)`.OpenTelemetryTracing(tracer: Tracer = Http4kOpenTelemetry.tracer, spanNamer: (`[`Request`](../org.http4k.core/-request/index.md)`) -> `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` = { it.uri.toString() }, error: (`[`Request`](../org.http4k.core/-request/index.md)`, `[`Throwable`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`) -> `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` = { _, t -> t.localizedMessage }): `[`Filter`](../org.http4k.core/-filter.md)

@@ -1,7 +1,0 @@
-[http4k](../index.md) / [org.http4k.kotest](index.md) / [shouldHaveForm](./should-have-form.md)
-
-# shouldHaveForm
-
-`@JvmName("shouldHaveFormNullableStringMatcher") fun `[`Request`](../org.http4k.core/-request/index.md)`.shouldHaveForm(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, matcher: Matcher<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?>): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
-`fun `[`Request`](../org.http4k.core/-request/index.md)`.shouldHaveForm(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, matcher: `[`Regex`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)
-`fun `[`Request`](../org.http4k.core/-request/index.md)`.shouldHaveForm(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, expected: `[`CharSequence`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`): `[`Unit`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html)

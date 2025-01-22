@@ -1,5 +1,0 @@
-[http4k](../index.md) / [org.http4k.lens](index.md) / [multipartForm](./multipart-form.md)
-
-# multipartForm
-
-`fun Body.Companion.multipartForm(validator: `[`Validator`](-validator/index.md)`, vararg parts: `[`Lens`](-lens/index.md)`<`[`MultipartForm`](-multipart-form/index.md)`, *>, defaultBoundary: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` = MULTIPART_BOUNDARY, diskThreshold: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` = DEFAULT_DISK_THRESHOLD, contentTypeFn: (`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`) -> `[`ContentType`](../org.http4k.core/-content-type/index.md)` = ::MultipartFormWithBoundary): `[`BiDiBodyLensSpec`](-bi-di-body-lens-spec/index.md)`<`[`MultipartForm`](-multipart-form/index.md)`>`
