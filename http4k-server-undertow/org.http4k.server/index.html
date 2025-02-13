@@ -43,7 +43,7 @@
 <a class="library-name--link" href="../../index.html">
                             http4k
                     </a>            </div>
-            <div class="library-version">5.47.0.0
+            <div class="library-version">6.0.0.0
             </div>
         </div>
         <div class="filter-section" id="filter-section">
@@ -126,7 +126,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-undertow:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-undertow/index.html">Undertow</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>port<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">8000</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>enableHttp2<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>stopMode<span class="token operator">: </span><a href="../../http4k-core/org.http4k.server/-server-config/-stop-mode/index.html">ServerConfig.StopMode</a><span class="token operator"> = </span>Immediate</span></span><span class="token punctuation">)</span> : <a href="../../http4k-realtime-core/org.http4k.server/-poly-server-config/index.html">PolyServerConfig</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-undertow:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-undertow/index.html">Undertow</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">port<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">8000</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>stopMode<span class="token operator">: </span><a href="../../http4k-core/org.http4k.server/-server-config/-stop-mode/index.html">ServerConfig.StopMode</a></span></span><span class="token punctuation">)</span> : <a href="../../http4k-realtime-core/org.http4k.server/-poly-server-config/index.html">PolyServerConfig</a></div><div class="brief "><p class="paragraph">Stock version of an Undertow Server. Not that if you want to configure your own server instance you can duplicate this code and modify it as required. We are purposefully trying to limit options here to keep the API simple for the 99% of use-cases.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -135,7 +135,52 @@
       </div>
       <div data-togglable="FUNCTION">
         <h2 class="">Functions</h2>
-        <div class="table"><a data-name="-872737283%2FFunctions%2F-740758264" anchor-label="Http4kUndertowSseHandler" id="-872737283%2FFunctions%2F-740758264" data-filterable-set=":http4k-server-undertow:dokkaHtmlPartial/main"></a>
+        <div class="table"><a data-name="-1673865353%2FFunctions%2F-740758264" anchor-label="buildHttp4kUndertowServer" id="-1673865353%2FFunctions%2F-740758264" data-filterable-set=":http4k-server-undertow:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-server-undertow:dokkaHtmlPartial/main" data-filterable-set=":http4k-server-undertow:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build-http4k-undertow-server.html"><span>build</span><wbr><span>Http4k</span><wbr><span>Undertow</span><wbr><span><span>Server</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1673865353%2FFunctions%2F-740758264"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-undertow:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><span data-unresolved-link="io.undertow/Undertow.Builder///PointingToDeclaration/">Undertow.Builder</span><span class="token punctuation">.</span><a href="build-http4k-undertow-server.html"><span class="token function">buildHttp4kUndertowServer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">httpHandler<span class="token operator">: </span><span data-unresolved-link="io.undertow.server/HttpHandler///PointingToDeclaration/">HttpHandler</span><span class="token punctuation">, </span></span><span class="parameter ">stopMode<span class="token operator">: </span><a href="../../http4k-core/org.http4k.server/-server-config/-stop-mode/index.html">ServerConfig.StopMode</a><span class="token punctuation">, </span></span><span class="parameter ">port<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.server/-http4k-server/index.html">Http4kServer</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1739240259%2FFunctions%2F-740758264" anchor-label="buildUndertowHandlers" id="1739240259%2FFunctions%2F-740758264" data-filterable-set=":http4k-server-undertow:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-server-undertow:dokkaHtmlPartial/main" data-filterable-set=":http4k-server-undertow:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build-undertow-handlers.html"><span>build</span><wbr><span>Undertow</span><wbr><span><span>Handlers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1739240259%2FFunctions%2F-740758264"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-undertow:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="build-undertow-handlers.html"><span class="token function">buildUndertowHandlers</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">http<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">ws<span class="token operator">: </span><a href="../../http4k-realtime-core/org.http4k.websocket/-ws-handler/index.html">WsHandler</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">sse<span class="token operator">: </span><a href="../../http4k-realtime-core/org.http4k.sse/-sse-handler/index.html">SseHandler</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">stopMode1<span class="token operator">: </span><a href="../../http4k-core/org.http4k.server/-server-config/-stop-mode/index.html">ServerConfig.StopMode</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><span data-unresolved-link="io.undertow.server/HttpHandler///PointingToDeclaration/">HttpHandler</span><span class="token punctuation">, </span><span data-unresolved-link="io.undertow.server/HttpHandler///PointingToDeclaration/">HttpHandler</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="138607305%2FFunctions%2F-740758264" anchor-label="defaultUndertowBuilder" id="138607305%2FFunctions%2F-740758264" data-filterable-set=":http4k-server-undertow:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-server-undertow:dokkaHtmlPartial/main" data-filterable-set=":http4k-server-undertow:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="default-undertow-builder.html"><span>default</span><wbr><span>Undertow</span><wbr><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="138607305%2FFunctions%2F-740758264"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-undertow:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="default-undertow-builder.html"><span class="token function">defaultUndertowBuilder</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">port<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">httpHandler1<span class="token operator">: </span><span data-unresolved-link="io.undertow.server/HttpHandler///PointingToDeclaration/">HttpHandler</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="io.undertow/Undertow.Builder///PointingToDeclaration/">Undertow.Builder</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-872737283%2FFunctions%2F-740758264" anchor-label="Http4kUndertowSseHandler" id="-872737283%2FFunctions%2F-740758264" data-filterable-set=":http4k-server-undertow:dokkaHtmlPartial/main"></a>
           <div class="table-row" data-filterable-current=":http4k-server-undertow:dokkaHtmlPartial/main" data-filterable-set=":http4k-server-undertow:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">

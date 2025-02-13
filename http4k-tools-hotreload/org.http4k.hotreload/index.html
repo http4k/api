@@ -1,0 +1,241 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.hotreload</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../index.html">
+                            http4k
+                    </a>            </div>
+            <div class="library-version">6.0.0.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":http4k-tools-hotreload:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+            <a class="navigation-controls--btn navigation-controls--homepage" id="homepage-link" href="https://http4k.org"></a>
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-tools-hotreload::org.http4k.hotreload////PointingToDeclaration//-1325986334">
+  <div class="breadcrumbs"><a href="../index.html">http4k-tools-hotreload</a><span class="delimiter">/</span><span class="current">org.http4k.hotreload</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-379087489%2FClasslikes%2F-1325986334" anchor-label="HotReloadable" id="-379087489%2FClasslikes%2F-1325986334" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-tools-hotreload:dokkaHtmlPartial/main" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-hot-reloadable/index.html"><span>Hot</span><wbr><span><span>Reloadable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-379087489%2FClasslikes%2F-1325986334"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-tools-hotreload:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-hot-reloadable/index.html">HotReloadable</a><span class="token operator">&lt;</span><a href="-hot-reloadable/index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Base interface for creating a hot-reloadable app. Note that these are required to be top-level classes as they are instantiated via reflection on hot-reload. Thus, they cannot require constructor parameters.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="289883294%2FClasslikes%2F-1325986334" anchor-label="HotReloadClassLoader" id="289883294%2FClasslikes%2F-1325986334" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-tools-hotreload:dokkaHtmlPartial/main" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-hot-reload-class-loader/index.html"><span>Hot</span><wbr><span>Reload</span><wbr><span>Class</span><wbr><span><span>Loader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="289883294%2FClasslikes%2F-1325986334"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-tools-hotreload:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-hot-reload-class-loader/index.html">HotReloadClassLoader</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">urls<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/URL.html">URL</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="https://docs.oracle.com/javase/8/docs/api/java/net/URLClassLoader.html">URLClassLoader</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1105428886%2FClasslikes%2F-1325986334" anchor-label="HotReloadServer" id="1105428886%2FClasslikes%2F-1325986334" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-tools-hotreload:dokkaHtmlPartial/main" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-hot-reload-server/index.html"><span>Hot</span><wbr><span>Reload</span><wbr><span><span>Server</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1105428886%2FClasslikes%2F-1325986334"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-tools-hotreload:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-hot-reload-server/index.html">HotReloadServer</a></div><div class="brief "><p class="paragraph">Hot reloading server. Watches for changes on the classpath source and rebuilds the project when changes are detected. Uses an event source connection script injected into the HTML pages to trigger a reload when the project is rebuilt.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2077180328%2FClasslikes%2F-1325986334" anchor-label="PathWatcher" id="2077180328%2FClasslikes%2F-1325986334" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-tools-hotreload:dokkaHtmlPartial/main" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-path-watcher/index.html"><span>Path</span><wbr><span><span>Watcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2077180328%2FClasslikes%2F-1325986334"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-tools-hotreload:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-path-watcher/index.html">PathWatcher</a> : <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html">AutoCloseable</a></div><div class="brief "><p class="paragraph">Responsible for watching a set of paths for changes and acting on the changes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1087759559%2FClasslikes%2F-1325986334" anchor-label="ProjectCompiler" id="1087759559%2FClasslikes%2F-1325986334" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-tools-hotreload:dokkaHtmlPartial/main" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-project-compiler/index.html"><span>Project</span><wbr><span><span>Compiler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1087759559%2FClasslikes%2F-1325986334"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-tools-hotreload:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-project-compiler/index.html">ProjectCompiler</a></div><div class="brief "><p class="paragraph">Represents the process to compile the project for hot reload.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="223088991%2FClasslikes%2F-1325986334" anchor-label="ProjectCompilingPathWatcher" id="223088991%2FClasslikes%2F-1325986334" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-tools-hotreload:dokkaHtmlPartial/main" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-project-compiling-path-watcher/index.html"><span>Project</span><wbr><span>Compiling</span><wbr><span>Path</span><wbr><span><span>Watcher</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="223088991%2FClasslikes%2F-1325986334"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-tools-hotreload:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-project-compiling-path-watcher/index.html">ProjectCompilingPathWatcher</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">projectCompiler<span class="token operator">: </span><a href="-project-compiler/index.html">ProjectCompiler</a><span class="token operator"> = </span>Gradle()<span class="token punctuation">, </span></span><span class="parameter ">watchedDirs<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>setOf("src/main", "src/test", "build/classes")<span class="token punctuation">, </span></span><span class="parameter ">downtimeSleep<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{ Thread.sleep(Duration.ofSeconds(1)) }</span></span><span class="token punctuation">)</span> : <a href="-path-watcher/index.html">PathWatcher</a></div><div class="brief "><p class="paragraph">Watches for changes on the classpath source and rebuilds the project when changes are detected. If you have a project with a different structure, you can implement your own <a href="-path-watcher/index.html">PathWatcher</a> to pick up any custom paths to watch.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1183879030%2FClasslikes%2F-1325986334" anchor-label="Reload" id="-1183879030%2FClasslikes%2F-1325986334" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-tools-hotreload:dokkaHtmlPartial/main" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-reload/index.html"><span><span>Reload</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1183879030%2FClasslikes%2F-1325986334"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-tools-hotreload:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-reload/index.html">Reload</a><span class="token operator">&lt;</span><a href="-reload/index.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Responsible for reloading an application when the classpath changes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2025073778%2FClasslikes%2F-1325986334" anchor-label="TaskRunner" id="-2025073778%2FClasslikes%2F-1325986334" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-tools-hotreload:dokkaHtmlPartial/main" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-task-runner/index.html"><span>Task</span><wbr><span><span>Runner</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2025073778%2FClasslikes%2F-1325986334"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-tools-hotreload:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-task-runner/index.html">TaskRunner</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="2131468667%2FFunctions%2F-1325986334" anchor-label="HotReloadRoutes" id="2131468667%2FFunctions%2F-1325986334" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-tools-hotreload:dokkaHtmlPartial/main" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-hot-reload-routes.html"><span>Hot</span><wbr><span>Reload</span><wbr><span><span>Routes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2131468667%2FFunctions%2F-1325986334"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-tools-hotreload:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-hot-reload-routes.html"><span class="token function">HotReloadRoutes</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">app<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token punctuation">, </span></span><span class="parameter ">duration<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html">Duration</a><span class="token operator"> = </span>ofMinutes(10)<span class="token punctuation">, </span></span><span class="parameter ">sleeper<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html">Duration</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>Thread::sleep</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div><div class="brief "><p class="paragraph">Filter which injects a script into HTML responses using an event source to detect changes and reload the page.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2107247426%2FFunctions%2F-1325986334" anchor-label="InsertHotReloadScript" id="-2107247426%2FFunctions%2F-1325986334" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-tools-hotreload:dokkaHtmlPartial/main" data-filterable-set=":http4k-tools-hotreload:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-insert-hot-reload-script.html"><span>Insert</span><wbr><span>Hot</span><wbr><span>Reload</span><wbr><span><span>Script</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2107247426%2FFunctions%2F-1325986334"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-tools-hotreload:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-insert-hot-reload-script.html"><span class="token function">InsertHotReloadScript</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-filter/index.html">Filter</a></div><div class="brief "><p class="paragraph">Filter which injects a script into HTML responses using an event source to detect changes and reload the page.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>(c) 2025 http4k</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
