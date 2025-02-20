@@ -389,6 +389,12 @@ module:http4k-incubator
 org.http4k.lens
 org.http4k.routing.experimental
 org.http4k.webdriver
+module:http4k-incubator-db
+org.http4k.db
+org.http4k.postbox
+org.http4k.postbox.processing
+org.http4k.postbox.storage.exposed
+org.http4k.postbox.storage.inmemory
 module:http4k-mcp-desktop
 org.http4k.mcp
 org.http4k.mcp.internal
