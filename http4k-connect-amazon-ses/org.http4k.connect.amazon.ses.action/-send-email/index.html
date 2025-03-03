@@ -43,7 +43,7 @@
 <a class="library-name--link" href="../../../index.html">
                             http4k
                     </a>            </div>
-            <div class="library-version">6.0.1.0
+            <div class="library-version">6.1.0.0
             </div>
         </div>
         <div class="filter-section" id="filter-section">
@@ -65,24 +65,24 @@
   <div class="breadcrumbs"><a href="../../index.html">http4k-connect-amazon-ses</a><span class="delimiter">/</span><a href="../index.html">org.http4k.connect.amazon.ses.action</a><span class="delimiter">/</span><span class="current">SendEmail</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Send</span><wbr><span><span>Email</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">SendEmail</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>source<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-email-address/index.html">EmailAddress</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>destination<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-destination/index.html">Destination</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>message<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-message/index.html">Message</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>replyToAddresses<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.amazon.ses.model/-email-address/index.html">EmailAddress</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../../org.http4k.connect.amazon.ses/-s-e-s-action/index.html">SESAction</a><span class="token operator">&lt;</span><a href="../-send-email-response/index.html">SendEmailResponse</a><span class="token operator">&gt; </span></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">SendEmail</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/"><span class="token annotation builtin">Json</span></span><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Content"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span><span class="token keyword">val </span>content<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-email-content/index.html">EmailContent</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/"><span class="token annotation builtin">Json</span></span><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Destination"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span><span class="token keyword">val </span>destination<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-destination/index.html">Destination</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/"><span class="token annotation builtin">Json</span></span><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"FromEmailAddress"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span><span class="token keyword">val </span>fromEmailAddress<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-email-address/index.html">EmailAddress</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/"><span class="token annotation builtin">Json</span></span><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"ConfigurationSetName"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span><span class="token keyword">val </span>configurationSetName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/"><span class="token annotation builtin">Json</span></span><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"EmailTags"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span><span class="token keyword">val </span>emailTags<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.amazon.ses.model/-message-tag/index.html">MessageTag</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/"><span class="token annotation builtin">Json</span></span><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"ReplyToAddresses"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span><span class="token keyword">val </span>replyToAddresses<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.amazon.ses.model/-email-address/index.html">EmailAddress</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../../org.http4k.connect.amazon.ses/-s-e-s-action/index.html">SESAction</a><span class="token operator">&lt;</span><a href="../-send-email-response/index.html">SendEmailResponse</a><span class="token operator">&gt; </span></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
-        <div class="table"><a data-name="-500345006%2FConstructors%2F-1710570415" anchor-label="SendEmail" id="-500345006%2FConstructors%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
+        <div class="table"><a data-name="1277688302%2FConstructors%2F-1710570415" anchor-label="SendEmail" id="1277688302%2FConstructors%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
           <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":http4k-connect-amazon-ses:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-send-email.html"><span>Send</span><wbr><span><span>Email</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-500345006%2FConstructors%2F-1710570415"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1277688302%2FConstructors%2F-1710570415"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">source<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-email-address/index.html">EmailAddress</a><span class="token punctuation">, </span></span><span class="parameter ">destination<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-destination/index.html">Destination</a><span class="token punctuation">, </span></span><span class="parameter ">message<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-message/index.html">Message</a><span class="token punctuation">, </span></span><span class="parameter ">replyToAddresses<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.amazon.ses.model/-email-address/index.html">EmailAddress</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/"><span class="token annotation builtin">Json</span></span><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Content"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>content<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-email-content/index.html">EmailContent</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/"><span class="token annotation builtin">Json</span></span><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Destination"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>destination<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-destination/index.html">Destination</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/"><span class="token annotation builtin">Json</span></span><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"FromEmailAddress"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>fromEmailAddress<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-email-address/index.html">EmailAddress</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/"><span class="token annotation builtin">Json</span></span><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"ConfigurationSetName"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>configurationSetName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/"><span class="token annotation builtin">Json</span></span><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"EmailTags"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>emailTags<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.amazon.ses.model/-message-tag/index.html">MessageTag</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="com.squareup.moshi/Json///PointingToDeclaration/"><span class="token annotation builtin">Json</span></span><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"ReplyToAddresses"</span></span></span><wbr><span class="token punctuation">)</span>&nbsp;</span>replyToAddresses<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.amazon.ses.model/-email-address/index.html">EmailAddress</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -91,7 +91,37 @@
       </div>
       <div data-togglable="PROPERTY">
         <h2 class="">Properties</h2>
-        <div class="table"><a data-name="1205266645%2FProperties%2F-1710570415" anchor-label="destination" id="1205266645%2FProperties%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
+        <div class="table"><a data-name="339855552%2FProperties%2F-1710570415" anchor-label="configurationSetName" id="339855552%2FProperties%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-connect-amazon-ses:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="configuration-set-name.html"><span>configuration</span><wbr><span>Set</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="339855552%2FProperties%2F-1710570415"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="configuration-set-name.html">configurationSetName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-342074934%2FProperties%2F-1710570415" anchor-label="content" id="-342074934%2FProperties%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-connect-amazon-ses:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="content.html"><span><span>content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-342074934%2FProperties%2F-1710570415"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="content.html">content</a><span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-email-content/index.html">EmailContent</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1205266645%2FProperties%2F-1710570415" anchor-label="destination" id="1205266645%2FProperties%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
           <div class="table-row" data-filterable-current=":http4k-connect-amazon-ses:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
@@ -101,22 +131,37 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="destination.html">destination</a><span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-destination/index.html">Destination</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="destination.html">destination</a><span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-destination/index.html">Destination</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-700511748%2FProperties%2F-1710570415" anchor-label="message" id="-700511748%2FProperties%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
+<a data-name="314132078%2FProperties%2F-1710570415" anchor-label="emailTags" id="314132078%2FProperties%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
           <div class="table-row" data-filterable-current=":http4k-connect-amazon-ses:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="message.html"><span><span>message</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-700511748%2FProperties%2F-1710570415"></span>
+                  <div><a href="email-tags.html"><span>email</span><wbr><span><span>Tags</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="314132078%2FProperties%2F-1710570415"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="message.html">message</a><span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-message/index.html">Message</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="email-tags.html">emailTags</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.amazon.ses.model/-message-tag/index.html">MessageTag</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1708765483%2FProperties%2F-1710570415" anchor-label="fromEmailAddress" id="-1708765483%2FProperties%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-connect-amazon-ses:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="from-email-address.html"><span>from</span><wbr><span>Email</span><wbr><span><span>Address</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1708765483%2FProperties%2F-1710570415"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="from-email-address.html">fromEmailAddress</a><span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-email-address/index.html">EmailAddress</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
                 </div>
               </div>
             </div>
@@ -131,22 +176,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="reply-to-addresses.html">replyToAddresses</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.amazon.ses.model/-email-address/index.html">EmailAddress</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1682031908%2FProperties%2F-1710570415" anchor-label="source" id="-1682031908%2FProperties%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":http4k-connect-amazon-ses:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="source.html"><span><span>source</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1682031908%2FProperties%2F-1710570415"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="source.html">source</a><span class="token operator">: </span><a href="../../org.http4k.connect.amazon.ses.model/-email-address/index.html">EmailAddress</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="reply-to-addresses.html">replyToAddresses</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.amazon.ses.model/-email-address/index.html">EmailAddress</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
                 </div>
               </div>
             </div>
@@ -155,32 +185,47 @@
       </div>
       <div data-togglable="FUNCTION">
         <h2 class="">Functions</h2>
-        <div class="table"><a data-name="-1191748592%2FFunctions%2F-1710570415" anchor-label="toRequest" id="-1191748592%2FFunctions%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
+        <div class="table"><a data-name="-1032946049%2FFunctions%2F-1710570415" anchor-label="toRequest" id="-1032946049%2FFunctions%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
           <div class="table-row" data-filterable-current=":http4k-connect-amazon-ses:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="../../org.http4k.connect.amazon.ses/-s-e-s-action/to-request.html"><span>to</span><wbr><span><span>Request</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1191748592%2FFunctions%2F-1710570415"></span>
+                  <div><a href="index.html#-1032946049%2FFunctions%2F-1710570415"><span>to</span><wbr><span><span>Request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1032946049%2FFunctions%2F-1710570415"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../../org.http4k.connect.amazon.ses/-s-e-s-action/to-request.html"><span class="token function">toRequest</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1032946049%2FFunctions%2F-1710570415"><span class="token function">toRequest</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="1993724436%2FFunctions%2F-1710570415" anchor-label="toResult" id="1993724436%2FFunctions%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
+<a data-name="-1872319708%2FFunctions%2F-1710570415" anchor-label="toResult" id="-1872319708%2FFunctions%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
           <div class="table-row" data-filterable-current=":http4k-connect-amazon-ses:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="to-result.html"><span>to</span><wbr><span><span>Result</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1993724436%2FFunctions%2F-1710570415"></span>
+                  <div><a href="index.html#-1872319708%2FFunctions%2F-1710570415"><span>to</span><wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1872319708%2FFunctions%2F-1710570415"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-result.html"><span class="token function">toResult</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">response<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-response/index.html">Response</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../-send-email-response/index.html">SendEmailResponse</a><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1872319708%2FFunctions%2F-1710570415"><span class="token function">toResult</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">response<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-response/index.html">Response</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../-send-email-response/index.html">SendEmailResponse</a><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-503054728%2FFunctions%2F-1710570415" anchor-label="uri" id="-503054728%2FFunctions%2F-1710570415" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-connect-amazon-ses:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-ses:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../org.http4k.connect.amazon.ses/-s-e-s-action/uri.html"><span><span>uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-503054728%2FFunctions%2F-1710570415"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-ses:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../../org.http4k.connect.amazon.ses/-s-e-s-action/uri.html"><span class="token function">uri</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a></div></div></div>
                 </div>
               </div>
             </div>

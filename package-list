@@ -408,8 +408,12 @@ org.http4k.mcp.protocol.messages
 org.http4k.mcp.server
 org.http4k.mcp.server.capability
 org.http4k.mcp.server.protocol
+org.http4k.mcp.server.session
 org.http4k.mcp.server.sse
 org.http4k.mcp.server.stdio
+org.http4k.mcp.server.ws
+org.http4k.mcp.testing
+org.http4k.mcp.testing.capabilities
 org.http4k.mcp.util
 org.http4k.routing
 module:http4k-multipart
@@ -454,6 +458,7 @@ org.http4k.lens
 org.http4k.routing
 org.http4k.routing.sse
 org.http4k.routing.websocket
+org.http4k.security
 org.http4k.server
 org.http4k.sse
 org.http4k.testing
@@ -469,6 +474,7 @@ org.http4k.security
 org.http4k.security.oauth.client
 org.http4k.security.oauth.core
 org.http4k.security.oauth.format
+org.http4k.security.oauth.metadata
 org.http4k.security.oauth.server
 org.http4k.security.oauth.server.accesstoken
 org.http4k.security.oauth.server.refreshtoken
