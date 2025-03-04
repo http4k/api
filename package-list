@@ -407,6 +407,7 @@ org.http4k.mcp.protocol
 org.http4k.mcp.protocol.messages
 org.http4k.mcp.server
 org.http4k.mcp.server.capability
+org.http4k.mcp.server.http
 org.http4k.mcp.server.protocol
 org.http4k.mcp.server.session
 org.http4k.mcp.server.sse
