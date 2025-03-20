@@ -25,11 +25,13 @@
 <link href="../../styles/prism.css" rel="Stylesheet">
 <link href="../../styles/logo-styles.css" rel="Stylesheet">
 <link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
 <script type="text/javascript" src="../../scripts/clipboard.js" async></script>
 <script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
 <script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
 <script type="text/javascript" src="../../scripts/main.js" defer></script>
 <script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" async></script>
 <script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
 <link href="../../images/logo-icon.svg">
 <link href="../../styles/dokka.css" rel="Stylesheet"></head>
@@ -43,7 +45,7 @@
 <a class="library-name--link" href="../../index.html">
                             http4k
                     </a>            </div>
-            <div class="library-version">6.1.0.1
+            <div class="library-version">6.2.0.0
             </div>
         </div>
         <div class="filter-section" id="filter-section">
@@ -66,14 +68,20 @@
   <div class="cover ">
     <h1 class="cover"><span><span>bind</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="../org.http4k.mcp.model/-tool/index.html">Tool</a><span class="token punctuation">.</span><a href="bind.html"><span class="token function">bind</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../org.http4k.mcp/-tool-handler/index.html">ToolHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.mcp.server.capability/-tool-capability/index.html">ToolCapability</a></div><p class="paragraph">Create Tool capability by binding the Spec to the Handler.</p><hr><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="../org.http4k.mcp.model/-prompt/index.html">Prompt</a><span class="token punctuation">.</span><a href="bind.html"><span class="token function">bind</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../org.http4k.mcp/-prompt-handler/index.html">PromptHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.mcp.server.capability/-prompt-capability/index.html">PromptCapability</a></div><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="../org.http4k.mcp.model/-resource/index.html">Resource</a><span class="token punctuation">.</span><a href="bind.html"><span class="token function">bind</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../org.http4k.mcp/-resource-handler/index.html">ResourceHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.mcp.server.capability/-resource-capability/index.html">ResourceCapability</a></div><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="../org.http4k.mcp.model/-reference/index.html">Reference</a><span class="token punctuation">.</span><a href="bind.html"><span class="token function">bind</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../org.http4k.mcp/-completion-handler/index.html">CompletionHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.mcp.server.capability/-completion-capability/index.html">CompletionCapability</a></div><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="../org.http4k.mcp.model/-model-selector/index.html">ModelSelector</a><span class="token punctuation">.</span><a href="bind.html"><span class="token function">bind</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../org.http4k.mcp/-sampling-handler/index.html">SamplingHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.mcp.server.capability/-sampling-capability/index.html">SamplingCapability</a></div></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="../org.http4k.mcp.model/-tool/index.html">Tool</a><span class="token punctuation">.</span><a href="bind.html"><span class="token function">bind</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../org.http4k.mcp/-tool-handler/index.html">ToolHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.mcp.server.capability/-tool-capability/index.html">ToolCapability</a></div><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="../org.http4k.mcp.model/-prompt/index.html">Prompt</a><span class="token punctuation">.</span><a href="bind.html"><span class="token function">bind</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../org.http4k.mcp/-prompt-handler/index.html">PromptHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.mcp.server.capability/-prompt-capability/index.html">PromptCapability</a></div><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="../org.http4k.mcp.model/-resource/index.html">Resource</a><span class="token punctuation">.</span><a href="bind.html"><span class="token function">bind</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../org.http4k.mcp/-resource-handler/index.html">ResourceHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.mcp.server.capability/-resource-capability/index.html">ResourceCapability</a></div><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="../org.http4k.mcp.model/-reference/index.html">Reference</a><span class="token punctuation">.</span><a href="bind.html"><span class="token function">bind</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">handler<span class="token operator">: </span><a href="../org.http4k.mcp/-completion-handler/index.html">CompletionHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.mcp.server.capability/-completion-capability/index.html">CompletionCapability</a></div></div></div>
 </div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>(c) 2025 http4k</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>(c) 2025 http4k</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
             </div>
         </div>
     </div>
 </body>
 </html>
-

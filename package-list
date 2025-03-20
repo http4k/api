@@ -91,6 +91,7 @@ org.http4k.connect.azure.action
 module:http4k-connect-ai-azure-fake
 org.http4k.connect.azure
 module:http4k-connect-ai-core
+org.http4k.connect
 org.http4k.connect.model
 org.http4k.connect.util
 module:http4k-connect-ai-langchain
@@ -395,9 +396,6 @@ org.http4k.postbox
 org.http4k.postbox.processing
 org.http4k.postbox.storage.exposed
 org.http4k.postbox.storage.inmemory
-module:http4k-mcp-desktop
-org.http4k.mcp
-org.http4k.mcp.internal
 module:http4k-mcp-sdk
 org.http4k.lens
 org.http4k.mcp
@@ -405,14 +403,12 @@ org.http4k.mcp.client
 org.http4k.mcp.model
 org.http4k.mcp.protocol
 org.http4k.mcp.protocol.messages
-org.http4k.mcp.server
 org.http4k.mcp.server.capability
-org.http4k.mcp.server.http
+org.http4k.mcp.server.jsonrpc
 org.http4k.mcp.server.protocol
-org.http4k.mcp.server.session
 org.http4k.mcp.server.sse
 org.http4k.mcp.server.stdio
-org.http4k.mcp.server.ws
+org.http4k.mcp.server.websocket
 org.http4k.mcp.testing
 org.http4k.mcp.testing.capabilities
 org.http4k.mcp.util

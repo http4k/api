@@ -25,11 +25,13 @@
 <link href="../../../styles/prism.css" rel="Stylesheet">
 <link href="../../../styles/logo-styles.css" rel="Stylesheet">
 <link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
 <script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
 <script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
 <script type="text/javascript" src="../../../scripts/main.js" defer></script>
 <script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" async></script>
 <script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
 <link href="../../../images/logo-icon.svg">
 <link href="../../../styles/dokka.css" rel="Stylesheet"></head>
@@ -43,7 +45,7 @@
 <a class="library-name--link" href="../../../index.html">
                             http4k
                     </a>            </div>
-            <div class="library-version">6.1.0.1
+            <div class="library-version">6.2.0.0
             </div>
         </div>
         <div class="filter-section" id="filter-section">
@@ -61,19 +63,25 @@
                 <div class="sidebar--inner" id="sideMenu"></div>
             </div>
             <div id="main">
-<div class="main-content" data-page-type="member" id="content" pageids="http4k-mcp-sdk::org.http4k.mcp.server.protocol/McpProtocol/McpProtocol/#org.http4k.mcp.protocol.ServerMetaData#org.http4k.mcp.server.capability.Tools#org.http4k.mcp.server.capability.Completions#org.http4k.mcp.server.capability.Resources#org.http4k.mcp.server.capability.Roots#org.http4k.mcp.server.capability.Sampling#org.http4k.mcp.server.capability.Prompts#org.http4k.mcp.server.capability.Logger#kotlin.random.Random/PointingToDeclaration//-1537121169">
+<div class="main-content" data-page-type="member" id="content" pageids="http4k-mcp-sdk::org.http4k.mcp.server.protocol/McpProtocol/McpProtocol/#org.http4k.mcp.protocol.ServerMetaData#org.http4k.mcp.server.protocol.ClientSessions[TypeParam(bounds=[kotlin.Any?]),TypeParam(bounds=[kotlin.Any])]#kotlin.Array[org.http4k.mcp.server.capability.ServerCapability]/PointingToDeclaration//-1537121169">
   <div class="breadcrumbs"><a href="../../index.html">http4k-mcp-sdk</a><span class="delimiter">/</span><a href="../index.html">org.http4k.mcp.server.protocol</a><span class="delimiter">/</span><a href="index.html">McpProtocol</a><span class="delimiter">/</span><span class="current">McpProtocol</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Mcp</span><wbr><span><span>Protocol</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">metaData<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-server-meta-data/index.html">ServerMetaData</a><span class="token punctuation">, </span></span><span class="parameter ">tools<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-tools/index.html">Tools</a><span class="token punctuation">, </span></span><span class="parameter ">completions<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-completions/index.html">Completions</a><span class="token punctuation">, </span></span><span class="parameter ">resources<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-resources/index.html">Resources</a><span class="token punctuation">, </span></span><span class="parameter ">roots<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-roots/index.html">Roots</a><span class="token punctuation">, </span></span><span class="parameter ">sampling<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-sampling/index.html">Sampling</a><span class="token punctuation">, </span></span><span class="parameter ">prompts<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-prompts/index.html">Prompts</a><span class="token punctuation">, </span></span><span class="parameter ">logger<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-logger/index.html">Logger</a><span class="token punctuation">, </span></span><span class="parameter ">random<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.random/-random/index.html">Random</a></span></span><span class="token punctuation">)</span></div></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">serverMetaData<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-server-meta-data/index.html">ServerMetaData</a><span class="token punctuation">, </span></span><span class="parameter ">clientSessions<span class="token operator">: </span><a href="../-client-sessions/index.html">ClientSessions</a><span class="token operator">&lt;</span><a href="index.html">Transport</a><span class="token punctuation">, </span><a href="index.html">RSP</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>capabilities<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-server-capability/index.html">ServerCapability</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">metaData<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-server-meta-data/index.html">ServerMetaData</a><span class="token punctuation">, </span></span><span class="parameter ">clientSessions<span class="token operator">: </span><a href="../-client-sessions/index.html">ClientSessions</a><span class="token operator">&lt;</span><a href="index.html">Transport</a><span class="token punctuation">, </span><a href="index.html">RSP</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">tools<span class="token operator">: </span><a href="../-tools/index.html">Tools</a><span class="token operator"> = </span>ServerTools()<span class="token punctuation">, </span></span><span class="parameter ">resources<span class="token operator">: </span><a href="../-resources/index.html">Resources</a><span class="token operator"> = </span>ServerResources()<span class="token punctuation">, </span></span><span class="parameter ">prompts<span class="token operator">: </span><a href="../-prompts/index.html">Prompts</a><span class="token operator"> = </span>ServerPrompts()<span class="token punctuation">, </span></span><span class="parameter ">completions<span class="token operator">: </span><a href="../-completions/index.html">Completions</a><span class="token operator"> = </span>ServerCompletions()<span class="token punctuation">, </span></span><span class="parameter ">sampling<span class="token operator">: </span><a href="../-sampling/index.html">Sampling</a><span class="token operator"> = </span>ServerSampling(Random)<span class="token punctuation">, </span></span><span class="parameter ">logger<span class="token operator">: </span><a href="../-logger/index.html">Logger</a><span class="token operator"> = </span>ServerLogger()<span class="token punctuation">, </span></span><span class="parameter ">roots<span class="token operator">: </span><a href="../-roots/index.html">Roots</a><span class="token operator"> = </span>ServerRoots()<span class="token punctuation">, </span></span><span class="parameter ">random<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.random/-random/index.html">Random</a><span class="token operator"> = </span>Random</span></span><span class="token punctuation">)</span></div></div></div>
 </div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>(c) 2025 http4k</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>(c) 2025 http4k</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
             </div>
         </div>
     </div>
 </body>
 </html>
-

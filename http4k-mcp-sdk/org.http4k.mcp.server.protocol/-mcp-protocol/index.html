@@ -25,11 +25,13 @@
 <link href="../../../styles/prism.css" rel="Stylesheet">
 <link href="../../../styles/logo-styles.css" rel="Stylesheet">
 <link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
 <script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
 <script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
 <script type="text/javascript" src="../../../scripts/main.js" defer></script>
 <script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" async></script>
 <script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
 <link href="../../../images/logo-icon.svg">
 <link href="../../../styles/dokka.css" rel="Stylesheet"></head>
@@ -43,7 +45,7 @@
 <a class="library-name--link" href="../../../index.html">
                             http4k
                     </a>            </div>
-            <div class="library-version">6.1.0.1
+            <div class="library-version">6.2.0.0
             </div>
         </div>
         <div class="filter-section" id="filter-section">
@@ -65,24 +67,24 @@
   <div class="breadcrumbs"><a href="../../index.html">http4k-mcp-sdk</a><span class="delimiter">/</span><a href="../index.html">org.http4k.mcp.server.protocol</a><span class="delimiter">/</span><span class="current">McpProtocol</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Mcp</span><wbr><span><span>Protocol</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">McpProtocol</a><span class="token operator">&lt;</span><a href="index.html">RSP</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">metaData<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-server-meta-data/index.html">ServerMetaData</a><span class="token punctuation">, </span></span><span class="parameter ">tools<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-tools/index.html">Tools</a><span class="token punctuation">, </span></span><span class="parameter ">completions<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-completions/index.html">Completions</a><span class="token punctuation">, </span></span><span class="parameter ">resources<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-resources/index.html">Resources</a><span class="token punctuation">, </span></span><span class="parameter ">roots<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-roots/index.html">Roots</a><span class="token punctuation">, </span></span><span class="parameter ">sampling<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-sampling/index.html">Sampling</a><span class="token punctuation">, </span></span><span class="parameter ">prompts<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-prompts/index.html">Prompts</a><span class="token punctuation">, </span></span><span class="parameter ">logger<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-logger/index.html">Logger</a><span class="token punctuation">, </span></span><span class="parameter ">random<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.random/-random/index.html">Random</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Models the MCP protocol in terms of message handling and session management.</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":http4k-mcp-sdk:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.mcp.server/-realtime-mcp-protocol/index.html">RealtimeMcpProtocol</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-mcp-sdk:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.mcp.server.stdio/-std-io-mcp-protocol/index.html">StdIoMcpProtocol</a></div></span></div><div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">McpProtocol</a><span class="token operator">&lt;</span><a href="index.html">Transport</a><span class="token punctuation">, </span><a href="index.html">RSP</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">metaData<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-server-meta-data/index.html">ServerMetaData</a><span class="token punctuation">, </span></span><span class="parameter ">clientSessions<span class="token operator">: </span><a href="../-client-sessions/index.html">ClientSessions</a><span class="token operator">&lt;</span><a href="index.html">Transport</a><span class="token punctuation">, </span><a href="index.html">RSP</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">tools<span class="token operator">: </span><a href="../-tools/index.html">Tools</a><span class="token operator"> = </span>ServerTools()<span class="token punctuation">, </span></span><span class="parameter ">resources<span class="token operator">: </span><a href="../-resources/index.html">Resources</a><span class="token operator"> = </span>ServerResources()<span class="token punctuation">, </span></span><span class="parameter ">prompts<span class="token operator">: </span><a href="../-prompts/index.html">Prompts</a><span class="token operator"> = </span>ServerPrompts()<span class="token punctuation">, </span></span><span class="parameter ">completions<span class="token operator">: </span><a href="../-completions/index.html">Completions</a><span class="token operator"> = </span>ServerCompletions()<span class="token punctuation">, </span></span><span class="parameter ">sampling<span class="token operator">: </span><a href="../-sampling/index.html">Sampling</a><span class="token operator"> = </span>ServerSampling(Random)<span class="token punctuation">, </span></span><span class="parameter ">logger<span class="token operator">: </span><a href="../-logger/index.html">Logger</a><span class="token operator"> = </span>ServerLogger()<span class="token punctuation">, </span></span><span class="parameter ">roots<span class="token operator">: </span><a href="../-roots/index.html">Roots</a><span class="token operator"> = </span>ServerRoots()<span class="token punctuation">, </span></span><span class="parameter ">random<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.random/-random/index.html">Random</a><span class="token operator"> = </span>Random</span></span><span class="token punctuation">)</span></div><p class="paragraph">Models the MCP protocol in terms of message handling and session management.</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
-        <div class="table"><a data-name="40546409%2FConstructors%2F-1537121169" anchor-label="McpProtocol" id="40546409%2FConstructors%2F-1537121169" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main"></a>
+        <div class="table"><a data-name="-264796873%2FConstructors%2F-1537121169" anchor-label="McpProtocol" id="-264796873%2FConstructors%2F-1537121169" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main"></a>
           <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":http4k-mcp-sdk:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-mcp-protocol.html"><span>Mcp</span><wbr><span><span>Protocol</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="40546409%2FConstructors%2F-1537121169"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-264796873%2FConstructors%2F-1537121169"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">metaData<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-server-meta-data/index.html">ServerMetaData</a><span class="token punctuation">, </span></span><span class="parameter ">tools<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-tools/index.html">Tools</a><span class="token punctuation">, </span></span><span class="parameter ">completions<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-completions/index.html">Completions</a><span class="token punctuation">, </span></span><span class="parameter ">resources<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-resources/index.html">Resources</a><span class="token punctuation">, </span></span><span class="parameter ">roots<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-roots/index.html">Roots</a><span class="token punctuation">, </span></span><span class="parameter ">sampling<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-sampling/index.html">Sampling</a><span class="token punctuation">, </span></span><span class="parameter ">prompts<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-prompts/index.html">Prompts</a><span class="token punctuation">, </span></span><span class="parameter ">logger<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-logger/index.html">Logger</a><span class="token punctuation">, </span></span><span class="parameter ">random<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.random/-random/index.html">Random</a></span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">serverMetaData<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-server-meta-data/index.html">ServerMetaData</a><span class="token punctuation">, </span></span><span class="parameter ">clientSessions<span class="token operator">: </span><a href="../-client-sessions/index.html">ClientSessions</a><span class="token operator">&lt;</span><a href="index.html">Transport</a><span class="token punctuation">, </span><a href="index.html">RSP</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>capabilities<span class="token operator">: </span><a href="../../org.http4k.mcp.server.capability/-server-capability/index.html">ServerCapability</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">metaData<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-server-meta-data/index.html">ServerMetaData</a><span class="token punctuation">, </span></span><span class="parameter ">clientSessions<span class="token operator">: </span><a href="../-client-sessions/index.html">ClientSessions</a><span class="token operator">&lt;</span><a href="index.html">Transport</a><span class="token punctuation">, </span><a href="index.html">RSP</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">tools<span class="token operator">: </span><a href="../-tools/index.html">Tools</a><span class="token operator"> = </span>ServerTools()<span class="token punctuation">, </span></span><span class="parameter ">resources<span class="token operator">: </span><a href="../-resources/index.html">Resources</a><span class="token operator"> = </span>ServerResources()<span class="token punctuation">, </span></span><span class="parameter ">prompts<span class="token operator">: </span><a href="../-prompts/index.html">Prompts</a><span class="token operator"> = </span>ServerPrompts()<span class="token punctuation">, </span></span><span class="parameter ">completions<span class="token operator">: </span><a href="../-completions/index.html">Completions</a><span class="token operator"> = </span>ServerCompletions()<span class="token punctuation">, </span></span><span class="parameter ">sampling<span class="token operator">: </span><a href="../-sampling/index.html">Sampling</a><span class="token operator"> = </span>ServerSampling(Random)<span class="token punctuation">, </span></span><span class="parameter ">logger<span class="token operator">: </span><a href="../-logger/index.html">Logger</a><span class="token operator"> = </span>ServerLogger()<span class="token punctuation">, </span></span><span class="parameter ">roots<span class="token operator">: </span><a href="../-roots/index.html">Roots</a><span class="token operator"> = </span>ServerRoots()<span class="token punctuation">, </span></span><span class="parameter ">random<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.random/-random/index.html">Random</a><span class="token operator"> = </span>Random</span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -106,6 +108,21 @@
               </div>
             </div>
           </div>
+<a data-name="895048023%2FFunctions%2F-1537121169" anchor-label="newSession" id="895048023%2FFunctions%2F-1537121169" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-sdk:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="new-session.html"><span>new</span><wbr><span><span>Session</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="895048023%2FFunctions%2F-1537121169"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="new-session.html"><span class="token function">newSession</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">req<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token punctuation">, </span></span><span class="parameter ">sink<span class="token operator">: </span><a href="index.html">Transport</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-session-id/index.html">SessionId</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
 <a data-name="-2117611792%2FFunctions%2F-1537121169" anchor-label="receive" id="-2117611792%2FFunctions%2F-1537121169" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main"></a>
           <div class="table-row" data-filterable-current=":http4k-mcp-sdk:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
@@ -121,32 +138,23 @@
               </div>
             </div>
           </div>
-<a data-name="1110934693%2FFunctions%2F-1537121169" anchor-label="start" id="1110934693%2FFunctions%2F-1537121169" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main"></a>
-          <div class="table-row" data-filterable-current=":http4k-mcp-sdk:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="start.html"><span><span>start</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1110934693%2FFunctions%2F-1537121169"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="start.html"><span class="token function">start</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">executor<span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.time.executors/SimpleScheduler///PointingToDeclaration/">SimpleScheduler</span><span class="token operator"> = </span>SimpleSchedulerService(1)</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Future.html">Future</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Start the protocol.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>(c) 2025 http4k</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>(c) 2025 http4k</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
             </div>
         </div>
     </div>
 </body>
 </html>
-

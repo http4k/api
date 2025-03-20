@@ -25,11 +25,13 @@
 <link href="../../../styles/prism.css" rel="Stylesheet">
 <link href="../../../styles/logo-styles.css" rel="Stylesheet">
 <link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
 <script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
 <script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
 <script type="text/javascript" src="../../../scripts/main.js" defer></script>
 <script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" async></script>
 <script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
 <link href="../../../images/logo-icon.svg">
 <link href="../../../styles/dokka.css" rel="Stylesheet"></head>
@@ -43,7 +45,7 @@
 <a class="library-name--link" href="../../../index.html">
                             http4k
                     </a>            </div>
-            <div class="library-version">6.1.0.1
+            <div class="library-version">6.2.0.0
             </div>
         </div>
         <div class="filter-section" id="filter-section">
@@ -65,24 +67,24 @@
   <div class="breadcrumbs"><a href="../../index.html">http4k-mcp-sdk</a><span class="delimiter">/</span><a href="../index.html">org.http4k.mcp.client</a><span class="delimiter">/</span><span class="current">AbstractMcpClient</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Abstract</span><wbr><span>Mcp</span><wbr><span><span>Client</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">AbstractMcpClient</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientInfo<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-versioned-mcp-entity/index.html">VersionedMcpEntity</a><span class="token punctuation">, </span></span><span class="parameter ">capabilities<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-client-capabilities/index.html">ClientCapabilities</a><span class="token punctuation">, </span></span><span class="parameter ">protocolVersion<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-protocol-version/index.html">ProtocolVersion</a><span class="token operator"> = </span>LATEST_VERSION<span class="token punctuation">, </span></span><span class="parameter ">defaultTimeout<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html">Duration</a></span></span><span class="token punctuation">)</span> : <a href="../-mcp-client/index.html">McpClient</a></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":http4k-mcp-sdk:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-sse-mcp-client/index.html">SseMcpClient</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-mcp-sdk:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-ws-mcp-client/index.html">WsMcpClient</a></div></span></div><div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">AbstractMcpClient</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientInfo<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-versioned-mcp-entity/index.html">VersionedMcpEntity</a><span class="token punctuation">, </span></span><span class="parameter ">capabilities<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-client-capabilities/index.html">ClientCapabilities</a><span class="token punctuation">, </span></span><span class="parameter ">protocolVersion<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-protocol-version/index.html">ProtocolVersion</a><span class="token operator"> = </span>LATEST_VERSION<span class="token punctuation">, </span></span><span class="parameter ">defaultTimeout<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html">Duration</a><span class="token punctuation">, </span></span><span class="parameter ">random<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.random/-random/index.html">Random</a></span></span><span class="token punctuation">)</span> : <a href="../-mcp-client/index.html">McpClient</a></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":http4k-mcp-sdk:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-sse-mcp-client/index.html">SseMcpClient</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-mcp-sdk:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-websocket-mcp-client/index.html">WebsocketMcpClient</a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
-        <div class="table"><a data-name="-1075902685%2FConstructors%2F-1537121169" anchor-label="AbstractMcpClient" id="-1075902685%2FConstructors%2F-1537121169" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main"></a>
+        <div class="table"><a data-name="1169168603%2FConstructors%2F-1537121169" anchor-label="AbstractMcpClient" id="1169168603%2FConstructors%2F-1537121169" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main"></a>
           <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":http4k-mcp-sdk:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-sdk:dokkaHtmlPartial/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-abstract-mcp-client.html"><span>Abstract</span><wbr><span>Mcp</span><wbr><span><span>Client</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1075902685%2FConstructors%2F-1537121169"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1169168603%2FConstructors%2F-1537121169"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientInfo<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-versioned-mcp-entity/index.html">VersionedMcpEntity</a><span class="token punctuation">, </span></span><span class="parameter ">capabilities<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-client-capabilities/index.html">ClientCapabilities</a><span class="token punctuation">, </span></span><span class="parameter ">protocolVersion<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-protocol-version/index.html">ProtocolVersion</a><span class="token operator"> = </span>LATEST_VERSION<span class="token punctuation">, </span></span><span class="parameter ">defaultTimeout<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html">Duration</a></span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-sdk:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientInfo<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-versioned-mcp-entity/index.html">VersionedMcpEntity</a><span class="token punctuation">, </span></span><span class="parameter ">capabilities<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-client-capabilities/index.html">ClientCapabilities</a><span class="token punctuation">, </span></span><span class="parameter ">protocolVersion<span class="token operator">: </span><a href="../../org.http4k.mcp.protocol/-protocol-version/index.html">ProtocolVersion</a><span class="token operator"> = </span>LATEST_VERSION<span class="token punctuation">, </span></span><span class="parameter ">defaultTimeout<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html">Duration</a><span class="token punctuation">, </span></span><span class="parameter ">random<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.random/-random/index.html">Random</a></span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -216,12 +218,18 @@
     </div>
   </div>
 </div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>(c) 2025 http4k</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>(c) 2025 http4k</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
             </div>
         </div>
     </div>
 </body>
 </html>
-

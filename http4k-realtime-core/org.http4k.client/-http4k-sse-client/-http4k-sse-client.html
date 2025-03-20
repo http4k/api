@@ -25,11 +25,13 @@
 <link href="../../../styles/prism.css" rel="Stylesheet">
 <link href="../../../styles/logo-styles.css" rel="Stylesheet">
 <link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
 <script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
 <script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
 <script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
 <script type="text/javascript" src="../../../scripts/main.js" defer></script>
 <script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" async></script>
 <script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
 <link href="../../../images/logo-icon.svg">
 <link href="../../../styles/dokka.css" rel="Stylesheet"></head>
@@ -43,7 +45,7 @@
 <a class="library-name--link" href="../../../index.html">
                             http4k
                     </a>            </div>
-            <div class="library-version">6.1.0.1
+            <div class="library-version">6.2.0.0
             </div>
         </div>
         <div class="filter-section" id="filter-section">
@@ -61,19 +63,25 @@
                 <div class="sidebar--inner" id="sideMenu"></div>
             </div>
             <div id="main">
-<div class="main-content" data-page-type="member" id="content" pageids="http4k-realtime-core::org.http4k.client/Http4kSseClient/Http4kSseClient/#org.http4k.core.Request#kotlin.Function1[org.http4k.core.Request,org.http4k.core.Response]#org.http4k.client.SseReconnectionMode#kotlin.Function1[java.lang.Exception,kotlin.Unit]/PointingToDeclaration//1157631669">
+<div class="main-content" data-page-type="member" id="content" pageids="http4k-realtime-core::org.http4k.client/Http4kSseClient/Http4kSseClient/#org.http4k.core.Request#kotlin.Function1[org.http4k.core.Request,org.http4k.core.Response]#org.http4k.client.ReconnectionMode#kotlin.Function1[java.lang.Exception,kotlin.Unit]/PointingToDeclaration//1157631669">
   <div class="breadcrumbs"><a href="../../index.html">http4k-realtime-core</a><span class="delimiter">/</span><a href="../index.html">org.http4k.client</a><span class="delimiter">/</span><a href="index.html">Http4kSseClient</a><span class="delimiter">/</span><span class="current">Http4kSseClient</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Http4k</span><wbr><span>Sse</span><wbr><span><span>Client</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sseRequest<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token punctuation">, </span></span><span class="parameter ">reconnectionMode<span class="token operator">: </span><a href="../-sse-reconnection-mode/index.html">SseReconnectionMode</a><span class="token operator"> = </span>Disconnect<span class="token punctuation">, </span></span><span class="parameter ">reportError<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-exception/index.html">Exception</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sseRequest<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token punctuation">, </span></span><span class="parameter ">reconnectionMode<span class="token operator">: </span><a href="../-reconnection-mode/index.html">ReconnectionMode</a><span class="token operator"> = </span>Disconnect<span class="token punctuation">, </span></span><span class="parameter ">reportError<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-exception/index.html">Exception</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div></div></div>
 </div>
-      <div class="footer">
-        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>(c) 2025 http4k</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
-      </div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>(c) 2025 http4k</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
             </div>
         </div>
     </div>
 </body>
 </html>
-
