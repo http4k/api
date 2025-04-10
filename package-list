@@ -397,6 +397,7 @@ org.http4k.postbox.processing
 org.http4k.postbox.storage.exposed
 org.http4k.postbox.storage.inmemory
 module:http4k-mcp-sdk
+org.http4k.core
 org.http4k.filter
 org.http4k.lens
 org.http4k.mcp
