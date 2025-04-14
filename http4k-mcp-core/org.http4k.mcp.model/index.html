@@ -1,0 +1,613 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.mcp.model</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" async></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../index.html">
+                            http4k
+                    </a>            </div>
+            <div class="library-version">6.6.0.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":http4k-mcp-core:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+            <a class="navigation-controls--btn navigation-controls--homepage" id="homepage-link" href="https://http4k.org"></a>
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-mcp-core::org.http4k.mcp.model////PointingToDeclaration//1573296346">
+  <div class="breadcrumbs"><a href="../index.html">http4k-mcp-core</a><span class="delimiter">/</span><span class="current">org.http4k.mcp.model</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1474815828%2FClasslikes%2F1573296346" anchor-label="Annotations" id="-1474815828%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-annotations/index.html"><span><span>Annotations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1474815828%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-annotations/index.html">Annotations</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>audience<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-ai-core/org.http4k.connect.model/-role/index.html">Role</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>priority<span class="token operator">: </span><a href="-priority/index.html">Priority</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-366525665%2FClasslikes%2F1573296346" anchor-label="CapabilitySpec" id="-366525665%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-capability-spec/index.html"><span>Capability</span><wbr><span><span>Spec</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-366525665%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">interface </span><a href="-capability-spec/index.html">CapabilitySpec</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1896844074%2FClasslikes%2F1573296346" anchor-label="Completion" id="-1896844074%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-completion/index.html"><span><span>Completion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1896844074%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-completion/index.html">Completion</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>values<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>total<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>hasMore<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="548355993%2FClasslikes%2F1573296346" anchor-label="CompletionArgument" id="548355993%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-completion-argument/index.html"><span>Completion</span><wbr><span><span>Argument</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="548355993%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-completion-argument/index.html">CompletionArgument</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="673628484%2FClasslikes%2F1573296346" anchor-label="CompletionStatus" id="673628484%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-completion-status/index.html"><span>Completion</span><wbr><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="673628484%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-completion-status/index.html">CompletionStatus</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-completion-status/index.html">CompletionStatus</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1340964745%2FClasslikes%2F1573296346" anchor-label="Content" id="-1340964745%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-content/index.html"><span><span>Content</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1340964745%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/Polymorphic///PointingToDeclaration/"><span class="token annotation builtin">Polymorphic</span></span><span class="token punctuation">(</span><span>labelKey<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"type"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-content/index.html">Content</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1615303908%2FClasslikes%2F1573296346" anchor-label="Cursor" id="-1615303908%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-cursor/index.html"><span><span>Cursor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1615303908%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-cursor/index.html">Cursor</a><span class="token operator"> = </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="712775378%2FClasslikes%2F1573296346" anchor-label="LogLevel" id="712775378%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-log-level/index.html"><span>Log</span><wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="712775378%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-log-level/index.html">LogLevel</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-log-level/index.html">LogLevel</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-86012013%2FClasslikes%2F1573296346" anchor-label="McpEntity" id="-86012013%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-mcp-entity/index.html"><span>Mcp</span><wbr><span><span>Entity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-86012013%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-mcp-entity/index.html">McpEntity</a> : <span data-unresolved-link="dev.forkhandles.values/AbstractValue///PointingToDeclaration/">AbstractValue</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span>, <a href="-capability-spec/index.html">CapabilitySpec</a></div><div class="brief "><p class="paragraph">Represents the name of the MCP entity. Used for identification and matching purposes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-951682326%2FClasslikes%2F1573296346" anchor-label="McpMessageId" id="-951682326%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-mcp-message-id/index.html"><span>Mcp</span><wbr><span>Message</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-951682326%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-mcp-message-id/index.html">McpMessageId</a> : <span data-unresolved-link="dev.forkhandles.values/AbstractValue///PointingToDeclaration/">AbstractValue</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1699401559%2FClasslikes%2F1573296346" anchor-label="Message" id="-1699401559%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-message/index.html"><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1699401559%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-message/index.html">Message</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>role<span class="token operator">: </span><a href="../../http4k-connect-ai-core/org.http4k.connect.model/-role/index.html">Role</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>content<span class="token operator">: </span><a href="-content/index.html">Content</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="189032333%2FClasslikes%2F1573296346" anchor-label="Meta" id="189032333%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-meta/index.html"><span><span>Meta</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="189032333%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-meta/index.html">Meta</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>progress<span class="token operator">: </span><a href="-progress-token/index.html">ProgressToken</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1617377344%2FClasslikes%2F1573296346" anchor-label="ModelHint" id="-1617377344%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-model-hint/index.html"><span>Model</span><wbr><span><span>Hint</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1617377344%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-model-hint/index.html">ModelHint</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="../../http4k-connect-ai-core/org.http4k.connect.model/-model-name/index.html">ModelName</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-380028093%2FClasslikes%2F1573296346" anchor-label="ModelPreferences" id="-380028093%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-model-preferences/index.html"><span>Model</span><wbr><span><span>Preferences</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-380028093%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-model-preferences/index.html">ModelPreferences</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>hints<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-model-hint/index.html">ModelHint</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>costPriority<span class="token operator">: </span><a href="-priority/index.html">Priority</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>speedPriority<span class="token operator">: </span><a href="-priority/index.html">Priority</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>intelligencePriority<span class="token operator">: </span><a href="-priority/index.html">Priority</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1309883470%2FClasslikes%2F1573296346" anchor-label="Priority" id="1309883470%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-priority/index.html"><span><span>Priority</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1309883470%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-priority/index.html">Priority</a> : <span data-unresolved-link="dev.forkhandles.values/AbstractValue///PointingToDeclaration/">AbstractValue</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1099599899%2FClasslikes%2F1573296346" anchor-label="Progress" id="-1099599899%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-progress/index.html"><span><span>Progress</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1099599899%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-progress/index.html">Progress</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>progressToken<span class="token operator">: </span><a href="-progress-token/index.html">ProgressToken</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>progress<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>total<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-761857724%2FClasslikes%2F1573296346" anchor-label="ProgressToken" id="-761857724%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-progress-token/index.html"><span>Progress</span><wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-761857724%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-progress-token/index.html">ProgressToken</a><span class="token operator"> = </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-911052594%2FClasslikes%2F1573296346" anchor-label="Prompt" id="-911052594%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-prompt/index.html"><span><span>Prompt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-911052594%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-prompt/index.html">Prompt</a> : <a href="-capability-spec/index.html">CapabilitySpec</a></div><div class="brief "><p class="paragraph">Spec of a Prompt capability.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="344404483%2FClasslikes%2F1573296346" anchor-label="PromptName" id="344404483%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-prompt-name/index.html"><span>Prompt</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="344404483%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-prompt-name/index.html">PromptName</a> : <span data-unresolved-link="dev.forkhandles.values/AbstractValue///PointingToDeclaration/">AbstractValue</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-887014875%2FClasslikes%2F1573296346" anchor-label="Reference" id="-887014875%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-reference/index.html"><span><span>Reference</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-887014875%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/Polymorphic///PointingToDeclaration/"><span class="token annotation builtin">Polymorphic</span></span><span class="token punctuation">(</span><span>labelKey<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"type"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-reference/index.html">Reference</a> : <a href="-capability-spec/index.html">CapabilitySpec</a></div><div class="brief "><p class="paragraph">Spec of a Completion capability.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="810786084%2FClasslikes%2F1573296346" anchor-label="Resource" id="810786084%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-resource/index.html"><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="810786084%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-resource/index.html">Resource</a> : <a href="-capability-spec/index.html">CapabilitySpec</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1284619431%2FClasslikes%2F1573296346" anchor-label="ResourceName" id="-1284619431%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-resource-name/index.html"><span>Resource</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1284619431%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-resource-name/index.html">ResourceName</a> : <span data-unresolved-link="dev.forkhandles.values/AbstractValue///PointingToDeclaration/">AbstractValue</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="958441016%2FClasslikes%2F1573296346" anchor-label="ResourceUriTemplate" id="958441016%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-resource-uri-template/index.html"><span>Resource</span><wbr><span>Uri</span><wbr><span><span>Template</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="958441016%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-resource-uri-template/index.html">ResourceUriTemplate</a> : <span data-unresolved-link="dev.forkhandles.values/AbstractValue///PointingToDeclaration/">AbstractValue</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1183448912%2FClasslikes%2F1573296346" anchor-label="Root" id="1183448912%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-root/index.html"><span><span>Root</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1183448912%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-root/index.html">Root</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>uri<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1723910084%2FClasslikes%2F1573296346" anchor-label="SamplingIncludeContext" id="1723910084%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sampling-include-context/index.html"><span>Sampling</span><wbr><span>Include</span><wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1723910084%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-sampling-include-context/index.html">SamplingIncludeContext</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-sampling-include-context/index.html">SamplingIncludeContext</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="632525073%2FClasslikes%2F1573296346" anchor-label="Size" id="632525073%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-size/index.html"><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="632525073%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-size/index.html">Size</a> : <span data-unresolved-link="dev.forkhandles.values/AbstractValue///PointingToDeclaration/">AbstractValue</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1973473446%2FClasslikes%2F1573296346" anchor-label="Tool" id="-1973473446%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tool/index.html"><span><span>Tool</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1973473446%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-tool/index.html">Tool</a> : <a href="-capability-spec/index.html">CapabilitySpec</a></div><div class="brief "><p class="paragraph">Description of a Tool capability.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-450698524%2FClasslikes%2F1573296346" anchor-label="ToolAnnotations" id="-450698524%2FClasslikes%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tool-annotations/index.html"><span>Tool</span><wbr><span><span>Annotations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-450698524%2FClasslikes%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-tool-annotations/index.html">ToolAnnotations</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>title<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>destructiveHint<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>idempotentHint<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>openWorldHint<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>readOnlyHint<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="EXTENSION_PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1411845538%2FProperties%2F1573296346" anchor-label="end_turn" id="1411845538%2FProperties%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="end_turn.html"><span>end_</span><wbr><span>turn</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1411845538%2FProperties%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../http4k-connect-ai-core/org.http4k.connect.model/-stop-reason/-companion/index.html">StopReason.Companion</a><span class="token punctuation">.</span><a href="end_turn.html">end_turn</a><span class="token operator">: </span><a href="../../http4k-connect-ai-core/org.http4k.connect.model/-stop-reason/index.html">StopReason</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="425797142%2FProperties%2F1573296346" anchor-label="max_tokens" id="425797142%2FProperties%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max_tokens.html"><span>max_</span><wbr><span>tokens</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="425797142%2FProperties%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../http4k-connect-ai-core/org.http4k.connect.model/-stop-reason/-companion/index.html">StopReason.Companion</a><span class="token punctuation">.</span><a href="max_tokens.html">max_tokens</a><span class="token operator">: </span><a href="../../http4k-connect-ai-core/org.http4k.connect.model/-stop-reason/index.html">StopReason</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1537712319%2FProperties%2F1573296346" anchor-label="stop_sequence" id="1537712319%2FProperties%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop_sequence.html"><span>stop_</span><wbr><span>sequence</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1537712319%2FProperties%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../http4k-connect-ai-core/org.http4k.connect.model/-stop-reason/-companion/index.html">StopReason.Companion</a><span class="token punctuation">.</span><a href="stop_sequence.html">stop_sequence</a><span class="token operator">: </span><a href="../../http4k-connect-ai-core/org.http4k.connect.model/-stop-reason/index.html">StopReason</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1654822047%2FProperties%2F1573296346" anchor-label="tool_use" id="-1654822047%2FProperties%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tool_use.html"><span>tool_</span><wbr><span>use</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1654822047%2FProperties%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="../../http4k-connect-ai-core/org.http4k.connect.model/-stop-reason/-companion/index.html">StopReason.Companion</a><span class="token punctuation">.</span><a href="tool_use.html">tool_use</a><span class="token operator">: </span><a href="../../http4k-connect-ai-core/org.http4k.connect.model/-stop-reason/index.html">StopReason</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="EXTENSION_FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1819819501%2FFunctions%2F1573296346" anchor-label="asMcp" id="1819819501%2FFunctions%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="as-mcp.html"><span>as</span><wbr><span><span>Mcp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1819819501%2FFunctions%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-tool/index.html">Tool</a><span class="token punctuation">.</span><a href="as-mcp.html"><span class="token function">asMcp</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.mcp.protocol.messages/-mcp-tool/index.html">McpTool</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-358721023%2FFunctions%2F1573296346" anchor-label="toSchema" id="-358721023%2FFunctions%2F1573296346" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-mcp-core:dokkaHtmlPartial/main" data-filterable-set=":http4k-mcp-core:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-schema.html"><span>to</span><wbr><span><span>Schema</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-358721023%2FFunctions%2F1573296346"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-mcp-core:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-tool/index.html">Tool</a><span class="token punctuation">.</span><a href="to-schema.html"><span class="token function">toSchema</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>(c) 2025 http4k</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
