@@ -1,0 +1,340 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ResourceMetadata</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            http4k
+                    </a>            </div>
+            <div class="library-version">6.6.1.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":http4k-security-oauth:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+            <a class="navigation-controls--btn navigation-controls--homepage" id="homepage-link" href="https://http4k.org"></a>
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="http4k-security-oauth::org.http4k.security.oauth.metadata/ResourceMetadata///PointingToDeclaration//1137287618">
+  <div class="breadcrumbs"><a href="../../index.html">http4k-security-oauth</a><span class="delimiter">/</span><a href="../index.html">org.http4k.security.oauth.metadata</a><span class="delimiter">/</span><span class="current">ResourceMetadata</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Resource</span><wbr><span><span>Metadata</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">ResourceMetadata</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>resource<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>authorizationServers<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>jwksUri<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>scopesSupported<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>bearerMethodsSupported<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-bearer-method/index.html">BearerMethod</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>resourceSigningAlgValuesSupported<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>resourceName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>resourceDocumentation<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>resourcePolicyUri<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>resourceTosUri<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>tlsClientCertificateBoundAccessTokens<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>authorizationDetailsTypesSupported<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dpopSigningAlgValuesSupported<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dpopBoundAccessTokensRequired<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>signedMetadata<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-563989117%2FConstructors%2F1137287618" anchor-label="ResourceMetadata" id="-563989117%2FConstructors%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-resource-metadata.html"><span>Resource</span><wbr><span><span>Metadata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-563989117%2FConstructors%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">resource<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token punctuation">, </span></span><span class="parameter ">authorizationServers<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">jwksUri<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">scopesSupported<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">bearerMethodsSupported<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-bearer-method/index.html">BearerMethod</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">resourceSigningAlgValuesSupported<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">resourceName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">resourceDocumentation<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">resourcePolicyUri<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">resourceTosUri<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">tlsClientCertificateBoundAccessTokens<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">authorizationDetailsTypesSupported<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">dpopSigningAlgValuesSupported<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">dpopBoundAccessTokensRequired<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">signedMetadata<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1745595437%2FProperties%2F1137287618" anchor-label="authorizationDetailsTypesSupported" id="1745595437%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="authorization-details-types-supported.html"><span>authorization</span><wbr><span>Details</span><wbr><span>Types</span><wbr><span><span>Supported</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1745595437%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="authorization-details-types-supported.html">authorizationDetailsTypesSupported</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1957325804%2FProperties%2F1137287618" anchor-label="authorizationServers" id="-1957325804%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="authorization-servers.html"><span>authorization</span><wbr><span><span>Servers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1957325804%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="authorization-servers.html">authorizationServers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="454996878%2FProperties%2F1137287618" anchor-label="bearerMethodsSupported" id="454996878%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bearer-methods-supported.html"><span>bearer</span><wbr><span>Methods</span><wbr><span><span>Supported</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="454996878%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="bearer-methods-supported.html">bearerMethodsSupported</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../-bearer-method/index.html">BearerMethod</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-144158111%2FProperties%2F1137287618" anchor-label="dpopBoundAccessTokensRequired" id="-144158111%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dpop-bound-access-tokens-required.html"><span>dpop</span><wbr><span>Bound</span><wbr><span>Access</span><wbr><span>Tokens</span><wbr><span><span>Required</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-144158111%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="dpop-bound-access-tokens-required.html">dpopBoundAccessTokensRequired</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2134318649%2FProperties%2F1137287618" anchor-label="dpopSigningAlgValuesSupported" id="-2134318649%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dpop-signing-alg-values-supported.html"><span>dpop</span><wbr><span>Signing</span><wbr><span>Alg</span><wbr><span>Values</span><wbr><span><span>Supported</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2134318649%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="dpop-signing-alg-values-supported.html">dpopSigningAlgValuesSupported</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1067204648%2FProperties%2F1137287618" anchor-label="jwksUri" id="-1067204648%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="jwks-uri.html"><span>jwks</span><wbr><span><span>Uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1067204648%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="jwks-uri.html">jwksUri</a><span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1636825021%2FProperties%2F1137287618" anchor-label="resource" id="1636825021%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resource.html"><span><span>resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1636825021%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="resource.html">resource</a><span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-666960285%2FProperties%2F1137287618" anchor-label="resourceDocumentation" id="-666960285%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resource-documentation.html"><span>resource</span><wbr><span><span>Documentation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-666960285%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="resource-documentation.html">resourceDocumentation</a><span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1561546610%2FProperties%2F1137287618" anchor-label="resourceName" id="1561546610%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resource-name.html"><span>resource</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1561546610%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="resource-name.html">resourceName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1673007683%2FProperties%2F1137287618" anchor-label="resourcePolicyUri" id="1673007683%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resource-policy-uri.html"><span>resource</span><wbr><span>Policy</span><wbr><span><span>Uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1673007683%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="resource-policy-uri.html">resourcePolicyUri</a><span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-889017560%2FProperties%2F1137287618" anchor-label="resourceSigningAlgValuesSupported" id="-889017560%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resource-signing-alg-values-supported.html"><span>resource</span><wbr><span>Signing</span><wbr><span>Alg</span><wbr><span>Values</span><wbr><span><span>Supported</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-889017560%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="resource-signing-alg-values-supported.html">resourceSigningAlgValuesSupported</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="919125289%2FProperties%2F1137287618" anchor-label="resourceTosUri" id="919125289%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="resource-tos-uri.html"><span>resource</span><wbr><span>Tos</span><wbr><span><span>Uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="919125289%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="resource-tos-uri.html">resourceTosUri</a><span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="129241024%2FProperties%2F1137287618" anchor-label="scopesSupported" id="129241024%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="scopes-supported.html"><span>scopes</span><wbr><span><span>Supported</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="129241024%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="scopes-supported.html">scopesSupported</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1690388864%2FProperties%2F1137287618" anchor-label="signedMetadata" id="1690388864%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="signed-metadata.html"><span>signed</span><wbr><span><span>Metadata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1690388864%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="signed-metadata.html">signedMetadata</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1823409380%2FProperties%2F1137287618" anchor-label="tlsClientCertificateBoundAccessTokens" id="1823409380%2FProperties%2F1137287618" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-security-oauth:dokkaHtmlPartial/main" data-filterable-set=":http4k-security-oauth:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tls-client-certificate-bound-access-tokens.html"><span>tls</span><wbr><span>Client</span><wbr><span>Certificate</span><wbr><span>Bound</span><wbr><span>Access</span><wbr><span><span>Tokens</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1823409380%2FProperties%2F1137287618"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-oauth:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="tls-client-certificate-bound-access-tokens.html">tlsClientCertificateBoundAccessTokens</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>(c) 2025 http4k</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
