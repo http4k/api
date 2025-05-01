@@ -417,6 +417,7 @@ org.http4k.mcp.server.capability
 org.http4k.mcp.server.http
 org.http4k.mcp.server.jsonrpc
 org.http4k.mcp.server.protocol
+org.http4k.mcp.server.security
 org.http4k.mcp.server.sessions
 org.http4k.mcp.server.sse
 org.http4k.mcp.server.stdio
