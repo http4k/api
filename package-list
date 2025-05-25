@@ -95,6 +95,7 @@ org.http4k.connect
 org.http4k.connect.model
 org.http4k.connect.util
 module:http4k-connect-ai-langchain
+org.http4k.connect.langchain
 org.http4k.connect.langchain.chat
 org.http4k.connect.langchain.document
 org.http4k.connect.langchain.embedding
