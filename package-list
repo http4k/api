@@ -6,6 +6,15 @@ $dokka.location:/ServiceIdAndName.Companion/of/#org.http4k.connect.amazon.apprun
 $dokka.location:/ServiceIdAndName///PointingToDeclaration/http4k-connect-amazon-apprunner/[root]/-service-id-and-name/index.html
 $dokka.location:/ServiceIdAndName/serviceId/#/PointingToDeclaration/http4k-connect-amazon-apprunner/[root]/-service-id-and-name/service-id.html
 $dokka.location:/ServiceIdAndName/serviceName/#/PointingToDeclaration/http4k-connect-amazon-apprunner/[root]/-service-id-and-name/service-name.html
+module:http4k-ai-core
+org.http4k.ai
+org.http4k.ai.chat
+org.http4k.ai.image
+org.http4k.ai.model
+org.http4k.ai.moderation
+org.http4k.ai.tools
+org.http4k.ai.util
+org.http4k.connect.model
 module:http4k-api-cloudevents
 io.cloudevents
 io.cloudevents.core.builder
@@ -90,10 +99,6 @@ org.http4k.connect.azure
 org.http4k.connect.azure.action
 module:http4k-connect-ai-azure-fake
 org.http4k.connect.azure
-module:http4k-connect-ai-core
-org.http4k.connect
-org.http4k.connect.model
-org.http4k.connect.util
 module:http4k-connect-ai-langchain
 org.http4k.connect.langchain
 org.http4k.connect.langchain.chat
