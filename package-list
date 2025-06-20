@@ -189,6 +189,12 @@ org.http4k.connect.amazon.cloudfront.action
 org.http4k.connect.amazon.cloudfront.model
 module:http4k-connect-amazon-cloudfront-fake
 org.http4k.connect.amazon.cloudfront
+module:http4k-connect-amazon-cloudwatch
+org.http4k.connect.amazon.cloudwatch
+org.http4k.connect.amazon.cloudwatch.action
+org.http4k.connect.amazon.cloudwatch.model
+module:http4k-connect-amazon-cloudwatch-fake
+org.http4k.connect.amazon.cloudwatch
 module:http4k-connect-amazon-cloudwatchlogs
 org.http4k.connect.amazon.cloudwatchlogs
 org.http4k.connect.amazon.cloudwatchlogs.action

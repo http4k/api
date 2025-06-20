@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Alarm</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            http4k
+                    </a>            </div>
+            <div class="library-version">6.15.0.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":http4k-connect-amazon-cloudwatch-fake:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+            <a class="navigation-controls--btn navigation-controls--homepage" id="homepage-link" href="https://http4k.org"></a>
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageids="http4k-connect-amazon-cloudwatch-fake::org.http4k.connect.amazon.cloudwatch/Alarm/Alarm/#org.http4k.connect.amazon.cloudwatch.model.AlarmName#org.http4k.connect.amazon.core.model.ARN#org.http4k.connect.amazon.cloudwatch.model.ComparisonOperator?#kotlin.Int?#kotlin.Boolean?#kotlin.collections.List[org.http4k.connect.amazon.core.model.ARN]?#kotlin.String?#kotlin.Int?#kotlin.collections.List[org.http4k.connect.amazon.cloudwatch.model.Dimension]?#org.http4k.connect.amazon.cloudwatch.model.EvaluateLowSampleCountPercentile?#org.http4k.connect.amazon.cloudwatch.model.ExtendedStatistic?#kotlin.collections.List[org.http4k.connect.amazon.core.model.ARN]?#org.http4k.connect.amazon.cloudwatch.model.MetricName?#kotlin.collections.List[org.http4k.connect.amazon.cloudwatch.model.MetricDataQuery]?#org.http4k.connect.amazon.cloudwatch.model.Namespace?#kotlin.collections.List[org.http4k.connect.amazon.core.model.ARN]?#kotlin.Int?#org.http4k.connect.amazon.cloudwatch.model.Statistic?#kotlin.collections.List[org.http4k.connect.amazon.core.model.Tag]?#kotlin.Double?#kotlin.String?#org.http4k.connect.amazon.cloudwatch.model.TreatMissingData?#org.http4k.connect.amazon.cloudwatch.model.MetricUnit?#kotlin.String?#kotlin.String?#kotlin.Int?#kotlin.Int?#org.http4k.connect.amazon.cloudwatch.model.AlarmType#java.time.Instant#java.time.Instant#java.time.Instant#org.http4k.connect.amazon.cloudwatch.model.AlarmState#kotlin.String?#kotlin.String?/PointingToDeclaration//1344708746">
+  <div class="breadcrumbs"><a href="../../index.html">http4k-connect-amazon-cloudwatch-fake</a><span class="delimiter">/</span><a href="../index.html">org.http4k.connect.amazon.cloudwatch</a><span class="delimiter">/</span><a href="index.html">Alarm</a><span class="delimiter">/</span><span class="current">Alarm</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Alarm</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-cloudwatch-fake:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">AlarmName<span class="token operator">: </span><a href="../../../http4k-connect-amazon-cloudwatch/org.http4k.connect.amazon.cloudwatch.model/-alarm-name/index.html">AlarmName</a><span class="token punctuation">, </span></span><span class="parameter ">AlarmArn<span class="token operator">: </span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token punctuation">, </span></span><span class="parameter ">ComparisonOperator<span class="token operator">: </span><a href="../../../http4k-connect-amazon-cloudwatch/org.http4k.connect.amazon.cloudwatch.model/-comparison-operator/index.html">ComparisonOperator</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">EvaluationPeriods<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">ActionsEnabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">AlarmActions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">AlarmDescription<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">DatapointsToAlarm<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">Dimensions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../http4k-connect-amazon-cloudwatch/org.http4k.connect.amazon.cloudwatch.model/-dimension/index.html">Dimension</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">EvaluateLowSampleCountPercentile<span class="token operator">: </span><a href="../../../http4k-connect-amazon-cloudwatch/org.http4k.connect.amazon.cloudwatch.model/-evaluate-low-sample-count-percentile/index.html">EvaluateLowSampleCountPercentile</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">ExtendedStatistic<span class="token operator">: </span><a href="../../../http4k-connect-amazon-cloudwatch/org.http4k.connect.amazon.cloudwatch.model/-extended-statistic/index.html">ExtendedStatistic</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">InsufficientDataActions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">MetricName<span class="token operator">: </span><a href="../../../http4k-connect-amazon-cloudwatch/org.http4k.connect.amazon.cloudwatch.model/-metric-name/index.html">MetricName</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">Metrics<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../http4k-connect-amazon-cloudwatch/org.http4k.connect.amazon.cloudwatch.model/-metric-data-query/index.html">MetricDataQuery</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">Namespace<span class="token operator">: </span><a href="../../../http4k-connect-amazon-cloudwatch/org.http4k.connect.amazon.cloudwatch.model/-namespace/index.html">Namespace</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">OKActions<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">Period<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">Statistic<span class="token operator">: </span><a href="../../../http4k-connect-amazon-cloudwatch/org.http4k.connect.amazon.cloudwatch.model/-statistic/index.html">Statistic</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">Tags<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-tag/index.html">Tag</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">Threshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">ThresholdMetricId<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">TreatMissingData<span class="token operator">: </span><a href="../../../http4k-connect-amazon-cloudwatch/org.http4k.connect.amazon.cloudwatch.model/-treat-missing-data/index.html">TreatMissingData</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">Unit<span class="token operator">: </span><a href="../../../http4k-connect-amazon-cloudwatch/org.http4k.connect.amazon.cloudwatch.model/-metric-unit/index.html">MetricUnit</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">AlarmRule<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">ActionsSuppressor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">ActionsSuppressorExtensionPeriod<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">ActionsSuppressorWaitPeriod<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">AlarmType<span class="token operator">: </span><a href="../../../http4k-connect-amazon-cloudwatch/org.http4k.connect.amazon.cloudwatch.model/-alarm-type/index.html">AlarmType</a><span class="token punctuation">, </span></span><span class="parameter ">LastUpdate<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html">Instant</a><span class="token punctuation">, </span></span><span class="parameter ">LastStateTransitionTimestamp<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html">Instant</a><span class="token punctuation">, </span></span><span class="parameter ">LastStateUpdateTimestamp<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html">Instant</a><span class="token punctuation">, </span></span><span class="parameter ">State<span class="token operator">: </span><a href="../../../http4k-connect-amazon-cloudwatch/org.http4k.connect.amazon.cloudwatch.model/-alarm-state/index.html">AlarmState</a><span class="token punctuation">, </span></span><span class="parameter ">StateReason<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">StateReasonData<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>(c) 2025 http4k</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

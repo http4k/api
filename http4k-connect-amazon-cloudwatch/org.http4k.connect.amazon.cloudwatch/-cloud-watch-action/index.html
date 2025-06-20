@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CloudWatchAction</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script>
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+<a class="library-name--link" href="../../../index.html">
+                            http4k
+                    </a>            </div>
+            <div class="library-version">6.15.0.0
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+            <a class="navigation-controls--btn navigation-controls--homepage" id="homepage-link" href="https://http4k.org"></a>
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="http4k-connect-amazon-cloudwatch::org.http4k.connect.amazon.cloudwatch/CloudWatchAction///PointingToDeclaration//-1254548778">
+  <div class="breadcrumbs"><a href="../../index.html">http4k-connect-amazon-cloudwatch</a><span class="delimiter">/</span><a href="../index.html">org.http4k.connect.amazon.cloudwatch</a><span class="delimiter">/</span><span class="current">CloudWatchAction</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Cloud</span><wbr><span>Watch</span><wbr><span><span>Action</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">CloudWatchAction</a><span class="token operator">&lt;</span><a href="index.html">R</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="index.html">R</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">autoMarshalling<span class="token operator">: </span><a href="../../../http4k-format-core/org.http4k.format/-auto-marshalling/index.html">AutoMarshalling</a><span class="token operator"> = </span>CloudWatchMoshi</span></span><span class="token punctuation">)</span> : <a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon/-aws-json-action/index.html">AwsJsonAction</a><span class="token operator">&lt;</span><a href="index.html">R</a><span class="token operator">&gt; </span></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-delete-alarms/index.html">DeleteAlarms</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-describe-alarms/index.html">DescribeAlarms</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-describe-alarms-for-metric/index.html">DescribeAlarmsForMetric</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-disable-alarm-actions/index.html">DisableAlarmActions</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-enable-alarm-actions/index.html">EnableAlarmActions</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-get-metric-data/index.html">GetMetricData</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-get-metric-statistics/index.html">GetMetricStatistics</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-list-metrics/index.html">ListMetrics</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-list-tags-for-resource/index.html">ListTagsForResource</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-put-composite-alarm/index.html">PutCompositeAlarm</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-put-metric-alarm/index.html">PutMetricAlarm</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-put-metric-data/index.html">PutMetricData</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-set-alarm-state/index.html">SetAlarmState</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-tag-resource/index.html">TagResource</a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-untag-resource/index.html">UntagResource</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1004005354%2FConstructors%2F-1254548778" anchor-label="CloudWatchAction" id="-1004005354%2FConstructors%2F-1254548778" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-cloud-watch-action.html"><span>Cloud</span><wbr><span>Watch</span><wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1004005354%2FConstructors%2F-1254548778"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="index.html">R</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">autoMarshalling<span class="token operator">: </span><a href="../../../http4k-format-core/org.http4k.format/-auto-marshalling/index.html">AutoMarshalling</a><span class="token operator"> = </span>CloudWatchMoshi</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-2117692876%2FFunctions%2F-1254548778" anchor-label="toRequest" id="-2117692876%2FFunctions%2F-1254548778" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-request.html"><span>to</span><wbr><span><span>Request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2117692876%2FFunctions%2F-1254548778"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-request.html"><span class="token function">toRequest</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1872319708%2FFunctions%2F-1254548778" anchor-label="toResult" id="-1872319708%2FFunctions%2F-1254548778" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-untag-resource/index.html#-1872319708%2FFunctions%2F-1254548778"><span>to</span><wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1872319708%2FFunctions%2F-1254548778"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../../org.http4k.connect.amazon.cloudwatch.action/-untag-resource/index.html#-1872319708%2FFunctions%2F-1254548778"><span class="token function">toResult</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">response<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-response/index.html">Response</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="index.html">R</a><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="308633639%2FFunctions%2F-1254548778" anchor-label="uri" id="308633639%2FFunctions%2F-1254548778" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main" data-filterable-set=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../org.http4k.connect.amazon.cloudwatch.action/-untag-resource/index.html#308633639%2FFunctions%2F-1254548778"><span><span>uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="308633639%2FFunctions%2F-1254548778"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-cloudwatch:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../../org.http4k.connect.amazon.cloudwatch.action/-untag-resource/index.html#308633639%2FFunctions%2F-1254548778"><span class="token function">uri</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>(c) 2025 http4k</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
