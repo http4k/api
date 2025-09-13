@@ -1,0 +1,418 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.ai.mcp.server.capability</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-ai-mcp-sdk/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-ai-mcp-sdk/main" data-filter=":http4k-ai-mcp-sdk/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-ai-mcp-sdk::org.http4k.ai.mcp.server.capability////PointingToDeclaration//291385758">
+  <div class="breadcrumbs"><a href="../index.html">http4k-ai-mcp-sdk</a><span class="delimiter">/</span><span class="current">org.http4k.ai.mcp.server.capability</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-2004316769%2FClasslikes%2F291385758" anchor-label="CapabilityPack" id="-2004316769%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-capability-pack/index.html"><span>Capability</span><wbr><span><span>Pack</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2004316769%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-capability-pack/index.html">CapabilityPack</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bindings<span class="token operator">: </span><a href="-server-capability/index.html">ServerCapability</a></span></span><span class="token punctuation">)</span> : <a href="-server-capability/index.html">ServerCapability</a></div><div class="brief "><p class="paragraph">Provides the facility to compose many capabilities together.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1769937148%2FClasslikes%2F291385758" anchor-label="CompletionCapability" id="1769937148%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-completion-capability/index.html"><span>Completion</span><wbr><span><span>Capability</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1769937148%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-completion-capability/index.html">CompletionCapability</a> : <a href="-server-capability/index.html">ServerCapability</a>, <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp/-completion-request/index.html">CompletionRequest</a><span class="token punctuation">, </span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp/-completion-response/index.html">CompletionResponse</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2018644712%2FClasslikes%2F291385758" anchor-label="DirectoryResources" id="-2018644712%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-directory-resources/index.html"><span>Directory</span><wbr><span><span>Resources</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2018644712%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-directory-resources/index.html">DirectoryResources</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dir<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/File.html">File</a><span class="token punctuation">, </span></span><span class="parameter ">recursive<span class="token operator">: </span><a href="-recursion-mode/index.html">RecursionMode</a><span class="token punctuation">, </span></span><span class="parameter ">mimeTypes<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-mime-types/index.html">MimeTypes</a><span class="token operator"> = </span>MimeTypes()<span class="token punctuation">, </span></span><span class="parameter ">isText<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../http4k-core/org.http4k.core/-content-type/index.html">ContentType</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span>DEFAULT_TEXT_TYPES</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.ai.mcp.server.protocol/-resources/index.html">Resources</a></div><div class="brief "><p class="paragraph">Simple file-based resources.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-360350220%2FClasslikes%2F291385758" anchor-label="PromptCapability" id="-360350220%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-prompt-capability/index.html"><span>Prompt</span><wbr><span><span>Capability</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-360350220%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-prompt-capability/index.html">PromptCapability</a> : <a href="-server-capability/index.html">ServerCapability</a>, <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp/-prompt-request/index.html">PromptRequest</a><span class="token punctuation">, </span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp/-prompt-response/index.html">PromptResponse</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-527704019%2FClasslikes%2F291385758" anchor-label="RecursionMode" id="-527704019%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-recursion-mode/index.html"><span>Recursion</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-527704019%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-recursion-mode/index.html">RecursionMode</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-recursion-mode/index.html">RecursionMode</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="667567946%2FClasslikes%2F291385758" anchor-label="ResourceCapability" id="667567946%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-resource-capability/index.html"><span>Resource</span><wbr><span><span>Capability</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="667567946%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-resource-capability/index.html">ResourceCapability</a> : <a href="-server-capability/index.html">ServerCapability</a>, <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp/-resource-request/index.html">ResourceRequest</a><span class="token punctuation">, </span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp/-resource-response/index.html">ResourceResponse</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="392670021%2FClasslikes%2F291385758" anchor-label="ServerCancellations" id="392670021%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-server-cancellations/index.html"><span>Server</span><wbr><span><span>Cancellations</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="392670021%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-server-cancellations/index.html">ServerCancellations</a> : <a href="../org.http4k.ai.mcp.server.protocol/-cancellations/index.html">Cancellations</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="706126773%2FClasslikes%2F291385758" anchor-label="ServerCapability" id="706126773%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-server-capability/index.html"><span>Server</span><wbr><span><span>Capability</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="706126773%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">interface </span><a href="-server-capability/index.html">ServerCapability</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="-server-capability/index.html">ServerCapability</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Marker interface for classes which are used to bind capabilities to the MCP server.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="890970590%2FClasslikes%2F291385758" anchor-label="ServerCompletions" id="890970590%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-server-completions/index.html"><span>Server</span><wbr><span><span>Completions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="890970590%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-server-completions/index.html">ServerCompletions</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bindings<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="-completion-capability/index.html">CompletionCapability</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.ai.mcp.server.protocol/-completions/index.html">Completions</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1670852762%2FClasslikes%2F291385758" anchor-label="ServerPrompts" id="-1670852762%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-server-prompts/index.html"><span>Server</span><wbr><span><span>Prompts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1670852762%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-server-prompts/index.html">ServerPrompts</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bindings<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="-prompt-capability/index.html">PromptCapability</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.ai.mcp.util/-observable-list/index.html">ObservableList</a><span class="token operator">&lt;</span><a href="-prompt-capability/index.html">PromptCapability</a><span class="token operator">&gt; </span>, <a href="../org.http4k.ai.mcp.server.protocol/-prompts/index.html">Prompts</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1826091152%2FClasslikes%2F291385758" anchor-label="ServerResources" id="1826091152%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-server-resources/index.html"><span>Server</span><wbr><span><span>Resources</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1826091152%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-server-resources/index.html">ServerResources</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">list<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="-resource-capability/index.html">ResourceCapability</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.ai.mcp.util/-observable-list/index.html">ObservableList</a><span class="token operator">&lt;</span><a href="-resource-capability/index.html">ResourceCapability</a><span class="token operator">&gt; </span>, <a href="../org.http4k.ai.mcp.server.protocol/-observable-resources/index.html">ObservableResources</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="977706596%2FClasslikes%2F291385758" anchor-label="ServerRoots" id="977706596%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-server-roots/index.html"><span>Server</span><wbr><span><span>Roots</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="977706596%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-server-roots/index.html">ServerRoots</a> : <a href="../org.http4k.ai.mcp.util/-observable-list/index.html">ObservableList</a><span class="token operator">&lt;</span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp.model/-root/index.html">Root</a><span class="token operator">&gt; </span>, <a href="../org.http4k.ai.mcp.server.protocol/-roots/index.html">Roots</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1897361306%2FClasslikes%2F291385758" anchor-label="ServerTools" id="1897361306%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-server-tools/index.html"><span>Server</span><wbr><span><span>Tools</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1897361306%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-server-tools/index.html">ServerTools</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">list<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="-tool-capability/index.html">ToolCapability</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.ai.mcp.util/-observable-list/index.html">ObservableList</a><span class="token operator">&lt;</span><a href="-tool-capability/index.html">ToolCapability</a><span class="token operator">&gt; </span>, <a href="../org.http4k.ai.mcp.server.protocol/-tools/index.html">Tools</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-399651584%2FClasslikes%2F291385758" anchor-label="ToolCapability" id="-399651584%2FClasslikes%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tool-capability/index.html"><span>Tool</span><wbr><span><span>Capability</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-399651584%2FClasslikes%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-tool-capability/index.html">ToolCapability</a> : <a href="-server-capability/index.html">ServerCapability</a>, <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp/-tool-request/index.html">ToolRequest</a><span class="token punctuation">, </span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp/-tool-response/index.html">ToolResponse</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-97712165%2FFunctions%2F291385758" anchor-label="CompletionCapability" id="-97712165%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-completion-capability.html"><span>Completion</span><wbr><span><span>Capability</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-97712165%2FFunctions%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-completion-capability.html"><span class="token function">CompletionCapability</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ref<span class="token operator">: </span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp.model/-reference/index.html">Reference</a><span class="token punctuation">, </span></span><span class="parameter ">handler<span class="token operator">: </span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp/-completion-handler/index.html">CompletionHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-completion-capability/index.html">CompletionCapability</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1032065196%2FFunctions%2F291385758" anchor-label="PromptCapability" id="1032065196%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-prompt-capability.html"><span>Prompt</span><wbr><span><span>Capability</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1032065196%2FFunctions%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-prompt-capability.html"><span class="token function">PromptCapability</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">prompt<span class="token operator">: </span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp.model/-prompt/index.html">Prompt</a><span class="token punctuation">, </span></span><span class="parameter ">handler<span class="token operator">: </span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp/-prompt-handler/index.html">PromptHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-prompt-capability/index.html">PromptCapability</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="78915924%2FFunctions%2F291385758" anchor-label="ResourceCapability" id="78915924%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-resource-capability.html"><span>Resource</span><wbr><span><span>Capability</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="78915924%2FFunctions%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-resource-capability.html"><span class="token function">ResourceCapability</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">resource<span class="token operator">: </span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp.model/-resource/index.html">Resource</a><span class="token punctuation">, </span></span><span class="parameter ">handler<span class="token operator">: </span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp/-resource-handler/index.html">ResourceHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-resource-capability/index.html">ResourceCapability</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1119733252%2FFunctions%2F291385758" anchor-label="ToolCapability" id="-1119733252%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tool-capability.html"><span>Tool</span><wbr><span><span>Capability</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1119733252%2FFunctions%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-tool-capability.html"><span class="token function">ToolCapability</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tool<span class="token operator">: </span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp.model/-tool/index.html">Tool</a><span class="token punctuation">, </span></span><span class="parameter ">handler<span class="token operator">: </span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp/-tool-handler/index.html">ToolHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-tool-capability/index.html">ToolCapability</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="691624421%2FFunctions%2F291385758" anchor-label="toSchema" id="691624421%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-schema.html"><span>to</span><wbr><span><span>Schema</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="691624421%2FFunctions%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../http4k-ai-mcp-core/org.http4k.ai.mcp.model/-tool/index.html">Tool</a><span class="token punctuation">.</span><a href="to-schema.html"><span class="token function">toSchema</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-format-moshi/org.http4k.format/-moshi-node/index.html">MoshiNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>RouteMetaDsl</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-api-openapi/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-api-openapi/main" data-filter=":http4k-api-openapi/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="http4k-api-openapi::org.http4k.contract/RouteMetaDsl///PointingToDeclaration//1420488079">
+  <div class="breadcrumbs"><a href="../../index.html">http4k-api-openapi</a><span class="delimiter">/</span><a href="../index.html">org.http4k.contract</a><span class="delimiter">/</span><span class="current">RouteMetaDsl</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Route</span><wbr><span>Meta</span><wbr><span><span>Dsl</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">RouteMetaDsl</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/core/api/openapi/src/main/kotlin/org/http4k/contract/routeMeta.kt#L39">source</a>)</span></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-779969570%2FProperties%2F1420488079" anchor-label="consumes" id="-779969570%2FProperties%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="consumes.html"><span><span>consumes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-779969570%2FProperties%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="consumes.html">consumes</a><span class="token operator">: </span><a href="../../org.http4k.util/-appendable/index.html">Appendable</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.core/-content-type/index.html">ContentType</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="718618838%2FProperties%2F1420488079" anchor-label="cookies" id="718618838%2FProperties%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="cookies.html"><span><span>cookies</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="718618838%2FProperties%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="cookies.html">cookies</a><span class="token operator">: </span><a href="../../org.http4k.util/-appendable/index.html">Appendable</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.lens/-lens/index.html">Lens</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1319126612%2FProperties%2F1420488079" anchor-label="described" id="-1319126612%2FProperties%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="described.html"><span><span>described</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1319126612%2FProperties%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="described.html">described</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1100029943%2FProperties%2F1420488079" anchor-label="description" id="-1100029943%2FProperties%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="description.html"><span><span>description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1100029943%2FProperties%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="description.html">description</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-35141697%2FProperties%2F1420488079" anchor-label="headers" id="-35141697%2FProperties%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="headers.html"><span><span>headers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-35141697%2FProperties%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="headers.html">headers</a><span class="token operator">: </span><a href="../../org.http4k.util/-appendable/index.html">Appendable</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.lens/-lens/index.html">Lens</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1467052515%2FProperties%2F1420488079" anchor-label="operationId" id="1467052515%2FProperties%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="operation-id.html"><span>operation</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1467052515%2FProperties%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="operation-id.html">operationId</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-719742837%2FProperties%2F1420488079" anchor-label="preFlightExtraction" id="-719742837%2FProperties%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pre-flight-extraction.html"><span>pre</span><wbr><span>Flight</span><wbr><span><span>Extraction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-719742837%2FProperties%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="pre-flight-extraction.html">preFlightExtraction</a><span class="token operator">: </span><a href="../-pre-flight-extraction/index.html">PreFlightExtraction</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1890080706%2FProperties%2F1420488079" anchor-label="produces" id="1890080706%2FProperties%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="produces.html"><span><span>produces</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1890080706%2FProperties%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="produces.html">produces</a><span class="token operator">: </span><a href="../../org.http4k.util/-appendable/index.html">Appendable</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.core/-content-type/index.html">ContentType</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="895351775%2FProperties%2F1420488079" anchor-label="queries" id="895351775%2FProperties%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="queries.html"><span><span>queries</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="895351775%2FProperties%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="queries.html">queries</a><span class="token operator">: </span><a href="../../org.http4k.util/-appendable/index.html">Appendable</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.lens/-lens/index.html">Lens</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1608991563%2FProperties%2F1420488079" anchor-label="security" id="-1608991563%2FProperties%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="security.html"><span><span>security</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1608991563%2FProperties%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="security.html">security</a><span class="token operator">: </span><a href="../../../http4k-security-core/org.http4k.security/-security/index.html">Security</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-364776545%2FProperties%2F1420488079" anchor-label="summary" id="-364776545%2FProperties%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="summary.html"><span><span>summary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-364776545%2FProperties%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">var </span><a href="summary.html">summary</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-561720836%2FProperties%2F1420488079" anchor-label="tags" id="-561720836%2FProperties%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tags.html"><span><span>tags</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-561720836%2FProperties%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="tags.html">tags</a><span class="token operator">: </span><a href="../../org.http4k.util/-appendable/index.html">Appendable</a><span class="token operator">&lt;</span><a href="../-tag/index.html">Tag</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="268487867%2FFunctions%2F1420488079" anchor-label="callback" id="268487867%2FFunctions%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="callback.html"><span><span>callback</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="268487867%2FFunctions%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="callback.html"><span class="token function">callback</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">fn<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="../-web-callback/index.html">WebCallback</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="939155779%2FFunctions%2F1420488079" anchor-label="markAsDeprecated" id="939155779%2FFunctions%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="mark-as-deprecated.html"><span>mark</span><wbr><span>As</span><wbr><span><span>Deprecated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="939155779%2FFunctions%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="mark-as-deprecated.html"><span class="token function">markAsDeprecated</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1576436040%2FFunctions%2F1420488079" anchor-label="receiving" id="1576436040%2FFunctions%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="receiving.html"><span><span>receiving</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1576436040%2FFunctions%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="receiving.html"><span class="token function">receiving</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">requestMeta<span class="token operator">: </span><a href="../-http-message-meta/index.html">HttpMessageMeta</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add request metadata to this Route. A route only supports a single possible request.</p></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="receiving.html">T</a><span class="token operator">&gt; </span><a href="receiving.html"><span class="token function">receiving</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bodyLens<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.lens/-bi-di-body-lens/index.html">BiDiBodyLens</a><span class="token operator">&lt;</span><a href="receiving.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set the input body type for this request WITHOUT an example. Hence the content-type will be registered but no example schema will be generated.</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"receivingNegotiated"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="receiving.html">T</a><span class="token operator">&gt; </span><a href="receiving.html"><span class="token function">receiving</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">negotiated<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="../../../http4k-format-core/org.http4k.format/-auto-content-negotiator/index.html">AutoContentNegotiator</a><span class="token operator">&lt;</span><a href="receiving.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="receiving.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">definitionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">schemaPrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add negotiated example requests to this route.  It is also possible to pass in the definitionId for this request body which will override the naturally generated one.</p></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="receiving.html">T</a><span class="token operator">&gt; </span><a href="receiving.html"><span class="token function">receiving</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">body<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.lens/-bi-di-body-lens/index.html">BiDiBodyLens</a><span class="token operator">&lt;</span><a href="receiving.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="receiving.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">definitionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">schemaPrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add an example request (using a Lens and a value) to this Route. It is also possible to pass in the definitionId for this request body which will override the naturally generated one.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="416794014%2FFunctions%2F1420488079" anchor-label="returning" id="416794014%2FFunctions%2F1420488079" data-filterable-set=":http4k-api-openapi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-openapi/main" data-filterable-set=":http4k-api-openapi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="returning.html"><span><span>returning</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="416794014%2FFunctions%2F1420488079"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-openapi/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"returningResponse"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="returning.html"><span class="token function">returning</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>descriptionToResponse<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="../../../http4k-core/org.http4k.core/-response/index.html">Response</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add possible responses to this Route.</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"returningStatus"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="returning.html"><span class="token function">returning</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>statusesToDescriptions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.core/-status/index.html">Status</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add a possible response description/reason and status to this Route</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"returningResponseMeta"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="returning.html"><span class="token function">returning</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>responseMetas<span class="token operator">: </span><a href="../-http-message-meta/index.html">HttpMessageMeta</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.core/-response/index.html">Response</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add possible response metadata to this Route. A route supports multiple possible responses.</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"returningStatus"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="returning.html"><span class="token function">returning</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>statuses<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-status/index.html">Status</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add possible response statuses to this Route with no example.</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"returningStatusNegotiated"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="returning.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="returning.html"><span class="token function">returning</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">status<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-status/index.html">Status</a><span class="token punctuation">, </span></span><span class="parameter ">negotiated<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="../../../http4k-format-core/org.http4k.format/-auto-content-negotiator/index.html">AutoContentNegotiator</a><span class="token operator">&lt;</span><a href="returning.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="returning.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">definitionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">schemaPrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add all negotiated responses, with samples.  It is also possible to pass in the definitionId for this response body which will override the naturally generated one.</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"returningStatus"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="returning.html">T</a><span class="token operator">&gt; </span><a href="returning.html"><span class="token function">returning</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">status<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-status/index.html">Status</a><span class="token punctuation">, </span></span><span class="parameter ">body<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="../../../http4k-core/org.http4k.lens/-bi-di-body-lens/index.html">BiDiBodyLens</a><span class="token operator">&lt;</span><a href="returning.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="returning.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">definitionId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">schemaPrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add an example response (using a Lens and a value) to this Route. It is also possible to pass in the definitionId for this response body which will override the naturally generated one.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

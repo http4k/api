@@ -1,0 +1,572 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.connect.amazon.iamidentitycenter</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-connect-amazon-iamidentitycenter/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-connect-amazon-iamidentitycenter/main" data-filter=":http4k-connect-amazon-iamidentitycenter/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-connect-amazon-iamidentitycenter::org.http4k.connect.amazon.iamidentitycenter////PointingToDeclaration//68960030">
+  <div class="breadcrumbs"><a href="../index.html">http4k-connect-amazon-iamidentitycenter</a><span class="delimiter">/</span><span class="current">org.http4k.connect.amazon.iamidentitycenter</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-944779679%2FClasslikes%2F68960030" anchor-label="Auth" id="-944779679%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-auth/index.html"><span><span>Auth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-944779679%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-auth/index.html">Auth</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>code<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-auth-code/index.html">AuthCode</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>state<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>error<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>errorDescription<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1006071698%2FClasslikes%2F68960030" anchor-label="IAMIdentityCenterJsonAdapterFactory" id="-1006071698%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-a-m-identity-center-json-adapter-factory/index.html"><span>IAMIdentity</span><wbr><span>Center</span><wbr><span>Json</span><wbr><span>Adapter</span><wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1006071698%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/KotshiJsonAdapterFactory///PointingToDeclaration/"><span class="token annotation builtin">KotshiJsonAdapterFactory</span></span></div></div><span class="token keyword">object </span><a href="-i-a-m-identity-center-json-adapter-factory/index.html">IAMIdentityCenterJsonAdapterFactory</a> : <span data-unresolved-link="com.squareup.moshi/JsonAdapter.Factory///PointingToDeclaration/">JsonAdapter.Factory</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-480541697%2FClasslikes%2F68960030" anchor-label="IAMIdentityCenterMoshi" id="-480541697%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-a-m-identity-center-moshi/index.html"><span>IAMIdentity</span><wbr><span>Center</span><wbr><span><span>Moshi</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-480541697%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-i-a-m-identity-center-moshi/index.html">IAMIdentityCenterMoshi</a> : <a href="../../http4k-format-moshi/org.http4k.format/-configurable-moshi/index.html">ConfigurableMoshi</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1568349840%2FClasslikes%2F68960030" anchor-label="OIDC" id="-1568349840%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-o-i-d-c/index.html"><span><span>OIDC</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1568349840%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-o-i-d-c/index.html">OIDC</a></div><div class="brief "><p class="paragraph">Docs: https://docs.aws.amazon.com/singlesignon/latest/OIDCAPIReference/Welcome.html</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="53606554%2FClasslikes%2F68960030" anchor-label="OIDCAction" id="53606554%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-o-i-d-c-action/index.html"><span><span>OIDCAction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="53606554%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-o-i-d-c-action/index.html">OIDCAction</a><span class="token operator">&lt;</span><a href="-o-i-d-c-action/index.html">R</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="-o-i-d-c-action/index.html">R</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../../http4k-connect-core/org.http4k.connect/-non-null-auto-marshalled-action/index.html">NonNullAutoMarshalledAction</a><span class="token operator">&lt;</span><a href="-o-i-d-c-action/index.html">R</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-386585660%2FClasslikes%2F68960030" anchor-label="PkceAuth" id="-386585660%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-pkce-auth/index.html"><span>Pkce</span><wbr><span><span>Auth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-386585660%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-pkce-auth/index.html">PkceAuth</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>codeVerifier<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-p-k-c-e-code-verifier/index.html">PKCECodeVerifier</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>code<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-auth-code/index.html">AuthCode</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>redirectUri<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1361794077%2FClasslikes%2F68960030" anchor-label="PKCES256Generator" id="-1361794077%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-k-c-e-s256-generator/index.html"><span><span>PKCES256Generator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1361794077%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-p-k-c-e-s256-generator/index.html">PKCES256Generator</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2006771926%2FClasslikes%2F68960030" anchor-label="SSO" id="-2006771926%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-s-o/index.html"><span><span>SSO</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2006771926%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-s-s-o/index.html">SSO</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1541702956%2FClasslikes%2F68960030" anchor-label="SSOAction" id="-1541702956%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-s-o-action/index.html"><span><span>SSOAction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1541702956%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-s-s-o-action/index.html">SSOAction</a><span class="token operator">&lt;</span><a href="-s-s-o-action/index.html">R</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="-s-s-o-action/index.html">R</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../../http4k-connect-core/org.http4k.connect/-non-null-auto-marshalled-action/index.html">NonNullAutoMarshalledAction</a><span class="token operator">&lt;</span><a href="-s-s-o-action/index.html">R</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="568997935%2FClasslikes%2F68960030" anchor-label="SSOCachedRegistration" id="568997935%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-s-o-cached-registration/index.html"><span>SSOCached</span><wbr><span><span>Registration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="568997935%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-s-s-o-cached-registration/index.html">SSOCachedRegistration</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>expiresAt<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Instant.html">Instant</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>scopes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>grantTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-grant-type/index.html">GrantType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1747170911%2FClasslikes%2F68960030" anchor-label="SSOCachedToken" id="-1747170911%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-s-o-cached-token/index.html"><span>SSOCached</span><wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1747170911%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-s-s-o-cached-token/index.html">SSOCachedToken</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>startUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>region<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>accessToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>expiresAt<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Instant.html">Instant</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>clientId<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>clientSecret<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>registrationExpiresAt<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Instant.html">Instant</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>refreshToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1886855711%2FClasslikes%2F68960030" anchor-label="SSOCacheManager" id="1886855711%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-s-o-cache-manager/index.html"><span>SSOCache</span><wbr><span><span>Manager</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1886855711%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-s-s-o-cache-manager/index.html">SSOCacheManager</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>ssoProfile<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-s-s-o-profile/index.html">SSOProfile</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>cachedTokenDirectory<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html">Path</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>clientName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-client-name/index.html">ClientName</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1066213969%2FClasslikes%2F68960030" anchor-label="SSOLogin" id="-1066213969%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-s-o-login/index.html"><span><span>SSOLogin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1066213969%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">interface </span><a href="-s-s-o-login/index.html">SSOLogin</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1986414739%2FClasslikes%2F68960030" anchor-label="SSOLoginDisabled" id="1986414739%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-s-o-login-disabled/index.html"><span>SSOLogin</span><wbr><span><span>Disabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1986414739%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-s-s-o-login-disabled/index.html">SSOLoginDisabled</a> : <a href="-s-s-o-login/index.html">SSOLogin</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1257830642%2FClasslikes%2F68960030" anchor-label="SSOLoginEnabled" id="1257830642%2FClasslikes%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-s-o-login-enabled/index.html"><span>SSOLogin</span><wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1257830642%2FClasslikes%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-s-s-o-login-enabled/index.html">SSOLoginEnabled</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>openBrowser<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>waitFor<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>serverConfig<span class="token operator">: </span><a href="../../http4k-core/org.http4k.server/-server-config/index.html">ServerConfig</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>forceRefresh<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span> : <a href="-s-s-o-login/index.html">SSOLogin</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="1059236061%2FProperties%2F68960030" anchor-label="POSIX_OWNER_ONLY_FILE" id="1059236061%2FProperties%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-o-s-i-x_-o-w-n-e-r_-o-n-l-y_-f-i-l-e.html"><span>POSIX_</span><wbr><span>OWNER_</span><wbr><span>ONLY_</span><wbr><span>FILE</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1059236061%2FProperties%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-p-o-s-i-x_-o-w-n-e-r_-o-n-l-y_-f-i-l-e.html">POSIX_OWNER_ONLY_FILE</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/attribute/PosixFilePermission.html">PosixFilePermission</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1160417140%2FProperties%2F68960030" anchor-label="redirectUri" id="1160417140%2FProperties%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="redirect-uri.html"><span>redirect</span><wbr><span><span>Uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1160417140%2FProperties%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="redirect-uri.html">redirectUri</a><span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a></div><div class="brief "><p class="paragraph">Use SSO to log into the AWS command line using a browser interaction</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="EXTENSION_FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-1592070840%2FFunctions%2F68960030" anchor-label="createToken" id="-1592070840%2FFunctions%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-token.html"><span>create</span><wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1592070840%2FFunctions%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-o-i-d-c/index.html">OIDC</a><span class="token punctuation">.</span><a href="create-token.html"><span class="token function">createToken</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-client-id/index.html">ClientId</a><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-client-secret/index.html">ClientSecret</a><span class="token punctuation">, </span></span><span class="parameter ">grantType<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-grant-type/index.html">GrantType</a><span class="token punctuation">, </span></span><span class="parameter ">deviceCode<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-device-code/index.html">DeviceCode</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">redirectUri<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">codeVerifier<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-p-k-c-e-code-verifier/index.html">PKCECodeVerifier</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">code<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-auth-code/index.html">AuthCode</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.iamidentitycenter.oidc.action/-device-token/index.html">DeviceToken</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="355338273%2FFunctions%2F68960030" anchor-label="extractBaseUri" id="355338273%2FFunctions%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="extract-base-uri.html"><span>extract</span><wbr><span>Base</span><wbr><span><span>Uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="355338273%2FFunctions%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-o-i-d-c/-companion/index.html">OIDC.Companion</a><span class="token punctuation">.</span><a href="extract-base-uri.html"><span class="token function">extractBaseUri</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">region<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-region/index.html">Region</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="897819803%2FFunctions%2F68960030" anchor-label="getFederatedCredentials" id="897819803%2FFunctions%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-federated-credentials.html"><span>get</span><wbr><span>Federated</span><wbr><span><span>Credentials</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="897819803%2FFunctions%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s-s-o/index.html">SSO</a><span class="token punctuation">.</span><a href="get-federated-credentials.html"><span class="token function">getFederatedCredentials</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">account<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-aws-account/index.html">AwsAccount</a><span class="token punctuation">, </span></span><span class="parameter ">roleName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-role-name/index.html">RoleName</a><span class="token punctuation">, </span></span><span class="parameter ">accessToken<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-access-token/index.html">AccessToken</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.iamidentitycenter.sso.action/-federated-credentials/index.html">FederatedCredentials</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-498618826%2FFunctions%2F68960030" anchor-label="hasPosixFilePermissions" id="-498618826%2FFunctions%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-posix-file-permissions.html"><span>has</span><wbr><span>Posix</span><wbr><span>File</span><wbr><span><span>Permissions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-498618826%2FFunctions%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html">Path</a><span class="token punctuation">.</span><a href="has-posix-file-permissions.html"><span class="token function">hasPosixFilePermissions</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1162813132%2FFunctions%2F68960030" anchor-label="Http" id="-1162813132%2FFunctions%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-http.html"><span><span>Http</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1162813132%2FFunctions%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-o-i-d-c/-companion/index.html">OIDC.Companion</a><span class="token punctuation">.</span><a href="-http.html"><span class="token function">Http</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">region<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-region/index.html">Region</a><span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token operator"> = </span>JavaHttpClient()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-o-i-d-c/index.html">OIDC</a></div><div class="brief "><p class="paragraph">Standard HTTP implementation of OIDC</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s-s-o/-companion/index.html">SSO.Companion</a><span class="token punctuation">.</span><a href="-http.html"><span class="token function">Http</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">region<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-region/index.html">Region</a><span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token operator"> = </span>JavaHttpClient()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-s-s-o/index.html">SSO</a></div><div class="brief "><p class="paragraph">Standard HTTP implementation of SSO</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-237171393%2FFunctions%2F68960030" anchor-label="of" id="-237171393%2FFunctions%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="of.html"><span><span>of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-237171393%2FFunctions%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s-s-o-cached-registration/-companion/index.html">SSOCachedRegistration.Companion</a><span class="token punctuation">.</span><a href="of.html"><span class="token function">of</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">registeredClient<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.oidc.action/-registered-client/index.html">RegisteredClient</a><span class="token punctuation">, </span></span><span class="parameter ">scopes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">grantTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-grant-type/index.html">GrantType</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-s-s-o-cached-registration/index.html">SSOCachedRegistration</a></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s-s-o-cached-token/-companion/index.html">SSOCachedToken.Companion</a><span class="token punctuation">.</span><a href="of.html"><span class="token function">of</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ssoProfile<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-s-s-o-profile/index.html">SSOProfile</a><span class="token punctuation">, </span></span><span class="parameter ">deviceToken<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.oidc.action/-device-token/index.html">DeviceToken</a><span class="token punctuation">, </span></span><span class="parameter ">client<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.oidc.action/-registered-client/index.html">RegisteredClient</a><span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-s-s-o-cached-token/index.html">SSOCachedToken</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-991118306%2FFunctions%2F68960030" anchor-label="registerClient" id="-991118306%2FFunctions%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="register-client.html"><span>register</span><wbr><span><span>Client</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-991118306%2FFunctions%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-o-i-d-c/index.html">OIDC</a><span class="token punctuation">.</span><a href="register-client.html"><span class="token function">registerClient</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-client-name/index.html">ClientName</a><span class="token punctuation">, </span></span><span class="parameter ">scopes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">grantTypes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-grant-type/index.html">GrantType</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">redirectUris<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">issuerUrl<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.iamidentitycenter.oidc.action/-registered-client/index.html">RegisteredClient</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1007173076%2FFunctions%2F68960030" anchor-label="SSO" id="-1007173076%2FFunctions%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-s-o.html"><span><span>SSO</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1007173076%2FFunctions%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-credentials-provider/-companion/index.html">CredentialsProvider.Companion</a><span class="token punctuation">.</span><a href="-s-s-o.html"><span class="token function">SSO</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ssoProfile<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-s-s-o-profile/index.html">SSOProfile</a><span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token operator"> = </span>JavaHttpClient()<span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token operator"> = </span>Clock.systemUTC()<span class="token punctuation">, </span></span><span class="parameter ">clientName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-client-name/index.html">ClientName</a><span class="token operator"> = </span>ClientName.of("http4k-connect-client")<span class="token punctuation">, </span></span><span class="parameter ">cachedTokenDirectory<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html">Path</a><span class="token operator"> = </span>Path(System.getProperty("user.home")).resolve(".aws/sso/cache")<span class="token punctuation">, </span></span><span class="parameter ">login<span class="token operator">: </span><a href="-s-s-o-login/index.html">SSOLogin</a><span class="token operator"> = </span>SSOLogin.enabled()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-credentials-provider/index.html">CredentialsProvider</a></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-credentials-chain/-companion/index.html">CredentialsChain.Companion</a><span class="token punctuation">.</span><a href="-s-s-o.html"><span class="token function">SSO</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">env<span class="token operator">: </span><a href="../../http4k-config/org.http4k.config/-environment/index.html">Environment</a><span class="token operator"> = </span>Environment.ENV<span class="token punctuation">, </span></span><span class="parameter ">profileName<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-profile-name/index.html">ProfileName</a><span class="token operator"> = </span>AWS_PROFILE(env)<span class="token punctuation">, </span></span><span class="parameter ">configPath<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html">Path</a><span class="token operator"> = </span>AWS_CONFIG_FILE(env)<span class="token punctuation">, </span></span><span class="parameter ">clientName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-client-name/index.html">ClientName</a><span class="token operator"> = </span>ClientName.of("http4k-connect-client")<span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token operator"> = </span>JavaHttpClient()<span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token operator"> = </span>Clock.systemUTC()<span class="token punctuation">, </span></span><span class="parameter ">cachedTokenDirectory<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html">Path</a><span class="token operator"> = </span>Path(System.getProperty("user.home")).resolve(".aws/sso/cache")<span class="token punctuation">, </span></span><span class="parameter ">login<span class="token operator">: </span><a href="-s-s-o-login/index.html">SSOLogin</a><span class="token operator"> = </span>SSOLogin.enabled()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-credentials-chain/index.html">CredentialsChain</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="991695062%2FFunctions%2F68960030" anchor-label="startDeviceAuthorization" id="991695062%2FFunctions%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start-device-authorization.html"><span>start</span><wbr><span>Device</span><wbr><span><span>Authorization</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="991695062%2FFunctions%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-o-i-d-c/index.html">OIDC</a><span class="token punctuation">.</span><a href="start-device-authorization.html"><span class="token function">startDeviceAuthorization</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clientId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-client-id/index.html">ClientId</a><span class="token punctuation">, </span></span><span class="parameter ">clientSecret<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.model/-client-secret/index.html">ClientSecret</a><span class="token punctuation">, </span></span><span class="parameter ">startUrl<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.iamidentitycenter.oidc.action/-authorization-started/index.html">AuthorizationStarted</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1209039189%2FFunctions%2F68960030" anchor-label="toDeviceToken" id="-1209039189%2FFunctions%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-device-token.html"><span>to</span><wbr><span>Device</span><wbr><span><span>Token</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1209039189%2FFunctions%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s-s-o-cached-token/index.html">SSOCachedToken</a><span class="token punctuation">.</span><a href="to-device-token.html"><span class="token function">toDeviceToken</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.oidc.action/-device-token/index.html">DeviceToken</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1929006824%2FFunctions%2F68960030" anchor-label="toRegisteredClient" id="-1929006824%2FFunctions%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-registered-client.html"><span>to</span><wbr><span>Registered</span><wbr><span><span>Client</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1929006824%2FFunctions%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s-s-o-cached-registration/index.html">SSOCachedRegistration</a><span class="token punctuation">.</span><a href="to-registered-client.html"><span class="token function">toRegisteredClient</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.connect.amazon.iamidentitycenter.oidc.action/-registered-client/index.html">RegisteredClient</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="887983515%2FFunctions%2F68960030" anchor-label="touch" id="887983515%2FFunctions%2F68960030" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iamidentitycenter/main" data-filterable-set=":http4k-connect-amazon-iamidentitycenter/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="touch.html"><span><span>touch</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="887983515%2FFunctions%2F68960030"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iamidentitycenter/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html">Path</a><span class="token punctuation">.</span><a href="touch.html"><span class="token function">touch</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">restrictToOwner<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/nio/file/Path.html">Path</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

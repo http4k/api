@@ -1,0 +1,778 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.format</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-format-moshi/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-format-moshi/main" data-filter=":http4k-format-moshi/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-format-moshi::org.http4k.format////PointingToDeclaration//1376088568">
+  <div class="breadcrumbs"><a href="../index.html">http4k-format-moshi</a><span class="delimiter">/</span><span class="current">org.http4k.format</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-2104619404%2FClasslikes%2F1376088568" anchor-label="ArrayItemsJsonAdapterFactory" id="-2104619404%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-array-items-json-adapter-factory/index.html"><span>Array</span><wbr><span>Items</span><wbr><span>Json</span><wbr><span>Adapter</span><wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2104619404%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-array-items-json-adapter-factory/index.html">ArrayItemsJsonAdapterFactory</a> : <span data-unresolved-link="com.squareup.moshi/JsonAdapter.Factory///PointingToDeclaration/">JsonAdapter.Factory</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="955675211%2FClasslikes%2F1376088568" anchor-label="ConfigurableMoshi" id="955675211%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-configurable-moshi/index.html"><span>Configurable</span><wbr><span><span>Moshi</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="955675211%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-configurable-moshi/index.html">ConfigurableMoshi</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">builder<span class="token operator">: </span><span data-unresolved-link="com.squareup.moshi/Moshi.Builder///PointingToDeclaration/">Moshi.Builder</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>defaultContentType<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-content-type/index.html">ContentType</a><span class="token operator"> = </span>APPLICATION_JSON<span class="token punctuation">, </span></span><span class="parameter ">strictness<span class="token operator">: </span><a href="-strictness-mode/index.html">StrictnessMode</a><span class="token operator"> = </span>Lenient</span></span><span class="token punctuation">)</span> : <a href="../../http4k-format-core/org.http4k.format/-auto-marshalling-json/index.html">AutoMarshallingJson</a><span class="token operator">&lt;</span><a href="-moshi-node/index.html">MoshiNode</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1905376631%2FClasslikes%2F1376088568" anchor-label="EventAdapter" id="-1905376631%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-event-adapter/index.html"><span>Event</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1905376631%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-event-adapter/index.html">EventAdapter</a> : <span data-unresolved-link="com.squareup.moshi/JsonAdapter.Factory///PointingToDeclaration/">JsonAdapter.Factory</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1787595288%2FClasslikes%2F1376088568" anchor-label="IsAnInstanceOfAdapter" id="1787595288%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-is-an-instance-of-adapter/index.html"><span>Is</span><wbr><span>An</span><wbr><span>Instance</span><wbr><span>Of</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1787595288%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-is-an-instance-of-adapter/index.html">IsAnInstanceOfAdapter</a><span class="token operator">&lt;</span><a href="-is-an-instance-of-adapter/index.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="-is-an-instance-of-adapter/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">resolveAdapter<span class="token operator">: </span><span data-unresolved-link="com.squareup.moshi/Moshi///PointingToDeclaration/">Moshi</span><span class="token punctuation">.</span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="-is-an-instance-of-adapter/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="com.squareup.moshi/JsonAdapter///PointingToDeclaration/">JsonAdapter</span><span class="token operator">&lt;</span><a href="-is-an-instance-of-adapter/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span>{ adapter(it.java) }</span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.squareup.moshi/JsonAdapter.Factory///PointingToDeclaration/">JsonAdapter.Factory</span></div><div class="brief "><p class="paragraph">This adapter factory will capture ALL instances of a particular superclass/interface.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-822507821%2FClasslikes%2F1376088568" anchor-label="ListAdapter" id="-822507821%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-list-adapter/index.html"><span>List</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-822507821%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-list-adapter/index.html">ListAdapter</a> : <a href="-is-an-instance-of-adapter/index.html">IsAnInstanceOfAdapter</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="436145291%2FClasslikes%2F1376088568" anchor-label="MapAdapter" id="436145291%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-map-adapter/index.html"><span>Map</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="436145291%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-map-adapter/index.html">MapAdapter</a> : <a href="-is-an-instance-of-adapter/index.html">IsAnInstanceOfAdapter</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1101775566%2FClasslikes%2F1376088568" anchor-label="Moshi" id="-1101775566%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-moshi/index.html"><span><span>Moshi</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1101775566%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-moshi/index.html">Moshi</a> : <a href="-configurable-moshi/index.html">ConfigurableMoshi</a></div><div class="brief "><p class="paragraph">To implement custom JSON configuration, create your own object singleton. Extra mappings can be added before done() is called.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1774327881%2FClasslikes%2F1376088568" anchor-label="MoshiArray" id="-1774327881%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-moshi-array/index.html"><span>Moshi</span><wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1774327881%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-moshi-array/index.html">MoshiArray</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>elements<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-moshi-node/index.html">MoshiNode</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="-moshi-node/index.html">MoshiNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1874669304%2FClasslikes%2F1376088568" anchor-label="MoshiBoolean" id="-1874669304%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-moshi-boolean/index.html"><span>Moshi</span><wbr><span><span>Boolean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1874669304%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-moshi-boolean/index.html">MoshiBoolean</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span> : <a href="-moshi-node/index.html">MoshiNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-833005057%2FClasslikes%2F1376088568" anchor-label="MoshiDecimal" id="-833005057%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-moshi-decimal/index.html"><span>Moshi</span><wbr><span><span>Decimal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-833005057%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-moshi-decimal/index.html">MoshiDecimal</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span> : <a href="-moshi-node/index.html">MoshiNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-450395982%2FClasslikes%2F1376088568" anchor-label="MoshiInteger" id="-450395982%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-moshi-integer/index.html"><span>Moshi</span><wbr><span><span>Integer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-450395982%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-moshi-integer/index.html">MoshiInteger</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span> : <a href="-moshi-node/index.html">MoshiNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="649494934%2FClasslikes%2F1376088568" anchor-label="MoshiLong" id="649494934%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-moshi-long/index.html"><span>Moshi</span><wbr><span><span>Long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="649494934%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-moshi-long/index.html">MoshiLong</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span> : <a href="-moshi-node/index.html">MoshiNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="947453136%2FClasslikes%2F1376088568" anchor-label="MoshiNode" id="947453136%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-moshi-node/index.html"><span>Moshi</span><wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="947453136%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">interface </span><a href="-moshi-node/index.html">MoshiNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2040084067%2FClasslikes%2F1376088568" anchor-label="MoshiNodeAdapter" id="2040084067%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-moshi-node-adapter/index.html"><span>Moshi</span><wbr><span>Node</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2040084067%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-moshi-node-adapter/index.html">MoshiNodeAdapter</a> : <span data-unresolved-link="com.squareup.moshi/JsonAdapter.Factory///PointingToDeclaration/">JsonAdapter.Factory</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1260849941%2FClasslikes%2F1376088568" anchor-label="MoshiNull" id="-1260849941%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-moshi-null/index.html"><span>Moshi</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1260849941%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="-moshi-null/index.html">MoshiNull</a> : <a href="-moshi-node/index.html">MoshiNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-733978125%2FClasslikes%2F1376088568" anchor-label="MoshiObject" id="-733978125%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-moshi-object/index.html"><span>Moshi</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-733978125%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-moshi-object/index.html">MoshiObject</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>attributes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="-moshi-node/index.html">MoshiNode</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="-moshi-node/index.html">MoshiNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1606593183%2FClasslikes%2F1376088568" anchor-label="MoshiString" id="-1606593183%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-moshi-string/index.html"><span>Moshi</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1606593183%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-moshi-string/index.html">MoshiString</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-moshi-node/index.html">MoshiNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="106273884%2FClasslikes%2F1376088568" anchor-label="ProhibitUnknownValuesAdapter" id="106273884%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-prohibit-unknown-values-adapter/index.html"><span>Prohibit</span><wbr><span>Unknown</span><wbr><span>Values</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="106273884%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-prohibit-unknown-values-adapter/index.html">ProhibitUnknownValuesAdapter</a> : <span data-unresolved-link="com.squareup.moshi/JsonAdapter.Factory///PointingToDeclaration/">JsonAdapter.Factory</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1780716319%2FClasslikes%2F1376088568" anchor-label="ProtocolStatusAdapter" id="1780716319%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-protocol-status-adapter/index.html"><span>Protocol</span><wbr><span>Status</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1780716319%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-protocol-status-adapter/index.html">ProtocolStatusAdapter</a> : <span data-unresolved-link="com.squareup.moshi/JsonAdapter.Factory///PointingToDeclaration/">JsonAdapter.Factory</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="179708568%2FClasslikes%2F1376088568" anchor-label="SchemaNodeJsonAdapterFactory" id="179708568%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-schema-node-json-adapter-factory/index.html"><span>Schema</span><wbr><span>Node</span><wbr><span>Json</span><wbr><span>Adapter</span><wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="179708568%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-schema-node-json-adapter-factory/index.html">SchemaNodeJsonAdapterFactory</a> : <span data-unresolved-link="com.squareup.moshi/JsonAdapter.Factory///PointingToDeclaration/">JsonAdapter.Factory</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1861323665%2FClasslikes%2F1376088568" anchor-label="SetAdapter" id="1861323665%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-set-adapter/index.html"><span>Set</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1861323665%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-set-adapter/index.html">SetAdapter</a> : <a href="-is-an-instance-of-adapter/index.html">IsAnInstanceOfAdapter</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-146042487%2FClasslikes%2F1376088568" anchor-label="SimpleMoshiAdapterFactory" id="-146042487%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-simple-moshi-adapter-factory/index.html"><span>Simple</span><wbr><span>Moshi</span><wbr><span>Adapter</span><wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-146042487%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-simple-moshi-adapter-factory/index.html">SimpleMoshiAdapterFactory</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">typesToAdapters<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token punctuation">(</span><span data-unresolved-link="com.squareup.moshi/Moshi///PointingToDeclaration/">Moshi</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="com.squareup.moshi/JsonAdapter///PointingToDeclaration/">JsonAdapter</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.squareup.moshi/JsonAdapter.Factory///PointingToDeclaration/">JsonAdapter.Factory</span></div><div class="brief "><p class="paragraph">Convenience class to create Moshi Adapter Factory</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2122732549%2FClasslikes%2F1376088568" anchor-label="StrictnessMode" id="-2122732549%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-strictness-mode/index.html"><span>Strictness</span><wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2122732549%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-strictness-mode/index.html">StrictnessMode</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-strictness-mode/index.html">StrictnessMode</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Determines if the marshaller should be lenient when parsing unknown fields</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="876954287%2FClasslikes%2F1376088568" anchor-label="ThrowableAdapter" id="876954287%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-throwable-adapter/index.html"><span>Throwable</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="876954287%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-throwable-adapter/index.html">ThrowableAdapter</a> : <a href="-is-an-instance-of-adapter/index.html">IsAnInstanceOfAdapter</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">These adapters are the edge case adapters for dealing with Moshi</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="230621855%2FClasslikes%2F1376088568" anchor-label="UnmappedValue" id="230621855%2FClasslikes%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-unmapped-value/index.html"><span>Unmapped</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="230621855%2FClasslikes%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-unmapped-value/index.html">UnmappedValue</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/reflect/Type.html">Type</a></span></span><span class="token punctuation">)</span> : <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Exception.html">Exception</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-1765005549%2FFunctions%2F1376088568" anchor-label="adapter" id="-1765005549%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="adapter.html"><span><span>adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1765005549%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="adapter.html">T</a><span class="token operator"> : </span><span data-unresolved-link="com.squareup.moshi/JsonAdapter///PointingToDeclaration/">JsonAdapter</span><span class="token operator">&lt;</span><a href="adapter.html">K</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="adapter.html">K</a><span class="token operator">&gt; </span><a href="adapter.html"><span class="token function">adapter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>fn<span class="token operator">: </span><span class="token punctuation">(</span><span data-unresolved-link="com.squareup.moshi/Moshi///PointingToDeclaration/">Moshi</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="adapter.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span><span class="token punctuation">(</span><span data-unresolved-link="com.squareup.moshi/Moshi///PointingToDeclaration/">Moshi</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="adapter.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Convenience function to create Moshi Adapter.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1429166086%2FFunctions%2F1376088568" anchor-label="addTyped" id="-1429166086%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-typed.html"><span>add</span><wbr><span><span>Typed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1429166086%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="add-typed.html">T</a><span class="token operator"> : </span><span data-unresolved-link="com.squareup.moshi/JsonAdapter///PointingToDeclaration/">JsonAdapter</span><span class="token operator">&lt;</span><a href="add-typed.html">K</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="add-typed.html">K</a><span class="token operator">&gt; </span><span data-unresolved-link="com.squareup.moshi/Moshi.Builder///PointingToDeclaration/">Moshi.Builder</span><span class="token punctuation">.</span><a href="add-typed.html"><span class="token function">addTyped</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fn<span class="token operator">: </span><a href="add-typed.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.squareup.moshi/Moshi.Builder///PointingToDeclaration/">Moshi.Builder</span></div><div class="brief "><p class="paragraph">Convenience function to add a custom adapter.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1312480402%2FFunctions%2F1376088568" anchor-label="asConfigurable" id="1312480402%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="as-configurable.html"><span>as</span><wbr><span><span>Configurable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1312480402%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><span data-unresolved-link="com.squareup.moshi/Moshi.Builder///PointingToDeclaration/">Moshi.Builder</span><span class="token punctuation">.</span><a href="as-configurable.html"><span class="token function">asConfigurable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">kotlinFactory<span class="token operator">: </span><span data-unresolved-link="com.squareup.moshi/JsonAdapter.Factory///PointingToDeclaration/">JsonAdapter.Factory</span><span class="token operator"> = </span>KotlinJsonAdapterFactory()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-format-core/org.http4k.format/-auto-mapping-configuration/index.html">AutoMappingConfiguration</a><span class="token operator">&lt;</span><span data-unresolved-link="com.squareup.moshi/Moshi.Builder///PointingToDeclaration/">Moshi.Builder</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1496296275%2FFunctions%2F1376088568" anchor-label="asFactory" id="-1496296275%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="as-factory.html"><span>as</span><wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1496296275%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="as-factory.html">K</a><span class="token operator">&gt; </span><span data-unresolved-link="com.squareup.moshi/JsonAdapter///PointingToDeclaration/">JsonAdapter</span><span class="token operator">&lt;</span><a href="as-factory.html">K</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="as-factory.html"><span class="token function">asFactory</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-simple-moshi-adapter-factory/index.html">SimpleMoshiAdapterFactory</a></div><div class="brief "><p class="paragraph">Convenience function to create Moshi Adapter Factory for a simple Moshi Adapter</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1926420872%2FFunctions%2F1376088568" anchor-label="boolean" id="-1926420872%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="boolean.html"><span><span>boolean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1926420872%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><span data-unresolved-link="com.squareup.moshi/JsonWriter///PointingToDeclaration/">JsonWriter</span><span class="token punctuation">.</span><a href="boolean.html"><span class="token function">boolean</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">theValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1268995790%2FFunctions%2F1376088568" anchor-label="invoke" id="1268995790%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="invoke.html"><span><span>invoke</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1268995790%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="invoke.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><a href="invoke.html">R</a><span class="token operator"> : </span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt; </span><a href="-configurable-moshi/index.html">ConfigurableMoshi</a><span class="token punctuation">.</span><a href="invoke.html"><span class="token function">invoke</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">item<span class="token operator">: </span><a href="invoke.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span class="token punctuation">(</span><a href="invoke.html">R</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="invoke.html">R</a></div><div class="symbol monospace"><span class="token keyword">inline operator </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="invoke.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="-configurable-moshi/index.html">ConfigurableMoshi</a><span class="token punctuation">.</span><a href="invoke.html"><span class="token function">invoke</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">msg<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="invoke.html">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1956485028%2FFunctions%2F1376088568" anchor-label="json" id="1956485028%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="json.html"><span><span>json</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1956485028%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="json.html">T</a><span class="token operator"> : </span><a href="../dev.forkhandles.data/-moshi-node-data-container/index.html">MoshiNodeDataContainer</a><span class="token operator">&gt; </span><a href="../../http4k-core/org.http4k.core/-body/-companion/index.html">Body.Companion</a><span class="token punctuation">.</span><a href="json.html"><span class="token function">json</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fn<span class="token operator">: </span><span class="token punctuation">(</span><a href="-moshi-node/index.html">MoshiNode</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="json.html">T</a><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">contentNegotiation<span class="token operator">: </span><a href="../../http4k-core/org.http4k.lens/-content-negotiation/index.html">ContentNegotiation</a><span class="token operator"> = </span>ContentNegotiation.None</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.lens/-bi-di-body-lens-spec/index.html">BiDiBodyLensSpec</a><span class="token operator">&lt;</span><a href="json.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Custom lens to extract and inject Data4k DataContainer types from JSON bodies</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="224783169%2FFunctions%2F1376088568" anchor-label="list" id="224783169%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="list.html"><span><span>list</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="224783169%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="list.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="com.squareup.moshi/JsonReader///PointingToDeclaration/">JsonReader</span><span class="token punctuation">.</span><a href="list.html"><span class="token function">list</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">item<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="list.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><a href="list.html">T</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="list.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="com.squareup.moshi/JsonReader///PointingToDeclaration/">JsonReader</span><span class="token punctuation">.</span><a href="list.html"><span class="token function">list</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mk<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="list.html">T</a><span class="token punctuation">, </span></span><span class="parameter ">item<span class="token operator">: </span><a href="list.html">T</a><span class="token punctuation">.</span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><a href="list.html">T</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span data-unresolved-link="com.squareup.moshi/JsonWriter///PointingToDeclaration/">JsonWriter</span><span class="token punctuation">.</span><a href="list.html"><span class="token function">list</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">theValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="list.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="com.squareup.moshi/JsonWriter///PointingToDeclaration/">JsonWriter</span><span class="token punctuation">.</span><a href="list.html"><span class="token function">list</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">list<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="list.html">T</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">fn<span class="token operator">: </span><a href="list.html">T</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="list.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="com.squareup.moshi/JsonWriter///PointingToDeclaration/">JsonWriter</span><span class="token punctuation">.</span><a href="list.html"><span class="token function">list</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">list<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="list.html">T</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">fn<span class="token operator">: </span><a href="list.html">T</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1128894806%2FFunctions%2F1376088568" anchor-label="map" id="-1128894806%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="map.html"><span><span>map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1128894806%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="map.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="com.squareup.moshi/JsonReader///PointingToDeclaration/">JsonReader</span><span class="token punctuation">.</span><a href="map.html"><span class="token function">map</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">valueFn<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="map.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="map.html">T</a><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2054615862%2FFunctions%2F1376088568" anchor-label="number" id="2054615862%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="number.html"><span><span>number</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2054615862%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><span data-unresolved-link="com.squareup.moshi/JsonWriter///PointingToDeclaration/">JsonWriter</span><span class="token punctuation">.</span><a href="number.html"><span class="token function">number</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">theValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-number/index.html">Number</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-76659836%2FFunctions%2F1376088568" anchor-label="obj" id="-76659836%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="obj.html"><span><span>obj</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-76659836%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="obj.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="com.squareup.moshi/JsonReader///PointingToDeclaration/">JsonReader</span><span class="token punctuation">.</span><a href="obj.html"><span class="token function">obj</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mk<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="obj.html">T</a><span class="token punctuation">, </span></span><span class="parameter ">fn<span class="token operator">: </span><a href="obj.html">T</a><span class="token punctuation">.</span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="obj.html">T</a></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="obj.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="com.squareup.moshi/JsonReader///PointingToDeclaration/">JsonReader</span><span class="token punctuation">.</span><a href="obj.html"><span class="token function">obj</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">build<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="obj.html">T</a><span class="token punctuation">, </span></span><span class="parameter ">item<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="obj.html">T</a></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="obj.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="com.squareup.moshi/JsonWriter///PointingToDeclaration/">JsonWriter</span><span class="token punctuation">.</span><a href="obj.html"><span class="token function">obj</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">obj<span class="token operator">: </span><a href="obj.html">T</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">fn<span class="token operator">: </span><a href="obj.html">T</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span data-unresolved-link="com.squareup.moshi/JsonWriter///PointingToDeclaration/">JsonWriter</span><span class="token punctuation">.</span><a href="obj.html"><span class="token function">obj</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">theValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="obj.html">T</a><span class="token operator">&gt; </span><span data-unresolved-link="com.squareup.moshi/JsonWriter///PointingToDeclaration/">JsonWriter</span><span class="token punctuation">.</span><a href="obj.html"><span class="token function">obj</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">obj<span class="token operator">: </span><a href="obj.html">T</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">fn<span class="token operator">: </span><a href="obj.html">T</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-304388924%2FFunctions%2F1376088568" anchor-label="standardConfig" id="-304388924%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="standard-config.html"><span>standard</span><wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-304388924%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="standard-config.html"><span class="token function">standardConfig</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">kotlinFactory<span class="token operator">: </span><span data-unresolved-link="com.squareup.moshi/JsonAdapter.Factory///PointingToDeclaration/">JsonAdapter.Factory</span><span class="token operator"> = </span>KotlinJsonAdapterFactory()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-format-core/org.http4k.format/-auto-mapping-configuration/index.html">AutoMappingConfiguration</a><span class="token operator">&lt;</span><span data-unresolved-link="com.squareup.moshi/Moshi.Builder///PointingToDeclaration/">Moshi.Builder</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="854147782%2FFunctions%2F1376088568" anchor-label="string" id="854147782%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="string.html"><span><span>string</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="854147782%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><span data-unresolved-link="com.squareup.moshi/JsonWriter///PointingToDeclaration/">JsonWriter</span><span class="token punctuation">.</span><a href="string.html"><span class="token function">string</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">theValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-24611910%2FFunctions%2F1376088568" anchor-label="stringList" id="-24611910%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="string-list.html"><span>string</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-24611910%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><span data-unresolved-link="com.squareup.moshi/JsonReader///PointingToDeclaration/">JsonReader</span><span class="token punctuation">.</span><a href="string-list.html"><span class="token function">stringList</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1088136002%2FFunctions%2F1376088568" anchor-label="stringMap" id="-1088136002%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="string-map.html"><span>string</span><wbr><span><span>Map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1088136002%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><span data-unresolved-link="com.squareup.moshi/JsonReader///PointingToDeclaration/">JsonReader</span><span class="token punctuation">.</span><a href="string-map.html"><span class="token function">stringMap</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1392924902%2FFunctions%2F1376088568" anchor-label="stringOrNull" id="1392924902%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="string-or-null.html"><span>string</span><wbr><span>Or</span><wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1392924902%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><span data-unresolved-link="com.squareup.moshi/JsonReader///PointingToDeclaration/">JsonReader</span><span class="token punctuation">.</span><a href="string-or-null.html"><span class="token function">stringOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1958452768%2FFunctions%2F1376088568" anchor-label="unwrap" id="1958452768%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unwrap.html"><span><span>unwrap</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1958452768%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-moshi-node/index.html">MoshiNode</a><span class="token punctuation">.</span><a href="unwrap.html"><span class="token function">unwrap</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1005010915%2FFunctions%2F1376088568" anchor-label="wrap" id="-1005010915%2FFunctions%2F1376088568" data-filterable-set=":http4k-format-moshi/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-format-moshi/main" data-filterable-set=":http4k-format-moshi/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="wrap.html"><span><span>wrap</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1005010915%2FFunctions%2F1376088568"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-format-moshi/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-moshi-node/-companion/index.html">MoshiNode.Companion</a><span class="token punctuation">.</span><a href="wrap.html"><span class="token function">wrap</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">obj<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-moshi-node/index.html">MoshiNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

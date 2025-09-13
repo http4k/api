@@ -1,0 +1,325 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Companion</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../../../images/logo-icon.svg">
+<link href="../../../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-core/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-core/main" data-filter=":http4k-core/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="http4k-core::org.http4k.core/ContentEncodingName.Companion///PointingToDeclaration//-740847589">
+  <div class="breadcrumbs"><a href="../../../index.html">http4k-core</a><span class="delimiter">/</span><a href="../../index.html">org.http4k.core</a><span class="delimiter">/</span><a href="../index.html">ContentEncodingName</a><span class="delimiter">/</span><span class="current">Companion</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Companion</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Companion</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/core/core/src/main/kotlin/org/http4k/core/ContentEncoding.kt#L8">source</a>)</span></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="857232377%2FProperties%2F-740847589" anchor-label="AES128GCM" id="857232377%2FProperties%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-e-s128-g-c-m.html"><span><span>AES128GCM</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="857232377%2FProperties%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-a-e-s128-g-c-m.html">AES128GCM</a><span class="token operator">: </span><a href="../index.html">ContentEncodingName</a></div><div class="brief "><p class="paragraph">AES-GCM encryption with a 128-bit content encryption key</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-235397592%2FProperties%2F-740847589" anchor-label="BR" id="-235397592%2FProperties%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-r.html"><span><span>BR</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-235397592%2FProperties%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-b-r.html">BR</a><span class="token operator">: </span><a href="../index.html">ContentEncodingName</a></div><div class="brief "><p class="paragraph">Brotli Compressed Data Format</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-430126314%2FProperties%2F-740847589" anchor-label="COMPRESS" id="-430126314%2FProperties%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-o-m-p-r-e-s-s.html"><span><span>COMPRESS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-430126314%2FProperties%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-c-o-m-p-r-e-s-s.html">COMPRESS</a><span class="token operator">: </span><a href="../index.html">ContentEncodingName</a></div><div class="brief "><p class="paragraph">UNIX "compress" data format Welch, T., "A Technique for High Performance Data Compression", IEEE Computer 17(6), June 1984.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-709887969%2FProperties%2F-740847589" anchor-label="DCB" id="-709887969%2FProperties%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-c-b.html"><span><span>DCB</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-709887969%2FProperties%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-d-c-b.html">DCB</a><span class="token operator">: </span><a href="../index.html">ContentEncodingName</a></div><div class="brief "><p class="paragraph">"Dictionary-Compressed Brotli" data format.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="34587399%2FProperties%2F-740847589" anchor-label="DCZ" id="34587399%2FProperties%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-c-z.html"><span><span>DCZ</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="34587399%2FProperties%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-d-c-z.html">DCZ</a><span class="token operator">: </span><a href="../index.html">ContentEncodingName</a></div><div class="brief "><p class="paragraph">"Dictionary-Compressed Zstandard" data format.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1303981513%2FProperties%2F-740847589" anchor-label="DEFLATE" id="-1303981513%2FProperties%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-e-f-l-a-t-e.html"><span><span>DEFLATE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1303981513%2FProperties%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-d-e-f-l-a-t-e.html">DEFLATE</a><span class="token operator">: </span><a href="../index.html">ContentEncodingName</a></div><div class="brief "><p class="paragraph">"deflate" compressed data (RFC1951) inside the "zlib" data format (RFC1950)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2028427988%2FProperties%2F-740847589" anchor-label="EXI" id="-2028427988%2FProperties%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e-x-i.html"><span><span>EXI</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2028427988%2FProperties%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-e-x-i.html">EXI</a><span class="token operator">: </span><a href="../index.html">ContentEncodingName</a></div><div class="brief "><p class="paragraph">W3C Efficient XML Interchange</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1394433634%2FProperties%2F-740847589" anchor-label="GZIP" id="-1394433634%2FProperties%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-g-z-i-p.html"><span><span>GZIP</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1394433634%2FProperties%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-g-z-i-p.html">GZIP</a><span class="token operator">: </span><a href="../index.html">ContentEncodingName</a></div><div class="brief "><p class="paragraph">GZIP file format (RFC1952)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1325021894%2FProperties%2F-740847589" anchor-label="IDENTITY" id="-1325021894%2FProperties%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-d-e-n-t-i-t-y.html"><span><span>IDENTITY</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1325021894%2FProperties%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-i-d-e-n-t-i-t-y.html">IDENTITY</a><span class="token operator">: </span><a href="../index.html">ContentEncodingName</a></div><div class="brief "><p class="paragraph">Reserved</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="72774104%2FProperties%2F-740847589" anchor-label="PACK200_GZIP" id="72774104%2FProperties%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-a-c-k200_-g-z-i-p.html"><span>PACK200_</span><wbr><span>GZIP</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="72774104%2FProperties%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-p-a-c-k200_-g-z-i-p.html">PACK200_GZIP</a><span class="token operator">: </span><a href="../index.html">ContentEncodingName</a></div><div class="brief "><p class="paragraph">Network Transfer Format for Java Archives</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="565594671%2FProperties%2F-740847589" anchor-label="X_COMPRESS" id="565594671%2FProperties%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-x_-c-o-m-p-r-e-s-s.html"><span>X_</span><wbr><span>COMPRESS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="565594671%2FProperties%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-x_-c-o-m-p-r-e-s-s.html">X_COMPRESS</a><span class="token operator">: </span><a href="../index.html">ContentEncodingName</a></div><div class="brief "><p class="paragraph">Deprecated (alias for compress)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2122421559%2FProperties%2F-740847589" anchor-label="X_GZIP" id="2122421559%2FProperties%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-x_-g-z-i-p.html"><span>X_</span><wbr><span>GZIP</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2122421559%2FProperties%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-x_-g-z-i-p.html">X_GZIP</a><span class="token operator">: </span><a href="../index.html">ContentEncodingName</a></div><div class="brief "><p class="paragraph">Deprecated (alias for gzip)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2006632849%2FProperties%2F-740847589" anchor-label="ZSTD" id="-2006632849%2FProperties%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-z-s-t-d.html"><span><span>ZSTD</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2006632849%2FProperties%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-z-s-t-d.html">ZSTD</a><span class="token operator">: </span><a href="../index.html">ContentEncodingName</a></div><div class="brief "><p class="paragraph">A stream of bytes compressed using the Zstandard protocol with a Window_Size of not more than 8 MB.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,2127 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>All modules</title>
+    <link href="images/logo-icon.svg" rel="icon" type="image/svg">
+        <script>var pathToRoot = "";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
+<link href="styles/style.css" rel="Stylesheet">
+<link href="styles/main.css" rel="Stylesheet">
+<link href="styles/prism.css" rel="Stylesheet">
+<link href="styles/logo-styles.css" rel="Stylesheet">
+<link href="ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="ui-kit/ui-kit.min.js" defer="defer"></script>
+<link href="images/logo-icon.svg">
+<link href="styles/dokka.css" rel="Stylesheet">
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="index.html" tabindex="1">
+                    http4k
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+LOCAL        </div>
+        <div class="navigation-controls">
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link"
+                   href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" id="content" pageIds="http4k::.ext/allModules///PointingToDeclaration//0">
+  <div class="breadcrumbs"></div>
+  <div class="cover ">
+    <div class="cover "><hr/>
+<img src="https://http4k.org/images/logo-http4k.png" alt="http4k logo">
+<hr/>
+      <p class="paragraph"><a href="https://github.com/http4k/http4k/actions/workflows/build.yaml"><img alt="build" src="https://github.com/http4k/http4k/actions/workflows/build.yaml/badge.svg"></a> <a href="https://mvnrepository.com/artifact/org.http4k"><img alt="download" src="https://img.shields.io/maven-central/v/org.http4k/http4k-core"></a> <a href="https://codecov.io/gh/http4k/http4k"><img src="https://codecov.io/gh/http4k/http4k/branch/master/graph/badge.svg" /></a> <a href="http://www.apache.org/licenses/LICENSE-2.0"><img alt="GitHub license" src="https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat"></a> <a href="https://codebeat.co/projects/github-com-http4k-http4k-master"><img alt="codebeat" src="https://codebeat.co/badges/5b369ed4-af27-46f4-ad9c-a307d900617e"></a> <a href="https://plugins.jetbrains.com/plugin/25243-http4k-toolbox"><img alt="intellij-badge" src="https://img.shields.io/jetbrains/plugin/v/25243-http4k-toolbox?label=intellij%20plugin"></a> <a href="https://kotlin.link"><img alt="awesome kotlin" src="https://kotlin.link/awesome-kotlin.svg"></a> <a href="https://opencollective.com/http4k"><img alt="Kotlin Slack" src="https://img.shields.io/badge/chat-kotlin%20slack-orange.svg"></a> <a href="https://opencollective.com/http4k"><img alt="back us!" src="https://opencollective.com/http4k/backers/badge.svg"></a> <a href="https://opencollective.com/http4k"><img alt="sponsor us!" src="https://opencollective.com/http4k/sponsors/badge.svg"></a></p>
+      <p class="paragraph"><a href="https://http4k.org">http4k</a> is a lightweight but fully-featured HTTP toolkit written in pure <a href="https://kotlinlang.org/">Kotlin</a> that enables the serving and consuming of HTTP services in a functional and consistent way. <a href="https://http4k.org">http4k</a> applications are <i>just</i> Kotlin functions. For example, here's a simple echo server:</p>
+      <div class="sample-container">
+        <pre><code class="block lang-kotlin" theme="idea">val app: HttpHandler = { request: Request -&gt; Response(OK).body(request.body) }<br>val server = app.asServer(SunHttp(8000)).start()</code></pre>
+<span class="copy-tooltip">
+          <div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div>
+<span class="copy-icon"></span></span></div>
+      <p class="paragraph">You can read about the rationale and ethos of http4k <a href="https://http4k.org/rationale">here</a></p>
+      <p class="paragraph">The <a href="https://http4k.org">http4k</a> platform consists of the following main ecosystems, all released under a single version:</p>
+      <ul>
+        <li>
+          <p class="paragraph">./core consists of a lightweight core library providing a base HTTP implementation and Server/Client implementations based on the JDK classes. Further servers, clients, serverless, templating, websockets capabilities are then implemented in add-on modules. <a href="https://http4k.org">http4k</a> apps can be simply mounted into a running Server, Serverless platform, or compiled to GraalVM and run as a super-lightweight binary.</p>
+        </li>
+        <li>
+          <p class="paragraph">./connect is a lightweight API Client toolkit which includes libraries for connecting to popular third-party cloud   services and AI backends using <a href="https://http4k.org">http4k</a> compatible APIs, along with Fake implementations for usage during local   testing.</p>
+        </li>
+      </ul>
+      <p class="paragraph"><h2>Sounds cool! Where can I find out more?</h2></p>
+      <p class="paragraph">You can find out all about the project on the <a href="https://http4k.org">http4k</a> site.</p>
+      <h2 class="">Installation</h2>
+      <div class="sample-container">
+        <pre><code class="block lang-kotlin" theme="idea">dependencies {<br>    // install the platform...<br>    implementation(platform(&quot;org.http4k:http4k-bom:&lt;LATEST_VERSION&gt;&quot;))<br><br>    // ...then choose any moduless but at least the core<br>    implementation(&quot;org.http4k:http4k-core&quot;)<br>}</code></pre>
+<span class="copy-tooltip">
+          <div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div>
+<span class="copy-icon"></span></span></div>
+      <h2 class="">Acknowledgments</h2>
+      <ul>
+        <li>
+          <p class="paragraph"><a href="https://twitter.com/DanielBodart">Dan Bodart</a>'s <strong>utterlyidle</strong></p>
+        </li>
+        <li>
+          <p class="paragraph">Ivan Moore for pairing on the original hackday project - Barely Magical.</p>
+        </li>
+        <li>
+          <p class="paragraph">You can see the amazing people and companies who have helped us to make http4k <a href="https://http4k.org/community">here</a>.</p>
+        </li>
+      </ul>
+    </div>
+    <h2 class="">All modules:</h2>
+    <div class="table"><a data-name="-537474945%2FMain%2F0" anchor-label="http4k-ai-core" id="-537474945%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ai-core/index.html">http4k-ai-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-537474945%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-2026569445%2FMain%2F0" anchor-label="http4k-ai-langchain4j" id="-2026569445%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ai-langchain4j/index.html">http4k-ai-langchain4j</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2026569445%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1540995256%2FMain%2F0" anchor-label="http4k-ai-llm-anthropic" id="1540995256%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ai-llm-anthropic/index.html">http4k-ai-llm-anthropic</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1540995256%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="730354805%2FMain%2F0" anchor-label="http4k-ai-llm-azure" id="730354805%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ai-llm-azure/index.html">http4k-ai-llm-azure</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="730354805%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="801843999%2FMain%2F0" anchor-label="http4k-ai-llm-core" id="801843999%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ai-llm-core/index.html">http4k-ai-llm-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="801843999%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-545585655%2FMain%2F0" anchor-label="http4k-ai-llm-gemini" id="-545585655%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ai-llm-gemini/index.html">http4k-ai-llm-gemini</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-545585655%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1764615141%2FMain%2F0" anchor-label="http4k-ai-llm-github" id="-1764615141%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ai-llm-github/index.html">http4k-ai-llm-github</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1764615141%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="245681900%2FMain%2F0" anchor-label="http4k-ai-llm-openai" id="245681900%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ai-llm-openai/index.html">http4k-ai-llm-openai</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="245681900%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-156923936%2FMain%2F0" anchor-label="http4k-ai-mcp-client" id="-156923936%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ai-mcp-client/index.html">http4k-ai-mcp-client</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-156923936%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="581632268%2FMain%2F0" anchor-label="http4k-ai-mcp-core" id="581632268%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ai-mcp-core/index.html">http4k-ai-mcp-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="581632268%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="266369629%2FMain%2F0" anchor-label="http4k-ai-mcp-sdk" id="266369629%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ai-mcp-sdk/index.html">http4k-ai-mcp-sdk</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="266369629%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1140865064%2FMain%2F0" anchor-label="http4k-api-cloudevents" id="1140865064%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-api-cloudevents/index.html">http4k-api-cloudevents</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1140865064%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1799864659%2FMain%2F0" anchor-label="http4k-api-graphql" id="-1799864659%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-api-graphql/index.html">http4k-api-graphql</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1799864659%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="389590297%2FMain%2F0" anchor-label="http4k-api-jsonrpc" id="389590297%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-api-jsonrpc/index.html">http4k-api-jsonrpc</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="389590297%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1050294429%2FMain%2F0" anchor-label="http4k-api-jsonschema" id="-1050294429%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-api-jsonschema/index.html">http4k-api-jsonschema</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1050294429%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-2014882586%2FMain%2F0" anchor-label="http4k-api-openapi" id="-2014882586%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-api-openapi/index.html">http4k-api-openapi</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2014882586%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1351255456%2FMain%2F0" anchor-label="http4k-api-ui-redoc" id="-1351255456%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-api-ui-redoc/index.html">http4k-api-ui-redoc</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1351255456%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1615664539%2FMain%2F0" anchor-label="http4k-api-ui-swagger" id="1615664539%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-api-ui-swagger/index.html">http4k-api-ui-swagger</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1615664539%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1139052518%2FMain%2F0" anchor-label="http4k-bridge-helidon" id="-1139052518%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-bridge-helidon/index.html">http4k-bridge-helidon</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1139052518%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1604813201%2FMain%2F0" anchor-label="http4k-bridge-jakarta" id="1604813201%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-bridge-jakarta/index.html">http4k-bridge-jakarta</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1604813201%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1060108717%2FMain%2F0" anchor-label="http4k-bridge-ktor" id="-1060108717%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-bridge-ktor/index.html">http4k-bridge-ktor</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1060108717%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1145333843%2FMain%2F0" anchor-label="http4k-bridge-micronaut" id="-1145333843%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-bridge-micronaut/index.html">http4k-bridge-micronaut</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1145333843%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1495503301%2FMain%2F0" anchor-label="http4k-bridge-ratpack" id="1495503301%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-bridge-ratpack/index.html">http4k-bridge-ratpack</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1495503301%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="129914142%2FMain%2F0" anchor-label="http4k-bridge-servlet" id="129914142%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-bridge-servlet/index.html">http4k-bridge-servlet</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="129914142%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1500239630%2FMain%2F0" anchor-label="http4k-bridge-spring" id="-1500239630%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-bridge-spring/index.html">http4k-bridge-spring</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1500239630%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1047254204%2FMain%2F0" anchor-label="http4k-bridge-vertx" id="1047254204%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-bridge-vertx/index.html">http4k-bridge-vertx</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1047254204%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-853051117%2FMain%2F0" anchor-label="http4k-client-apache" id="-853051117%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-client-apache/index.html">http4k-client-apache</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-853051117%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1704002556%2FMain%2F0" anchor-label="http4k-client-apache-async" id="-1704002556%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-client-apache-async/index.html">http4k-client-apache-async</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1704002556%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1584820699%2FMain%2F0" anchor-label="http4k-client-apache4" id="1584820699%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-client-apache4/index.html">http4k-client-apache4</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1584820699%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-696107316%2FMain%2F0" anchor-label="http4k-client-apache4-async" id="-696107316%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-client-apache4-async/index.html">http4k-client-apache4-async</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-696107316%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="382135723%2FMain%2F0" anchor-label="http4k-client-fuel" id="382135723%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-client-fuel/index.html">http4k-client-fuel</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="382135723%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="372617240%2FMain%2F0" anchor-label="http4k-client-helidon" id="372617240%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-client-helidon/index.html">http4k-client-helidon</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="372617240%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="483742371%2FMain%2F0" anchor-label="http4k-client-jetty" id="483742371%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-client-jetty/index.html">http4k-client-jetty</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="483742371%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-776525123%2FMain%2F0" anchor-label="http4k-client-okhttp" id="-776525123%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-client-okhttp/index.html">http4k-client-okhttp</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-776525123%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-41452070%2FMain%2F0" anchor-label="http4k-client-websocket" id="-41452070%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-client-websocket/index.html">http4k-client-websocket</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-41452070%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="13482749%2FMain%2F0" anchor-label="http4k-config" id="13482749%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-config/index.html">http4k-config</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="13482749%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1411271349%2FMain%2F0" anchor-label="http4k-connect-ai-anthropic" id="1411271349%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ai-anthropic/index.html">http4k-connect-ai-anthropic</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1411271349%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="978411883%2FMain%2F0" anchor-label="http4k-connect-ai-anthropic-fake" id="978411883%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ai-anthropic-fake/index.html">http4k-connect-ai-anthropic-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="978411883%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1170772750%2FMain%2F0" anchor-label="http4k-connect-ai-azure" id="-1170772750%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ai-azure/index.html">http4k-connect-ai-azure</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1170772750%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="682958158%2FMain%2F0" anchor-label="http4k-connect-ai-azure-fake" id="682958158%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ai-azure-fake/index.html">http4k-connect-ai-azure-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="682958158%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="390511214%2FMain%2F0" anchor-label="http4k-connect-ai-langchain" id="390511214%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ai-langchain/index.html">http4k-connect-ai-langchain</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="390511214%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="5171978%2FMain%2F0" anchor-label="http4k-connect-ai-lmstudio" id="5171978%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ai-lmstudio/index.html">http4k-connect-ai-lmstudio</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="5171978%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1150332470%2FMain%2F0" anchor-label="http4k-connect-ai-lmstudio-fake" id="1150332470%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ai-lmstudio-fake/index.html">http4k-connect-ai-lmstudio-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1150332470%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-625334437%2FMain%2F0" anchor-label="http4k-connect-ai-ollama" id="-625334437%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ai-ollama/index.html">http4k-connect-ai-ollama</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-625334437%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="570653829%2FMain%2F0" anchor-label="http4k-connect-ai-ollama-fake" id="570653829%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ai-ollama-fake/index.html">http4k-connect-ai-ollama-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="570653829%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1440269839%2FMain%2F0" anchor-label="http4k-connect-ai-openai" id="1440269839%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ai-openai/index.html">http4k-connect-ai-openai</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1440269839%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1166021039%2FMain%2F0" anchor-label="http4k-connect-ai-openai-fake" id="-1166021039%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ai-openai-fake/index.html">http4k-connect-ai-openai-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1166021039%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1322070956%2FMain%2F0" anchor-label="http4k-connect-amazon-apprunner" id="-1322070956%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-apprunner/index.html">http4k-connect-amazon-apprunner</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1322070956%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="439880492%2FMain%2F0" anchor-label="http4k-connect-amazon-apprunner-fake" id="439880492%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-apprunner-fake/index.html">http4k-connect-amazon-apprunner-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="439880492%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="627093641%2FMain%2F0" anchor-label="http4k-connect-amazon-cloudfront" id="627093641%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-cloudfront/index.html">http4k-connect-amazon-cloudfront</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="627093641%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1517715433%2FMain%2F0" anchor-label="http4k-connect-amazon-cloudfront-fake" id="-1517715433%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-cloudfront-fake/index.html">http4k-connect-amazon-cloudfront-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1517715433%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1712099165%2FMain%2F0" anchor-label="http4k-connect-amazon-cloudwatch" id="-1712099165%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-cloudwatch/index.html">http4k-connect-amazon-cloudwatch</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1712099165%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="185385021%2FMain%2F0" anchor-label="http4k-connect-amazon-cloudwatch-fake" id="185385021%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-cloudwatch-fake/index.html">http4k-connect-amazon-cloudwatch-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="185385021%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1632529196%2FMain%2F0" anchor-label="http4k-connect-amazon-cloudwatchlogs" id="-1632529196%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-cloudwatchlogs/index.html">http4k-connect-amazon-cloudwatchlogs</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1632529196%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="253924012%2FMain%2F0" anchor-label="http4k-connect-amazon-cloudwatchlogs-fake" id="253924012%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-cloudwatchlogs-fake/index.html">http4k-connect-amazon-cloudwatchlogs-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="253924012%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1536592780%2FMain%2F0" anchor-label="http4k-connect-amazon-cognito" id="-1536592780%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-cognito/index.html">http4k-connect-amazon-cognito</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1536592780%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1652197620%2FMain%2F0" anchor-label="http4k-connect-amazon-cognito-fake" id="-1652197620%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-cognito-fake/index.html">http4k-connect-amazon-cognito-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1652197620%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="193479842%2FMain%2F0" anchor-label="http4k-connect-amazon-containercredentials" id="193479842%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-containercredentials/index.html">http4k-connect-amazon-containercredentials</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="193479842%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="933729182%2FMain%2F0" anchor-label="http4k-connect-amazon-containercredentials-fake" id="933729182%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-containercredentials-fake/index.html">http4k-connect-amazon-containercredentials-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="933729182%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1029923490%2FMain%2F0" anchor-label="http4k-connect-amazon-core" id="-1029923490%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-core/index.html">http4k-connect-amazon-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1029923490%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1736276875%2FMain%2F0" anchor-label="http4k-connect-amazon-dynamodb" id="-1736276875%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-dynamodb/index.html">http4k-connect-amazon-dynamodb</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1736276875%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1605681237%2FMain%2F0" anchor-label="http4k-connect-amazon-dynamodb-fake" id="-1605681237%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-dynamodb-fake/index.html">http4k-connect-amazon-dynamodb-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1605681237%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1728614786%2FMain%2F0" anchor-label="http4k-connect-amazon-eventbridge" id="1728614786%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-eventbridge/index.html">http4k-connect-amazon-eventbridge</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1728614786%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="984896190%2FMain%2F0" anchor-label="http4k-connect-amazon-eventbridge-fake" id="984896190%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-eventbridge-fake/index.html">http4k-connect-amazon-eventbridge-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="984896190%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-218644583%2FMain%2F0" anchor-label="http4k-connect-amazon-evidently" id="-218644583%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-evidently/index.html">http4k-connect-amazon-evidently</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-218644583%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1917934343%2FMain%2F0" anchor-label="http4k-connect-amazon-evidently-fake" id="1917934343%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-evidently-fake/index.html">http4k-connect-amazon-evidently-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1917934343%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-96449490%2FMain%2F0" anchor-label="http4k-connect-amazon-firehose" id="-96449490%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-firehose/index.html">http4k-connect-amazon-firehose</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-96449490%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1664982126%2FMain%2F0" anchor-label="http4k-connect-amazon-firehose-fake" id="-1664982126%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-firehose-fake/index.html">http4k-connect-amazon-firehose-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1664982126%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1741801629%2FMain%2F0" anchor-label="http4k-connect-amazon-iamidentitycenter" id="1741801629%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-iamidentitycenter/index.html">http4k-connect-amazon-iamidentitycenter</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1741801629%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1479038083%2FMain%2F0" anchor-label="http4k-connect-amazon-iamidentitycenter-fake" id="1479038083%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-iamidentitycenter-fake/index.html">http4k-connect-amazon-iamidentitycenter-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1479038083%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1599243225%2FMain%2F0" anchor-label="http4k-connect-amazon-instancemetadata" id="1599243225%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-instancemetadata/index.html">http4k-connect-amazon-instancemetadata</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1599243225%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1857601849%2FMain%2F0" anchor-label="http4k-connect-amazon-instancemetadata-fake" id="-1857601849%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-instancemetadata-fake/index.html">http4k-connect-amazon-instancemetadata-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1857601849%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-2145582956%2FMain%2F0" anchor-label="http4k-connect-amazon-kms" id="-2145582956%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-kms/index.html">http4k-connect-amazon-kms</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2145582956%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="918847212%2FMain%2F0" anchor-label="http4k-connect-amazon-kms-fake" id="918847212%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-kms-fake/index.html">http4k-connect-amazon-kms-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="918847212%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-2014991562%2FMain%2F0" anchor-label="http4k-connect-amazon-lambda" id="-2014991562%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-lambda/index.html">http4k-connect-amazon-lambda</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2014991562%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-129554038%2FMain%2F0" anchor-label="http4k-connect-amazon-lambda-fake" id="-129554038%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-lambda-fake/index.html">http4k-connect-amazon-lambda-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-129554038%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1399273470%2FMain%2F0" anchor-label="http4k-connect-amazon-route53" id="1399273470%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-route53/index.html">http4k-connect-amazon-route53</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1399273470%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1898338754%2FMain%2F0" anchor-label="http4k-connect-amazon-route53-fake" id="1898338754%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-route53-fake/index.html">http4k-connect-amazon-route53-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1898338754%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-823104259%2FMain%2F0" anchor-label="http4k-connect-amazon-s3" id="-823104259%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-s3/index.html">http4k-connect-amazon-s3</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-823104259%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="845245475%2FMain%2F0" anchor-label="http4k-connect-amazon-s3-fake" id="845245475%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-s3-fake/index.html">http4k-connect-amazon-s3-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="845245475%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="620629459%2FMain%2F0" anchor-label="http4k-connect-amazon-secretsmanager" id="620629459%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-secretsmanager/index.html">http4k-connect-amazon-secretsmanager</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="620629459%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="285532429%2FMain%2F0" anchor-label="http4k-connect-amazon-secretsmanager-fake" id="285532429%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-secretsmanager-fake/index.html">http4k-connect-amazon-secretsmanager-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="285532429%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1008514436%2FMain%2F0" anchor-label="http4k-connect-amazon-ses" id="1008514436%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-ses/index.html">http4k-connect-amazon-ses</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1008514436%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-469737476%2FMain%2F0" anchor-label="http4k-connect-amazon-ses-fake" id="-469737476%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-ses-fake/index.html">http4k-connect-amazon-ses-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-469737476%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1073105997%2FMain%2F0" anchor-label="http4k-connect-amazon-sns" id="1073105997%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-sns/index.html">http4k-connect-amazon-sns</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1073105997%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1380802861%2FMain%2F0" anchor-label="http4k-connect-amazon-sns-fake" id="-1380802861%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-sns-fake/index.html">http4k-connect-amazon-sns-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1380802861%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-337019248%2FMain%2F0" anchor-label="http4k-connect-amazon-sqs" id="-337019248%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-sqs/index.html">http4k-connect-amazon-sqs</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-337019248%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1178820208%2FMain%2F0" anchor-label="http4k-connect-amazon-sqs-fake" id="1178820208%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-sqs-fake/index.html">http4k-connect-amazon-sqs-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1178820208%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1747144493%2FMain%2F0" anchor-label="http4k-connect-amazon-sts" id="-1747144493%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-sts/index.html">http4k-connect-amazon-sts</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1747144493%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-556524019%2FMain%2F0" anchor-label="http4k-connect-amazon-sts-fake" id="-556524019%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-sts-fake/index.html">http4k-connect-amazon-sts-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-556524019%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="915379764%2FMain%2F0" anchor-label="http4k-connect-amazon-systemsmanager" id="915379764%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-systemsmanager/index.html">http4k-connect-amazon-systemsmanager</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="915379764%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="179203404%2FMain%2F0" anchor-label="http4k-connect-amazon-systemsmanager-fake" id="179203404%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-amazon-systemsmanager-fake/index.html">http4k-connect-amazon-systemsmanager-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="179203404%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="792452381%2FMain%2F0" anchor-label="http4k-connect-core" id="792452381%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-core/index.html">http4k-connect-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="792452381%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="2094941849%2FMain%2F0" anchor-label="http4k-connect-github" id="2094941849%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-github/index.html">http4k-connect-github</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2094941849%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-976415487%2FMain%2F0" anchor-label="http4k-connect-gitlab" id="-976415487%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-gitlab/index.html">http4k-connect-gitlab</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-976415487%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="2092678540%2FMain%2F0" anchor-label="http4k-connect-google-analytics-core" id="2092678540%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-google-analytics-core/index.html">http4k-connect-google-analytics-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2092678540%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1357527171%2FMain%2F0" anchor-label="http4k-connect-google-analytics-ga4" id="-1357527171%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-google-analytics-ga4/index.html">http4k-connect-google-analytics-ga4</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1357527171%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="267428259%2FMain%2F0" anchor-label="http4k-connect-google-analytics-ga4-fake" id="267428259%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-google-analytics-ga4-fake/index.html">http4k-connect-google-analytics-ga4-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="267428259%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1153749439%2FMain%2F0" anchor-label="http4k-connect-google-analytics-ua" id="1153749439%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-google-analytics-ua/index.html">http4k-connect-google-analytics-ua</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1153749439%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="817344673%2FMain%2F0" anchor-label="http4k-connect-google-analytics-ua-fake" id="817344673%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-google-analytics-ua-fake/index.html">http4k-connect-google-analytics-ua-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="817344673%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1471556127%2FMain%2F0" anchor-label="http4k-connect-kafka-rest" id="-1471556127%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-kafka-rest/index.html">http4k-connect-kafka-rest</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1471556127%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1169813951%2FMain%2F0" anchor-label="http4k-connect-kafka-rest-fake" id="1169813951%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-kafka-rest-fake/index.html">http4k-connect-kafka-rest-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1169813951%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="708372247%2FMain%2F0" anchor-label="http4k-connect-kafka-schemaregistry" id="708372247%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-kafka-schemaregistry/index.html">http4k-connect-kafka-schemaregistry</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="708372247%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-5033399%2FMain%2F0" anchor-label="http4k-connect-kafka-schemaregistry-fake" id="-5033399%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-kafka-schemaregistry-fake/index.html">http4k-connect-kafka-schemaregistry-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-5033399%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-130690728%2FMain%2F0" anchor-label="http4k-connect-ksp-generator" id="-130690728%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ksp-generator/index.html">http4k-connect-ksp-generator</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-130690728%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1027740248%2FMain%2F0" anchor-label="http4k-connect-mattermost" id="1027740248%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-mattermost/index.html">http4k-connect-mattermost</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1027740248%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="966256552%2FMain%2F0" anchor-label="http4k-connect-mattermost-fake" id="966256552%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-mattermost-fake/index.html">http4k-connect-mattermost-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="966256552%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1024010154%2FMain%2F0" anchor-label="http4k-connect-slack" id="-1024010154%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-slack/index.html">http4k-connect-slack</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1024010154%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="8728682%2FMain%2F0" anchor-label="http4k-connect-slack-fake" id="8728682%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-slack-fake/index.html">http4k-connect-slack-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="8728682%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1292884405%2FMain%2F0" anchor-label="http4k-connect-storage-core" id="-1292884405%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-storage-core/index.html">http4k-connect-storage-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1292884405%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1131580030%2FMain%2F0" anchor-label="http4k-connect-storage-http" id="-1131580030%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-storage-http/index.html">http4k-connect-storage-http</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1131580030%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-496999825%2FMain%2F0" anchor-label="http4k-connect-storage-jdbc" id="-496999825%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-storage-jdbc/index.html">http4k-connect-storage-jdbc</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-496999825%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-854336163%2FMain%2F0" anchor-label="http4k-connect-storage-redis" id="-854336163%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-storage-redis/index.html">http4k-connect-storage-redis</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-854336163%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1987792170%2FMain%2F0" anchor-label="http4k-connect-storage-s3" id="1987792170%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-storage-s3/index.html">http4k-connect-storage-s3</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1987792170%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-2102174528%2FMain%2F0" anchor-label="http4k-core" id="-2102174528%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-core/index.html">http4k-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2102174528%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1448940780%2FMain%2F0" anchor-label="http4k-format-argo" id="-1448940780%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-argo/index.html">http4k-format-argo</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1448940780%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1915873522%2FMain%2F0" anchor-label="http4k-format-core" id="-1915873522%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-core/index.html">http4k-format-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1915873522%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="191122802%2FMain%2F0" anchor-label="http4k-format-dataframe" id="191122802%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-dataframe/index.html">http4k-format-dataframe</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="191122802%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1526890594%2FMain%2F0" anchor-label="http4k-format-gson" id="1526890594%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-gson/index.html">http4k-format-gson</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1526890594%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-728142046%2FMain%2F0" anchor-label="http4k-format-jackson" id="-728142046%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-jackson/index.html">http4k-format-jackson</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-728142046%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1107913225%2FMain%2F0" anchor-label="http4k-format-jackson-csv" id="1107913225%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-jackson-csv/index.html">http4k-format-jackson-csv</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1107913225%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1731501800%2FMain%2F0" anchor-label="http4k-format-jackson-xml" id="-1731501800%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-jackson-xml/index.html">http4k-format-jackson-xml</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1731501800%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-2018617844%2FMain%2F0" anchor-label="http4k-format-jackson-yaml" id="-2018617844%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-jackson-yaml/index.html">http4k-format-jackson-yaml</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2018617844%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1881215626%2FMain%2F0" anchor-label="http4k-format-klaxon" id="-1881215626%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-klaxon/index.html">http4k-format-klaxon</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1881215626%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1757887197%2FMain%2F0" anchor-label="http4k-format-kondor-json" id="1757887197%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-kondor-json/index.html">http4k-format-kondor-json</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1757887197%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-287107301%2FMain%2F0" anchor-label="http4k-format-kotlinx-serialization" id="-287107301%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-kotlinx-serialization/index.html">http4k-format-kotlinx-serialization</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-287107301%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1205553533%2FMain%2F0" anchor-label="http4k-format-moshi" id="-1205553533%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-moshi/index.html">http4k-format-moshi</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1205553533%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-258112693%2FMain%2F0" anchor-label="http4k-format-moshi-yaml" id="-258112693%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-moshi-yaml/index.html">http4k-format-moshi-yaml</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-258112693%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-22435106%2FMain%2F0" anchor-label="http4k-format-xml" id="-22435106%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-format-xml/index.html">http4k-format-xml</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-22435106%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="561879554%2FMain%2F0" anchor-label="http4k-incubator" id="561879554%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-incubator/index.html">http4k-incubator</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="561879554%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1105583541%2FMain%2F0" anchor-label="http4k-incubator-db" id="1105583541%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-incubator-db/index.html">http4k-incubator-db</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1105583541%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="2083890807%2FMain%2F0" anchor-label="http4k-multipart" id="2083890807%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-multipart/index.html">http4k-multipart</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2083890807%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1433312229%2FMain%2F0" anchor-label="http4k-ops-core" id="1433312229%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ops-core/index.html">http4k-ops-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1433312229%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="2017191897%2FMain%2F0" anchor-label="http4k-ops-failsafe" id="2017191897%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ops-failsafe/index.html">http4k-ops-failsafe</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2017191897%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="943958207%2FMain%2F0" anchor-label="http4k-ops-micrometer" id="943958207%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ops-micrometer/index.html">http4k-ops-micrometer</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="943958207%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-750873265%2FMain%2F0" anchor-label="http4k-ops-opentelemetry" id="-750873265%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ops-opentelemetry/index.html">http4k-ops-opentelemetry</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-750873265%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="483656765%2FMain%2F0" anchor-label="http4k-ops-resilience4j" id="483656765%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ops-resilience4j/index.html">http4k-ops-resilience4j</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="483656765%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1063527484%2FMain%2F0" anchor-label="http4k-platform-aws" id="1063527484%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-platform-aws/index.html">http4k-platform-aws</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1063527484%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1720830698%2FMain%2F0" anchor-label="http4k-platform-azure" id="1720830698%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-platform-azure/index.html">http4k-platform-azure</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1720830698%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="556700170%2FMain%2F0" anchor-label="http4k-platform-core" id="556700170%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-platform-core/index.html">http4k-platform-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="556700170%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1684604933%2FMain%2F0" anchor-label="http4k-platform-gcp" id="1684604933%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-platform-gcp/index.html">http4k-platform-gcp</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1684604933%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1935978893%2FMain%2F0" anchor-label="http4k-platform-k8s" id="-1935978893%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-platform-k8s/index.html">http4k-platform-k8s</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1935978893%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="938333442%2FMain%2F0" anchor-label="http4k-realtime-core" id="938333442%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-realtime-core/index.html">http4k-realtime-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="938333442%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="10451991%2FMain%2F0" anchor-label="http4k-security-core" id="10451991%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-security-core/index.html">http4k-security-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="10451991%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="138394706%2FMain%2F0" anchor-label="http4k-security-digest" id="138394706%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-security-digest/index.html">http4k-security-digest</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="138394706%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-300920971%2FMain%2F0" anchor-label="http4k-security-oauth" id="-300920971%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-security-oauth/index.html">http4k-security-oauth</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-300920971%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="562746507%2FMain%2F0" anchor-label="http4k-server-apache" id="562746507%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-server-apache/index.html">http4k-server-apache</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="562746507%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1770093213%2FMain%2F0" anchor-label="http4k-server-apache4" id="-1770093213%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-server-apache4/index.html">http4k-server-apache4</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1770093213%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1312670624%2FMain%2F0" anchor-label="http4k-server-helidon" id="1312670624%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-server-helidon/index.html">http4k-server-helidon</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1312670624%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1499244587%2FMain%2F0" anchor-label="http4k-server-jetty" id="1499244587%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-server-jetty/index.html">http4k-server-jetty</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1499244587%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1725091957%2FMain%2F0" anchor-label="http4k-server-jetty11" id="-1725091957%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-server-jetty11/index.html">http4k-server-jetty11</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1725091957%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1332294060%2FMain%2F0" anchor-label="http4k-server-ktorcio" id="1332294060%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-server-ktorcio/index.html">http4k-server-ktorcio</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1332294060%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-640347469%2FMain%2F0" anchor-label="http4k-server-ktornetty" id="-640347469%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-server-ktornetty/index.html">http4k-server-ktornetty</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-640347469%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1544509095%2FMain%2F0" anchor-label="http4k-server-netty" id="1544509095%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-server-netty/index.html">http4k-server-netty</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1544509095%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-347740853%2FMain%2F0" anchor-label="http4k-server-ratpack" id="-347740853%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-server-ratpack/index.html">http4k-server-ratpack</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-347740853%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="796707093%2FMain%2F0" anchor-label="http4k-server-undertow" id="796707093%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-server-undertow/index.html">http4k-server-undertow</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="796707093%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1406717794%2FMain%2F0" anchor-label="http4k-server-websocket" id="1406717794%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-server-websocket/index.html">http4k-server-websocket</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1406717794%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-360550447%2FMain%2F0" anchor-label="http4k-template-core" id="-360550447%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-template-core/index.html">http4k-template-core</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-360550447%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-781944726%2FMain%2F0" anchor-label="http4k-template-freemarker" id="-781944726%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-template-freemarker/index.html">http4k-template-freemarker</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-781944726%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1341640552%2FMain%2F0" anchor-label="http4k-template-handlebars" id="1341640552%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-template-handlebars/index.html">http4k-template-handlebars</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1341640552%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1806862857%2FMain%2F0" anchor-label="http4k-template-jte" id="-1806862857%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-template-jte/index.html">http4k-template-jte</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1806862857%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1351254686%2FMain%2F0" anchor-label="http4k-template-pebble" id="-1351254686%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-template-pebble/index.html">http4k-template-pebble</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1351254686%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-9017478%2FMain%2F0" anchor-label="http4k-template-pug4j" id="-9017478%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-template-pug4j/index.html">http4k-template-pug4j</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-9017478%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="125873214%2FMain%2F0" anchor-label="http4k-template-rocker" id="125873214%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-template-rocker/index.html">http4k-template-rocker</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="125873214%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-102129705%2FMain%2F0" anchor-label="http4k-template-thymeleaf" id="-102129705%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-template-thymeleaf/index.html">http4k-template-thymeleaf</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-102129705%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1717614305%2FMain%2F0" anchor-label="http4k-testing-approval" id="-1717614305%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-testing-approval/index.html">http4k-testing-approval</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1717614305%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1542221696%2FMain%2F0" anchor-label="http4k-testing-chaos" id="-1542221696%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-testing-chaos/index.html">http4k-testing-chaos</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1542221696%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1623890871%2FMain%2F0" anchor-label="http4k-testing-hamkrest" id="1623890871%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-testing-hamkrest/index.html">http4k-testing-hamkrest</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1623890871%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="807710476%2FMain%2F0" anchor-label="http4k-testing-kotest" id="807710476%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-testing-kotest/index.html">http4k-testing-kotest</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="807710476%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1182152617%2FMain%2F0" anchor-label="http4k-testing-playwright" id="1182152617%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-testing-playwright/index.html">http4k-testing-playwright</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1182152617%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-893362539%2FMain%2F0" anchor-label="http4k-testing-powerassert" id="-893362539%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-testing-powerassert/index.html">http4k-testing-powerassert</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-893362539%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-244885706%2FMain%2F0" anchor-label="http4k-testing-servirtium" id="-244885706%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-testing-servirtium/index.html">http4k-testing-servirtium</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-244885706%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-2132403807%2FMain%2F0" anchor-label="http4k-testing-strikt" id="-2132403807%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-testing-strikt/index.html">http4k-testing-strikt</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2132403807%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="1249430867%2FMain%2F0" anchor-label="http4k-testing-tracerbullet" id="1249430867%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-testing-tracerbullet/index.html">http4k-testing-tracerbullet</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1249430867%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-308828284%2FMain%2F0" anchor-label="http4k-testing-webdriver" id="-308828284%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-testing-webdriver/index.html">http4k-testing-webdriver</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-308828284%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1564256273%2FMain%2F0" anchor-label="http4k-tools-hotreload" id="-1564256273%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-tools-hotreload/index.html">http4k-tools-hotreload</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1564256273%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-619663457%2FMain%2F0" anchor-label="http4k-tools-traffic-capture" id="-619663457%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-tools-traffic-capture/index.html">http4k-tools-traffic-capture</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-619663457%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-29650998%2FMain%2F0" anchor-label="http4k-web-datastar" id="-29650998%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-web-datastar/index.html">http4k-web-datastar</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-29650998%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1915427857%2FMain%2F0" anchor-label="http4k-web-htmx" id="-1915427857%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-web-htmx/index.html">http4k-web-htmx</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1915427857%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1846746228%2FMain%2F0" anchor-label="http4k-webhook" id="-1846746228%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-webhook/index.html">http4k-webhook</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1846746228%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

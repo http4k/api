@@ -1,0 +1,433 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.connect.amazon.s3</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-connect-amazon-s3/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-connect-amazon-s3/main" data-filter=":http4k-connect-amazon-s3/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-connect-amazon-s3::org.http4k.connect.amazon.s3////PointingToDeclaration//655854552">
+  <div class="breadcrumbs"><a href="../index.html">http4k-connect-amazon-s3</a><span class="delimiter">/</span><span class="current">org.http4k.connect.amazon.s3</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="101975555%2FClasslikes%2F655854552" anchor-label="S3" id="101975555%2FClasslikes%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s3/index.html"><span><span>S3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="101975555%2FClasslikes%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-s3/index.html">S3</a></div><div class="brief "><p class="paragraph">Docs: https://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="664301%2FClasslikes%2F655854552" anchor-label="S3Action" id="664301%2FClasslikes%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s3-action/index.html"><span><span>S3Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="664301%2FClasslikes%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-s3-action/index.html">S3Action</a><span class="token operator">&lt;</span><a href="-s3-action/index.html">R</a><span class="token operator">&gt;</span> : <a href="../../http4k-connect-core/org.http4k.connect/-action/index.html">Action</a><span class="token operator">&lt;</span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="-s3-action/index.html">R</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="307767737%2FClasslikes%2F655854552" anchor-label="S3Bucket" id="307767737%2FClasslikes%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s3-bucket/index.html"><span><span>S3Bucket</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="307767737%2FClasslikes%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-s3-bucket/index.html">S3Bucket</a></div><div class="brief "><p class="paragraph">Interface for bucket-specific S3 operations</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-552196573%2FClasslikes%2F655854552" anchor-label="S3BucketAction" id="-552196573%2FClasslikes%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s3-bucket-action/index.html"><span>S3Bucket</span><wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-552196573%2FClasslikes%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-s3-bucket-action/index.html">S3BucketAction</a><span class="token operator">&lt;</span><a href="-s3-bucket-action/index.html">R</a><span class="token operator">&gt;</span> : <a href="../../http4k-connect-core/org.http4k.connect/-action/index.html">Action</a><span class="token operator">&lt;</span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="-s3-bucket-action/index.html">R</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="EXTENSION_FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="1172109404%2FFunctions%2F655854552" anchor-label="copyObject" id="1172109404%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="copy-object.html"><span>copy</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1172109404%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/index.html">S3Bucket</a><span class="token punctuation">.</span><a href="copy-object.html"><span class="token function">copyObject</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sourceBucket<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-name/index.html">BucketName</a><span class="token punctuation">, </span></span><span class="parameter ">source<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-key/index.html">BucketKey</a><span class="token punctuation">, </span></span><span class="parameter ">destination<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-key/index.html">BucketKey</a><span class="token punctuation">, </span></span><span class="parameter ">storageClass<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-storage-class/index.html">StorageClass</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">tags<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-tag/index.html">Tag</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">taggingDirective<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.action/-tagging-directive/index.html">TaggingDirective</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">headers<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-162262908%2FFunctions%2F655854552" anchor-label="createBucket" id="-162262908%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-bucket.html"><span>create</span><wbr><span><span>Bucket</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-162262908%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3/index.html">S3</a><span class="token punctuation">.</span><a href="create-bucket.html"><span class="token function">createBucket</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bucketName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-name/index.html">BucketName</a><span class="token punctuation">, </span></span><span class="parameter ">region<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-region/index.html">Region</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1642267028%2FFunctions%2F655854552" anchor-label="deleteBucket" id="-1642267028%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-bucket.html"><span>delete</span><wbr><span><span>Bucket</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1642267028%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/index.html">S3Bucket</a><span class="token punctuation">.</span><a href="delete-bucket.html"><span class="token function">deleteBucket</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2085828866%2FFunctions%2F655854552" anchor-label="deleteObject" id="-2085828866%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-object.html"><span>delete</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2085828866%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/index.html">S3Bucket</a><span class="token punctuation">.</span><a href="delete-object.html"><span class="token function">deleteObject</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-key/index.html">BucketKey</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="93069917%2FFunctions%2F655854552" anchor-label="deleteObjectTagging" id="93069917%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-object-tagging.html"><span>delete</span><wbr><span>Object</span><wbr><span><span>Tagging</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="93069917%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/index.html">S3Bucket</a><span class="token punctuation">.</span><a href="delete-object-tagging.html"><span class="token function">deleteObjectTagging</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-key/index.html">BucketKey</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1683015097%2FFunctions%2F655854552" anchor-label="getObject" id="-1683015097%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-object.html"><span>get</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1683015097%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/index.html">S3Bucket</a><span class="token punctuation">.</span><a href="get-object.html"><span class="token function">getObject</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-key/index.html">BucketKey</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/InputStream.html">InputStream</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="229120756%2FFunctions%2F655854552" anchor-label="getObjectTagging" id="229120756%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-object-tagging.html"><span>get</span><wbr><span>Object</span><wbr><span><span>Tagging</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="229120756%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/index.html">S3Bucket</a><span class="token punctuation">.</span><a href="get-object-tagging.html"><span class="token function">getObjectTagging</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-key/index.html">BucketKey</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-tag/index.html">Tag</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1247391488%2FFunctions%2F655854552" anchor-label="headBucket" id="-1247391488%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="head-bucket.html"><span>head</span><wbr><span><span>Bucket</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1247391488%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/index.html">S3Bucket</a><span class="token punctuation">.</span><a href="head-bucket.html"><span class="token function">headBucket</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expectedBucketOwner<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1266308467%2FFunctions%2F655854552" anchor-label="headObject" id="1266308467%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="head-object.html"><span>head</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1266308467%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/index.html">S3Bucket</a><span class="token punctuation">.</span><a href="head-object.html"><span class="token function">headObject</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-key/index.html">BucketKey</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.s3.model/-object-details/index.html">ObjectDetails</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1124491536%2FFunctions%2F655854552" anchor-label="Http" id="1124491536%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-http.html"><span><span>Http</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1124491536%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3/-companion/index.html">S3.Companion</a><span class="token punctuation">.</span><a href="-http.html"><span class="token function">Http</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">env<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>getenv()<span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token operator"> = </span>JavaHttpClient()<span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token operator"> = </span>systemUTC()<span class="token punctuation">, </span></span><span class="parameter ">credentialsProvider<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-credentials-provider/index.html">CredentialsProvider</a><span class="token operator"> = </span>CredentialsProvider.Environment(env)<span class="token punctuation">, </span></span><span class="parameter ">overrideEndpoint<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-s3/index.html">S3</a></div><div class="brief "><p class="paragraph">Convenience function to create a S3 from a System environment</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3/-companion/index.html">S3.Companion</a><span class="token punctuation">.</span><a href="-http.html"><span class="token function">Http</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">env<span class="token operator">: </span><a href="../../http4k-config/org.http4k.config/-environment/index.html">Environment</a><span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token operator"> = </span>JavaHttpClient()<span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token operator"> = </span>systemUTC()<span class="token punctuation">, </span></span><span class="parameter ">credentialsProvider<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-credentials-provider/index.html">CredentialsProvider</a><span class="token operator"> = </span>CredentialsProvider.Environment(env)<span class="token punctuation">, </span></span><span class="parameter ">overrideEndpoint<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-s3/index.html">S3</a></div><div class="brief "><p class="paragraph">Convenience function to create a S3 from an http4k Environment</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3/-companion/index.html">S3.Companion</a><span class="token punctuation">.</span><a href="-http.html"><span class="token function">Http</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">credentialsProvider<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-credentials-provider/index.html">CredentialsProvider</a><span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token operator"> = </span>JavaHttpClient()<span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token operator"> = </span>systemUTC()<span class="token punctuation">, </span></span><span class="parameter ">payloadMode<span class="token operator">: </span><a href="../../http4k-platform-aws/org.http4k.filter/-payload/-mode/index.html">Payload.Mode</a><span class="token operator"> = </span>Payload.Mode.Signed<span class="token punctuation">, </span></span><span class="parameter ">overrideEndpoint<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-s3/index.html">S3</a></div><div class="brief "><p class="paragraph">Standard HTTP implementation of S3</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/-companion/index.html">S3Bucket.Companion</a><span class="token punctuation">.</span><a href="-http.html"><span class="token function">Http</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bucketName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-name/index.html">BucketName</a><span class="token punctuation">, </span></span><span class="parameter ">bucketRegion<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-region/index.html">Region</a><span class="token punctuation">, </span></span><span class="parameter ">credentialsProvider<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-credentials-provider/index.html">CredentialsProvider</a><span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token operator"> = </span>JavaHttpClient()<span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token operator"> = </span>Clock.systemUTC()<span class="token punctuation">, </span></span><span class="parameter ">payloadMode<span class="token operator">: </span><a href="../../http4k-platform-aws/org.http4k.filter/-payload/-mode/index.html">Payload.Mode</a><span class="token operator"> = </span>Payload.Mode.Signed<span class="token punctuation">, </span></span><span class="parameter ">overrideEndpoint<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">forcePathStyle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-s3-bucket/index.html">S3Bucket</a></div><div class="brief "><p class="paragraph">Standard HTTP implementation of S3Bucket</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/-companion/index.html">S3Bucket.Companion</a><span class="token punctuation">.</span><a href="-http.html"><span class="token function">Http</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bucketName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-name/index.html">BucketName</a><span class="token punctuation">, </span></span><span class="parameter ">bucketRegion<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-region/index.html">Region</a><span class="token punctuation">, </span></span><span class="parameter ">env<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>System.getenv()<span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token operator"> = </span>JavaHttpClient()<span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token operator"> = </span>Clock.systemUTC()<span class="token punctuation">, </span></span><span class="parameter ">payloadMode<span class="token operator">: </span><a href="../../http4k-platform-aws/org.http4k.filter/-payload/-mode/index.html">Payload.Mode</a><span class="token operator"> = </span>Payload.Mode.Signed<span class="token punctuation">, </span></span><span class="parameter ">overrideEndpoint<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">forcePathStyle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">credentialsProvider<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-credentials-provider/index.html">CredentialsProvider</a><span class="token operator"> = </span>CredentialsProvider.Environment(env)</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-s3-bucket/index.html">S3Bucket</a></div><div class="brief "><p class="paragraph">Convenience function to create a S3Bucket from a System environment</p></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/-companion/index.html">S3Bucket.Companion</a><span class="token punctuation">.</span><a href="-http.html"><span class="token function">Http</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bucketName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-name/index.html">BucketName</a><span class="token punctuation">, </span></span><span class="parameter ">bucketRegion<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-region/index.html">Region</a><span class="token punctuation">, </span></span><span class="parameter ">env<span class="token operator">: </span><a href="../../http4k-config/org.http4k.config/-environment/index.html">Environment</a><span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token operator"> = </span>JavaHttpClient()<span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token operator"> = </span>Clock.systemUTC()<span class="token punctuation">, </span></span><span class="parameter ">payloadMode<span class="token operator">: </span><a href="../../http4k-platform-aws/org.http4k.filter/-payload/-mode/index.html">Payload.Mode</a><span class="token operator"> = </span>Payload.Mode.Signed<span class="token punctuation">, </span></span><span class="parameter ">overrideEndpoint<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">forcePathStyle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">credentialsProvider<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-credentials-provider/index.html">CredentialsProvider</a><span class="token operator"> = </span>CredentialsProvider.Environment(env)</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-s3-bucket/index.html">S3Bucket</a></div><div class="brief "><p class="paragraph">Convenience function to create a S3Bucket from an http4k Environment</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1105230698%2FFunctions%2F655854552" anchor-label="listBuckets" id="-1105230698%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="list-buckets.html"><span>list</span><wbr><span><span>Buckets</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1105230698%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3/index.html">S3</a><span class="token punctuation">.</span><a href="list-buckets.html"><span class="token function">listBuckets</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.s3.action/-bucket-list/index.html">BucketList</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1810137426%2FFunctions%2F655854552" anchor-label="listObjectsV2" id="1810137426%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="list-objects-v2.html"><span>list</span><wbr><span>Objects</span><wbr><span><span>V2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1810137426%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/index.html">S3Bucket</a><span class="token punctuation">.</span><a href="list-objects-v2.html"><span class="token function">listObjectsV2</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">continuationToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">maxKeys<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">prefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">delimiter<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">encodingType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">expectedBucketOwner<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">requestPayer<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.s3.action/-object-list/index.html">ObjectList</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1063263033%2FFunctions%2F655854552" anchor-label="listObjectsV2Paginated" id="-1063263033%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="list-objects-v2-paginated.html"><span>list</span><wbr><span>Objects</span><wbr><span><span>V2Paginated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1063263033%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/index.html">S3Bucket</a><span class="token punctuation">.</span><a href="list-objects-v2-paginated.html"><span class="token function">listObjectsV2Paginated</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">continuationToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">maxKeys<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">prefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">delimiter<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">encodingType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">expectedBucketOwner<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">requestPayer<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.sequences/-sequence/index.html">Sequence</a><span class="token operator">&lt;</span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.s3.model/-object-summary/index.html">ObjectSummary</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1925491333%2FFunctions%2F655854552" anchor-label="putObject" id="-1925491333%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-object.html"><span>put</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1925491333%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/index.html">S3Bucket</a><span class="token punctuation">.</span><a href="put-object.html"><span class="token function">putObject</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-key/index.html">BucketKey</a><span class="token punctuation">, </span></span><span class="parameter ">content<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/InputStream.html">InputStream</a><span class="token punctuation">, </span></span><span class="parameter ">headers<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">tags<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-tag/index.html">Tag</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">storageClass<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-storage-class/index.html">StorageClass</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1434575615%2FFunctions%2F655854552" anchor-label="putObjectTagging" id="1434575615%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-object-tagging.html"><span>put</span><wbr><span>Object</span><wbr><span><span>Tagging</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1434575615%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/index.html">S3Bucket</a><span class="token punctuation">.</span><a href="put-object-tagging.html"><span class="token function">putObjectTagging</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-key/index.html">BucketKey</a><span class="token punctuation">, </span></span><span class="parameter ">tags<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-tag/index.html">Tag</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1745403838%2FFunctions%2F655854552" anchor-label="restoreObject" id="-1745403838%2FFunctions%2F655854552" data-filterable-set=":http4k-connect-amazon-s3/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-s3/main" data-filterable-set=":http4k-connect-amazon-s3/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="restore-object.html"><span>restore</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1745403838%2FFunctions%2F655854552"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-s3/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-s3-bucket/index.html">S3Bucket</a><span class="token punctuation">.</span><a href="restore-object.html"><span class="token function">restoreObject</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-bucket-key/index.html">BucketKey</a><span class="token punctuation">, </span></span><span class="parameter ">days<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">tier<span class="token operator">: </span><a href="../org.http4k.connect.amazon.s3.model/-restore-tier/index.html">RestoreTier</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

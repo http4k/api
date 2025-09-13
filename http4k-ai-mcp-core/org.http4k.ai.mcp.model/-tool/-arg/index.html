@@ -1,0 +1,565 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Arg</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../../../images/logo-icon.svg">
+<link href="../../../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-ai-mcp-core/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-ai-mcp-core/main" data-filter=":http4k-ai-mcp-core/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="http4k-ai-mcp-core::org.http4k.ai.mcp.model/Tool.Arg///PointingToDeclaration//1578789545">
+  <div class="breadcrumbs"><a href="../../../index.html">http4k-ai-mcp-core</a><span class="delimiter">/</span><a href="../../index.html">org.http4k.ai.mcp.model</a><span class="delimiter">/</span><a href="../index.html">Tool</a><span class="delimiter">/</span><span class="current">Arg</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Arg</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="index.html">Arg</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/pro/ai/mcp/core/src/main/kotlin/org/http4k/ai/mcp/model/Tool.kt#L56">source</a>)</span></span></div><p class="paragraph">A typesafe tool argument lens. Use the extension functions below to create a lens for a specific type.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="EXTENSION_FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-776491113%2FFunctions%2F1578789545" anchor-label="auto" id="-776491113%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../../org.http4k.ai.mcp.util/-configurable-mcp-json/auto.html"><span><span>auto</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-776491113%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../../org.http4k.ai.mcp.util/-configurable-mcp-json/auto.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../../org.http4k.ai.mcp.util/-configurable-mcp-json/auto.html"><span class="token function">auto</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">example<span class="token operator">: </span><a href="../../../org.http4k.ai.mcp.util/-configurable-mcp-json/auto.html">T</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="../../../org.http4k.ai.mcp.util/-configurable-mcp-json/auto.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Auto-marshalled lens for a tool argument. You will need Kotlin reflection on the classpath for this to work.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="229472756%2FFunctions%2F1578789545" anchor-label="base64" id="229472756%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../base64.html"><span><span>base64</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="229472756%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../base64.html"><span class="token function">base64</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1038686499%2FFunctions%2F1578789545" anchor-label="boolean" id="1038686499%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../boolean.html"><span><span>boolean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1038686499%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../boolean.html"><span class="token function">boolean</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1404887173%2FFunctions%2F1578789545" anchor-label="dateTime" id="-1404887173%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../date-time.html"><span>date</span><wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1404887173%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../date-time.html"><span class="token function">dateTime</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">formatter<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a><span class="token operator"> = </span>ISO_LOCAL_DATE_TIME</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/LocalDateTime.html">LocalDateTime</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-221177422%2FFunctions%2F1578789545" anchor-label="double" id="-221177422%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../double.html"><span><span>double</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-221177422%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../double.html"><span class="token function">double</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="736133711%2FFunctions%2F1578789545" anchor-label="duration" id="736133711%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../duration.html"><span><span>duration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="736133711%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../duration.html"><span class="token function">duration</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html">Duration</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1517402498%2FFunctions%2F1578789545" anchor-label="enum" id="1517402498%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../enum.html"><span><span>enum</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1517402498%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../enum.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="../../enum.html">T</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../enum.html"><span class="token function">enum</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="../../enum.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-449580433%2FFunctions%2F1578789545" anchor-label="float" id="-449580433%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../float.html"><span><span>float</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-449580433%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../float.html"><span class="token function">float</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-228444790%2FFunctions%2F1578789545" anchor-label="instant" id="-228444790%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../instant.html"><span><span>instant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-228444790%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../instant.html"><span class="token function">instant</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Instant.html">Instant</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1289863484%2FFunctions%2F1578789545" anchor-label="int" id="1289863484%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../int.html"><span><span>int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1289863484%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../int.html"><span class="token function">int</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1810237061%2FFunctions%2F1578789545" anchor-label="localDate" id="1810237061%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../local-date.html"><span>local</span><wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1810237061%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../local-date.html"><span class="token function">localDate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">formatter<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a><span class="token operator"> = </span>ISO_LOCAL_DATE</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/LocalDate.html">LocalDate</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1828988745%2FFunctions%2F1578789545" anchor-label="locale" id="1828988745%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../locale.html"><span><span>locale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1828988745%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../locale.html"><span class="token function">locale</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Locale.html">Locale</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="647766022%2FFunctions%2F1578789545" anchor-label="localTime" id="647766022%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../local-time.html"><span>local</span><wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="647766022%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../local-time.html"><span class="token function">localTime</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">formatter<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a><span class="token operator"> = </span>ISO_LOCAL_TIME</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/LocalTime.html">LocalTime</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1222261657%2FFunctions%2F1578789545" anchor-label="long" id="-1222261657%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../long.html"><span><span>long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1222261657%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../long.html"><span class="token function">long</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1916012011%2FFunctions%2F1578789545" anchor-label="nonBlankString" id="1916012011%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../non-blank-string.html"><span>non</span><wbr><span>Blank</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1916012011%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../non-blank-string.html"><span class="token function">nonBlankString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="399734482%2FFunctions%2F1578789545" anchor-label="nonEmptyString" id="399734482%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../non-empty-string.html"><span>non</span><wbr><span>Empty</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="399734482%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../non-empty-string.html"><span class="token function">nonEmptyString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1342370024%2FFunctions%2F1578789545" anchor-label="offsetDateTime" id="1342370024%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../offset-date-time.html"><span>offset</span><wbr><span>Date</span><wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1342370024%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../offset-date-time.html"><span class="token function">offsetDateTime</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">formatter<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a><span class="token operator"> = </span>ISO_OFFSET_DATE_TIME</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/OffsetDateTime.html">OffsetDateTime</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="529265398%2FFunctions%2F1578789545" anchor-label="offsetTime" id="529265398%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../offset-time.html"><span>offset</span><wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="529265398%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../offset-time.html"><span class="token function">offsetTime</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">formatter<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a><span class="token operator"> = </span>ISO_OFFSET_TIME</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/OffsetTime.html">OffsetTime</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="856223170%2FFunctions%2F1578789545" anchor-label="period" id="856223170%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../period.html"><span><span>period</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="856223170%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../period.html"><span class="token function">period</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Period.html">Period</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1739983195%2FFunctions%2F1578789545" anchor-label="regexObject" id="-1739983195%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../regex-object.html"><span>regex</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1739983195%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../regex-object.html"><span class="token function">regexObject</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/-regex/index.html">Regex</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1399946610%2FFunctions%2F1578789545" anchor-label="string" id="1399946610%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../string.html"><span><span>string</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1399946610%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../string.html"><span class="token function">string</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Typesafe extension functions for creating tool argument lenses.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-910786977%2FFunctions%2F1578789545" anchor-label="uri" id="-910786977%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../uri.html"><span><span>uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-910786977%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../uri.html"><span class="token function">uri</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="../../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="209567396%2FFunctions%2F1578789545" anchor-label="urlEncoded" id="209567396%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../url-encoded.html"><span>url</span><wbr><span><span>Encoded</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="209567396%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../url-encoded.html"><span class="token function">urlEncoded</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1862985736%2FFunctions%2F1578789545" anchor-label="uuid" id="1862985736%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../uuid.html"><span><span>uuid</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1862985736%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../uuid.html"><span class="token function">uuid</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/UUID.html">UUID</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="934888980%2FFunctions%2F1578789545" anchor-label="value" id="934888980%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../value.html"><span><span>value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="934888980%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../value.html"><span class="token function">value</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../value.html">VALUE</a><span class="token operator"> : </span><span data-unresolved-link="dev.forkhandles.values/Value///PointingToDeclaration/">Value</span><span class="token operator">&lt;</span><a href="../../value.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="../../value.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../value.html"><span class="token function">value</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">vf<span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.values/ValueFactory///PointingToDeclaration/">ValueFactory</span><span class="token operator">&lt;</span><a href="../../value.html">VALUE</a><span class="token punctuation">, </span><a href="../../value.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="../../value.html">VALUE</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1028477032%2FFunctions%2F1578789545" anchor-label="yearMonth" id="1028477032%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../year-month.html"><span>year</span><wbr><span><span>Month</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1028477032%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../year-month.html"><span class="token function">yearMonth</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/YearMonth.html">YearMonth</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1234268171%2FFunctions%2F1578789545" anchor-label="zonedDateTime" id="1234268171%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../zoned-date-time.html"><span>zoned</span><wbr><span>Date</span><wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1234268171%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../zoned-date-time.html"><span class="token function">zonedDateTime</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">formatter<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/format/DateTimeFormatter.html">DateTimeFormatter</a><span class="token operator"> = </span>ISO_ZONED_DATE_TIME</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/ZonedDateTime.html">ZonedDateTime</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="70410332%2FFunctions%2F1578789545" anchor-label="zoneId" id="70410332%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../zone-id.html"><span>zone</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="70410332%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../zone-id.html"><span class="token function">zoneId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/ZoneId.html">ZoneId</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1503133668%2FFunctions%2F1578789545" anchor-label="zoneOffset" id="1503133668%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../zone-offset.html"><span>zone</span><wbr><span><span>Offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1503133668%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">Tool.Arg</a><span class="token punctuation">.</span><a href="../../zone-offset.html"><span class="token function">zoneOffset</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../-tool-arg-lens-spec/index.html">ToolArgLensSpec</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/ZoneOffset.html">ZoneOffset</a><span class="token operator">?</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

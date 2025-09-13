@@ -1,0 +1,434 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Data4kJsonSchemaMeta</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-api-jsonschema/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-api-jsonschema/main" data-filter=":http4k-api-jsonschema/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="http4k-api-jsonschema::org.http4k.contract.jsonschema.v3/Data4kJsonSchemaMeta///PointingToDeclaration//1538009176">
+  <div class="breadcrumbs"><a href="../../index.html">http4k-api-jsonschema</a><span class="delimiter">/</span><a href="../index.html">org.http4k.contract.jsonschema.v3</a><span class="delimiter">/</span><span class="current">Data4kJsonSchemaMeta</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Data4k</span><wbr><span>Json</span><wbr><span>Schema</span><wbr><span><span>Meta</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">interface </span><a href="index.html">Data4kJsonSchemaMeta</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/core/api/jsonschema/src/main/kotlin/org/http4k/contract/jsonschema/v3/data4kExt.kt#L9">source</a>)</span></span></div><p class="paragraph">Values of the json schema metadata</p><h4 class="tableheader">Inheritors</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="example/index.html">example</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="description/index.html">description</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="format/index.html">format</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="default/index.html">default</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="title/index.html">title</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="multiple-of/index.html">multipleOf</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="maximum/index.html">maximum</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="exclusive-maximum/index.html">exclusiveMaximum</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="minimum/index.html">minimum</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="exclusive-minimum/index.html">exclusiveMinimum</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="max-length/index.html">maxLength</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="min-length/index.html">minLength</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="pattern/index.html">pattern</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="max-items/index.html">maxItems</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="min-items/index.html">minItems</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="unique-items/index.html">uniqueItems</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="max-properties/index.html">maxProperties</a></div></span></div><div></div></div></div><div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="min-properties/index.html">minProperties</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-303389699%2FClasslikes%2F1538009176" anchor-label="Datum" id="-303389699%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-datum/index.html"><span><span>Datum</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-303389699%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-datum/index.html">Datum</a><span class="token operator">&lt;</span><a href="-datum/index.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="-datum/index.html">T</a></span></span><span class="token punctuation">)</span> : <a href="../../../http4k-format-moshi/dev.forkhandles.data/-metadatum/index.html">Metadatum</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1874905205%2FClasslikes%2F1538009176" anchor-label="default" id="-1874905205%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="default/index.html"><span><span>default</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1874905205%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="default/index.html">default</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="228666544%2FClasslikes%2F1538009176" anchor-label="description" id="228666544%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="description/index.html"><span><span>description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="228666544%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="description/index.html">description</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1035686782%2FClasslikes%2F1538009176" anchor-label="example" id="-1035686782%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="example/index.html"><span><span>example</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1035686782%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="example/index.html">example</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="920947892%2FClasslikes%2F1538009176" anchor-label="exclusiveMaximum" id="920947892%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="exclusive-maximum/index.html"><span>exclusive</span><wbr><span><span>Maximum</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="920947892%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="exclusive-maximum/index.html">exclusiveMaximum</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-680781178%2FClasslikes%2F1538009176" anchor-label="exclusiveMinimum" id="-680781178%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="exclusive-minimum/index.html"><span>exclusive</span><wbr><span><span>Minimum</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-680781178%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="exclusive-minimum/index.html">exclusiveMinimum</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="332700223%2FClasslikes%2F1538009176" anchor-label="format" id="332700223%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="format/index.html"><span><span>format</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="332700223%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="format/index.html">format</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-850288500%2FClasslikes%2F1538009176" anchor-label="maximum" id="-850288500%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="maximum/index.html"><span><span>maximum</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-850288500%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="maximum/index.html">maximum</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-694811686%2FClasslikes%2F1538009176" anchor-label="maxItems" id="-694811686%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-items/index.html"><span>max</span><wbr><span><span>Items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-694811686%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="max-items/index.html">maxItems</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="534010306%2FClasslikes%2F1538009176" anchor-label="maxLength" id="534010306%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-length/index.html"><span>max</span><wbr><span><span>Length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="534010306%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="max-length/index.html">maxLength</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="122066069%2FClasslikes%2F1538009176" anchor-label="maxProperties" id="122066069%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-properties/index.html"><span>max</span><wbr><span><span>Properties</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="122066069%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="max-properties/index.html">maxProperties</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1842949726%2FClasslikes%2F1538009176" anchor-label="minimum" id="1842949726%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="minimum/index.html"><span><span>minimum</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1842949726%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="minimum/index.html">minimum</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1191194696%2FClasslikes%2F1538009176" anchor-label="minItems" id="1191194696%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="min-items/index.html"><span>min</span><wbr><span><span>Items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1191194696%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="min-items/index.html">minItems</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1129333996%2FClasslikes%2F1538009176" anchor-label="minLength" id="-1129333996%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="min-length/index.html"><span>min</span><wbr><span><span>Length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1129333996%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="min-length/index.html">minLength</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="437058791%2FClasslikes%2F1538009176" anchor-label="minProperties" id="437058791%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="min-properties/index.html"><span>min</span><wbr><span><span>Properties</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="437058791%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="min-properties/index.html">minProperties</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1411530159%2FClasslikes%2F1538009176" anchor-label="multipleOf" id="1411530159%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="multiple-of/index.html"><span>multiple</span><wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1411530159%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="multiple-of/index.html">multipleOf</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-117675748%2FClasslikes%2F1538009176" anchor-label="pattern" id="-117675748%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pattern/index.html"><span><span>pattern</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-117675748%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="pattern/index.html">pattern</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1176880660%2FClasslikes%2F1538009176" anchor-label="title" id="1176880660%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title/index.html"><span><span>title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1176880660%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="title/index.html">title</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-537321059%2FClasslikes%2F1538009176" anchor-label="uniqueItems" id="-537321059%2FClasslikes%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unique-items/index.html"><span>unique</span><wbr><span><span>Items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-537321059%2FClasslikes%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">object </span><a href="unique-items/index.html">uniqueItems</a> : <a href="index.html">Data4kJsonSchemaMeta</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-2093316533%2FFunctions%2F1538009176" anchor-label="of" id="-2093316533%2FFunctions%2F1538009176" data-filterable-set=":http4k-api-jsonschema/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-api-jsonschema/main" data-filterable-set=":http4k-api-jsonschema/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="of.html"><span><span>of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2093316533%2FFunctions%2F1538009176"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-api-jsonschema/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="of.html"><span class="token function">of</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">t<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-datum/index.html">Data4kJsonSchemaMeta.Datum</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

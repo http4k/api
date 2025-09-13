@@ -1,8 +1,0 @@
-[http4k](../index.md) / [org.http4k.lens](index.md) / [string](./string.md)
-
-# string
-
-`fun Body.Companion.string(contentType: `[`ContentType`](../org.http4k.core/-content-type/index.md)`, description: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`? = null, contentNegotiation: `[`ContentNegotiation`](-content-negotiation/index.md)` = None): `[`BiDiBodyLensSpec`](-bi-di-body-lens-spec/index.md)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`>` [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/lens/body.kt#L139)
-`fun <IN> `[`BiDiLensSpec`](-bi-di-lens-spec/index.md)`<`[`IN`](string.md#IN)`, `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`>.string(): `[`BiDiLensSpec`](-bi-di-lens-spec/index.md)`<`[`IN`](string.md#IN)`, `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`>` [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/lens/lensSpec.kt#L200)
-`fun `[`Path`](-path/index.md)`.string(): `[`Path`](-path/index.md) [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/lens/path.kt#L98)
-`fun WsMessage.Companion.string(): `[`BiDiWsMessageLensSpec`](-bi-di-ws-message-lens-spec/index.md)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`>` [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/lens/wsMessageLens.kt#L81)

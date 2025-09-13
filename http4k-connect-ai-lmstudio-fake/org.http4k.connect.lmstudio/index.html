@@ -1,0 +1,317 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.connect.lmstudio</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-connect-ai-lmstudio-fake/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-connect-ai-lmstudio-fake/main" data-filter=":http4k-connect-ai-lmstudio-fake/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-connect-ai-lmstudio-fake::org.http4k.connect.lmstudio////PointingToDeclaration//-1987191195">
+  <div class="breadcrumbs"><a href="../index.html">http4k-connect-ai-lmstudio-fake</a><span class="delimiter">/</span><span class="current">org.http4k.connect.lmstudio</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="124392097%2FClasslikes%2F-1987191195" anchor-label="ChatCompletionGenerator" id="124392097%2FClasslikes%2F-1987191195" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-ai-lmstudio-fake/main" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-chat-completion-generator/index.html"><span>Chat</span><wbr><span>Completion</span><wbr><span><span>Generator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="124392097%2FClasslikes%2F-1987191195"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-lmstudio-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-chat-completion-generator/index.html">ChatCompletionGenerator</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><a href="../../http4k-connect-ai-lmstudio/org.http4k.connect.lmstudio.action/-chat-completion/index.html">ChatCompletion</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-ai-lmstudio/org.http4k.connect.lmstudio.action/-choice/index.html">Choice</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Helps to control the generation of responses in a particular format for a model.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1741836918%2FClasslikes%2F-1987191195" anchor-label="FakeLmStudio" id="1741836918%2FClasslikes%2F-1987191195" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-ai-lmstudio-fake/main" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-fake-lm-studio/index.html"><span>Fake</span><wbr><span>Lm</span><wbr><span><span>Studio</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1741836918%2FClasslikes%2F-1987191195"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-lmstudio-fake/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-fake-lm-studio/index.html">FakeLmStudio</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>models<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="../../http4k-connect-ai-lmstudio/org.http4k.connect.lmstudio.action/-model/index.html">Model</a><span class="token operator">&gt;</span><span class="token operator"> = </span>DEFAULT_MODELS<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>completionGenerators<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="../../http4k-ai-core/org.http4k.ai.model/-model-name/index.html">ModelName</a><span class="token punctuation">, </span><a href="-chat-completion-generator/index.html">ChatCompletionGenerator</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyMap()<span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token operator"> = </span>systemUTC()</span></span><span class="token punctuation">)</span> : <a href="../../http4k-testing-chaos/org.http4k.chaos/-chaotic-http-handler/index.html">ChaoticHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="31288044%2FProperties%2F-1987191195" anchor-label="chatModel" id="31288044%2FProperties%2F-1987191195" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-ai-lmstudio-fake/main" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="chat-model.html"><span>chat</span><wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="31288044%2FProperties%2F-1987191195"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-lmstudio-fake/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="chat-model.html">chatModel</a><span class="token operator">: </span><a href="../../http4k-connect-ai-lmstudio/org.http4k.connect.lmstudio.action/-model/index.html">Model</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-103457355%2FProperties%2F-1987191195" anchor-label="DEFAULT_MODELS" id="-103457355%2FProperties%2F-1987191195" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-ai-lmstudio-fake/main" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-e-f-a-u-l-t_-m-o-d-e-l-s.html"><span>DEFAULT_</span><wbr><span>MODELS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-103457355%2FProperties%2F-1987191195"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-lmstudio-fake/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-d-e-f-a-u-l-t_-m-o-d-e-l-s.html">DEFAULT_MODELS</a><span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="../../http4k-connect-ai-lmstudio/org.http4k.connect.lmstudio.action/-model/index.html">Model</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="343950323%2FProperties%2F-1987191195" anchor-label="Echo" id="343950323%2FProperties%2F-1987191195" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":http4k-connect-ai-lmstudio-fake/main" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-echo.html"><span><span>Echo</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="343950323%2FProperties%2F-1987191195"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-lmstudio-fake/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-chat-completion-generator/-companion/index.html">ChatCompletionGenerator.Companion</a><span class="token punctuation">.</span><a href="-echo.html">Echo</a><span class="token operator">: </span><a href="-chat-completion-generator/index.html">ChatCompletionGenerator</a></div><div class="brief "><p class="paragraph">Simply echoes the request</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1518693077%2FProperties%2F-1987191195" anchor-label="embeddingModel" id="-1518693077%2FProperties%2F-1987191195" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-ai-lmstudio-fake/main" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="embedding-model.html"><span>embedding</span><wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1518693077%2FProperties%2F-1987191195"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-lmstudio-fake/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="embedding-model.html">embeddingModel</a><span class="token operator">: </span><a href="../../http4k-connect-ai-lmstudio/org.http4k.connect.lmstudio.action/-model/index.html">Model</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="789813142%2FProperties%2F-1987191195" anchor-label="ReverseInput" id="789813142%2FProperties%2F-1987191195" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":http4k-connect-ai-lmstudio-fake/main" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-reverse-input.html"><span>Reverse</span><wbr><span><span>Input</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="789813142%2FProperties%2F-1987191195"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-lmstudio-fake/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-chat-completion-generator/-companion/index.html">ChatCompletionGenerator.Companion</a><span class="token punctuation">.</span><a href="-reverse-input.html">ReverseInput</a><span class="token operator">: </span><a href="-chat-completion-generator/index.html">ChatCompletionGenerator</a></div><div class="brief "><p class="paragraph">Simply reverses the input question</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-34444844%2FFunctions%2F-1987191195" anchor-label="chatCompletion" id="-34444844%2FFunctions%2F-1987191195" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-ai-lmstudio-fake/main" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="chat-completion.html"><span>chat</span><wbr><span><span>Completion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-34444844%2FFunctions%2F-1987191195"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-lmstudio-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="chat-completion.html"><span class="token function">chatCompletion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token punctuation">, </span></span><span class="parameter ">completionGenerators<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="../../http4k-ai-core/org.http4k.ai.model/-model-name/index.html">ModelName</a><span class="token punctuation">, </span><a href="-chat-completion-generator/index.html">ChatCompletionGenerator</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-564241341%2FFunctions%2F-1987191195" anchor-label="createEmbeddings" id="-564241341%2FFunctions%2F-1987191195" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-ai-lmstudio-fake/main" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-embeddings.html"><span>create</span><wbr><span><span>Embeddings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-564241341%2FFunctions%2F-1987191195"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-lmstudio-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="create-embeddings.html"><span class="token function">createEmbeddings</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">models<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="../../http4k-connect-ai-lmstudio/org.http4k.connect.lmstudio.action/-model/index.html">Model</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1112335227%2FFunctions%2F-1987191195" anchor-label="getModels" id="1112335227%2FFunctions%2F-1987191195" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-ai-lmstudio-fake/main" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-models.html"><span>get</span><wbr><span><span>Models</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1112335227%2FFunctions%2F-1987191195"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-lmstudio-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-models.html"><span class="token function">getModels</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">models<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="../../http4k-connect-ai-lmstudio/org.http4k.connect.lmstudio.action/-model/index.html">Model</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1481079736%2FFunctions%2F-1987191195" anchor-label="LoremIpsum" id="1481079736%2FFunctions%2F-1987191195" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-ai-lmstudio-fake/main" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-lorem-ipsum.html"><span>Lorem</span><wbr><span><span>Ipsum</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1481079736%2FFunctions%2F-1987191195"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-lmstudio-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-chat-completion-generator/-companion/index.html">ChatCompletionGenerator.Companion</a><span class="token punctuation">.</span><a href="-lorem-ipsum.html"><span class="token function">LoremIpsum</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">random<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Random.html">Random</a><span class="token operator"> = </span>Random(0)</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-chat-completion-generator/index.html">ChatCompletionGenerator</a></div><div class="brief "><p class="paragraph">Generates Lorem Ipsum paragraphs based on the random generator.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1965685604%2FFunctions%2F-1987191195" anchor-label="main" id="1965685604%2FFunctions%2F-1987191195" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-ai-lmstudio-fake/main" data-filterable-set=":http4k-connect-ai-lmstudio-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="main.html"><span><span>main</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1965685604%2FFunctions%2F-1987191195"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-lmstudio-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="main.html"><span class="token function">main</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

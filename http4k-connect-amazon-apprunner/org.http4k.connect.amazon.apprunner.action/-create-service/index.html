@@ -1,0 +1,333 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CreateService</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-connect-amazon-apprunner/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-connect-amazon-apprunner/main" data-filter=":http4k-connect-amazon-apprunner/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="http4k-connect-amazon-apprunner::org.http4k.connect.amazon.apprunner.action/CreateService///PointingToDeclaration//-1840168313">
+  <div class="breadcrumbs"><a href="../../index.html">http4k-connect-amazon-apprunner</a><span class="delimiter">/</span><a href="../index.html">org.http4k.connect.amazon.apprunner.action</a><span class="delimiter">/</span><span class="current">CreateService</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Create</span><wbr><span><span>Service</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">CreateService</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>ServiceName<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.apprunner.model/-service-name/index.html">ServiceName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>SourceConfiguration<span class="token operator">: </span><a href="../-source-configuration/index.html">SourceConfiguration</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>AutoScalingConfigurationArn<span class="token operator">: </span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>EncryptionConfiguration<span class="token operator">: </span><a href="../-encryption-configuration/index.html">EncryptionConfiguration</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>HealthCheckConfiguration<span class="token operator">: </span><a href="../-health-check-configuration/index.html">HealthCheckConfiguration</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>InstanceConfiguration<span class="token operator">: </span><a href="../-instance-configuration/index.html">InstanceConfiguration</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>NetworkConfiguration<span class="token operator">: </span><a href="../-network-configuration/index.html">NetworkConfiguration</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ObservabilityConfiguration<span class="token operator">: </span><a href="../-observability-configuration/index.html">ObservabilityConfiguration</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Tags<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-tag/index.html">Tag</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../../org.http4k.connect.amazon.apprunner/-app-runner-action/index.html">AppRunnerAction</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.amazon.apprunner.model/-app-runner-service/index.html">AppRunnerService</a><span class="token operator">&gt; </span><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/connect/amazon/apprunner/client/src/main/kotlin/org/http4k/connect/amazon/apprunner/action/CreateService.kt#L18">source</a>)</span></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="1643837468%2FConstructors%2F-1840168313" anchor-label="CreateService" id="1643837468%2FConstructors%2F-1840168313" data-filterable-set=":http4k-connect-amazon-apprunner/main"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":http4k-connect-amazon-apprunner/main" data-filterable-set=":http4k-connect-amazon-apprunner/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-create-service.html"><span>Create</span><wbr><span><span>Service</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1643837468%2FConstructors%2F-1840168313"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ServiceName<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.apprunner.model/-service-name/index.html">ServiceName</a><span class="token punctuation">, </span></span><span class="parameter ">SourceConfiguration<span class="token operator">: </span><a href="../-source-configuration/index.html">SourceConfiguration</a><span class="token punctuation">, </span></span><span class="parameter ">AutoScalingConfigurationArn<span class="token operator">: </span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">EncryptionConfiguration<span class="token operator">: </span><a href="../-encryption-configuration/index.html">EncryptionConfiguration</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">HealthCheckConfiguration<span class="token operator">: </span><a href="../-health-check-configuration/index.html">HealthCheckConfiguration</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">InstanceConfiguration<span class="token operator">: </span><a href="../-instance-configuration/index.html">InstanceConfiguration</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">NetworkConfiguration<span class="token operator">: </span><a href="../-network-configuration/index.html">NetworkConfiguration</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">ObservabilityConfiguration<span class="token operator">: </span><a href="../-observability-configuration/index.html">ObservabilityConfiguration</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">Tags<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-tag/index.html">Tag</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-1655208689%2FProperties%2F-1840168313" anchor-label="AutoScalingConfigurationArn" id="-1655208689%2FProperties%2F-1840168313" data-filterable-set=":http4k-connect-amazon-apprunner/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-apprunner/main" data-filterable-set=":http4k-connect-amazon-apprunner/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-auto-scaling-configuration-arn.html"><span>Auto</span><wbr><span>Scaling</span><wbr><span>Configuration</span><wbr><span><span>Arn</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1655208689%2FProperties%2F-1840168313"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-auto-scaling-configuration-arn.html">AutoScalingConfigurationArn</a><span class="token operator">: </span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-180728229%2FProperties%2F-1840168313" anchor-label="EncryptionConfiguration" id="-180728229%2FProperties%2F-1840168313" data-filterable-set=":http4k-connect-amazon-apprunner/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-apprunner/main" data-filterable-set=":http4k-connect-amazon-apprunner/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-encryption-configuration.html"><span>Encryption</span><wbr><span><span>Configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-180728229%2FProperties%2F-1840168313"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-encryption-configuration.html">EncryptionConfiguration</a><span class="token operator">: </span><a href="../-encryption-configuration/index.html">EncryptionConfiguration</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2005446814%2FProperties%2F-1840168313" anchor-label="HealthCheckConfiguration" id="-2005446814%2FProperties%2F-1840168313" data-filterable-set=":http4k-connect-amazon-apprunner/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-apprunner/main" data-filterable-set=":http4k-connect-amazon-apprunner/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-health-check-configuration.html"><span>Health</span><wbr><span>Check</span><wbr><span><span>Configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2005446814%2FProperties%2F-1840168313"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-health-check-configuration.html">HealthCheckConfiguration</a><span class="token operator">: </span><a href="../-health-check-configuration/index.html">HealthCheckConfiguration</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="395451949%2FProperties%2F-1840168313" anchor-label="InstanceConfiguration" id="395451949%2FProperties%2F-1840168313" data-filterable-set=":http4k-connect-amazon-apprunner/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-apprunner/main" data-filterable-set=":http4k-connect-amazon-apprunner/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-instance-configuration.html"><span>Instance</span><wbr><span><span>Configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="395451949%2FProperties%2F-1840168313"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-instance-configuration.html">InstanceConfiguration</a><span class="token operator">: </span><a href="../-instance-configuration/index.html">InstanceConfiguration</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1334991996%2FProperties%2F-1840168313" anchor-label="NetworkConfiguration" id="-1334991996%2FProperties%2F-1840168313" data-filterable-set=":http4k-connect-amazon-apprunner/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-apprunner/main" data-filterable-set=":http4k-connect-amazon-apprunner/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-network-configuration.html"><span>Network</span><wbr><span><span>Configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1334991996%2FProperties%2F-1840168313"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-network-configuration.html">NetworkConfiguration</a><span class="token operator">: </span><a href="../-network-configuration/index.html">NetworkConfiguration</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-144663433%2FProperties%2F-1840168313" anchor-label="ObservabilityConfiguration" id="-144663433%2FProperties%2F-1840168313" data-filterable-set=":http4k-connect-amazon-apprunner/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-apprunner/main" data-filterable-set=":http4k-connect-amazon-apprunner/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-observability-configuration.html"><span>Observability</span><wbr><span><span>Configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-144663433%2FProperties%2F-1840168313"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-observability-configuration.html">ObservabilityConfiguration</a><span class="token operator">: </span><a href="../-observability-configuration/index.html">ObservabilityConfiguration</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-577819698%2FProperties%2F-1840168313" anchor-label="ServiceName" id="-577819698%2FProperties%2F-1840168313" data-filterable-set=":http4k-connect-amazon-apprunner/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-apprunner/main" data-filterable-set=":http4k-connect-amazon-apprunner/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-service-name.html"><span>Service</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-577819698%2FProperties%2F-1840168313"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-service-name.html">ServiceName</a><span class="token operator">: </span><a href="../../org.http4k.connect.amazon.apprunner.model/-service-name/index.html">ServiceName</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="91673971%2FProperties%2F-1840168313" anchor-label="SourceConfiguration" id="91673971%2FProperties%2F-1840168313" data-filterable-set=":http4k-connect-amazon-apprunner/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-apprunner/main" data-filterable-set=":http4k-connect-amazon-apprunner/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-source-configuration.html"><span>Source</span><wbr><span><span>Configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="91673971%2FProperties%2F-1840168313"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-source-configuration.html">SourceConfiguration</a><span class="token operator">: </span><a href="../-source-configuration/index.html">SourceConfiguration</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1028369395%2FProperties%2F-1840168313" anchor-label="Tags" id="1028369395%2FProperties%2F-1840168313" data-filterable-set=":http4k-connect-amazon-apprunner/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-apprunner/main" data-filterable-set=":http4k-connect-amazon-apprunner/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-tags.html"><span><span>Tags</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1028369395%2FProperties%2F-1840168313"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-tags.html">Tags</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-tag/index.html">Tag</a><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-1032946049%2FFunctions%2F-1840168313" anchor-label="toRequest" id="-1032946049%2FFunctions%2F-1840168313" data-filterable-set=":http4k-connect-amazon-apprunner/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-apprunner/main" data-filterable-set=":http4k-connect-amazon-apprunner/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-list-services/index.html#-1032946049%2FFunctions%2F-1840168313"><span>to</span><wbr><span><span>Request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1032946049%2FFunctions%2F-1840168313"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-list-services/index.html#-1032946049%2FFunctions%2F-1840168313"><span class="token function">toRequest</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1872319708%2FFunctions%2F-1840168313" anchor-label="toResult" id="-1872319708%2FFunctions%2F-1840168313" data-filterable-set=":http4k-connect-amazon-apprunner/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-apprunner/main" data-filterable-set=":http4k-connect-amazon-apprunner/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-list-services/index.html#-1872319708%2FFunctions%2F-1840168313"><span>to</span><wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1872319708%2FFunctions%2F-1840168313"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../-list-services/index.html#-1872319708%2FFunctions%2F-1840168313"><span class="token function">toResult</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">response<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-response/index.html">Response</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../../org.http4k.connect.amazon.apprunner.model/-app-runner-service/index.html">AppRunnerService</a><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="308633639%2FFunctions%2F-1840168313" anchor-label="uri" id="308633639%2FFunctions%2F-1840168313" data-filterable-set=":http4k-connect-amazon-apprunner/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-apprunner/main" data-filterable-set=":http4k-connect-amazon-apprunner/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-list-services/index.html#308633639%2FFunctions%2F-1840168313"><span><span>uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="308633639%2FFunctions%2F-1840168313"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-apprunner/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-list-services/index.html#308633639%2FFunctions%2F-1840168313"><span class="token function">uri</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-uri/index.html">Uri</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

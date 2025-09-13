@@ -1,0 +1,763 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.connect.amazon.dynamodb.grammar</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-connect-amazon-dynamodb-fake/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-connect-amazon-dynamodb-fake/main" data-filter=":http4k-connect-amazon-dynamodb-fake/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-connect-amazon-dynamodb-fake::org.http4k.connect.amazon.dynamodb.grammar////PointingToDeclaration//169551312">
+  <div class="breadcrumbs"><a href="../index.html">http4k-connect-amazon-dynamodb-fake</a><span class="delimiter">/</span><span class="current">org.http4k.connect.amazon.dynamodb.grammar</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-1053589081%2FClasslikes%2F169551312" anchor-label="And" id="-1053589081%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-and/index.html"><span><span>And</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1053589081%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-and/index.html">And</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="940029190%2FClasslikes%2F169551312" anchor-label="AttributeExists" id="940029190%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-attribute-exists/index.html"><span>Attribute</span><wbr><span><span>Exists</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="940029190%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-attribute-exists/index.html">AttributeExists</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="581597690%2FClasslikes%2F169551312" anchor-label="AttributeNameValue" id="581597690%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-attribute-name-value/index.html"><span>Attribute</span><wbr><span>Name</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="581597690%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-attribute-name-value/index.html">AttributeNameValue</a><span class="token operator"> = </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-dynamodb/org.http4k.connect.amazon.dynamodb.model/-attribute-name/index.html">AttributeName</a><span class="token punctuation">, </span><a href="../../http4k-connect-amazon-dynamodb/org.http4k.connect.amazon.dynamodb.model/-attribute-value/index.html">AttributeValue</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-127527247%2FClasslikes%2F169551312" anchor-label="AttributeNotExists" id="-127527247%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-attribute-not-exists/index.html"><span>Attribute</span><wbr><span>Not</span><wbr><span><span>Exists</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-127527247%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-attribute-not-exists/index.html">AttributeNotExists</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-179722200%2FClasslikes%2F169551312" anchor-label="AttributeType" id="-179722200%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-attribute-type/index.html"><span>Attribute</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-179722200%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-attribute-type/index.html">AttributeType</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1419712172%2FClasslikes%2F169551312" anchor-label="BeginsWith" id="-1419712172%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-begins-with/index.html"><span>Begins</span><wbr><span><span>With</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1419712172%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-begins-with/index.html">BeginsWith</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-823576042%2FClasslikes%2F169551312" anchor-label="Between" id="-823576042%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-between/index.html"><span><span>Between</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-823576042%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-between/index.html">Between</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-639204626%2FClasslikes%2F169551312" anchor-label="ConditionAttributeValue" id="-639204626%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-condition-attribute-value/index.html"><span>Condition</span><wbr><span>Attribute</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-639204626%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-condition-attribute-value/index.html">ConditionAttributeValue</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2007783333%2FClasslikes%2F169551312" anchor-label="Contains" id="2007783333%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-contains/index.html"><span><span>Contains</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2007783333%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-contains/index.html">Contains</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="958141211%2FClasslikes%2F169551312" anchor-label="DynamoDbConditionalGrammar" id="958141211%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dynamo-db-conditional-grammar/index.html"><span>Dynamo</span><wbr><span>Db</span><wbr><span>Conditional</span><wbr><span><span>Grammar</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="958141211%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-dynamo-db-conditional-grammar/index.html">DynamoDbConditionalGrammar</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-897289553%2FClasslikes%2F169551312" anchor-label="DynamoDbConditionError" id="-897289553%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dynamo-db-condition-error/index.html"><span>Dynamo</span><wbr><span>Db</span><wbr><span>Condition</span><wbr><span><span>Error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-897289553%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-dynamo-db-condition-error/index.html">DynamoDbConditionError</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Exception.html">Exception</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1030696302%2FClasslikes%2F169551312" anchor-label="DynamoDbProjectionGrammar" id="1030696302%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dynamo-db-projection-grammar/index.html"><span>Dynamo</span><wbr><span>Db</span><wbr><span>Projection</span><wbr><span><span>Grammar</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1030696302%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-dynamo-db-projection-grammar/index.html">DynamoDbProjectionGrammar</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1917109864%2FClasslikes%2F169551312" anchor-label="DynamoDbUpdateGrammar" id="1917109864%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dynamo-db-update-grammar/index.html"><span>Dynamo</span><wbr><span>Db</span><wbr><span>Update</span><wbr><span><span>Grammar</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1917109864%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-dynamo-db-update-grammar/index.html">DynamoDbUpdateGrammar</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="260095914%2FClasslikes%2F169551312" anchor-label="Equal" id="260095914%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-equal/index.html"><span><span>Equal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="260095914%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-equal/index.html">Equal</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="465846799%2FClasslikes%2F169551312" anchor-label="Expr" id="465846799%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-expr/index.html"><span><span>Expr</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="465846799%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-expr/index.html">Expr</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="521003631%2FClasslikes%2F169551312" anchor-label="ExpressionAttributeName" id="521003631%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-expression-attribute-name/index.html"><span>Expression</span><wbr><span>Attribute</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="521003631%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-expression-attribute-name/index.html">ExpressionAttributeName</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1302036119%2FClasslikes%2F169551312" anchor-label="ExpressionAttributeValue" id="1302036119%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-expression-attribute-value/index.html"><span>Expression</span><wbr><span>Attribute</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1302036119%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-expression-attribute-value/index.html">ExpressionAttributeValue</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-264624407%2FClasslikes%2F169551312" anchor-label="ExprFactory" id="-264624407%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-expr-factory/index.html"><span>Expr</span><wbr><span><span>Factory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-264624407%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-expr-factory/index.html">ExprFactory</a><span class="token operator"> = </span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1477220797%2FClasslikes%2F169551312" anchor-label="GreaterThan" id="-1477220797%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-greater-than/index.html"><span>Greater</span><wbr><span><span>Than</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1477220797%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-greater-than/index.html">GreaterThan</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1085159438%2FClasslikes%2F169551312" anchor-label="GreaterThanOrEqual" id="1085159438%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-greater-than-or-equal/index.html"><span>Greater</span><wbr><span>Than</span><wbr><span>Or</span><wbr><span><span>Equal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1085159438%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-greater-than-or-equal/index.html">GreaterThanOrEqual</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="56448415%2FClasslikes%2F169551312" anchor-label="In" id="56448415%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-in/index.html"><span><span>In</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="56448415%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-in/index.html">In</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-934872680%2FClasslikes%2F169551312" anchor-label="IndexedAttributeValue" id="-934872680%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-indexed-attribute-value/index.html"><span>Indexed</span><wbr><span>Attribute</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-934872680%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-indexed-attribute-value/index.html">IndexedAttributeValue</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1535605217%2FClasslikes%2F169551312" anchor-label="ItemWithSubstitutions" id="1535605217%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-item-with-substitutions/index.html"><span>Item</span><wbr><span>With</span><wbr><span><span>Substitutions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1535605217%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-item-with-substitutions/index.html">ItemWithSubstitutions</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>item<span class="token operator">: </span><a href="../../http4k-connect-amazon-dynamodb/org.http4k.connect.amazon.dynamodb.model/-item/index.html">Item</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>names<span class="token operator">: </span><a href="../../http4k-connect-amazon-dynamodb/org.http4k.connect.amazon.dynamodb.model/-tokens-to-names/index.html">TokensToNames</a><span class="token operator"> = </span>emptyMap()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>values<span class="token operator">: </span><a href="../../http4k-connect-amazon-dynamodb/org.http4k.connect.amazon.dynamodb.model/-tokens-to-values/index.html">TokensToValues</a><span class="token operator"> = </span>emptyMap()</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-33384630%2FClasslikes%2F169551312" anchor-label="LessThan" id="-33384630%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-less-than/index.html"><span>Less</span><wbr><span><span>Than</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-33384630%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-less-than/index.html">LessThan</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1132584665%2FClasslikes%2F169551312" anchor-label="LessThanOrEqual" id="-1132584665%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-less-than-or-equal/index.html"><span>Less</span><wbr><span>Than</span><wbr><span>Or</span><wbr><span><span>Equal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1132584665%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-less-than-or-equal/index.html">LessThanOrEqual</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1594824371%2FClasslikes%2F169551312" anchor-label="MapAttributeValue" id="-1594824371%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-map-attribute-value/index.html"><span>Map</span><wbr><span>Attribute</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1594824371%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-map-attribute-value/index.html">MapAttributeValue</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1387734059%2FClasslikes%2F169551312" anchor-label="Not" id="1387734059%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-not/index.html"><span><span>Not</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1387734059%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-not/index.html">Not</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="644750307%2FClasslikes%2F169551312" anchor-label="NotEqual" id="644750307%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-not-equal/index.html"><span>Not</span><wbr><span><span>Equal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="644750307%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-not-equal/index.html">NotEqual</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1655244449%2FClasslikes%2F169551312" anchor-label="Or" id="1655244449%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-or/index.html"><span><span>Or</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1655244449%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-or/index.html">Or</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1737381228%2FClasslikes%2F169551312" anchor-label="Paren" id="-1737381228%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-paren/index.html"><span><span>Paren</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1737381228%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-paren/index.html">Paren</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1661572864%2FClasslikes%2F169551312" anchor-label="ProjectionAttributeValue" id="1661572864%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-projection-attribute-value/index.html"><span>Projection</span><wbr><span>Attribute</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1661572864%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-projection-attribute-value/index.html">ProjectionAttributeValue</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1760872839%2FClasslikes%2F169551312" anchor-label="ProjectionIndexedAttributeValue" id="1760872839%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-projection-indexed-attribute-value/index.html"><span>Projection</span><wbr><span>Indexed</span><wbr><span>Attribute</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1760872839%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-projection-indexed-attribute-value/index.html">ProjectionIndexedAttributeValue</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="657941431%2FClasslikes%2F169551312" anchor-label="ProjectionList" id="657941431%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-projection-list/index.html"><span>Projection</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="657941431%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-projection-list/index.html">ProjectionList</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1261045948%2FClasslikes%2F169551312" anchor-label="ProjectionMapAttributeValue" id="1261045948%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-projection-map-attribute-value/index.html"><span>Projection</span><wbr><span>Map</span><wbr><span>Attribute</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1261045948%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-projection-map-attribute-value/index.html">ProjectionMapAttributeValue</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1728364931%2FClasslikes%2F169551312" anchor-label="Size" id="1728364931%2FClasslikes%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-size/index.html"><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1728364931%2FClasslikes%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-size/index.html">Size</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="1738830651%2FFunctions%2F169551312" anchor-label="And" id="1738830651%2FFunctions%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-and.html"><span><span>And</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1738830651%2FFunctions%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-and.html"><span class="token function">And</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">left<span class="token operator">: </span><a href="-expr/index.html">Expr</a><span class="token punctuation">, </span></span><span class="parameter ">right<span class="token operator">: </span><a href="-expr/index.html">Expr</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-expr/index.html">Expr</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1783750387%2FFunctions%2F169551312" anchor-label="binaryExpr" id="-1783750387%2FFunctions%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="binary-expr.html"><span>binary</span><wbr><span><span>Expr</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1783750387%2FFunctions%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="binary-expr.html"><span class="token function">binaryExpr</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parser<span class="token operator">: </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">tokenString<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">f<span class="token operator">: </span><span class="token punctuation">(</span><a href="-expr/index.html">Expr</a><span class="token punctuation">, </span><a href="-expr/index.html">Expr</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="-expr/index.html">Expr</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1914716982%2FFunctions%2F169551312" anchor-label="ExpressionAttributeValue" id="1914716982%2FFunctions%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-expression-attribute-value.html"><span>Expression</span><wbr><span>Attribute</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1914716982%2FFunctions%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-expression-attribute-value.html"><span class="token function">ExpressionAttributeValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-expr/index.html">Expr</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2016702270%2FFunctions%2F169551312" anchor-label="GreaterThanOrEqual" id="2016702270%2FFunctions%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-greater-than-or-equal.html"><span>Greater</span><wbr><span>Than</span><wbr><span>Or</span><wbr><span><span>Equal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2016702270%2FFunctions%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-greater-than-or-equal.html"><span class="token function">GreaterThanOrEqual</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">attr1<span class="token operator">: </span><a href="-expr/index.html">Expr</a><span class="token punctuation">, </span></span><span class="parameter ">attr2<span class="token operator">: </span><a href="-expr/index.html">Expr</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-expr/index.html">Expr</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1836696773%2FFunctions%2F169551312" anchor-label="LessThanOrEqual" id="-1836696773%2FFunctions%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-less-than-or-equal.html"><span>Less</span><wbr><span>Than</span><wbr><span>Or</span><wbr><span><span>Equal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1836696773%2FFunctions%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-less-than-or-equal.html"><span class="token function">LessThanOrEqual</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">attr1<span class="token operator">: </span><a href="-expr/index.html">Expr</a><span class="token punctuation">, </span></span><span class="parameter ">attr2<span class="token operator">: </span><a href="-expr/index.html">Expr</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-expr/index.html">Expr</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1907303059%2FFunctions%2F169551312" anchor-label="ProjectionAttributeValue" id="-1907303059%2FFunctions%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-projection-attribute-value.html"><span>Projection</span><wbr><span>Attribute</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1907303059%2FFunctions%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-projection-attribute-value.html"><span class="token function">ProjectionAttributeValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-expr/index.html">Expr</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1391348691%2FFunctions%2F169551312" anchor-label="unaryExpr" id="-1391348691%2FFunctions%2F169551312" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb-fake/main" data-filterable-set=":http4k-connect-amazon-dynamodb-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unary-expr.html"><span>unary</span><wbr><span><span>Expr</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1391348691%2FFunctions%2F169551312"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="unary-expr.html"><span class="token function">unaryExpr</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parser<span class="token operator">: </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">tokenString<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">f<span class="token operator">: </span><span class="token punctuation">(</span><a href="-expr/index.html">Expr</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="-expr/index.html">Expr</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="parser4k/Parser///PointingToDeclaration/">Parser</span><span class="token operator">&lt;</span><a href="-expr/index.html">Expr</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

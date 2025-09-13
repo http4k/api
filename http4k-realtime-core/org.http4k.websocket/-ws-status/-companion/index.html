@@ -1,0 +1,355 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Companion</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../../../images/logo-icon.svg">
+<link href="../../../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-realtime-core/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-realtime-core/main" data-filter=":http4k-realtime-core/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="http4k-realtime-core::org.http4k.websocket/WsStatus.Companion///PointingToDeclaration//1220897459">
+  <div class="breadcrumbs"><a href="../../../index.html">http4k-realtime-core</a><span class="delimiter">/</span><a href="../../index.html">org.http4k.websocket</a><span class="delimiter">/</span><a href="../index.html">WsStatus</a><span class="delimiter">/</span><span class="current">Companion</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Companion</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Companion</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/core/realtime-core/src/main/kotlin/org/http4k/websocket/WsStatus.kt#L6">source</a>)</span></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="1998337606%2FProperties%2F1220897459" anchor-label="ABNORMAL_CLOSE" id="1998337606%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-b-n-o-r-m-a-l_-c-l-o-s-e.html"><span>ABNORMAL_</span><wbr><span>CLOSE</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1998337606%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-a-b-n-o-r-m-a-l_-c-l-o-s-e.html">ABNORMAL_CLOSE</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1754638389%2FProperties%2F1220897459" anchor-label="BUGGYCLOSE" id="1754638389%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-u-g-g-y-c-l-o-s-e.html"><span><span>BUGGYCLOSE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1754638389%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-b-u-g-g-y-c-l-o-s-e.html">BUGGYCLOSE</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1408225204%2FProperties%2F1220897459" anchor-label="EXTENSION" id="1408225204%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e-x-t-e-n-s-i-o-n.html"><span><span>EXTENSION</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1408225204%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-e-x-t-e-n-s-i-o-n.html">EXTENSION</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="839665329%2FProperties%2F1220897459" anchor-label="FLASHPOLICY" id="839665329%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-l-a-s-h-p-o-l-i-c-y.html"><span><span>FLASHPOLICY</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="839665329%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-f-l-a-s-h-p-o-l-i-c-y.html">FLASHPOLICY</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="687435892%2FProperties%2F1220897459" anchor-label="GOING_AWAY" id="687435892%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-g-o-i-n-g_-a-w-a-y.html"><span>GOING_</span><wbr><span>AWAY</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="687435892%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-g-o-i-n-g_-a-w-a-y.html">GOING_AWAY</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2036830627%2FProperties%2F1220897459" anchor-label="NEVER_CONNECTED" id="-2036830627%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-e-v-e-r_-c-o-n-n-e-c-t-e-d.html"><span>NEVER_</span><wbr><span>CONNECTED</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2036830627%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-n-e-v-e-r_-c-o-n-n-e-c-t-e-d.html">NEVER_CONNECTED</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1743929340%2FProperties%2F1220897459" anchor-label="NO_UTF8" id="-1743929340%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-o_-u-t-f8.html"><span>NO_</span><wbr><span>UTF8</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1743929340%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-n-o_-u-t-f8.html">NO_UTF8</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1061486375%2FProperties%2F1220897459" anchor-label="NOCODE" id="-1061486375%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-o-c-o-d-e.html"><span><span>NOCODE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1061486375%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-n-o-c-o-d-e.html">NOCODE</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1413125824%2FProperties%2F1220897459" anchor-label="NORMAL" id="-1413125824%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-o-r-m-a-l.html"><span><span>NORMAL</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1413125824%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-n-o-r-m-a-l.html">NORMAL</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1930542605%2FProperties%2F1220897459" anchor-label="POLICY_VALIDATION" id="1930542605%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-o-l-i-c-y_-v-a-l-i-d-a-t-i-o-n.html"><span>POLICY_</span><wbr><span>VALIDATION</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1930542605%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-p-o-l-i-c-y_-v-a-l-i-d-a-t-i-o-n.html">POLICY_VALIDATION</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-189954074%2FProperties%2F1220897459" anchor-label="PROTOCOL_ERROR" id="-189954074%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-r-o-t-o-c-o-l_-e-r-r-o-r.html"><span>PROTOCOL_</span><wbr><span>ERROR</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-189954074%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-p-r-o-t-o-c-o-l_-e-r-r-o-r.html">PROTOCOL_ERROR</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1976221005%2FProperties%2F1220897459" anchor-label="REFUSE" id="-1976221005%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-f-u-s-e.html"><span><span>REFUSE</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1976221005%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-r-e-f-u-s-e.html">REFUSE</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-377473553%2FProperties%2F1220897459" anchor-label="TLS_ERROR" id="-377473553%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-l-s_-e-r-r-o-r.html"><span>TLS_</span><wbr><span>ERROR</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-377473553%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-l-s_-e-r-r-o-r.html">TLS_ERROR</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="362349211%2FProperties%2F1220897459" anchor-label="TOOBIG" id="362349211%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-o-o-b-i-g.html"><span><span>TOOBIG</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="362349211%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-t-o-o-b-i-g.html">TOOBIG</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1951840038%2FProperties%2F1220897459" anchor-label="UNEXPECTED_CONDITION" id="-1951840038%2FProperties%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-u-n-e-x-p-e-c-t-e-d_-c-o-n-d-i-t-i-o-n.html"><span>UNEXPECTED_</span><wbr><span>CONDITION</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1951840038%2FProperties%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-u-n-e-x-p-e-c-t-e-d_-c-o-n-d-i-t-i-o-n.html">UNEXPECTED_CONDITION</a><span class="token operator">: </span><a href="../index.html">WsStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

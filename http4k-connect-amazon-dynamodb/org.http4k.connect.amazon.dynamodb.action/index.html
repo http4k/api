@@ -1,0 +1,718 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.connect.amazon.dynamodb.action</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-connect-amazon-dynamodb/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-connect-amazon-dynamodb/main" data-filter=":http4k-connect-amazon-dynamodb/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-connect-amazon-dynamodb::org.http4k.connect.amazon.dynamodb.action////PointingToDeclaration//-65758304">
+  <div class="breadcrumbs"><a href="../index.html">http4k-connect-amazon-dynamodb</a><span class="delimiter">/</span><span class="current">org.http4k.connect.amazon.dynamodb.action</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="1970995121%2FClasslikes%2F-65758304" anchor-label="BatchExecuteStatement" id="1970995121%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-batch-execute-statement/index.html"><span>Batch</span><wbr><span>Execute</span><wbr><span><span>Statement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1970995121%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-batch-execute-statement/index.html">BatchExecuteStatement</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>Statements<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-req-statement/index.html">ReqStatement</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-batch-statements/index.html">BatchStatements</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-333560882%2FClasslikes%2F-65758304" anchor-label="BatchGetItem" id="-333560882%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-batch-get-item/index.html"><span>Batch</span><wbr><span>Get</span><wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-333560882%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-batch-get-item/index.html">BatchGetItem</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>RequestItems<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span><a href="../org.http4k.connect.amazon.dynamodb.model/-req-get-item/index.html">ReqGetItem</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-consumed-capacity/index.html">ReturnConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-batch-get-items/index.html">BatchGetItems</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1831570655%2FClasslikes%2F-65758304" anchor-label="BatchGetItems" id="-1831570655%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-batch-get-items/index.html"><span>Batch</span><wbr><span>Get</span><wbr><span><span>Items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1831570655%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-batch-get-items/index.html">BatchGetItems</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>Responses<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-item/index.html">Item</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>UnprocessedKeys<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="../org.http4k.connect.amazon.dynamodb.model/-req-get-item/index.html">ReqGetItem</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ConsumedCapacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-consumed-capacity/index.html">ConsumedCapacity</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1956151545%2FClasslikes%2F-65758304" anchor-label="BatchStatements" id="-1956151545%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-batch-statements/index.html"><span>Batch</span><wbr><span><span>Statements</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1956151545%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-batch-statements/index.html">BatchStatements</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>Responses<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-statement-response/index.html">StatementResponse</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2066819685%2FClasslikes%2F-65758304" anchor-label="BatchWriteItem" id="2066819685%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-batch-write-item/index.html"><span>Batch</span><wbr><span>Write</span><wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2066819685%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-batch-write-item/index.html">BatchWriteItem</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>RequestItems<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-req-write-item/index.html">ReqWriteItem</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnItemCollectionMetrics<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-item-collection-metrics/index.html">ReturnItemCollectionMetrics</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-consumed-capacity/index.html">ReturnConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-batch-write-items/index.html">BatchWriteItems</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-434217110%2FClasslikes%2F-65758304" anchor-label="BatchWriteItems" id="-434217110%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-batch-write-items/index.html"><span>Batch</span><wbr><span>Write</span><wbr><span><span>Items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-434217110%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-batch-write-items/index.html">BatchWriteItems</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>UnprocessedItems<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="../org.http4k.connect.amazon.dynamodb.model/-req-write-item/index.html">ReqWriteItem</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ConsumedCapacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-consumed-capacity/index.html">ConsumedCapacity</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ItemCollectionMetrics<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item-collection-metrics/index.html">ItemCollectionMetrics</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-110017773%2FClasslikes%2F-65758304" anchor-label="CreateTable" id="-110017773%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-create-table/index.html"><span>Create</span><wbr><span><span>Table</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-110017773%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-create-table/index.html">CreateTable</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TableName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>KeySchema<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-key-schema/index.html">KeySchema</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>AttributeDefinitions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-attribute-definition/index.html">AttributeDefinition</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>GlobalSecondaryIndexes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-global-secondary-index/index.html">GlobalSecondaryIndex</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>LocalSecondaryIndexes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-local-secondary-index/index.html">LocalSecondaryIndex</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Tags<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-tag/index.html">Tag</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>BillingMode<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-billing-mode/index.html">BillingMode</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ProvisionedThroughput<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-provisioned-throughput/index.html">ProvisionedThroughput</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>SSESpecification<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-s-s-e-specification/index.html">SSESpecification</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>StreamSpecification<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-stream-specification/index.html">StreamSpecification</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-table-description-response/index.html">TableDescriptionResponse</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1391923519%2FClasslikes%2F-65758304" anchor-label="DeleteItem" id="1391923519%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-delete-item/index.html"><span>Delete</span><wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1391923519%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-delete-item/index.html">DeleteItem</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TableName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Key<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-key/index.html">Key</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ConditionExpression<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ExpressionAttributeNames<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-tokens-to-names/index.html">TokensToNames</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ExpressionAttributeValues<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-tokens-to-values/index.html">TokensToValues</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-consumed-capacity/index.html">ReturnConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnItemCollectionMetrics<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-item-collection-metrics/index.html">ReturnItemCollectionMetrics</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnValues<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-values/index.html">ReturnValues</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-modified-item/index.html">ModifiedItem</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-672396414%2FClasslikes%2F-65758304" anchor-label="DeleteTable" id="-672396414%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-delete-table/index.html"><span>Delete</span><wbr><span><span>Table</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-672396414%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-delete-table/index.html">DeleteTable</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TableName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-table-description-response/index.html">TableDescriptionResponse</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-360703448%2FClasslikes%2F-65758304" anchor-label="DescribedTable" id="-360703448%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-described-table/index.html"><span>Described</span><wbr><span><span>Table</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-360703448%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-described-table/index.html">DescribedTable</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>Table<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-description/index.html">TableDescription</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-524434291%2FClasslikes%2F-65758304" anchor-label="DescribeImport" id="-524434291%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-describe-import/index.html"><span>Describe</span><wbr><span><span>Import</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-524434291%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-describe-import/index.html">DescribeImport</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>ImportArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-import-table-response/index.html">ImportTableResponse</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1214291874%2FClasslikes%2F-65758304" anchor-label="DescribeTable" id="1214291874%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-describe-table/index.html"><span>Describe</span><wbr><span><span>Table</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1214291874%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-describe-table/index.html">DescribeTable</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TableName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-described-table/index.html">DescribedTable</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1073144322%2FClasslikes%2F-65758304" anchor-label="DynamoDbPagedAction" id="1073144322%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dynamo-db-paged-action/index.html"><span>Dynamo</span><wbr><span>Db</span><wbr><span>Paged</span><wbr><span><span>Action</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1073144322%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-dynamo-db-paged-action/index.html">DynamoDbPagedAction</a><span class="token operator">&lt;</span><a href="-dynamo-db-paged-action/index.html">R</a><span class="token operator"> : </span><a href="../../http4k-connect-core/org.http4k.connect/-paged/index.html">Paged</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-key/index.html">Key</a><span class="token punctuation">, </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item/index.html">Item</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="-dynamo-db-paged-action/index.html">Self</a><span class="token operator"> : </span><a href="../../http4k-connect-core/org.http4k.connect/-paged-action/index.html">PagedAction</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-key/index.html">Key</a><span class="token punctuation">, </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item/index.html">Item</a><span class="token punctuation">, </span><a href="-dynamo-db-paged-action/index.html">R</a><span class="token punctuation">, </span><a href="-dynamo-db-paged-action/index.html">Self</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.reflect/-k-class/index.html">KClass</a><span class="token operator">&lt;</span><a href="-dynamo-db-paged-action/index.html">R</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-dynamo-db-paged-action/index.html">R</a><span class="token operator">&gt; </span>, <a href="../../http4k-connect-core/org.http4k.connect/-paged-action/index.html">PagedAction</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-key/index.html">Key</a><span class="token punctuation">, </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item/index.html">Item</a><span class="token punctuation">, </span><a href="-dynamo-db-paged-action/index.html">R</a><span class="token punctuation">, </span><a href="-dynamo-db-paged-action/index.html">Self</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="399036773%2FClasslikes%2F-65758304" anchor-label="ExecutedStatement" id="399036773%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-executed-statement/index.html"><span>Executed</span><wbr><span><span>Statement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="399036773%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-executed-statement/index.html">ExecutedStatement</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">Items<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-item-result/index.html">ItemResult</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2006782442%2FClasslikes%2F-65758304" anchor-label="ExecutedTransaction" id="-2006782442%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-executed-transaction/index.html"><span>Executed</span><wbr><span><span>Transaction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2006782442%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-executed-transaction/index.html">ExecutedTransaction</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">Responses<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-item-result/index.html">ItemResult</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1002600867%2FClasslikes%2F-65758304" anchor-label="ExecuteStatement" id="1002600867%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-execute-statement/index.html"><span>Execute</span><wbr><span><span>Statement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1002600867%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-execute-statement/index.html">ExecuteStatement</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>Statement<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Parameters<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-attribute-value/index.html">AttributeValue</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ConsistentRead<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>NextToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-executed-statement/index.html">ExecutedStatement</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1802273068%2FClasslikes%2F-65758304" anchor-label="ExecuteTransaction" id="-1802273068%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-execute-transaction/index.html"><span>Execute</span><wbr><span><span>Transaction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1802273068%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-execute-transaction/index.html">ExecuteTransaction</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TransactStatements<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-parameterized-statement/index.html">ParameterizedStatement</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ClientRequestToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-executed-transaction/index.html">ExecutedTransaction</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1672318564%2FClasslikes%2F-65758304" anchor-label="GetItem" id="-1672318564%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-item/index.html"><span>Get</span><wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1672318564%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-get-item/index.html">GetItem</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TableName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Key<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-key/index.html">Key</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ProjectionExpression<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ExpressionAttributeNames<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-tokens-to-names/index.html">TokensToNames</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ConsistentRead<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-consumed-capacity/index.html">ReturnConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-get-response/index.html">GetResponse</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-481950766%2FClasslikes%2F-65758304" anchor-label="GetItemsResponse" id="-481950766%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-items-response/index.html"><span>Get</span><wbr><span>Items</span><wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-481950766%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-get-items-response/index.html">GetItemsResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">Responses<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-get-items-response-item/index.html">GetItemsResponseItem</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-consumed-capacity/index.html">ConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ItemCollectionMetrics<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item-collection-metrics/index.html">ItemCollectionMetrics</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="550578478%2FClasslikes%2F-65758304" anchor-label="GetResponse" id="550578478%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-get-response/index.html"><span>Get</span><wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="550578478%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-get-response/index.html">GetResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">Item<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item-result/index.html">ItemResult</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-consumed-capacity/index.html">ConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1545455612%2FClasslikes%2F-65758304" anchor-label="ImportTable" id="1545455612%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-import-table/index.html"><span>Import</span><wbr><span><span>Table</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1545455612%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-import-table/index.html">ImportTable</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>InputFormat<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-input-format/index.html">InputFormat</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>S3BucketSource<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-s3-bucket-source/index.html">S3BucketSource</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>TableCreationParameters<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-creation-parameters/index.html">TableCreationParameters</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ClientToken<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-client-token/index.html">ClientToken</a><span class="token operator"> = </span>org.http4k.connect.amazon.dynamodb.model.ClientToken.random()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>InputCompressionType<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-input-compression-type/index.html">InputCompressionType</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>InputFormatOptions<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-input-format-options/index.html">InputFormatOptions</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-import-table-response/index.html">ImportTableResponse</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-666971205%2FClasslikes%2F-65758304" anchor-label="ImportTableResponse" id="-666971205%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-import-table-response/index.html"><span>Import</span><wbr><span>Table</span><wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-666971205%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-import-table-response/index.html">ImportTableResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>ImportTableDescription<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-import-table-description/index.html">ImportTableDescription</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="783516181%2FClasslikes%2F-65758304" anchor-label="ListImports" id="783516181%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-list-imports/index.html"><span>List</span><wbr><span><span>Imports</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="783516181%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-list-imports/index.html">ListImports</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>NextToken<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-next-token/index.html">NextToken</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>PageSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>TableArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-list-imports-response/index.html">ListImportsResponse</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2032755924%2FClasslikes%2F-65758304" anchor-label="ListImportsResponse" id="2032755924%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-list-imports-response/index.html"><span>List</span><wbr><span>Imports</span><wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2032755924%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-list-imports-response/index.html">ListImportsResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>ImportSummaryList<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-import-summary/index.html">ImportSummary</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>NextToken<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-next-token/index.html">NextToken</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-678997094%2FClasslikes%2F-65758304" anchor-label="ListTables" id="-678997094%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-list-tables/index.html"><span>List</span><wbr><span><span>Tables</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-678997094%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-list-tables/index.html">ListTables</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>ExclusiveStartTableName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-table-list/index.html">TableList</a><span class="token operator">&gt; </span>, <a href="../../http4k-connect-core/org.http4k.connect/-paged-action/index.html">PagedAction</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span><a href="-table-list/index.html">TableList</a><span class="token punctuation">, </span><a href="-list-tables/index.html">ListTables</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="820663777%2FClasslikes%2F-65758304" anchor-label="ModifiedItem" id="820663777%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-modified-item/index.html"><span>Modified</span><wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="820663777%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-modified-item/index.html">ModifiedItem</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>Attributes<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item-result/index.html">ItemResult</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-consumed-capacity/index.html">ConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ItemCollectionMetrics<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item-collection-metrics/index.html">ItemCollectionMetrics</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-410344594%2FClasslikes%2F-65758304" anchor-label="ModifiedItems" id="-410344594%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-modified-items/index.html"><span>Modified</span><wbr><span><span>Items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-410344594%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-modified-items/index.html">ModifiedItems</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>ConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-consumed-capacity/index.html">ConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ItemCollectionMetrics<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item-collection-metrics/index.html">ItemCollectionMetrics</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1265552253%2FClasslikes%2F-65758304" anchor-label="PutItem" id="-1265552253%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-put-item/index.html"><span>Put</span><wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1265552253%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-put-item/index.html">PutItem</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TableName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Item<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item/index.html">Item</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ConditionExpression<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ExpressionAttributeNames<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-tokens-to-names/index.html">TokensToNames</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ExpressionAttributeValues<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-tokens-to-values/index.html">TokensToValues</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-consumed-capacity/index.html">ReturnConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnItemCollectionMetrics<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-item-collection-metrics/index.html">ReturnItemCollectionMetrics</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnValues<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-values/index.html">ReturnValues</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-modified-item/index.html">ModifiedItem</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1726477885%2FClasslikes%2F-65758304" anchor-label="Query" id="1726477885%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-query/index.html"><span><span>Query</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1726477885%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-query/index.html">Query</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TableName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>KeyConditionExpression<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>FilterExpression<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ProjectionExpression<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ExpressionAttributeNames<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-tokens-to-names/index.html">TokensToNames</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ExpressionAttributeValues<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-tokens-to-values/index.html">TokensToValues</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>IndexName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-index-name/index.html">IndexName</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Select<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-select/index.html">Select</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ConsistentRead<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ExclusiveStartKey<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-key/index.html">Key</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-consumed-capacity/index.html">ReturnConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ScanIndexForward<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="-dynamo-db-paged-action/index.html">DynamoDbPagedAction</a><span class="token operator">&lt;</span><a href="-query-response/index.html">QueryResponse</a><span class="token punctuation">, </span><a href="-query/index.html">Query</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1784361212%2FClasslikes%2F-65758304" anchor-label="QueryResponse" id="1784361212%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-query-response/index.html"><span>Query</span><wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1784361212%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-query-response/index.html">QueryResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">Items<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-item-result/index.html">ItemResult</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-consumed-capacity/index.html">ConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Count<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>LastEvaluatedKey<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-key/index.html">Key</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ScannedCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span> : <a href="../../http4k-connect-core/org.http4k.connect/-paged/index.html">Paged</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-key/index.html">Key</a><span class="token punctuation">, </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item/index.html">Item</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2053231616%2FClasslikes%2F-65758304" anchor-label="Scan" id="2053231616%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-scan/index.html"><span><span>Scan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2053231616%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-scan/index.html">Scan</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TableName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>FilterExpression<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ProjectionExpression<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ExpressionAttributeNames<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-tokens-to-names/index.html">TokensToNames</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ExpressionAttributeValues<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-tokens-to-values/index.html">TokensToValues</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ExclusiveStartKey<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-key/index.html">Key</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>IndexName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-index-name/index.html">IndexName</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ConsistentRead<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Segment<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Select<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-select/index.html">Select</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>TotalSegments<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-consumed-capacity/index.html">ReturnConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="-dynamo-db-paged-action/index.html">DynamoDbPagedAction</a><span class="token operator">&lt;</span><a href="-scan-response/index.html">ScanResponse</a><span class="token punctuation">, </span><a href="-scan/index.html">Scan</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-121070657%2FClasslikes%2F-65758304" anchor-label="ScanResponse" id="-121070657%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-scan-response/index.html"><span>Scan</span><wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-121070657%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-scan-response/index.html">ScanResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>ConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-consumed-capacity/index.html">ConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Count<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>LastEvaluatedKey<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-key/index.html">Key</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ScannedCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">Items<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-item-result/index.html">ItemResult</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../../http4k-connect-core/org.http4k.connect/-paged/index.html">Paged</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-key/index.html">Key</a><span class="token punctuation">, </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item/index.html">Item</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-793199858%2FClasslikes%2F-65758304" anchor-label="TableDescriptionResponse" id="-793199858%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-table-description-response/index.html"><span>Table</span><wbr><span>Description</span><wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-793199858%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-table-description-response/index.html">TableDescriptionResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TableDescription<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-description/index.html">TableDescription</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-837099527%2FClasslikes%2F-65758304" anchor-label="TableList" id="-837099527%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-table-list/index.html"><span>Table</span><wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-837099527%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-table-list/index.html">TableList</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TableNames<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>LastEvaluatedTableName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../../http4k-connect-core/org.http4k.connect/-paged/index.html">Paged</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1722338487%2FClasslikes%2F-65758304" anchor-label="TransactGetItems" id="-1722338487%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transact-get-items/index.html"><span>Transact</span><wbr><span>Get</span><wbr><span><span>Items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1722338487%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-transact-get-items/index.html">TransactGetItems</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TransactItems<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-transact-get-item/index.html">TransactGetItem</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-consumed-capacity/index.html">ReturnConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-get-items-response/index.html">GetItemsResponse</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1458681234%2FClasslikes%2F-65758304" anchor-label="TransactWriteItems" id="1458681234%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-transact-write-items/index.html"><span>Transact</span><wbr><span>Write</span><wbr><span><span>Items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1458681234%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-transact-write-items/index.html">TransactWriteItems</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TransactItems<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-transact-write-item/index.html">TransactWriteItem</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ClientRequestToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-consumed-capacity/index.html">ReturnConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnItemCollectionMetrics<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-item-collection-metrics/index.html">ReturnItemCollectionMetrics</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-modified-items/index.html">ModifiedItems</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1204135199%2FClasslikes%2F-65758304" anchor-label="UpdateItem" id="-1204135199%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-update-item/index.html"><span>Update</span><wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1204135199%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-update-item/index.html">UpdateItem</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TableName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>Key<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-key/index.html">Key</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ConditionExpression<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>UpdateExpression<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ExpressionAttributeNames<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-tokens-to-names/index.html">TokensToNames</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ExpressionAttributeValues<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-tokens-to-values/index.html">TokensToValues</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnConsumedCapacity<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-consumed-capacity/index.html">ReturnConsumedCapacity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnItemCollectionMetrics<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-item-collection-metrics/index.html">ReturnItemCollectionMetrics</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReturnValues<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-return-values/index.html">ReturnValues</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-modified-item/index.html">ModifiedItem</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="454161952%2FClasslikes%2F-65758304" anchor-label="UpdateTable" id="454161952%2FClasslikes%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-update-table/index.html"><span>Update</span><wbr><span><span>Table</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="454161952%2FClasslikes%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-update-table/index.html">UpdateTable</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>TableName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>AttributeDefinitions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-attribute-definition/index.html">AttributeDefinition</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>BillingMode<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-billing-mode/index.html">BillingMode</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>GlobalSecondaryIndexUpdates<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-global-secondary-index-updates/index.html">GlobalSecondaryIndexUpdates</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ProvisionedThroughput<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-provisioned-throughput/index.html">ProvisionedThroughput</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ReplicaUpdates<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-replica-updates/index.html">ReplicaUpdates</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>SSESpecification<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-s-s-e-specification/index.html">SSESpecification</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>StreamSpecification<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-stream-specification/index.html">StreamSpecification</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db-action/index.html">DynamoDbAction</a><span class="token operator">&lt;</span><a href="-table-description-response/index.html">TableDescriptionResponse</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="EXTENSION_FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-1572082179%2FFunctions%2F-65758304" anchor-label="copy" id="-1572082179%2FFunctions%2F-65758304" data-filterable-set=":http4k-connect-amazon-dynamodb/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-dynamodb/main" data-filterable-set=":http4k-connect-amazon-dynamodb/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="copy.html"><span><span>copy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1572082179%2FFunctions%2F-65758304"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-dynamodb/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="copy.html">R</a><span class="token operator"> : </span><a href="../../http4k-connect-core/org.http4k.connect/-paged/index.html">Paged</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.dynamodb.model/-key/index.html">Key</a><span class="token punctuation">, </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item/index.html">Item</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="copy.html">Self</a><span class="token operator"> : </span><a href="-dynamo-db-paged-action/index.html">DynamoDbPagedAction</a><span class="token operator">&lt;</span><a href="copy.html">R</a><span class="token punctuation">, </span><a href="copy.html">Self</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span><a href="../org.http4k.connect.amazon.dynamodb/-dynamo-db/index.html">DynamoDb</a><span class="token punctuation">.</span><a href="copy.html"><span class="token function">copy</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">action<span class="token operator">: </span><a href="copy.html">Self</a><span class="token punctuation">, </span></span><span class="parameter ">destination<span class="token operator">: </span><a href="../org.http4k.connect.amazon.dynamodb.model/-table-name/index.html">TableName</a><span class="token punctuation">, </span></span><span class="parameter ">mappingFn<span class="token operator">: </span><span class="token punctuation">(</span><a href="../org.http4k.connect.amazon.dynamodb.model/-item/index.html">Item</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../org.http4k.connect.amazon.dynamodb.model/-item/index.html">Item</a><span class="token operator"> = </span>{ it }</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="../org.http4k.connect.amazon.dynamodb.model/-req-write-item/index.html">ReqWriteItem</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Copies items that are queried into another table, using BatchWriteItem to insert, and optionally mapping. Returns the Unprocessed Items from the last insert if there were any.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

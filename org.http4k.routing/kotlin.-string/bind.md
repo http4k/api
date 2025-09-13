@@ -1,9 +1,0 @@
-[http4k](../../index.md) / [org.http4k.routing](../index.md) / [kotlin.String](index.md) / [bind](./bind.md)
-
-# bind
-
-`infix fun `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`.bind(method: `[`Method`](../../org.http4k.core/-method/index.md)`): `[`PathMethod`](../-path-method/index.md) [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/routing/routing.kt#L85)
-`infix fun `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`.bind(httpHandler: `[`RoutingHttpHandler`](../-routing-http-handler/index.md)`): `[`RoutingHttpHandler`](../-routing-http-handler/index.md) [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/routing/routing.kt#L87)
-`infix fun `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`.bind(action: `[`HttpHandler`](../../org.http4k.core/-http-handler.md)`): `[`RoutingHttpHandler`](../-routing-http-handler/index.md) [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/routing/routing.kt#L89)
-`infix fun `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`.bind(consumer: `[`WsConsumer`](../../org.http4k.websocket/-ws-consumer.md)`): `[`RoutingWsHandler`](../-routing-ws-handler/index.md) [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/routing/routing.kt#L91)
-`infix fun `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`.bind(wsHandler: `[`RoutingWsHandler`](../-routing-ws-handler/index.md)`): `[`RoutingWsHandler`](../-routing-ws-handler/index.md) [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/routing/routing.kt#L93)

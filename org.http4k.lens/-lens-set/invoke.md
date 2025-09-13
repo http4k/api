@@ -1,6 +1,0 @@
-[http4k](../../index.md) / [org.http4k.lens](../index.md) / [LensSet](index.md) / [invoke](./invoke.md)
-
-# invoke
-
-`operator fun invoke(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`): (`[`List`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)`<`[`OUT`](index.md#OUT)`>, `[`IN`](index.md#IN)`) -> `[`IN`](index.md#IN) [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/lens/lensSpec.kt#L27)
-`operator fun <IN, OUT> invoke(setFn: (`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `[`List`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)`<`[`OUT`](invoke.md#OUT)`>, `[`IN`](invoke.md#IN)`) -> `[`IN`](invoke.md#IN)`): `[`LensSet`](index.md)`<`[`IN`](invoke.md#IN)`, `[`OUT`](invoke.md#OUT)`>` [(source)](https://github.com/http4k/http4k/blob/master/http4k-core/src/main/kotlin/org/http4k/lens/lensSpec.kt#L32)

@@ -1,0 +1,549 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.hamkrest</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-testing-hamkrest/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-testing-hamkrest/main" data-filter=":http4k-testing-hamkrest/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-testing-hamkrest::org.http4k.hamkrest////PointingToDeclaration//108150980">
+  <div class="breadcrumbs"><a href="../index.html">http4k-testing-hamkrest</a><span class="delimiter">/</span><span class="current">org.http4k.hamkrest</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-1934681408%2FFunctions%2F108150980" anchor-label="hasAuthority" id="-1934681408%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-authority.html"><span>has</span><wbr><span><span>Authority</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1934681408%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-authority.html"><span class="token function">hasAuthority</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1523249146%2FFunctions%2F108150980" anchor-label="hasBody" id="1523249146%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-body.html"><span>has</span><wbr><span><span>Body</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1523249146%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"hasBodyNullableString"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="has-body.html"><span class="token function">hasBody</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"hasBodyString"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="has-body.html"><span class="token function">hasBody</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-body.html"><span class="token function">hasBody</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-body/index.html">Body</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-body.html"><span class="token function">hasBody</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-body.html"><span class="token function">hasBody</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/-regex/index.html">Regex</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="has-body.html">T</a><span class="token operator">&gt; </span><a href="has-body.html"><span class="token function">hasBody</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lens<span class="token operator">: </span><a href="../../http4k-core/org.http4k.lens/-body-lens/index.html">BodyLens</a><span class="token operator">&lt;</span><a href="has-body.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="has-body.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1719927957%2FFunctions%2F108150980" anchor-label="hasBody" id="1719927957%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-body.html"><span>has</span><wbr><span><span>Body</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1719927957%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="has-body.html">NODE</a><span class="token operator">&gt; </span><a href="../../http4k-format-core/org.http4k.format/-json/index.html">Json</a><span class="token operator">&lt;</span><a href="has-body.html">NODE</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="has-body.html"><span class="token function">hasBody</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="has-body.html">NODE</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="has-body.html">NODE</a><span class="token operator">&gt; </span><a href="../../http4k-format-core/org.http4k.format/-json/index.html">Json</a><span class="token operator">&lt;</span><a href="has-body.html">NODE</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="has-body.html"><span class="token function">hasBody</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="has-body.html">NODE</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="has-body.html">NODE</a><span class="token operator">&gt; </span><a href="../../http4k-format-core/org.http4k.format/-json/index.html">Json</a><span class="token operator">&lt;</span><a href="has-body.html">NODE</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="has-body.html"><span class="token function">hasBody</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-907815739%2FFunctions%2F108150980" anchor-label="hasContentType" id="-907815739%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-content-type.html"><span>has</span><wbr><span>Content</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-907815739%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-content-type.html"><span class="token function">hasContentType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-content-type/index.html">ContentType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1767035096%2FFunctions%2F108150980" anchor-label="hasCookie" id="1767035096%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-cookie.html"><span>has</span><wbr><span><span>Cookie</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1767035096%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-cookie.html"><span class="token function">hasCookie</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-cookie.html"><span class="token function">hasCookie</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-cookie.html"><span class="token function">hasCookie</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-cookie.html"><span class="token function">hasCookie</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/-regex/index.html">Regex</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1121111309%2FFunctions%2F108150980" anchor-label="hasCookieDomain" id="-1121111309%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-cookie-domain.html"><span>has</span><wbr><span>Cookie</span><wbr><span><span>Domain</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1121111309%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-cookie-domain.html"><span class="token function">hasCookieDomain</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1083951222%2FFunctions%2F108150980" anchor-label="hasCookieExpiry" id="1083951222%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-cookie-expiry.html"><span>has</span><wbr><span>Cookie</span><wbr><span><span>Expiry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1083951222%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-cookie-expiry.html"><span class="token function">hasCookieExpiry</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Instant.html">Instant</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-cookie-expiry.html"><span class="token function">hasCookieExpiry</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Instant.html">Instant</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="120319418%2FFunctions%2F108150980" anchor-label="hasCookieName" id="120319418%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-cookie-name.html"><span>has</span><wbr><span>Cookie</span><wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="120319418%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-cookie-name.html"><span class="token function">hasCookieName</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1558730836%2FFunctions%2F108150980" anchor-label="hasCookiePath" id="1558730836%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-cookie-path.html"><span>has</span><wbr><span>Cookie</span><wbr><span><span>Path</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1558730836%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-cookie-path.html"><span class="token function">hasCookiePath</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-203885485%2FFunctions%2F108150980" anchor-label="hasCookieSameSite" id="-203885485%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-cookie-same-site.html"><span>has</span><wbr><span>Cookie</span><wbr><span>Same</span><wbr><span><span>Site</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-203885485%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-cookie-same-site.html"><span class="token function">hasCookieSameSite</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core.cookie/-same-site/index.html">SameSite</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1841128789%2FFunctions%2F108150980" anchor-label="hasCookieValue" id="1841128789%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-cookie-value.html"><span>has</span><wbr><span>Cookie</span><wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1841128789%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"hasCookieValueNullableString"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="has-cookie-value.html"><span class="token function">hasCookieValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-cookie-value.html"><span class="token function">hasCookieValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-cookie-value.html"><span class="token function">hasCookieValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1065722166%2FFunctions%2F108150980" anchor-label="hasForm" id="1065722166%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-form.html"><span>has</span><wbr><span><span>Form</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1065722166%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"hasFormNullableString"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="has-form.html"><span class="token function">hasForm</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-form.html"><span class="token function">hasForm</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-form.html"><span class="token function">hasForm</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-form.html"><span class="token function">hasForm</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/-regex/index.html">Regex</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1072374556%2FFunctions%2F108150980" anchor-label="hasFormField" id="1072374556%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-form-field.html"><span>has</span><wbr><span>Form</span><wbr><span><span>Field</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1072374556%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="has-form-field.html">T</a><span class="token operator">&gt; </span><a href="has-form-field.html"><span class="token function">hasFormField</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lens<span class="token operator">: </span><a href="../../http4k-core/org.http4k.lens/-lens/index.html">Lens</a><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.lens/-web-form/index.html">WebForm</a><span class="token punctuation">, </span><a href="has-form-field.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="has-form-field.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.lens/-web-form/index.html">WebForm</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-227481059%2FFunctions%2F108150980" anchor-label="hasHeader" id="-227481059%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-header.html"><span>has</span><wbr><span><span>Header</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-227481059%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-header.html"><span class="token function">hasHeader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"hasBodyNullableString"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="has-header.html"><span class="token function">hasHeader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-header.html"><span class="token function">hasHeader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-header.html"><span class="token function">hasHeader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-header.html"><span class="token function">hasHeader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-header.html"><span class="token function">hasHeader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/-regex/index.html">Regex</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="has-header.html">T</a><span class="token operator">&gt; </span><a href="has-header.html"><span class="token function">hasHeader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lens<span class="token operator">: </span><a href="../../http4k-core/org.http4k.lens/-header-lens/index.html">HeaderLens</a><span class="token operator">&lt;</span><a href="has-header.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="has-header.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1554535175%2FFunctions%2F108150980" anchor-label="hasHost" id="-1554535175%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-host.html"><span>has</span><wbr><span><span>Host</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1554535175%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-host.html"><span class="token function">hasHost</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-745748249%2FFunctions%2F108150980" anchor-label="hasMethod" id="-745748249%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-method.html"><span>has</span><wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-745748249%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-method.html"><span class="token function">hasMethod</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-method/index.html">Method</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1188548688%2FFunctions%2F108150980" anchor-label="hasPort" id="1188548688%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-port.html"><span>has</span><wbr><span><span>Port</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1188548688%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-port.html"><span class="token function">hasPort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2106698387%2FFunctions%2F108150980" anchor-label="hasQuery" id="-2106698387%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-query.html"><span>has</span><wbr><span><span>Query</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2106698387%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-name/index.html"><span class="token annotation builtin">JvmName</span></a><span class="token punctuation">(</span><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"hasQueryNullableString"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">fun </span><a href="has-query.html"><span class="token function">hasQuery</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-query.html"><span class="token function">hasQuery</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-query.html"><span class="token function">hasQuery</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-query.html"><span class="token function">hasQuery</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-query.html"><span class="token function">hasQuery</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/-regex/index.html">Regex</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="has-query.html">T</a><span class="token operator">&gt; </span><a href="has-query.html"><span class="token function">hasQuery</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lens<span class="token operator">: </span><a href="../../http4k-core/org.http4k.lens/-query-lens/index.html">QueryLens</a><span class="token operator">&lt;</span><a href="has-query.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="has-query.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1725438173%2FFunctions%2F108150980" anchor-label="hasRequest" id="1725438173%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-request.html"><span>has</span><wbr><span><span>Request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1725438173%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-request.html"><span class="token function">hasRequest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-transaction/index.html">HttpTransaction</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-852505311%2FFunctions%2F108150980" anchor-label="hasResponse" id="-852505311%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-response.html"><span>has</span><wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-852505311%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-response.html"><span class="token function">hasResponse</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-response/index.html">Response</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-http-transaction/index.html">HttpTransaction</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="323492329%2FFunctions%2F108150980" anchor-label="hasSetCookie" id="323492329%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-set-cookie.html"><span>has</span><wbr><span>Set</span><wbr><span><span>Cookie</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="323492329%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-set-cookie.html"><span class="token function">hasSetCookie</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-response/index.html">Response</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-set-cookie.html"><span class="token function">hasSetCookie</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">expected<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-response/index.html">Response</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1239107461%2FFunctions%2F108150980" anchor-label="hasStatus" id="1239107461%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-status.html"><span>has</span><wbr><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1239107461%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-status.html"><span class="token function">hasStatus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-status/index.html">Status</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-response/index.html">Response</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1682937625%2FFunctions%2F108150980" anchor-label="hasStatusDescription" id="-1682937625%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-status-description.html"><span>has</span><wbr><span>Status</span><wbr><span><span>Description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1682937625%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-status-description.html"><span class="token function">hasStatusDescription</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-response/index.html">Response</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-237338263%2FFunctions%2F108150980" anchor-label="hasUri" id="-237338263%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-uri.html"><span>has</span><wbr><span><span>Uri</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-237338263%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-uri.html"><span class="token function">hasUri</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-uri.html"><span class="token function">hasUri</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-uri.html"><span class="token function">hasUri</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/-regex/index.html">Regex</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-uri.html"><span class="token function">hasUri</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="585142910%2FFunctions%2F108150980" anchor-label="hasUriPath" id="585142910%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-uri-path.html"><span>has</span><wbr><span>Uri</span><wbr><span><span>Path</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="585142910%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-uri-path.html"><span class="token function">hasUriPath</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">matcher<span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-uri-path.html"><span class="token function">hasUriPath</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-uri-path.html"><span class="token function">hasUriPath</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.text/-regex/index.html">Regex</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1954654733%2FFunctions%2F108150980" anchor-label="hasUriQuery" id="1954654733%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-uri-query.html"><span>has</span><wbr><span>Uri</span><wbr><span><span>Query</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1954654733%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="has-uri-query.html"><span class="token function">hasUriQuery</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2035505904%2FFunctions%2F108150980" anchor-label="isHttpOnlyCookie" id="-2035505904%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-http-only-cookie.html"><span>is</span><wbr><span>Http</span><wbr><span>Only</span><wbr><span><span>Cookie</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2035505904%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="is-http-only-cookie.html"><span class="token function">isHttpOnlyCookie</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="157569101%2FFunctions%2F108150980" anchor-label="isSecureCookie" id="157569101%2FFunctions%2F108150980" data-filterable-set=":http4k-testing-hamkrest/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-testing-hamkrest/main" data-filterable-set=":http4k-testing-hamkrest/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-secure-cookie.html"><span>is</span><wbr><span>Secure</span><wbr><span><span>Cookie</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="157569101%2FFunctions%2F108150980"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-testing-hamkrest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="is-secure-cookie.html"><span class="token function">isSecureCookie</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">expected<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.natpryce.hamkrest/Matcher///PointingToDeclaration/">Matcher</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

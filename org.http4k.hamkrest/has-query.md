@@ -1,7 +1,0 @@
-[http4k](../index.md) / [org.http4k.hamkrest](index.md) / [hasQuery](./has-query.md)
-
-# hasQuery
-
-`fun <T> hasQuery(lens: `[`QueryLens`](../org.http4k.lens/-query-lens.md)`<`[`T`](has-query.md#T)`>, matcher: Matcher<`[`T`](has-query.md#T)`>): Matcher<`[`Request`](../org.http4k.core/-request/index.md)`>` [(source)](https://github.com/http4k/http4k/blob/master/http4k-testing-hamkrest/src/main/kotlin/org/http4k/hamkrest/request.kt#L14)
-`fun hasQuery(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, expected: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?): Matcher<`[`Request`](../org.http4k.core/-request/index.md)`>` [(source)](https://github.com/http4k/http4k/blob/master/http4k-testing-hamkrest/src/main/kotlin/org/http4k/hamkrest/request.kt#L16)
-`fun hasQuery(name: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, expected: `[`List`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)`<`[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?>): Matcher<`[`Request`](../org.http4k.core/-request/index.md)`>` [(source)](https://github.com/http4k/http4k/blob/master/http4k-testing-hamkrest/src/main/kotlin/org/http4k/hamkrest/request.kt#L18)

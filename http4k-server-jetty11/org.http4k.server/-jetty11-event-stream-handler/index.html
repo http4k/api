@@ -1,0 +1,907 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Jetty11EventStreamHandler</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">LOCAL
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-server-jetty11/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-server-jetty11/main" data-filter=":http4k-server-jetty11/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="http4k-server-jetty11::org.http4k.server/Jetty11EventStreamHandler///PointingToDeclaration//997114672">
+  <div class="breadcrumbs"><a href="../../index.html">http4k-server-jetty11</a><span class="delimiter">/</span><a href="../index.html">org.http4k.server</a><span class="delimiter">/</span><span class="current">Jetty11EventStreamHandler</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Jetty11Event</span><wbr><span>Stream</span><wbr><span><span>Handler</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Jetty11EventStreamHandler</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sse<span class="token operator">: </span><a href="../../../http4k-realtime-core/org.http4k.sse/-sse-handler/index.html">SseHandler</a><span class="token punctuation">, </span></span><span class="parameter ">heartBeatDuration<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html">Duration</a><span class="token operator"> = </span>Duration.ofSeconds(15)</span></span><span class="token punctuation">)</span> : <span data-unresolved-link="org.eclipse.jetty.server.handler/HandlerWrapper///PointingToDeclaration/">HandlerWrapper</span><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/core/server/jetty11/src/main/kotlin/org/http4k/server/Jetty11EventStreamHandler.kt#L15">source</a>)</span></span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="-893780466%2FConstructors%2F997114672" anchor-label="Jetty11EventStreamHandler" id="-893780466%2FConstructors%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-jetty11-event-stream-handler.html"><span>Jetty11Event</span><wbr><span>Stream</span><wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-893780466%2FConstructors%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sse<span class="token operator">: </span><a href="../../../http4k-realtime-core/org.http4k.sse/-sse-handler/index.html">SseHandler</a><span class="token punctuation">, </span></span><span class="parameter ">heartBeatDuration<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html">Duration</a><span class="token operator"> = </span>Duration.ofSeconds(15)</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-1332163348%2FClasslikes%2F997114672" anchor-label="Companion" id="-1332163348%2FClasslikes%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1332163348%2FClasslikes%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-910189661%2FProperties%2F997114672" anchor-label="beans" id="-910189661%2FProperties%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-910189661%2FProperties%2F997114672"><span><span>beans</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-910189661%2FProperties%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="index.html#-910189661%2FProperties%2F997114672">beans</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-391950209%2FProperties%2F997114672" anchor-label="childHandlers" id="-391950209%2FProperties%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-391950209%2FProperties%2F997114672"><span>child</span><wbr><span><span>Handlers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-391950209%2FProperties%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="index.html#-391950209%2FProperties%2F997114672">childHandlers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><span data-unresolved-link="org.eclipse.jetty.server/Handler///PointingToDeclaration/">Handler</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-319855596%2FProperties%2F997114672" anchor-label="eventListeners" id="-319855596%2FProperties%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-319855596%2FProperties%2F997114672"><span>event</span><wbr><span><span>Listeners</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-319855596%2FProperties%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="index.html#-319855596%2FProperties%2F997114672">eventListeners</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/EventListener.html">EventListener</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-609188950%2FProperties%2F997114672" anchor-label="handler" id="-609188950%2FProperties%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-609188950%2FProperties%2F997114672"><span><span>handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-609188950%2FProperties%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@get:</span><span data-unresolved-link="org.eclipse.jetty.util.annotation/ManagedAttribute///PointingToDeclaration/"><span class="token annotation builtin">ManagedAttribute</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Wrapped Handler"</span></span><span class="token punctuation">, </span></span><wbr><span>readonly<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">var </span><a href="index.html#-609188950%2FProperties%2F997114672">handler</a><span class="token operator">: </span><span data-unresolved-link="org.eclipse.jetty.server/Handler///PointingToDeclaration/">Handler</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-138733475%2FProperties%2F997114672" anchor-label="handlers" id="-138733475%2FProperties%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-138733475%2FProperties%2F997114672"><span><span>handlers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-138733475%2FProperties%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="index.html#-138733475%2FProperties%2F997114672">handlers</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><span data-unresolved-link="org.eclipse.jetty.server/Handler///PointingToDeclaration/">Handler</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1196947950%2FProperties%2F997114672" anchor-label="isFailed" id="-1196947950%2FProperties%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1196947950%2FProperties%2F997114672"><span>is</span><wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1196947950%2FProperties%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="index.html#-1196947950%2FProperties%2F997114672">isFailed</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-26965716%2FProperties%2F997114672" anchor-label="isRunning" id="-26965716%2FProperties%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-26965716%2FProperties%2F997114672"><span>is</span><wbr><span><span>Running</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-26965716%2FProperties%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="index.html#-26965716%2FProperties%2F997114672">isRunning</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1572641962%2FProperties%2F997114672" anchor-label="isStarted" id="1572641962%2FProperties%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1572641962%2FProperties%2F997114672"><span>is</span><wbr><span><span>Started</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1572641962%2FProperties%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="index.html#1572641962%2FProperties%2F997114672">isStarted</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1586430225%2FProperties%2F997114672" anchor-label="isStarting" id="-1586430225%2FProperties%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1586430225%2FProperties%2F997114672"><span>is</span><wbr><span><span>Starting</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1586430225%2FProperties%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="index.html#-1586430225%2FProperties%2F997114672">isStarting</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1363810526%2FProperties%2F997114672" anchor-label="isStopped" id="1363810526%2FProperties%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1363810526%2FProperties%2F997114672"><span>is</span><wbr><span><span>Stopped</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1363810526%2FProperties%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="index.html#1363810526%2FProperties%2F997114672">isStopped</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="529729851%2FProperties%2F997114672" anchor-label="isStopping" id="529729851%2FProperties%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#529729851%2FProperties%2F997114672"><span>is</span><wbr><span><span>Stopping</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="529729851%2FProperties%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="index.html#529729851%2FProperties%2F997114672">isStopping</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1344220452%2FProperties%2F997114672" anchor-label="server" id="1344220452%2FProperties%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1344220452%2FProperties%2F997114672"><span><span>server</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1344220452%2FProperties%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">var </span><a href="index.html#1344220452%2FProperties%2F997114672">server</a><span class="token operator">: </span><span data-unresolved-link="org.eclipse.jetty.server/Server///PointingToDeclaration/">Server</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1985150128%2FProperties%2F997114672" anchor-label="state" id="-1985150128%2FProperties%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1985150128%2FProperties%2F997114672"><span><span>state</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1985150128%2FProperties%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@get:</span><span data-unresolved-link="org.eclipse.jetty.util.annotation/ManagedAttribute///PointingToDeclaration/"><span class="token annotation builtin">ManagedAttribute</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Lifecycle State for this instance"</span></span><span class="token punctuation">, </span></span><wbr><span>readonly<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">true</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">val </span><a href="index.html#-1985150128%2FProperties%2F997114672">state</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-99644104%2FFunctions%2F997114672" anchor-label="addBean" id="-99644104%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1410547224%2FFunctions%2F997114672"><span>add</span><wbr><span><span>Bean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-99644104%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1410547224%2FFunctions%2F997114672"><span class="token function">addBean</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">o<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-28155284%2FFunctions%2F997114672"><span class="token function">addBean</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">o<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">managed<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="419393798%2FFunctions%2F997114672" anchor-label="addEventListener" id="419393798%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#419393798%2FFunctions%2F997114672"><span>add</span><wbr><span>Event</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="419393798%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#419393798%2FFunctions%2F997114672"><span class="token function">addEventListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/EventListener.html">EventListener</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="756467880%2FFunctions%2F997114672" anchor-label="addManaged" id="756467880%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#756467880%2FFunctions%2F997114672"><span>add</span><wbr><span><span>Managed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="756467880%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#756467880%2FFunctions%2F997114672"><span class="token function">addManaged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lifecycle<span class="token operator">: </span><span data-unresolved-link="org.eclipse.jetty.util.component/LifeCycle///PointingToDeclaration/">LifeCycle</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="197589334%2FFunctions%2F997114672" anchor-label="contains" id="197589334%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#197589334%2FFunctions%2F997114672"><span><span>contains</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="197589334%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="index.html#197589334%2FFunctions%2F997114672"><span class="token function">contains</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bean<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-138207429%2FFunctions%2F997114672" anchor-label="destroy" id="-138207429%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-138207429%2FFunctions%2F997114672"><span><span>destroy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-138207429%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-138207429%2FFunctions%2F997114672"><span class="token function">destroy</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="486923093%2FFunctions%2F997114672" anchor-label="dump" id="486923093%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1748460648%2FFunctions%2F997114672"><span><span>dump</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="486923093%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1748460648%2FFunctions%2F997114672"><span class="token function">dump</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">out<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Appendable.html">Appendable</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.eclipse.jetty.util.annotation/ManagedOperation///PointingToDeclaration/"><span class="token annotation builtin">ManagedOperation</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Dump the object to a string"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1594851557%2FFunctions%2F997114672"><span class="token function">dump</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-931847102%2FFunctions%2F997114672"><span class="token function">dump</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">out<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Appendable.html">Appendable</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">indent<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1781914361%2FFunctions%2F997114672" anchor-label="dumpSelf" id="1781914361%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1781914361%2FFunctions%2F997114672"><span>dump</span><wbr><span><span>Self</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1781914361%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1781914361%2FFunctions%2F997114672"><span class="token function">dumpSelf</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2088160898%2FFunctions%2F997114672" anchor-label="dumpStdErr" id="-2088160898%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-2088160898%2FFunctions%2F997114672"><span>dump</span><wbr><span>Std</span><wbr><span><span>Err</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2088160898%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.eclipse.jetty.util.annotation/ManagedOperation///PointingToDeclaration/"><span class="token annotation builtin">ManagedOperation</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="breakable-word"><span class="token string">"Dump the object to stderr"</span></span></span><wbr><span class="token punctuation">)</span></div></div><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-2088160898%2FFunctions%2F997114672"><span class="token function">dumpStdErr</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1882337747%2FFunctions%2F997114672" anchor-label="getBean" id="-1882337747%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1882337747%2FFunctions%2F997114672"><span>get</span><wbr><span><span>Bean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1882337747%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="index.html#-1882337747%2FFunctions%2F997114672">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt; </span><a href="index.html#-1882337747%2FFunctions%2F997114672"><span class="token function">getBean</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span data-unresolved-link="org.eclipse.jetty.util.component/ContainerLifeCycle/getBean/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]/PointingToGenericParameters(0)/">T</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.eclipse.jetty.util.component/ContainerLifeCycle/getBean/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]/PointingToGenericParameters(0)/">T</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="192719240%2FFunctions%2F997114672" anchor-label="getCachedBeans" id="192719240%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#192719240%2FFunctions%2F997114672"><span>get</span><wbr><span>Cached</span><wbr><span><span>Beans</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="192719240%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="index.html#192719240%2FFunctions%2F997114672">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt; </span><a href="index.html#192719240%2FFunctions%2F997114672"><span class="token function">getCachedBeans</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><a href="index.html#192719240%2FFunctions%2F997114672">T</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="index.html#192719240%2FFunctions%2F997114672">T</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2080601283%2FFunctions%2F997114672" anchor-label="getChildHandlerByClass" id="-2080601283%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-2080601283%2FFunctions%2F997114672"><span>get</span><wbr><span>Child</span><wbr><span>Handler</span><wbr><span>By</span><wbr><span><span>Class</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2080601283%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="index.html#-2080601283%2FFunctions%2F997114672">T</a><span class="token operator"> : </span><span data-unresolved-link="org.eclipse.jetty.server/Handler///PointingToDeclaration/">Handler</span><span class="token operator">?</span><span class="token operator">&gt; </span><a href="index.html#-2080601283%2FFunctions%2F997114672"><span class="token function">getChildHandlerByClass</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">byclass<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span data-unresolved-link="org.eclipse.jetty.server.handler/AbstractHandlerContainer/getChildHandlerByClass/#java.lang.Class[TypeParam(bounds=[org.eclipse.jetty.server.Handler])]/PointingToGenericParameters(0)/">T</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.eclipse.jetty.server.handler/AbstractHandlerContainer/getChildHandlerByClass/#java.lang.Class[TypeParam(bounds=[org.eclipse.jetty.server.Handler])]/PointingToGenericParameters(0)/">T</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="648869198%2FFunctions%2F997114672" anchor-label="getChildHandlersByClass" id="648869198%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#648869198%2FFunctions%2F997114672"><span>get</span><wbr><span>Child</span><wbr><span>Handlers</span><wbr><span>By</span><wbr><span><span>Class</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="648869198%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#648869198%2FFunctions%2F997114672"><span class="token function">getChildHandlersByClass</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">byclass<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><span data-unresolved-link="org.eclipse.jetty.server/Handler///PointingToDeclaration/">Handler</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="343299789%2FFunctions%2F997114672" anchor-label="getContainedBeans" id="343299789%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#343299789%2FFunctions%2F997114672"><span>get</span><wbr><span>Contained</span><wbr><span><span>Beans</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="343299789%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="index.html#343299789%2FFunctions%2F997114672">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt; </span><a href="index.html#343299789%2FFunctions%2F997114672"><span class="token function">getContainedBeans</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clazz<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span data-unresolved-link="org.eclipse.jetty.util.component/ContainerLifeCycle/getContainedBeans/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]/PointingToGenericParameters(0)/">T</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><span data-unresolved-link="org.eclipse.jetty.util.component/ContainerLifeCycle/getContainedBeans/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]/PointingToGenericParameters(0)/">T</span><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1853289626%2FFunctions%2F997114672" anchor-label="getEventListeners" id="-1853289626%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1853289626%2FFunctions%2F997114672"><span>get</span><wbr><span>Event</span><wbr><span><span>Listeners</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1853289626%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1853289626%2FFunctions%2F997114672"><span class="token function">getEventListeners</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/EventListener.html">EventListener</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="515219375%2FFunctions%2F997114672" anchor-label="handle" id="515219375%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="handle.html"><span><span>handle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="515219375%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="handle.html"><span class="token function">handle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">target<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">baseRequest<span class="token operator">: </span><span data-unresolved-link="org.eclipse.jetty.server/Request///PointingToDeclaration/">Request</span><span class="token punctuation">, </span></span><span class="parameter ">request<span class="token operator">: </span><span data-unresolved-link="jakarta.servlet.http/HttpServletRequest///PointingToDeclaration/">HttpServletRequest</span><span class="token punctuation">, </span></span><span class="parameter ">response<span class="token operator">: </span><span data-unresolved-link="jakarta.servlet.http/HttpServletResponse///PointingToDeclaration/">HttpServletResponse</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-751360568%2FFunctions%2F997114672" anchor-label="insertHandler" id="-751360568%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-751360568%2FFunctions%2F997114672"><span>insert</span><wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-751360568%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-751360568%2FFunctions%2F997114672"><span class="token function">insertHandler</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">wrapper<span class="token operator">: </span><span data-unresolved-link="org.eclipse.jetty.server.handler/HandlerWrapper///PointingToDeclaration/">HandlerWrapper</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-901889796%2FFunctions%2F997114672" anchor-label="isAuto" id="-901889796%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-901889796%2FFunctions%2F997114672"><span>is</span><wbr><span><span>Auto</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-901889796%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-901889796%2FFunctions%2F997114672"><span class="token function">isAuto</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bean<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1276609095%2FFunctions%2F997114672" anchor-label="isDumpable" id="1276609095%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1276609095%2FFunctions%2F997114672"><span>is</span><wbr><span><span>Dumpable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1276609095%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1276609095%2FFunctions%2F997114672"><span class="token function">isDumpable</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">o<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1648558740%2FFunctions%2F997114672" anchor-label="isFailed" id="1648558740%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1648558740%2FFunctions%2F997114672"><span>is</span><wbr><span><span>Failed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1648558740%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1648558740%2FFunctions%2F997114672"><span class="token function">isFailed</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1927438924%2FFunctions%2F997114672" anchor-label="isManaged" id="-1927438924%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1927438924%2FFunctions%2F997114672"><span>is</span><wbr><span><span>Managed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1927438924%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1927438924%2FFunctions%2F997114672"><span class="token function">isManaged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bean<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2010571542%2FFunctions%2F997114672" anchor-label="isRunning" id="-2010571542%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-2010571542%2FFunctions%2F997114672"><span>is</span><wbr><span><span>Running</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2010571542%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-2010571542%2FFunctions%2F997114672"><span class="token function">isRunning</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-410963864%2FFunctions%2F997114672" anchor-label="isStarted" id="-410963864%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-410963864%2FFunctions%2F997114672"><span>is</span><wbr><span><span>Started</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-410963864%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-410963864%2FFunctions%2F997114672"><span class="token function">isStarted</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1346298609%2FFunctions%2F997114672" anchor-label="isStarting" id="1346298609%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1346298609%2FFunctions%2F997114672"><span>is</span><wbr><span><span>Starting</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1346298609%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1346298609%2FFunctions%2F997114672"><span class="token function">isStarting</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-619795300%2FFunctions%2F997114672" anchor-label="isStopped" id="-619795300%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-619795300%2FFunctions%2F997114672"><span>is</span><wbr><span><span>Stopped</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-619795300%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-619795300%2FFunctions%2F997114672"><span class="token function">isStopped</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-832508611%2FFunctions%2F997114672" anchor-label="isStopping" id="-832508611%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-832508611%2FFunctions%2F997114672"><span>is</span><wbr><span><span>Stopping</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-832508611%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-832508611%2FFunctions%2F997114672"><span class="token function">isStopping</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-360268949%2FFunctions%2F997114672" anchor-label="isUnmanaged" id="-360268949%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-360268949%2FFunctions%2F997114672"><span>is</span><wbr><span><span>Unmanaged</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-360268949%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-360268949%2FFunctions%2F997114672"><span class="token function">isUnmanaged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bean<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-264411026%2FFunctions%2F997114672" anchor-label="manage" id="-264411026%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-264411026%2FFunctions%2F997114672"><span><span>manage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-264411026%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-264411026%2FFunctions%2F997114672"><span class="token function">manage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bean<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="628311711%2FFunctions%2F997114672" anchor-label="removeBean" id="628311711%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#628311711%2FFunctions%2F997114672"><span>remove</span><wbr><span><span>Bean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="628311711%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#628311711%2FFunctions%2F997114672"><span class="token function">removeBean</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">o<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1340507783%2FFunctions%2F997114672" anchor-label="removeBeans" id="1340507783%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1340507783%2FFunctions%2F997114672"><span>remove</span><wbr><span><span>Beans</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1340507783%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#1340507783%2FFunctions%2F997114672"><span class="token function">removeBeans</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-912512449%2FFunctions%2F997114672" anchor-label="removeEventListener" id="-912512449%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-912512449%2FFunctions%2F997114672"><span>remove</span><wbr><span>Event</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-912512449%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-912512449%2FFunctions%2F997114672"><span class="token function">removeEventListener</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/EventListener.html">EventListener</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-946619172%2FFunctions%2F997114672" anchor-label="setEventListeners" id="-946619172%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-946619172%2FFunctions%2F997114672"><span>set</span><wbr><span>Event</span><wbr><span><span>Listeners</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-946619172%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-946619172%2FFunctions%2F997114672"><span class="token function">setEventListeners</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">eventListeners<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/EventListener.html">EventListener</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1794564957%2FFunctions%2F997114672" anchor-label="start" id="1794564957%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1794564957%2FFunctions%2F997114672"><span><span>start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1794564957%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#1794564957%2FFunctions%2F997114672"><span class="token function">start</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="383471609%2FFunctions%2F997114672" anchor-label="stop" id="383471609%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#383471609%2FFunctions%2F997114672"><span><span>stop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="383471609%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html#383471609%2FFunctions%2F997114672"><span class="token function">stop</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="267342005%2FFunctions%2F997114672" anchor-label="unmanage" id="267342005%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#267342005%2FFunctions%2F997114672"><span><span>unmanage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="267342005%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#267342005%2FFunctions%2F997114672"><span class="token function">unmanage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bean<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="751804024%2FFunctions%2F997114672" anchor-label="updateBean" id="751804024%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#919711204%2FFunctions%2F997114672"><span>update</span><wbr><span><span>Bean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="751804024%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#919711204%2FFunctions%2F997114672"><span class="token function">updateBean</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">oldBean<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">newBean<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-2025529056%2FFunctions%2F997114672"><span class="token function">updateBean</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">oldBean<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">newBean<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">managed<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="471939154%2FFunctions%2F997114672" anchor-label="updateBeans" id="471939154%2FFunctions%2F997114672" data-filterable-set=":http4k-server-jetty11/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-server-jetty11/main" data-filterable-set=":http4k-server-jetty11/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1749629933%2FFunctions%2F997114672"><span>update</span><wbr><span><span>Beans</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="471939154%2FFunctions%2F997114672"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-server-jetty11/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#-1749629933%2FFunctions%2F997114672"><span class="token function">updateBeans</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">oldBeans<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">newBeans<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="index.html#420584185%2FFunctions%2F997114672"><span class="token function">updateBeans</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">oldBeans<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">newBeans<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-collection/index.html">Collection</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2025 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
