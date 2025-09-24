@@ -566,6 +566,8 @@ module:http4k-template-freemarker
 org.http4k.template
 module:http4k-template-handlebars
 org.http4k.template
+module:http4k-template-htmlflow
+org.http4k.template
 module:http4k-template-jte
 org.http4k.template
 module:http4k-template-pebble
