@@ -51,6 +51,12 @@ org.http4k.ai.mcp.client.websocket
 org.http4k.ai.mcp.protocol.messages
 org.http4k.ai.mcp.testing
 org.http4k.ai.mcp.testing.capabilities
+module:http4k-ai-mcp-conformance
+org.http4k.ai.mcp.conformance.server
+org.http4k.ai.mcp.conformance.server.misc
+org.http4k.ai.mcp.conformance.server.prompts
+org.http4k.ai.mcp.conformance.server.resources
+org.http4k.ai.mcp.conformance.server.tools
 module:http4k-ai-mcp-core
 org.http4k.ai.mcp
 org.http4k.ai.mcp.model
