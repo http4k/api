@@ -467,6 +467,8 @@ dev.forkhandles.data
 org.http4k.format
 module:http4k-format-moshi-yaml
 org.http4k.format
+module:http4k-format-toon
+org.http4k.format
 module:http4k-format-xml
 org.http4k.format
 module:http4k-incubator
@@ -507,6 +509,8 @@ org.http4k.azure
 module:http4k-platform-core
 org.http4k.cloudnative
 org.http4k.filter
+module:http4k-platform-docker
+org.http4k.docker.config
 module:http4k-platform-gcp
 org.http4k.gcp
 module:http4k-platform-k8s
