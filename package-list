@@ -300,6 +300,12 @@ org.http4k.lens
 module:http4k-connect-amazon-s3-fake
 org.http4k.connect.amazon.s3
 org.http4k.connect.amazon.s3.endpoints
+module:http4k-connect-amazon-scheduler
+org.http4k.connect.amazon.scheduler
+org.http4k.connect.amazon.scheduler.action
+org.http4k.connect.amazon.scheduler.model
+module:http4k-connect-amazon-scheduler-fake
+org.http4k.connect.amazon.scheduler
 module:http4k-connect-amazon-secretsmanager
 org.http4k.connect.amazon.secretsmanager
 org.http4k.connect.amazon.secretsmanager.action
