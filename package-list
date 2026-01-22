@@ -309,6 +309,7 @@ org.http4k.connect.amazon.scheduler
 module:http4k-connect-amazon-secretsmanager
 org.http4k.connect.amazon.secretsmanager
 org.http4k.connect.amazon.secretsmanager.action
+org.http4k.connect.amazon.secretsmanager.events
 org.http4k.connect.amazon.secretsmanager.model
 module:http4k-connect-amazon-secretsmanager-fake
 org.http4k.connect.amazon.secretsmanager
@@ -481,8 +482,13 @@ module:http4k-incubator
 org.http4k.lens
 org.http4k.routing.experimental
 org.http4k.webdriver
-module:http4k-incubator-db
+module:http4k-incubator-db-core
 org.http4k.db
+module:http4k-incubator-db-exposed
+org.http4k.db.exposed
+module:http4k-incubator-db-jdbc
+org.http4k.db.jdbc
+module:http4k-incubator-db-postbox
 org.http4k.postbox
 org.http4k.postbox.processing
 org.http4k.postbox.storage.exposed
