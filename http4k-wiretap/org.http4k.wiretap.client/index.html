@@ -1,0 +1,377 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.wiretap.client</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">6.33.0.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-wiretap/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-wiretap/main" data-filter=":http4k-wiretap/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-wiretap::org.http4k.wiretap.client////PointingToDeclaration//1875226928">
+  <div class="breadcrumbs"><a href="../index.html">http4k-wiretap</a><span class="delimiter">/</span><span class="current">org.http4k.wiretap.client</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="628155324%2FClasslikes%2F1875226928" anchor-label="ClientRequest" id="628155324%2FClasslikes%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-client-request/index.html"><span>Client</span><wbr><span><span>Request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="628155324%2FClasslikes%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-client-request/index.html">ClientRequest</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>method<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-method/index.html">Method</a><span class="token operator"> = </span>GET<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>url<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator"> = </span>Uri.of("/")<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>headers<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="-header-entry/index.html">HeaderEntry</a><span class="token operator">&gt;</span><span class="token operator"> = </span>mapOf("0" to HeaderEntry())<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>contentType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>body<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2097059072%2FClasslikes%2F1875226928" anchor-label="ClientSignals" id="-2097059072%2FClasslikes%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-client-signals/index.html"><span>Client</span><wbr><span><span>Signals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2097059072%2FClasslikes%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-client-signals/index.html">ClientSignals</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>url<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>method<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span>GET.name<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>headers<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="-header-entry/index.html">HeaderEntry</a><span class="token operator">&gt;</span><span class="token operator"> = </span>mapOf("0" to HeaderEntry())<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>contentType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>body<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.wiretap.util/-signal-model/index.html">SignalModel</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2036480565%2FClasslikes%2F1875226928" anchor-label="FormattedBodySignals" id="2036480565%2FClasslikes%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-formatted-body-signals/index.html"><span>Formatted</span><wbr><span>Body</span><wbr><span><span>Signals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2036480565%2FClasslikes%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-formatted-body-signals/index.html">FormattedBodySignals</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>body<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.wiretap.util/-signal-model/index.html">SignalModel</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1353754373%2FClasslikes%2F1875226928" anchor-label="HeaderEntry" id="-1353754373%2FClasslikes%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-header-entry/index.html"><span>Header</span><wbr><span><span>Entry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1353754373%2FClasslikes%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-header-entry/index.html">HeaderEntry</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">""</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1141292887%2FClasslikes%2F1875226928" anchor-label="HeaderRowsView" id="1141292887%2FClasslikes%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-header-rows-view/index.html"><span>Header</span><wbr><span>Rows</span><wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1141292887%2FClasslikes%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-header-rows-view/index.html">HeaderRowsView</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>rows<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-header-row-view/index.html">HeaderRowView</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>showAdd<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>basePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="../../http4k-template-core/org.http4k.template/-view-model/index.html">ViewModel</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-760241298%2FClasslikes%2F1875226928" anchor-label="HeaderRowView" id="-760241298%2FClasslikes%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-header-row-view/index.html"><span>Header</span><wbr><span>Row</span><wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-760241298%2FClasslikes%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-header-row-view/index.html">HeaderRowView</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>key<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>index<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>basePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1300453885%2FClasslikes%2F1875226928" anchor-label="HeadersSignals" id="1300453885%2FClasslikes%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-headers-signals/index.html"><span>Headers</span><wbr><span><span>Signals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1300453885%2FClasslikes%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-headers-signals/index.html">HeadersSignals</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>headers<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="-header-entry/index.html">HeaderEntry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.wiretap.util/-signal-model/index.html">SignalModel</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1060970002%2FClasslikes%2F1875226928" anchor-label="Index" id="-1060970002%2FClasslikes%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-index/index.html"><span><span>Index</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1060970002%2FClasslikes%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-index/index.html">Index</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>signals<span class="token operator">: </span><a href="-client-signals/index.html">ClientSignals</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>basePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"/_wiretap/inbound/"</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pageTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"Inbound Client"</span></span></span><span class="token punctuation">)</span> : <a href="../../http4k-template-core/org.http4k.template/-view-model/index.html">ViewModel</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="1292539963%2FProperties%2F1875226928" anchor-label="clientRequestLens" id="1292539963%2FProperties%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="client-request-lens.html"><span>client</span><wbr><span>Request</span><wbr><span><span>Lens</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1292539963%2FProperties%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="client-request-lens.html">clientRequestLens</a><span class="token operator">: </span><a href="../../http4k-core/org.http4k.lens/-bi-di-body-lens/index.html">BiDiBodyLens</a><span class="token operator">&lt;</span><a href="-client-request/index.html">ClientRequest</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="394250455%2FFunctions%2F1875226928" anchor-label="EditHeaders" id="394250455%2FFunctions%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-edit-headers.html"><span>Edit</span><wbr><span><span>Headers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="394250455%2FFunctions%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-edit-headers.html"><span class="token function">EditHeaders</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">elements<span class="token operator">: </span><a href="../../http4k-web-datastar/org.http4k.template/-datastar-element-renderer/index.html">DatastarElementRenderer</a><span class="token punctuation">, </span></span><span class="parameter ">basePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"/_wiretap/inbound/"</span><span class="token punctuation">, </span></span><span class="parameter ">defaultUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"/"</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1473957348%2FFunctions%2F1875226928" anchor-label="FormatBody" id="1473957348%2FFunctions%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-format-body.html"><span>Format</span><wbr><span><span>Body</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1473957348%2FFunctions%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-format-body.html"><span class="token function">FormatBody</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="395221212%2FFunctions%2F1875226928" anchor-label="headerRowsView" id="395221212%2FFunctions%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="header-rows-view.html"><span>header</span><wbr><span>Rows</span><wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="395221212%2FFunctions%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="header-rows-view.html"><span class="token function">headerRowsView</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">headers<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="-header-entry/index.html">HeaderEntry</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">basePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-header-rows-view/index.html">HeaderRowsView</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="977587628%2FFunctions%2F1875226928" anchor-label="InboundClient" id="977587628%2FFunctions%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-inbound-client.html"><span>Inbound</span><wbr><span><span>Client</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="977587628%2FFunctions%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-inbound-client.html"><span class="token function">InboundClient</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token punctuation">, </span></span><span class="parameter ">transactions<span class="token operator">: </span><a href="../org.http4k.wiretap.domain/-transaction-store/index.html">TransactionStore</a><span class="token punctuation">, </span></span><span class="parameter ">proxy<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.wiretap/-wiretap-function/index.html">WiretapFunction</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="368046746%2FFunctions%2F1875226928" anchor-label="Index" id="368046746%2FFunctions%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-index.html"><span><span>Index</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="368046746%2FFunctions%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-index.html"><span class="token function">Index</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultUrl<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">html<span class="token operator">: </span><a href="../../http4k-template-core/org.http4k.template/-template-renderer/index.html">TemplateRenderer</a><span class="token punctuation">, </span></span><span class="parameter ">transactions<span class="token operator">: </span><a href="../org.http4k.wiretap.domain/-transaction-store/index.html">TransactionStore</a><span class="token punctuation">, </span></span><span class="parameter ">basePath<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">pageTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1788728169%2FFunctions%2F1875226928" anchor-label="OutboundClient" id="-1788728169%2FFunctions%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-outbound-client.html"><span>Outbound</span><wbr><span><span>Client</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1788728169%2FFunctions%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-outbound-client.html"><span class="token function">OutboundClient</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">httpClient<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a><span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token punctuation">, </span></span><span class="parameter ">transactions<span class="token operator">: </span><a href="../org.http4k.wiretap.domain/-transaction-store/index.html">TransactionStore</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.wiretap/-wiretap-function/index.html">WiretapFunction</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1078972055%2FFunctions%2F1875226928" anchor-label="SendRequest" id="1078972055%2FFunctions%2F1875226928" data-filterable-set=":http4k-wiretap/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-wiretap/main" data-filterable-set=":http4k-wiretap/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-send-request.html"><span>Send</span><wbr><span><span>Request</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1078972055%2FFunctions%2F1875226928"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-wiretap/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-send-request.html"><span class="token function">SendRequest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token punctuation">, </span></span><span class="parameter ">direction<span class="token operator">: </span><a href="../org.http4k.wiretap.domain/-direction/index.html">Direction</a><span class="token punctuation">, </span></span><span class="parameter ">proxy<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../org.http4k.wiretap/-wiretap-function/index.html">WiretapFunction</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2026 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
