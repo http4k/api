@@ -65,6 +65,8 @@ org.http4k.ai.mcp.protocol.messages
 org.http4k.ai.mcp.util
 org.http4k.format
 org.http4k.lens
+module:http4k-ai-mcp-mpp
+org.http4k.ai.mcp.mpp
 module:http4k-ai-mcp-sdk
 org.http4k.ai.mcp.server
 org.http4k.ai.mcp.server.capability
@@ -88,6 +90,8 @@ org.http4k.ai.mcp.apps.model
 org.http4k.ai.mcp.apps.util
 org.http4k.ai.mcp.testing
 org.http4k.ai.mcp.testing.capabilities
+module:http4k-ai-mcp-x402
+org.http4k.ai.mcp.x402
 module:http4k-api-cloudevents
 io.cloudevents
 io.cloudevents.core.builder
@@ -422,6 +426,12 @@ org.http4k.connect.mattermost.action
 org.http4k.connect.mattermost.model
 module:http4k-connect-mattermost-fake
 org.http4k.connect.mattermost
+module:http4k-connect-mpp
+org.http4k.connect.mpp
+org.http4k.connect.mpp.model
+org.http4k.filter
+org.http4k.lens
+org.http4k.security
 module:http4k-connect-slack
 org.http4k.connect.slack
 org.http4k.connect.slack.action
@@ -439,6 +449,15 @@ module:http4k-connect-storage-redis
 org.http4k.connect.storage
 module:http4k-connect-storage-s3
 org.http4k.connect.storage
+module:http4k-connect-x402
+org.http4k.connect.x402
+org.http4k.connect.x402.action
+org.http4k.connect.x402.model
+org.http4k.filter
+org.http4k.lens
+org.http4k.security
+module:http4k-connect-x402-fake
+org.http4k.connect.x402
 module:http4k-core
 org.http4k
 org.http4k.client
