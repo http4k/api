@@ -534,6 +534,7 @@ module:http4k-ops-opentelemetry
 org.http4k.events
 org.http4k.filter
 org.http4k.metrics
+org.http4k.util
 module:http4k-ops-resilience4j
 org.http4k.filter
 module:http4k-platform-aws
@@ -682,6 +683,7 @@ org.http4k.wiretap.chaos
 org.http4k.wiretap.client
 org.http4k.wiretap.domain
 org.http4k.wiretap.home
+org.http4k.wiretap.junit
 org.http4k.wiretap.mcp
 org.http4k.wiretap.mcp.apps
 org.http4k.wiretap.mcp.prompts
