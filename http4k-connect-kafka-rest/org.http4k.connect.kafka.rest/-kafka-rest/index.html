@@ -18,7 +18,6 @@
         }
       }
     </script>
-<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
 <script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
 <link href="../../../styles/style.css" rel="Stylesheet">
 <link href="../../../styles/main.css" rel="Stylesheet">
@@ -41,7 +40,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">6.38.0.0
+        <div class="library-version" id="library-version">6.39.1.0
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -123,22 +122,7 @@
       </div>
       <div data-togglable="FUNCTION">
         <h2 class="tableheader">Functions</h2>
-        <div class="table"><a data-name="323530736%2FFunctions%2F-672266598" anchor-label="commitOffsets" id="323530736%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
-          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../../org.http4k.connect.kafka.rest.v2/commit-offsets.html"><span>commit</span><wbr><span><span>Offsets</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="323530736%2FFunctions%2F-672266598"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v2/commit-offsets.html"><span class="token function">commitOffsets</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">group<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-group/index.html">ConsumerGroup</a><span class="token punctuation">, </span></span><span class="parameter ">instance<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-instance/index.html">ConsumerInstance</a><span class="token punctuation">, </span></span><span class="parameter ">offsets<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v2.model/-commit-offset/index.html">CommitOffset</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-2036524499%2FFunctions%2F-672266598" anchor-label="consumeAndCommitRecords" id="-2036524499%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
+        <div class="table"><a data-name="-2036524499%2FFunctions%2F-672266598" anchor-label="consumeAndCommitRecords" id="-2036524499%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
           <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
@@ -149,111 +133,6 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v2.extensions/consume-and-commit-records.html">T</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v2.extensions/consume-and-commit-records.html"><span class="token function">consumeAndCommitRecords</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">group<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-group/index.html">ConsumerGroup</a><span class="token punctuation">, </span></span><span class="parameter ">consumerInstance<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-instance/index.html">ConsumerInstance</a><span class="token punctuation">, </span></span><span class="parameter ">topic<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-topic/index.html">Topic</a><span class="token punctuation">, </span></span><span class="parameter ">recordFormat<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.v2.model/-record-format/index.html">RecordFormat</a><span class="token punctuation">, </span></span><span class="parameter ">recordConsumer<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.extensions/-record-consumer/index.html">RecordConsumer</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v2.extensions/consume-and-commit-records.html">T</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Process Records on a Topic using the passed RecordConsumer, and either commits the Offset after processing each.</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="625650388%2FFunctions%2F-672266598" anchor-label="consumeRecords" id="625650388%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
-          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../../org.http4k.connect.kafka.rest.v2/consume-records.html"><span>consume</span><wbr><span><span>Records</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="625650388%2FFunctions%2F-672266598"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v2/consume-records.html"><span class="token function">consumeRecords</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">group<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-group/index.html">ConsumerGroup</a><span class="token punctuation">, </span></span><span class="parameter ">instance<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-instance/index.html">ConsumerInstance</a><span class="token punctuation">, </span></span><span class="parameter ">format<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.v2.model/-record-format/index.html">RecordFormat</a><span class="token punctuation">, </span></span><span class="parameter ">timeout<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html">Duration</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v2.model/-topic-record/index.html">TopicRecord</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-679405057%2FFunctions%2F-672266598" anchor-label="createConsumer" id="-679405057%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
-          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../../org.http4k.connect.kafka.rest.v2/create-consumer.html"><span>create</span><wbr><span><span>Consumer</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-679405057%2FFunctions%2F-672266598"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v2/create-consumer.html"><span class="token function">createConsumer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">group<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-group/index.html">ConsumerGroup</a><span class="token punctuation">, </span></span><span class="parameter ">consumer<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.v2.model/-consumer/index.html">Consumer</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v2.action/-new-consumer/index.html">NewConsumer</a><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1213263115%2FFunctions%2F-672266598" anchor-label="deleteConsumer" id="-1213263115%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
-          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../../org.http4k.connect.kafka.rest.v2/delete-consumer.html"><span>delete</span><wbr><span><span>Consumer</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1213263115%2FFunctions%2F-672266598"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v2/delete-consumer.html"><span class="token function">deleteConsumer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">group<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-group/index.html">ConsumerGroup</a><span class="token punctuation">, </span></span><span class="parameter ">instance<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-instance/index.html">ConsumerInstance</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-1519948371%2FFunctions%2F-672266598" anchor-label="getOffsets" id="-1519948371%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
-          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../../org.http4k.connect.kafka.rest.v2/get-offsets.html"><span>get</span><wbr><span><span>Offsets</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1519948371%2FFunctions%2F-672266598"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v2/get-offsets.html"><span class="token function">getOffsets</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">group<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-group/index.html">ConsumerGroup</a><span class="token punctuation">, </span></span><span class="parameter ">instance<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-instance/index.html">ConsumerInstance</a><span class="token punctuation">, </span></span><span class="parameter ">partitions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v2.model/-partition-offset-request/index.html">PartitionOffsetRequest</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v2.model/-commit-offsets-set/index.html">CommitOffsetsSet</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="155523192%2FFunctions%2F-672266598" anchor-label="getPartitions" id="155523192%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
-          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../../org.http4k.connect.kafka.rest.v2/get-partitions.html"><span>get</span><wbr><span><span>Partitions</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="155523192%2FFunctions%2F-672266598"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v2/get-partitions.html"><span class="token function">getPartitions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">topic<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-topic/index.html">Topic</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v2.action/-partition/index.html">Partition</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v3/get-partitions.html"><span class="token function">getPartitions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.v3.model/-cluster-id/index.html">ClusterId</a><span class="token punctuation">, </span></span><span class="parameter ">topic<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-topic/index.html">Topic</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v3.action/-kafka-partition-list/index.html">KafkaPartitionList</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="912806249%2FFunctions%2F-672266598" anchor-label="getTopic" id="912806249%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
-          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../../org.http4k.connect.kafka.rest.v3/get-topic.html"><span>get</span><wbr><span><span>Topic</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="912806249%2FFunctions%2F-672266598"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v3/get-topic.html"><span class="token function">getTopic</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.v3.model/-cluster-id/index.html">ClusterId</a><span class="token punctuation">, </span></span><span class="parameter ">topic<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-topic/index.html">Topic</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v3.action/-kafka-topic/index.html">KafkaTopic</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="597186300%2FFunctions%2F-672266598" anchor-label="getTopics" id="597186300%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
-          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../../org.http4k.connect.kafka.rest.v3/get-topics.html"><span>get</span><wbr><span><span>Topics</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="597186300%2FFunctions%2F-672266598"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v3/get-topics.html"><span class="token function">getTopics</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.v3.model/-cluster-id/index.html">ClusterId</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v3.action/-kafka-topic-list/index.html">KafkaTopicList</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -273,21 +152,6 @@
               </div>
             </div>
           </div>
-<a data-name="1728770113%2FFunctions%2F-672266598" anchor-label="produceMessages" id="1728770113%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
-          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../../org.http4k.connect.kafka.rest.v2/produce-messages.html"><span>produce</span><wbr><span><span>Messages</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1728770113%2FFunctions%2F-672266598"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v2/produce-messages.html"><span class="token function">produceMessages</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">topic<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-topic/index.html">Topic</a><span class="token punctuation">, </span></span><span class="parameter ">records<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.v2.model/-records/index.html">Records</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v2.action/-produced-messages/index.html">ProducedMessages</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
 <a data-name="928982376%2FFunctions%2F-672266598" anchor-label="produceMessagesWithPartitions" id="928982376%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
           <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
             <div class="main-subrow keyValue ">
@@ -303,21 +167,6 @@
               </div>
             </div>
           </div>
-<a data-name="134351351%2FFunctions%2F-672266598" anchor-label="produceRecords" id="134351351%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
-          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../../org.http4k.connect.kafka.rest.v3/produce-records.html"><span>produce</span><wbr><span><span>Records</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="134351351%2FFunctions%2F-672266598"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v3/produce-records.html"><span class="token function">produceRecords</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.v3.model/-cluster-id/index.html">ClusterId</a><span class="token punctuation">, </span></span><span class="parameter ">topic<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-topic/index.html">Topic</a><span class="token punctuation">, </span></span><span class="parameter ">records<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v3.model/-record/index.html">Record</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v3.action/-produced-record/index.html">ProducedRecord</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
 <a data-name="666078346%2FFunctions%2F-672266598" anchor-label="produceRecordsWithPartitions" id="666078346%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
           <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
             <div class="main-subrow keyValue ">
@@ -329,36 +178,6 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v3.extensions/produce-records-with-partitions.html"><span class="token function">produceRecordsWithPartitions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">topic<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-topic/index.html">Topic</a><span class="token punctuation">, </span></span><span class="parameter ">clusterId<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.v3.model/-cluster-id/index.html">ClusterId</a><span class="token punctuation">, </span></span><span class="parameter ">records<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v3.model/-record/index.html">Record</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">fn<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.model/-partition-id/index.html">PartitionId</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../../org.http4k.connect.kafka.rest.extensions/-partitioner/index.html">Partitioner</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v3.action/-produced-record/index.html">ProducedRecord</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Rewrites the partitions of records using the passed Partitioner, after getting the list of partitions to write to</p></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="833729906%2FFunctions%2F-672266598" anchor-label="seekOffsets" id="833729906%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
-          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../../org.http4k.connect.kafka.rest.v2/seek-offsets.html"><span>seek</span><wbr><span><span>Offsets</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="833729906%2FFunctions%2F-672266598"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v2/seek-offsets.html"><span class="token function">seekOffsets</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">group<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-group/index.html">ConsumerGroup</a><span class="token punctuation">, </span></span><span class="parameter ">instance<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-instance/index.html">ConsumerInstance</a><span class="token punctuation">, </span></span><span class="parameter ">offsets<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.v2.model/-seek-offset/index.html">SeekOffset</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="-85370823%2FFunctions%2F-672266598" anchor-label="subscribeToTopics" id="-85370823%2FFunctions%2F-672266598" data-filterable-set=":http4k-connect-kafka-rest/main"></a>
-          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-kafka-rest/main" data-filterable-set=":http4k-connect-kafka-rest/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="../../org.http4k.connect.kafka.rest.v2/subscribe-to-topics.html"><span>subscribe</span><wbr><span>To</span><wbr><span><span>Topics</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-85370823%2FFunctions%2F-672266598"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-kafka-rest/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="index.html">KafkaRest</a><span class="token punctuation">.</span><a href="../../org.http4k.connect.kafka.rest.v2/subscribe-to-topics.html"><span class="token function">subscribeToTopics</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">group<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-group/index.html">ConsumerGroup</a><span class="token punctuation">, </span></span><span class="parameter ">instance<span class="token operator">: </span><a href="../../org.http4k.connect.kafka.rest.model/-consumer-instance/index.html">ConsumerInstance</a><span class="token punctuation">, </span></span><span class="parameter ">topics<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../org.http4k.connect.kafka.rest.model/-topic/index.html">Topic</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="dev.forkhandles.result4k/Result///PointingToDeclaration/">Result</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">?</span><span class="token punctuation">, </span><a href="../../../http4k-connect-core/org.http4k.connect/-remote-failure/index.html">RemoteFailure</a><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>

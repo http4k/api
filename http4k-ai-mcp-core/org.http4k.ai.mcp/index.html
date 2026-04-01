@@ -18,7 +18,6 @@
         }
       }
     </script>
-<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
 <script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
 <link href="../../styles/style.css" rel="Stylesheet">
 <link href="../../styles/main.css" rel="Stylesheet">
@@ -41,7 +40,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">6.38.0.0
+        <div class="library-version" id="library-version">6.39.1.0
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -188,7 +187,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-completion-response/index.html">CompletionResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>values<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>total<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>hasMore<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">interface </span><a href="-completion-response/index.html">CompletionResponse</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -338,7 +337,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-prompt-response/index.html">PromptResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>messages<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.ai.mcp.model/-message/index.html">Message</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">interface </span><a href="-prompt-response/index.html">PromptResponse</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -398,7 +397,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-resource-response/index.html">ResourceResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>list<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.ai.mcp.model/-resource/-content/index.html">Resource.Content</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>meta<span class="token operator">: </span><a href="../org.http4k.ai.mcp.model/-meta/index.html">Meta</a><span class="token operator"> = </span>default</span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">interface </span><a href="-resource-response/index.html">ResourceResponse</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -546,7 +545,22 @@
       </div>
       <div data-togglable="EXTENSION_FUNCTION">
         <h2 class="tableheader">Functions</h2>
-        <div class="table"><a data-name="422366078%2FFunctions%2F1578789545" anchor-label="then" id="422366078%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+        <div class="table"><a data-name="-689996183%2FFunctions%2F1578789545" anchor-label="coerce" id="-689996183%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="coerce.html"><span><span>coerce</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-689996183%2FFunctions%2F1578789545"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-core/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="coerce.html">T</a><span class="token operator">&gt; </span><a href="-mcp-result/index.html">McpResult</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="coerce.html"><span class="token function">coerce</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="coerce.html">T</a></div><div class="brief "><p class="paragraph">Coerce result into expected type or throw</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="422366078%2FFunctions%2F1578789545" anchor-label="then" id="422366078%2FFunctions%2F1578789545" data-filterable-set=":http4k-ai-mcp-core/main"></a>
           <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-core/main" data-filterable-set=":http4k-ai-mcp-core/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">

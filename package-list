@@ -686,6 +686,7 @@ org.http4k.wiretap.home
 org.http4k.wiretap.junit
 org.http4k.wiretap.mcp
 org.http4k.wiretap.mcp.apps
+org.http4k.wiretap.mcp.completions
 org.http4k.wiretap.mcp.prompts
 org.http4k.wiretap.mcp.resources
 org.http4k.wiretap.mcp.tools
