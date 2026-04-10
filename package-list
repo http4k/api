@@ -660,6 +660,8 @@ org.http4k.hotreload
 module:http4k-tools-traffic-capture
 org.http4k.filter
 org.http4k.traffic
+module:http4k-tools-verify
+org.http4k.verify
 module:http4k-web-datastar
 org.http4k.core
 org.http4k.datastar
