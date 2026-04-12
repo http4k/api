@@ -686,6 +686,7 @@ org.http4k.wiretap.client
 org.http4k.wiretap.domain
 org.http4k.wiretap.home
 org.http4k.wiretap.junit
+org.http4k.wiretap.livingdoc
 org.http4k.wiretap.mcp
 org.http4k.wiretap.mcp.apps
 org.http4k.wiretap.mcp.completions
