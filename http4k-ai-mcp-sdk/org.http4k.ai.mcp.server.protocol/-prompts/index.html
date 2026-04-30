@@ -40,7 +40,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">6.42.0.0
+        <div class="library-version" id="library-version">6.45.1.0
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -96,39 +96,148 @@
   <div class="breadcrumbs"><a href="../../index.html">http4k-ai-mcp-sdk</a><span class="delimiter">/</span><a href="../index.html">org.http4k.ai.mcp.server.protocol</a><span class="delimiter">/</span><span class="current">Prompts</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Prompts</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Prompts</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/pro/ai/mcp/sdk/src/main/kotlin/org/http4k/ai/mcp/server/protocol/Prompts.kt#L14">source</a>)</span></span></div><p class="paragraph">Handles protocol traffic for prompts features.</p><h4 class="tableheader">Inheritors</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../org.http4k.ai.mcp.server.capability/-server-prompts/index.html">ServerPrompts</a></div></span></div><div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Prompts</a> : <a href="../-observable-capability/index.html">ObservableCapability</a><span class="token operator">&lt;</span><a href="../../org.http4k.ai.mcp.server.capability/-prompt-capability/index.html">PromptCapability</a><span class="token operator">&gt; </span>, <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp.model/-prompt-name/index.html">PromptName</a><span class="token punctuation">, </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp/-prompt-handler/index.html">PromptHandler</a><span class="token operator">&gt; </span>, <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../org.http4k.ai.mcp.server.capability/-prompt-capability/index.html">PromptCapability</a><span class="token operator">&gt; </span><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/pro/ai/mcp/sdk/src/main/kotlin/org/http4k/ai/mcp/server/protocol/Prompts.kt#L17">source</a>)</span></span></div><p class="paragraph">Handles protocol traffic for prompts features.</p></div></div>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
     <div class="tabs-section-body">
-      <div data-togglable="FUNCTION">
-        <h2 class="tableheader">Functions</h2>
-        <div class="table"><a data-name="-1659349879%2FFunctions%2F291385758" anchor-label="get" id="-1659349879%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-196197392%2FProperties%2F291385758" anchor-label="items" id="-196197392%2FProperties%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
           <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="get.html"><span><span>get</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1659349879%2FFunctions%2F291385758"></span>
+                  <div><a href="../-observable-capability/items.html"><span><span>items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-196197392%2FProperties%2F291385758"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">req<span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp.protocol.messages/-mcp-prompt/-get/-request/index.html">McpPrompt.Get.Request</a><span class="token punctuation">, </span></span><span class="parameter ">client<span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp/-client/index.html">Client</a><span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp.protocol.messages/-mcp-prompt/-get/-response/index.html">McpPrompt.Get.Response</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">var </span><a href="../-observable-capability/items.html">items</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../org.http4k.ai.mcp.server.capability/-prompt-capability/index.html">PromptCapability</a><span class="token operator">&gt;</span></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-732820049%2FFunctions%2F291385758" anchor-label="list" id="-732820049%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
-          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-1803150730%2FFunctions%2F291385758" anchor-label="asMcp" id="-1803150730%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="list.html"><span><span>list</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-732820049%2FFunctions%2F291385758"></span>
+                  <div><a href="../../org.http4k.ai.mcp.server/as-mcp.html"><span>as</span><wbr><span><span>Mcp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1803150730%2FFunctions%2F291385758"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="list.html"><span class="token function">list</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mcp<span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp.protocol.messages/-mcp-prompt/-list/-request/index.html">McpPrompt.List.Request</a><span class="token punctuation">, </span></span><span class="parameter ">client<span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp/-client/index.html">Client</a><span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp.protocol.messages/-mcp-prompt/-list/-response/index.html">McpPrompt.List.Response</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../org.http4k.ai.mcp.server.capability/-server-capability/index.html">ServerCapability</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../org.http4k.ai.mcp.server/as-mcp.html"><span class="token function">asMcp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"http4k-mcp"</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-realtime-core/org.http4k.core/-poly-handler/index.html">PolyHandler</a></div><div class="brief "><p class="paragraph">Convenience function to create a server from capabilities</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-613510407%2FFunctions%2F291385758" anchor-label="asServer" id="-613510407%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../org.http4k.ai.mcp.server/as-server.html"><span>as</span><wbr><span><span>Server</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-613510407%2FFunctions%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterable/index.html">Iterable</a><span class="token operator">&lt;</span><a href="../../org.http4k.ai.mcp.server.capability/-server-capability/index.html">ServerCapability</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="../../org.http4k.ai.mcp.server/as-server.html"><span class="token function">asServer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">config<span class="token operator">: </span><a href="../../../http4k-realtime-core/org.http4k.server/-poly-server-config/index.html">PolyServerConfig</a><span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"http4k-mcp"</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-core/org.http4k.server/-http4k-server/index.html">Http4kServer</a></div><div class="brief "><p class="paragraph">Convenience function to create a server from a multiple capabilities</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1933378621%2FFunctions%2F291385758" anchor-label="get" id="-1933378621%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1933378621%2FFunctions%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">req<span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp.protocol.messages/-mcp-prompt/-get/-request/-params/index.html">McpPrompt.Get.Request.Params</a><span class="token punctuation">, </span></span><span class="parameter ">client<span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp/-client/index.html">Client</a><span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp.protocol.messages/-mcp-prompt/-get/-response/-result/index.html">McpPrompt.Get.Response.Result</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-555530755%2FFunctions%2F291385758" anchor-label="invoke" id="-555530755%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-mcp-filter/index.html#-555530755%2FFunctions%2F291385758"><span><span>invoke</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-555530755%2FFunctions%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../-mcp-filter/index.html#-555530755%2FFunctions%2F291385758"><span class="token function">invoke</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p1<span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp.model/-prompt-name/index.html">PromptName</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp/-prompt-handler/index.html">PromptHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-858216167%2FFunctions%2F291385758" anchor-label="iterator" id="-858216167%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-tools/index.html#-858216167%2FFunctions%2F291385758"><span><span>iterator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-858216167%2FFunctions%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../-tools/index.html#-858216167%2FFunctions%2F291385758"><span class="token function">iterator</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-iterator/index.html">Iterator</a><span class="token operator">&lt;</span><a href="../../org.http4k.ai.mcp.server.capability/-prompt-capability/index.html">PromptCapability</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1740387363%2FFunctions%2F291385758" anchor-label="list" id="-1740387363%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="list.html"><span><span>list</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1740387363%2FFunctions%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">fun </span><a href="list.html"><span class="token function">list</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mcp<span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp.protocol.messages/-mcp-prompt/-list/-request/-params/index.html">McpPrompt.List.Request.Params</a><span class="token punctuation">, </span></span><span class="parameter ">client<span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp/-client/index.html">Client</a><span class="token punctuation">, </span></span><span class="parameter ">http<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-request/index.html">Request</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../http4k-ai-mcp-core/org.http4k.ai.mcp.protocol.messages/-mcp-prompt/-list/-response/-result/index.html">McpPrompt.List.Response.Result</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="101439168%2FFunctions%2F291385758" anchor-label="onChange" id="101439168%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-observable-capability/on-change.html"><span>on</span><wbr><span><span>Change</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="101439168%2FFunctions%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-observable-capability/on-change.html"><span class="token function">onChange</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">session<span class="token operator">: </span><a href="../-session/index.html">Session</a><span class="token punctuation">, </span></span><span class="parameter ">handler<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1253184890%2FFunctions%2F291385758" anchor-label="remove" id="-1253184890%2FFunctions%2F291385758" data-filterable-set=":http4k-ai-mcp-sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-ai-mcp-sdk/main" data-filterable-set=":http4k-ai-mcp-sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-observable-capability/remove.html"><span><span>remove</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1253184890%2FFunctions%2F291385758"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-ai-mcp-sdk/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="../-observable-capability/remove.html"><span class="token function">remove</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">session<span class="token operator">: </span><a href="../-session/index.html">Session</a></span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
