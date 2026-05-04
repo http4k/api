@@ -6,6 +6,21 @@ $dokka.location:/ServiceIdAndName.Companion/of/#org.http4k.connect.amazon.apprun
 $dokka.location:/ServiceIdAndName///PointingToDeclaration/http4k-connect-amazon-apprunner/[root]/-service-id-and-name/index.html
 $dokka.location:/ServiceIdAndName/serviceId/#/PointingToDeclaration/http4k-connect-amazon-apprunner/[root]/-service-id-and-name/service-id.html
 $dokka.location:/ServiceIdAndName/serviceName/#/PointingToDeclaration/http4k-connect-amazon-apprunner/[root]/-service-id-and-name/service-name.html
+module:http4k-ai-a2a-client
+org.http4k.ai.a2a.client
+module:http4k-ai-a2a-core
+org.http4k.ai.a2a
+org.http4k.ai.a2a.model
+org.http4k.ai.a2a.protocol
+org.http4k.ai.a2a.protocol.messages
+org.http4k.ai.a2a.util
+module:http4k-ai-a2a-sdk
+org.http4k.ai.a2a.server
+org.http4k.ai.a2a.server.notification
+org.http4k.ai.a2a.server.storage
+org.http4k.protocol
+org.http4k.routing
+org.http4k.wiretap.junit
 module:http4k-ai-core
 org.http4k.ai.model
 org.http4k.ai.util
