@@ -55,6 +55,10 @@ module:http4k-ai-llm-openai
 org.http4k.ai.llm
 org.http4k.ai.llm.chat
 org.http4k.ai.llm.image
+module:http4k-ai-mcp-a2a-bridge
+org.http4k.ai.mcp.a2a
+org.http4k.ai.mcp.a2a.capabilities
+org.http4k.routing
 module:http4k-ai-mcp-client
 org.http4k.ai.llm.tools
 org.http4k.ai.mcp

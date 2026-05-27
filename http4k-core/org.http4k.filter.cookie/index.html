@@ -40,7 +40,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">6.46.0.0
+        <div class="library-version" id="library-version">6.48.0.0
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -112,7 +112,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-basic-cookie-storage/index.html">BasicCookieStorage</a> : <a href="-cookie-storage/index.html">CookieStorage</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-basic-cookie-storage/index.html"><strike>BasicCookieStorage</strike></a><span class="token operator"> = </span><a href="-insecure-cookie-storage/index.html">InsecureCookieStorage</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -132,6 +132,36 @@
               </div>
             </div>
           </div>
+<a data-name="-1603274879%2FClasslikes%2F-740847589" anchor-label="DefaultCookieStorage" id="-1603274879%2FClasslikes%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-default-cookie-storage/index.html"><span>Default</span><wbr><span>Cookie</span><wbr><span><span>Storage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1603274879%2FClasslikes%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-default-cookie-storage/index.html">DefaultCookieStorage</a> : <a href="-cookie-storage/index.html">CookieStorage</a></div><div class="brief "><p class="paragraph">An RFC 6265 §5.3/§5.4 compliant cookie storage that scopes cookies by effective domain, path, and scheme (Secure flag). Cookies are only sent to origins that match the domain, path, and scheme under which they were set.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1606459408%2FClasslikes%2F-740847589" anchor-label="InsecureCookieStorage" id="1606459408%2FClasslikes%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-insecure-cookie-storage/index.html"><span>Insecure</span><wbr><span>Cookie</span><wbr><span><span>Storage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1606459408%2FClasslikes%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-insecure-cookie-storage/index.html">InsecureCookieStorage</a> : <a href="-cookie-storage/index.html">CookieStorage</a></div><div class="brief "><p class="paragraph">A global cookie jar with no domain, path, or scheme scoping. Cookies stored here are sent to every outgoing request regardless of origin, which can cause cross-origin credential leakage when a single client talks to more than one host, so do not use this in production!</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
 <a data-name="-1580704420%2FClasslikes%2F-740847589" anchor-label="LocalCookie" id="-1580704420%2FClasslikes%2F-740847589" data-filterable-set=":http4k-core/main"></a>
           <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
             <div class="main-subrow keyValue ">
@@ -142,7 +172,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-local-cookie/index.html">LocalCookie</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>cookie<span class="token operator">: </span><a href="../org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>created<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Instant.html">Instant</a></span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-local-cookie/index.html">LocalCookie</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>cookie<span class="token operator">: </span><a href="../org.http4k.core.cookie/-cookie/index.html">Cookie</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>created<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Instant.html">Instant</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>origin<span class="token operator">: </span><a href="../org.http4k.core/-uri/index.html">Uri</a></span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
