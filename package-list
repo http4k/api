@@ -145,6 +145,8 @@ module:http4k-api-ui-redoc
 org.http4k.contract.ui.redoc
 module:http4k-api-ui-swagger
 org.http4k.contract.ui.swagger
+module:http4k-bridge-core
+org.http4k.bridge
 module:http4k-bridge-helidon
 org.http4k.bridge
 module:http4k-bridge-jakarta
@@ -451,6 +453,13 @@ org.http4k.connect.mpp.model
 org.http4k.filter
 org.http4k.lens
 org.http4k.security
+module:http4k-connect-openfeature
+org.http4k.connect.openfeature
+org.http4k.connect.openfeature.action
+org.http4k.connect.openfeature.model
+module:http4k-connect-openfeature-fake
+org.http4k.connect.openfeature
+org.http4k.connect.openfeature.endpoints
 module:http4k-connect-slack
 org.http4k.connect.slack
 org.http4k.connect.slack.action
@@ -549,6 +558,10 @@ module:http4k-ops-failsafe
 org.http4k.filter
 module:http4k-ops-micrometer
 org.http4k.filter
+module:http4k-ops-openfeature
+org.http4k.filter
+org.http4k.lens
+org.http4k.ops.openfeature
 module:http4k-ops-opentelemetry
 org.http4k.events
 org.http4k.filter

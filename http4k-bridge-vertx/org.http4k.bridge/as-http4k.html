@@ -40,7 +40,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">6.48.0.0
+        <div class="library-version" id="library-version">6.49.0.0
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -92,12 +92,12 @@
         </nav>
         <div id="resizer" class="resizer" data-item-type="BAR"></div>
         <div id="main" data-item-type="SECTION" role="main">
-<div class="main-content" data-page-type="member" id="content" pageids="http4k-bridge-vertx::org.http4k.bridge//asHttp4k/io.vertx.core.http.HttpServerRequest#/PointingToDeclaration//37982623">
+<div class="main-content" data-page-type="member" id="content" pageids="http4k-bridge-vertx::org.http4k.bridge//asHttp4k/io.vertx.core.http.HttpServerRequest#io.vertx.core.Vertx/PointingToDeclaration//37982623">
   <div class="breadcrumbs"><a href="../index.html">http4k-bridge-vertx</a><span class="delimiter">/</span><a href="index.html">org.http4k.bridge</a><span class="delimiter">/</span><span class="current">asHttp4k</span></div>
   <div class="cover ">
     <h1 class="cover"><span>as</span><wbr><span><span>Http4k</span></span></h1>
   </div>
-  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-bridge-vertx/main"><div class="symbol monospace"><span class="token keyword">fun </span><span data-unresolved-link="io.vertx.core.http/HttpServerRequest///PointingToDeclaration/">HttpServerRequest</span><span class="token punctuation">.</span><a href="as-http4k.html"><span class="token function">asHttp4k</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="io.vertx.core/Future///PointingToDeclaration/">Future</span><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/core/bridge/vertx/src/main/kotlin/org/http4k/bridge/vertxExtensions.kt#L17">source</a>)</span></span></div></div></div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-bridge-vertx/main"><div class="symbol monospace"><span class="token keyword">fun </span><span data-unresolved-link="io.vertx.core.http/HttpServerRequest///PointingToDeclaration/">HttpServerRequest</span><span class="token punctuation">.</span><a href="as-http4k.html"><span class="token function">asHttp4k</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">vertx<span class="token operator">: </span><span data-unresolved-link="io.vertx.core/Vertx///PointingToDeclaration/">Vertx</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token operator">?</span><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/core/bridge/vertx/src/main/kotlin/org/http4k/bridge/vertxExtensions.kt#L38">source</a>)</span></span></div><p class="paragraph">Adapt the Vertx request to an http4k Request, streaming the body rather than buffering it. Must be called on the event-loop thread: it pauses the request and wires the body handlers synchronously so no inbound chunks are dropped before the http4k handler starts consuming.</p></div></div>
 </div>
     <div class="footer">
         <div class="footer--container">
