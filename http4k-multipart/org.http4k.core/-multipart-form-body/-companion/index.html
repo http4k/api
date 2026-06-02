@@ -40,7 +40,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">6.49.0.0
+        <div class="library-version" id="library-version">6.51.0.0
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -96,7 +96,7 @@
   <div class="breadcrumbs"><a href="../../../index.html">http4k-multipart</a><span class="delimiter">/</span><a href="../../index.html">org.http4k.core</a><span class="delimiter">/</span><a href="../index.html">MultipartFormBody</a><span class="delimiter">/</span><span class="current">Companion</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Companion</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-multipart/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Companion</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/core/multipart/src/main/kotlin/org/http4k/core/MultipartFormBody.kt#L144">source</a>)</span></span></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-multipart/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">Companion</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/core/multipart/src/main/kotlin/org/http4k/core/MultipartFormBody.kt#L149">source</a>)</span></span></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -118,21 +118,51 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div data-togglable="FUNCTION">
-        <h2 class="tableheader">Functions</h2>
-        <div class="table"><a data-name="-1543846589%2FFunctions%2F-1542741474" anchor-label="from" id="-1543846589%2FFunctions%2F-1542741474" data-filterable-set=":http4k-multipart/main"></a>
+<a data-name="173976181%2FProperties%2F-1542741474" anchor-label="MAX_PART_COUNT" id="173976181%2FProperties%2F-1542741474" data-filterable-set=":http4k-multipart/main"></a>
           <div class="table-row table-row_content" data-filterable-current=":http4k-multipart/main" data-filterable-set=":http4k-multipart/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="from.html"><span><span>from</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1543846589%2FFunctions%2F-1542741474"></span>
+                  <div><a href="-m-a-x_-p-a-r-t_-c-o-u-n-t.html"><span>MAX_</span><wbr><span>PART_</span><wbr><span>COUNT</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="173976181%2FProperties%2F-1542741474"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-multipart/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="from.html"><span class="token function">from</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">httpMessage<span class="token operator">: </span><a href="../../../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token punctuation">, </span></span><span class="parameter ">diskThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>DEFAULT_DISK_THRESHOLD<span class="token punctuation">, </span></span><span class="parameter ">diskLocation<span class="token operator">: </span><a href="../../../org.http4k.multipart/-disk-location/index.html">DiskLocation</a><span class="token operator"> = </span>DiskLocation.Temp()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">MultipartFormBody</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-multipart/main"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-m-a-x_-p-a-r-t_-c-o-u-n-t.html">MAX_PART_COUNT</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">1000</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1426171389%2FProperties%2F-1542741474" anchor-label="MAX_STREAM_LENGTH" id="1426171389%2FProperties%2F-1542741474" data-filterable-set=":http4k-multipart/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-multipart/main" data-filterable-set=":http4k-multipart/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-x_-s-t-r-e-a-m_-l-e-n-g-t-h.html"><span>MAX_</span><wbr><span>STREAM_</span><wbr><span>LENGTH</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1426171389%2FProperties%2F-1542741474"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-multipart/main"><div class="symbol monospace"><span class="token keyword">const </span><span class="token keyword">val </span><a href="-m-a-x_-s-t-r-e-a-m_-l-e-n-g-t-h.html">MAX_STREAM_LENGTH</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-153545501%2FFunctions%2F-1542741474" anchor-label="from" id="-153545501%2FFunctions%2F-1542741474" data-filterable-set=":http4k-multipart/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-multipart/main" data-filterable-set=":http4k-multipart/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="from.html"><span><span>from</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-153545501%2FFunctions%2F-1542741474"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-multipart/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="from.html"><span class="token function">from</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">httpMessage<span class="token operator">: </span><a href="../../../../http4k-core/org.http4k.core/-http-message/index.html">HttpMessage</a><span class="token punctuation">, </span></span><span class="parameter ">diskThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>DEFAULT_DISK_THRESHOLD<span class="token punctuation">, </span></span><span class="parameter ">diskLocation<span class="token operator">: </span><a href="../../../org.http4k.multipart/-disk-location/index.html">DiskLocation</a><span class="token operator"> = </span>DiskLocation.Temp()<span class="token punctuation">, </span></span><span class="parameter ">maxStreamLength<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>MAX_STREAM_LENGTH<span class="token punctuation">, </span></span><span class="parameter ">maxPartCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>MAX_PART_COUNT</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">MultipartFormBody</a></div></div></div>
                 </div>
               </div>
             </div>
