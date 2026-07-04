@@ -391,6 +391,8 @@ org.http4k.connect.github.model
 org.http4k.connect.github.webhook
 org.http4k.filter
 org.http4k.lens
+module:http4k-connect-github-fake
+org.http4k.connect.github.api
 module:http4k-connect-gitlab
 org.http4k.connect.gitlab
 org.http4k.connect.gitlab.api
@@ -616,6 +618,12 @@ org.http4k.security.oauth.server.refreshtoken
 org.http4k.security.oauth.server.request
 org.http4k.security.oauth.testing
 org.http4k.security.openid
+module:http4k-security-webauthn
+org.http4k.security.passkeys
+org.http4k.security.passkeys.model
+org.http4k.security.passkeys.testing
+org.http4k.security.passkeys.util
+org.http4k.security.passkeys.webauthn4j
 module:http4k-server-apache
 org.http4k.server
 module:http4k-server-apache4
@@ -687,6 +695,8 @@ org.http4k.tracing.renderer
 org.http4k.tracing.tracer
 module:http4k-testing-webdriver
 org.http4k.webdriver
+module:http4k-testing-webdriver-datastar
+org.http4k.webdriver.datastar
 module:http4k-tools-hotreload
 org.http4k.hotreload
 module:http4k-tools-traffic-capture

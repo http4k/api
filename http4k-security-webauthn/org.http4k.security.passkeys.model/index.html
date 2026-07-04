@@ -1,0 +1,462 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.security.passkeys.model</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">6.55.0.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-security-webauthn/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-security-webauthn/main" data-filter=":http4k-security-webauthn/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-security-webauthn::org.http4k.security.passkeys.model////PointingToDeclaration//1568217937">
+  <div class="breadcrumbs"><a href="../index.html">http4k-security-webauthn</a><span class="delimiter">/</span><span class="current">org.http4k.security.passkeys.model</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-100428473%2FClasslikes%2F1568217937" anchor-label="Attestation" id="-100428473%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-attestation/index.html"><span><span>Attestation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-100428473%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-attestation/index.html">Attestation</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-attestation/index.html">Attestation</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1531228241%2FClasslikes%2F1568217937" anchor-label="AuthenticationOptions" id="1531228241%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authentication-options/index.html"><span>Authentication</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1531228241%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-authentication-options/index.html">AuthenticationOptions</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>rp<span class="token operator">: </span><a href="-relying-party/index.html">RelyingParty</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>challenge<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>allowCredentials<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-credential-descriptor/index.html">CredentialDescriptor</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>userVerification<span class="token operator">: </span><a href="-user-verification/index.html">UserVerification</a><span class="token operator"> = </span>UserVerification.PREFERRED<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>timeout<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2111662546%2FClasslikes%2F1568217937" anchor-label="AuthenticationResponse" id="2111662546%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authentication-response/index.html"><span>Authentication</span><wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2111662546%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-authentication-response/index.html">AuthenticationResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>credentialId<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>clientDataJSON<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>authenticatorData<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>signature<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1160017270%2FClasslikes%2F1568217937" anchor-label="AuthenticationVerdict" id="1160017270%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authentication-verdict/index.html"><span>Authentication</span><wbr><span><span>Verdict</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1160017270%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-authentication-verdict/index.html">AuthenticationVerdict</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>signCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>backupState<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2121157345%2FClasslikes%2F1568217937" anchor-label="AuthenticatorAttachment" id="2121157345%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authenticator-attachment/index.html"><span>Authenticator</span><wbr><span><span>Attachment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2121157345%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-authenticator-attachment/index.html">AuthenticatorAttachment</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-authenticator-attachment/index.html">AuthenticatorAttachment</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="574115666%2FClasslikes%2F1568217937" anchor-label="AuthenticatorSelection" id="574115666%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-authenticator-selection/index.html"><span>Authenticator</span><wbr><span><span>Selection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="574115666%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-authenticator-selection/index.html">AuthenticatorSelection</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>residentKey<span class="token operator">: </span><a href="-resident-key/index.html">ResidentKey</a><span class="token operator"> = </span>ResidentKey.PREFERRED<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>userVerification<span class="token operator">: </span><a href="-user-verification/index.html">UserVerification</a><span class="token operator"> = </span>UserVerification.PREFERRED<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>authenticatorAttachment<span class="token operator">: </span><a href="-authenticator-attachment/index.html">AuthenticatorAttachment</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="816098345%2FClasslikes%2F1568217937" anchor-label="ClientExtensionResults" id="816098345%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-client-extension-results/index.html"><span>Client</span><wbr><span>Extension</span><wbr><span><span>Results</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="816098345%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-client-extension-results/index.html">ClientExtensionResults</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>credProps<span class="token operator">: </span><a href="-cred-props/index.html">CredProps</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1393015643%2FClasslikes%2F1568217937" anchor-label="CredentialDescriptor" id="-1393015643%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-credential-descriptor/index.html"><span>Credential</span><wbr><span><span>Descriptor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1393015643%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-credential-descriptor/index.html">CredentialDescriptor</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>id<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>transports<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"public-key"</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1342748395%2FClasslikes%2F1568217937" anchor-label="CredProps" id="-1342748395%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-cred-props/index.html"><span>Cred</span><wbr><span><span>Props</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1342748395%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-cred-props/index.html">CredProps</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>rk<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="585695825%2FClasslikes%2F1568217937" anchor-label="PasskeyError" id="585695825%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-passkey-error/index.html"><span>Passkey</span><wbr><span><span>Error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="585695825%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-passkey-error/index.html">PasskeyError</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-passkey-error/index.html">PasskeyError</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1827616098%2FClasslikes%2F1568217937" anchor-label="PasskeyUser" id="-1827616098%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-passkey-user/index.html"><span>Passkey</span><wbr><span><span>User</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1827616098%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-passkey-user/index.html">PasskeyUser</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>handle<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>displayName<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1247842306%2FClasslikes%2F1568217937" anchor-label="PendingCeremony" id="-1247842306%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-pending-ceremony/index.html"><span>Pending</span><wbr><span><span>Ceremony</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1247842306%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-pending-ceremony/index.html">PendingCeremony</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>challenge<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>user<span class="token operator">: </span><a href="-passkey-user/index.html">PasskeyUser</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1755002406%2FClasslikes%2F1568217937" anchor-label="PubKeyCredParam" id="-1755002406%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-pub-key-cred-param/index.html"><span>Pub</span><wbr><span>Key</span><wbr><span>Cred</span><wbr><span><span>Param</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1755002406%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-pub-key-cred-param/index.html">PubKeyCredParam</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>alg<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">"public-key"</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1061586610%2FClasslikes%2F1568217937" anchor-label="RegisteredCredential" id="1061586610%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-registered-credential/index.html"><span>Registered</span><wbr><span><span>Credential</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1061586610%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-registered-credential/index.html">RegisteredCredential</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>credentialId<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>publicKey<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>signCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>userHandle<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>backupEligible<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>backupState<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>transports<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>discoverable<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1901099650%2FClasslikes%2F1568217937" anchor-label="RegistrationExtensions" id="-1901099650%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-registration-extensions/index.html"><span>Registration</span><wbr><span><span>Extensions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1901099650%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-registration-extensions/index.html">RegistrationExtensions</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>credProps<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-289188846%2FClasslikes%2F1568217937" anchor-label="RegistrationOptions" id="-289188846%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-registration-options/index.html"><span>Registration</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-289188846%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-registration-options/index.html">RegistrationOptions</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>rp<span class="token operator">: </span><a href="-relying-party/index.html">RelyingParty</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>challenge<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>user<span class="token operator">: </span><a href="-passkey-user/index.html">PasskeyUser</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>excludeCredentials<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-credential-descriptor/index.html">CredentialDescriptor</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>pubKeyCredParams<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-pub-key-cred-param/index.html">PubKeyCredParam</a><span class="token operator">&gt;</span><span class="token operator"> = </span>defaultPubKeyCredParams<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>authenticatorSelection<span class="token operator">: </span><a href="-authenticator-selection/index.html">AuthenticatorSelection</a><span class="token operator"> = </span>AuthenticatorSelection()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>attestation<span class="token operator">: </span><a href="-attestation/index.html">Attestation</a><span class="token operator"> = </span>Attestation.NONE<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>timeout<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>extensions<span class="token operator">: </span><a href="-registration-extensions/index.html">RegistrationExtensions</a><span class="token operator"> = </span>RegistrationExtensions()</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1513307697%2FClasslikes%2F1568217937" anchor-label="RegistrationResponse" id="1513307697%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-registration-response/index.html"><span>Registration</span><wbr><span><span>Response</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1513307697%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-registration-response/index.html">RegistrationResponse</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>credentialId<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>clientDataJSON<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>attestationObject<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-base64-uri-blob/index.html">Base64UriBlob</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>transports<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>clientExtensionResults<span class="token operator">: </span><a href="-client-extension-results/index.html">ClientExtensionResults</a><span class="token operator"> = </span>ClientExtensionResults()</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2075171737%2FClasslikes%2F1568217937" anchor-label="RelyingParty" id="-2075171737%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-relying-party/index.html"><span>Relying</span><wbr><span><span>Party</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2075171737%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-relying-party/index.html">RelyingParty</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>id<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>origins<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><a href="../../http4k-core/org.http4k.core/-uri/index.html">Uri</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-658731512%2FClasslikes%2F1568217937" anchor-label="ResidentKey" id="-658731512%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-resident-key/index.html"><span>Resident</span><wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-658731512%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-resident-key/index.html">ResidentKey</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-resident-key/index.html">ResidentKey</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="106907461%2FClasslikes%2F1568217937" anchor-label="UserVerification" id="106907461%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-user-verification/index.html"><span>User</span><wbr><span><span>Verification</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="106907461%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-user-verification/index.html">UserVerification</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-user-verification/index.html">UserVerification</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="995398759%2FClasslikes%2F1568217937" anchor-label="WebAuthnPolicy" id="995398759%2FClasslikes%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-web-authn-policy/index.html"><span>Web</span><wbr><span>Authn</span><wbr><span><span>Policy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="995398759%2FClasslikes%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-web-authn-policy/index.html">WebAuthnPolicy</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>pubKeyCredParams<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-pub-key-cred-param/index.html">PubKeyCredParam</a><span class="token operator">&gt;</span><span class="token operator"> = </span>defaultPubKeyCredParams<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>authenticatorSelection<span class="token operator">: </span><a href="-authenticator-selection/index.html">AuthenticatorSelection</a><span class="token operator"> = </span>AuthenticatorSelection()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>attestation<span class="token operator">: </span><a href="-attestation/index.html">Attestation</a><span class="token operator"> = </span>Attestation.NONE<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>timeout<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="145755951%2FProperties%2F1568217937" anchor-label="defaultPubKeyCredParams" id="145755951%2FProperties%2F1568217937" data-filterable-set=":http4k-security-webauthn/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-security-webauthn/main" data-filterable-set=":http4k-security-webauthn/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="default-pub-key-cred-params.html"><span>default</span><wbr><span>Pub</span><wbr><span>Key</span><wbr><span>Cred</span><wbr><span><span>Params</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="145755951%2FProperties%2F1568217937"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-security-webauthn/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="default-pub-key-cred-params.html">defaultPubKeyCredParams</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-pub-key-cred-param/index.html">PubKeyCredParam</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2026 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
