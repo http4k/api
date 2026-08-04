@@ -1,0 +1,481 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.serverless</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">6.57.1.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-serverless-lambda/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-serverless-lambda/main" data-filter=":http4k-serverless-lambda/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-serverless-lambda::org.http4k.serverless////PointingToDeclaration//-235386422">
+  <div class="breadcrumbs"><a href="../index.html">http4k-serverless-lambda</a><span class="delimiter">/</span><span class="current">org.http4k.serverless</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="1270865822%2FClasslikes%2F-235386422" anchor-label="ApiGatewayFnLoader" id="1270865822%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-api-gateway-fn-loader/index.html"><span>Api</span><wbr><span>Gateway</span><wbr><span>Fn</span><wbr><span><span>Loader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1270865822%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-api-gateway-fn-loader/index.html">ApiGatewayFnLoader</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="../../http4k-serverless-core/org.http4k.serverless/-fn-handler/index.html">FnHandler</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/InputStream.html">InputStream</a><span class="token punctuation">, </span><span data-unresolved-link="com.amazonaws.services.lambda.runtime/Context///PointingToDeclaration/">Context</span><span class="token punctuation">, </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/InputStream.html">InputStream</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1105183387%2FClasslikes%2F-235386422" anchor-label="ApiGatewayRestAwsHttpAdapter" id="1105183387%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-api-gateway-rest-aws-http-adapter/index.html"><span>Api</span><wbr><span>Gateway</span><wbr><span>Rest</span><wbr><span>Aws</span><wbr><span>Http</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1105183387%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-api-gateway-rest-aws-http-adapter/index.html">ApiGatewayRestAwsHttpAdapter</a> : <a href="-aws-http-adapter/index.html">AwsHttpAdapter</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1003779542%2FClasslikes%2F-235386422" anchor-label="ApiGatewayRestFnLoader" id="-1003779542%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-api-gateway-rest-fn-loader/index.html"><span>Api</span><wbr><span>Gateway</span><wbr><span>Rest</span><wbr><span>Fn</span><wbr><span><span>Loader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1003779542%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-api-gateway-rest-fn-loader/index.html">ApiGatewayRestFnLoader</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">input<span class="token operator">: </span><a href="../../http4k-serverless-core/org.http4k.serverless/-app-loader/index.html">AppLoader</a></span></span><span class="token punctuation">)</span> : <a href="-api-gateway-fn-loader/index.html">ApiGatewayFnLoader</a></div><div class="brief "><p class="paragraph">Function loader for ApiGatewayRest Lambdas</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1112083942%2FClasslikes%2F-235386422" anchor-label="ApiGatewayRestLambdaFunction" id="1112083942%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-api-gateway-rest-lambda-function/index.html"><span>Api</span><wbr><span>Gateway</span><wbr><span>Rest</span><wbr><span>Lambda</span><wbr><span><span>Function</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1112083942%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-api-gateway-rest-lambda-function/index.html">ApiGatewayRestLambdaFunction</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">appLoader<span class="token operator">: </span><a href="../../http4k-serverless-core/org.http4k.serverless/-app-loader/index.html">AppLoader</a></span></span><span class="token punctuation">)</span> : <a href="-aws-lambda-event-function/index.html">AwsLambdaEventFunction</a></div><div class="brief "><p class="paragraph">This is the main entry point for lambda invocations using the REST payload format. It uses the local environment to instantiate the HttpHandler which can be used for further invocations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1292512236%2FClasslikes%2F-235386422" anchor-label="ApiGatewayV1AwsHttpAdapter" id="-1292512236%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-api-gateway-v1-aws-http-adapter/index.html"><span>Api</span><wbr><span>Gateway</span><wbr><span>V1Aws</span><wbr><span>Http</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1292512236%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-api-gateway-v1-aws-http-adapter/index.html">ApiGatewayV1AwsHttpAdapter</a> : <a href="-aws-http-adapter/index.html">AwsHttpAdapter</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2108058211%2FClasslikes%2F-235386422" anchor-label="ApiGatewayV1FnLoader" id="2108058211%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-api-gateway-v1-fn-loader/index.html"><span>Api</span><wbr><span>Gateway</span><wbr><span>V1Fn</span><wbr><span><span>Loader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2108058211%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-api-gateway-v1-fn-loader/index.html">ApiGatewayV1FnLoader</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">input<span class="token operator">: </span><a href="../../http4k-serverless-core/org.http4k.serverless/-app-loader/index.html">AppLoader</a></span></span><span class="token punctuation">)</span> : <a href="-api-gateway-fn-loader/index.html">ApiGatewayFnLoader</a></div><div class="brief "><p class="paragraph">Function loader for ApiGatewayV1 Lambdas</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1285611681%2FClasslikes%2F-235386422" anchor-label="ApiGatewayV1LambdaFunction" id="-1285611681%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-api-gateway-v1-lambda-function/index.html"><span>Api</span><wbr><span>Gateway</span><wbr><span>V1Lambda</span><wbr><span><span>Function</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1285611681%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-api-gateway-v1-lambda-function/index.html">ApiGatewayV1LambdaFunction</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">input<span class="token operator">: </span><a href="../../http4k-serverless-core/org.http4k.serverless/-app-loader/index.html">AppLoader</a></span></span><span class="token punctuation">)</span> : <a href="-aws-lambda-event-function/index.html">AwsLambdaEventFunction</a></div><div class="brief "><p class="paragraph">This is the main entry point for lambda invocations using the V1 payload format. It uses the local environment to instantiate the HttpHandler which can be used for further invocations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="169067763%2FClasslikes%2F-235386422" anchor-label="ApiGatewayV2AwsHttpAdapter" id="169067763%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-api-gateway-v2-aws-http-adapter/index.html"><span>Api</span><wbr><span>Gateway</span><wbr><span>V2Aws</span><wbr><span>Http</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="169067763%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-api-gateway-v2-aws-http-adapter/index.html">ApiGatewayV2AwsHttpAdapter</a> : <a href="-aws-http-adapter/index.html">AwsHttpAdapter</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1161417086%2FClasslikes%2F-235386422" anchor-label="ApiGatewayV2FnLoader" id="-1161417086%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-api-gateway-v2-fn-loader/index.html"><span>Api</span><wbr><span>Gateway</span><wbr><span>V2Fn</span><wbr><span><span>Loader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1161417086%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-api-gateway-v2-fn-loader/index.html">ApiGatewayV2FnLoader</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">input<span class="token operator">: </span><a href="../../http4k-serverless-core/org.http4k.serverless/-app-loader/index.html">AppLoader</a></span></span><span class="token punctuation">)</span> : <a href="-api-gateway-fn-loader/index.html">ApiGatewayFnLoader</a></div><div class="brief "><p class="paragraph">Function loader for ApiGatewayV2 Lambdas</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="175968318%2FClasslikes%2F-235386422" anchor-label="ApiGatewayV2LambdaFunction" id="175968318%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-api-gateway-v2-lambda-function/index.html"><span>Api</span><wbr><span>Gateway</span><wbr><span>V2Lambda</span><wbr><span><span>Function</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="175968318%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-api-gateway-v2-lambda-function/index.html">ApiGatewayV2LambdaFunction</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">input<span class="token operator">: </span><a href="../../http4k-serverless-core/org.http4k.serverless/-app-loader/index.html">AppLoader</a></span></span><span class="token punctuation">)</span> : <a href="-aws-lambda-event-function/index.html">AwsLambdaEventFunction</a></div><div class="brief "><p class="paragraph">This is the main entry point for lambda invocations using the V2 payload format. It uses the local environment to instantiate the HttpHandler which can be used for further invocations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1946688745%2FClasslikes%2F-235386422" anchor-label="ApplicationLoadBalancerAwsHttpAdapter" id="1946688745%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-application-load-balancer-aws-http-adapter/index.html"><span>Application</span><wbr><span>Load</span><wbr><span>Balancer</span><wbr><span>Aws</span><wbr><span>Http</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1946688745%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-application-load-balancer-aws-http-adapter/index.html">ApplicationLoadBalancerAwsHttpAdapter</a> : <a href="-aws-http-adapter/index.html">AwsHttpAdapter</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1761687288%2FClasslikes%2F-235386422" anchor-label="ApplicationLoadBalancerFnLoader" id="1761687288%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-application-load-balancer-fn-loader/index.html"><span>Application</span><wbr><span>Load</span><wbr><span>Balancer</span><wbr><span>Fn</span><wbr><span><span>Loader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1761687288%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-application-load-balancer-fn-loader/index.html">ApplicationLoadBalancerFnLoader</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">input<span class="token operator">: </span><a href="../../http4k-serverless-core/org.http4k.serverless/-app-loader/index.html">AppLoader</a></span></span><span class="token punctuation">)</span> : <a href="-api-gateway-fn-loader/index.html">ApiGatewayFnLoader</a></div><div class="brief "><p class="paragraph">Function loader for ApplicationLoadBalancer Lambdas</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1953589300%2FClasslikes%2F-235386422" anchor-label="ApplicationLoadBalancerLambdaFunction" id="1953589300%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-application-load-balancer-lambda-function/index.html"><span>Application</span><wbr><span>Load</span><wbr><span>Balancer</span><wbr><span>Lambda</span><wbr><span><span>Function</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1953589300%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-application-load-balancer-lambda-function/index.html">ApplicationLoadBalancerLambdaFunction</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">input<span class="token operator">: </span><a href="../../http4k-serverless-core/org.http4k.serverless/-app-loader/index.html">AppLoader</a></span></span><span class="token punctuation">)</span> : <a href="-aws-lambda-event-function/index.html">AwsLambdaEventFunction</a></div><div class="brief "><p class="paragraph">This is the main entry point for lambda invocations coming from an Application LoadBalancer. It uses the local environment to instantiate the HttpHandler which can be used for further invocations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1429333299%2FClasslikes%2F-235386422" anchor-label="AwsEnvironment" id="-1429333299%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-aws-environment/index.html"><span>Aws</span><wbr><span><span>Environment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1429333299%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-aws-environment/index.html">AwsEnvironment</a></div><div class="brief "><p class="paragraph">Constants from the AWS Lambda Runtime environment</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-135777863%2FClasslikes%2F-235386422" anchor-label="AwsHttpAdapter" id="-135777863%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-aws-http-adapter/index.html"><span>Aws</span><wbr><span>Http</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-135777863%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-aws-http-adapter/index.html">AwsHttpAdapter</a><span class="token operator">&lt;</span><a href="-aws-http-adapter/index.html">Req</a><span class="token punctuation">, </span><a href="-aws-http-adapter/index.html">Resp</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-839177003%2FClasslikes%2F-235386422" anchor-label="AwsLambdaEventFunction" id="-839177003%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-aws-lambda-event-function/index.html"><span>Aws</span><wbr><span>Lambda</span><wbr><span>Event</span><wbr><span><span>Function</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-839177003%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-aws-lambda-event-function/index.html">AwsLambdaEventFunction</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">envMap<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>System.getenv()<span class="token punctuation">, </span></span><span class="parameter ">loader<span class="token operator">: </span><a href="../../http4k-serverless-core/org.http4k.serverless/-fn-loader/index.html">FnLoader</a><span class="token operator">&lt;</span><span data-unresolved-link="com.amazonaws.services.lambda.runtime/Context///PointingToDeclaration/">Context</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="com.amazonaws.services.lambda.runtime/RequestStreamHandler///PointingToDeclaration/">RequestStreamHandler</span></div><div class="brief "><p class="paragraph">Adapts between http4k and AWS Lambda APIs..</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1267624600%2FClasslikes%2F-235386422" anchor-label="InvocationFnLoader" id="1267624600%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-invocation-fn-loader/index.html"><span>Invocation</span><wbr><span>Fn</span><wbr><span><span>Loader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1267624600%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-invocation-fn-loader/index.html">InvocationFnLoader</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">appLoader<span class="token operator">: </span><a href="../../http4k-serverless-core/org.http4k.serverless/-app-loader/index.html">AppLoader</a></span></span><span class="token punctuation">)</span> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="../../http4k-serverless-core/org.http4k.serverless/-fn-handler/index.html">FnHandler</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/InputStream.html">InputStream</a><span class="token punctuation">, </span><span data-unresolved-link="com.amazonaws.services.lambda.runtime/Context///PointingToDeclaration/">Context</span><span class="token punctuation">, </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/InputStream.html">InputStream</a><span class="token operator">&gt;</span><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Function loader for Invocation Lambdas</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-703917758%2FClasslikes%2F-235386422" anchor-label="InvocationLambdaAwsHttpAdapter" id="-703917758%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-invocation-lambda-aws-http-adapter/index.html"><span>Invocation</span><wbr><span>Lambda</span><wbr><span>Aws</span><wbr><span>Http</span><wbr><span><span>Adapter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-703917758%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-invocation-lambda-aws-http-adapter/index.html">InvocationLambdaAwsHttpAdapter</a> : <a href="-aws-http-adapter/index.html">AwsHttpAdapter</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/InputStream.html">InputStream</a><span class="token punctuation">, </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/InputStream.html">InputStream</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1727095764%2FClasslikes%2F-235386422" anchor-label="InvocationLambdaFunction" id="1727095764%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-invocation-lambda-function/index.html"><span>Invocation</span><wbr><span>Lambda</span><wbr><span><span>Function</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1727095764%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-invocation-lambda-function/index.html">InvocationLambdaFunction</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">appLoader<span class="token operator">: </span><a href="../../http4k-serverless-core/org.http4k.serverless/-app-loader/index.html">AppLoader</a></span></span><span class="token punctuation">)</span> : <a href="-aws-lambda-event-function/index.html">AwsLambdaEventFunction</a></div><div class="brief "><p class="paragraph">This is the main entry point for lambda invocations using the direct invocations. It uses the local environment to instantiate the HttpHandler which can be used for further invocations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1619168334%2FClasslikes%2F-235386422" anchor-label="UnsupportedHttpMethodException" id="-1619168334%2FClasslikes%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-unsupported-http-method-exception/index.html"><span>Unsupported</span><wbr><span>Http</span><wbr><span>Method</span><wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1619168334%2FClasslikes%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-unsupported-http-method-exception/index.html">UnsupportedHttpMethodException</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">method<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/RuntimeException.html">RuntimeException</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="1028186469%2FProperties%2F-235386422" anchor-label="LAMBDA_CONTEXT_KEY" id="1028186469%2FProperties%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-l-a-m-b-d-a_-c-o-n-t-e-x-t_-k-e-y.html"><span>LAMBDA_</span><wbr><span>CONTEXT_</span><wbr><span>KEY</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1028186469%2FProperties%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-l-a-m-b-d-a_-c-o-n-t-e-x-t_-k-e-y.html">LAMBDA_CONTEXT_KEY</a><span class="token operator">: </span><a href="../../http4k-core/org.http4k.lens/-request-lens/index.html">RequestLens</a><span class="token operator">&lt;</span><span data-unresolved-link="com.amazonaws.services.lambda.runtime/Context///PointingToDeclaration/">Context</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-718221179%2FProperties%2F-235386422" anchor-label="LAMBDA_REQUEST_KEY" id="-718221179%2FProperties%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-l-a-m-b-d-a_-r-e-q-u-e-s-t_-k-e-y.html"><span>LAMBDA_</span><wbr><span>REQUEST_</span><wbr><span>KEY</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-718221179%2FProperties%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-l-a-m-b-d-a_-r-e-q-u-e-s-t_-k-e-y.html">LAMBDA_REQUEST_KEY</a><span class="token operator">: </span><a href="../../http4k-core/org.http4k.lens/-request-lens/index.html">RequestLens</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-1927878168%2FFunctions%2F-235386422" anchor-label="FnLoader" id="-1927878168%2FFunctions%2F-235386422" data-filterable-set=":http4k-serverless-lambda/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-serverless-lambda/main" data-filterable-set=":http4k-serverless-lambda/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-fn-loader.html"><span>Fn</span><wbr><span><span>Loader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1927878168%2FFunctions%2F-235386422"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-serverless-lambda/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="-fn-loader.html">In</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><a href="-fn-loader.html">Out</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="-fn-loader.html"><span class="token function">FnLoader</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">autoMarshalling<span class="token operator">: </span><a href="../../http4k-format-core/org.http4k.format/-auto-marshalling/index.html">AutoMarshalling</a><span class="token operator"> = </span>AwsLambdaMoshi<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">noinline </span>makeHandler<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../../http4k-serverless-core/org.http4k.serverless/-fn-handler/index.html">FnHandler</a><span class="token operator">&lt;</span><a href="-fn-loader.html">In</a><span class="token punctuation">, </span><span data-unresolved-link="com.amazonaws.services.lambda.runtime/Context///PointingToDeclaration/">Context</span><span class="token punctuation">, </span><a href="-fn-loader.html">Out</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-serverless-core/org.http4k.serverless/-auto-marshalling-fn-loader/index.html">AutoMarshallingFnLoader</a><span class="token operator">&lt;</span><a href="-fn-loader.html">In</a><span class="token punctuation">, </span><span data-unresolved-link="com.amazonaws.services.lambda.runtime/Context///PointingToDeclaration/">Context</span><span class="token punctuation">, </span><a href="-fn-loader.html">Out</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Convenience DSL for constructing polymorphic AWS FnHandlers</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2026 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
