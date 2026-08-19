@@ -1,0 +1,623 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.connect.amazon.iot.action</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">6.58.0.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-connect-amazon-iot/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-connect-amazon-iot/main" data-filter=":http4k-connect-amazon-iot/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-connect-amazon-iot::org.http4k.connect.amazon.iot.action////PointingToDeclaration//-621821628">
+  <div class="breadcrumbs"><a href="../index.html">http4k-connect-amazon-iot</a><span class="delimiter">/</span><span class="current">org.http4k.connect.amazon.iot.action</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-85451322%2FClasslikes%2F-621821628" anchor-label="CancelJob" id="-85451322%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-cancel-job/index.html"><span>Cancel</span><wbr><span><span>Job</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-85451322%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-cancel-job/index.html">CancelJob</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>jobId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>comment<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>force<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>reasonCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.iot/-iot-action/index.html">IotAction</a><span class="token operator">&lt;</span><a href="-cancelled-job/index.html">CancelledJob</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">With <a href="../../http4k-connect-amazon-iot/org.http4k.connect.amazon.iot.action/-cancel-job/--root--.html">force</a> false (the default) only QUEUED executions are canceled; IN_PROGRESS executions are canceled only when <a href="../../http4k-connect-amazon-iot/org.http4k.connect.amazon.iot.action/-cancel-job/--root--.html">force</a> is true.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="358670012%2FClasslikes%2F-621821628" anchor-label="CancelJobData" id="358670012%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-cancel-job-data/index.html"><span>Cancel</span><wbr><span>Job</span><wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="358670012%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-cancel-job-data/index.html">CancelJobData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>comment<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>reasonCode<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="85380845%2FClasslikes%2F-621821628" anchor-label="CancelledJob" id="85380845%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-cancelled-job/index.html"><span>Cancelled</span><wbr><span><span>Job</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="85380845%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-cancelled-job/index.html">CancelledJob</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>jobArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>jobId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1374504452%2FClasslikes%2F-621821628" anchor-label="CreatedJob" id="1374504452%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-created-job/index.html"><span>Created</span><wbr><span><span>Job</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1374504452%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-created-job/index.html">CreatedJob</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>jobArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>jobId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1072776129%2FClasslikes%2F-621821628" anchor-label="CreatedStream" id="1072776129%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-created-stream/index.html"><span>Created</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1072776129%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-created-stream/index.html">CreatedStream</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>streamId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-stream-id/index.html">StreamId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>streamArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>streamVersion<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1269209416%2FClasslikes%2F-621821628" anchor-label="CreateJob" id="1269209416%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-create-job/index.html"><span>Create</span><wbr><span><span>Job</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1269209416%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-create-job/index.html">CreateJob</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>jobId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>targets<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>document<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>targetSelection<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-target-selection/index.html">TargetSelection</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>timeoutConfig<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-timeout-config/index.html">TimeoutConfig</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.iot/-iot-action/index.html">IotAction</a><span class="token operator">&lt;</span><a href="-created-job/index.html">CreatedJob</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Creates a job which is sent to the <a href="../../http4k-connect-amazon-iot/org.http4k.connect.amazon.iot.action/-create-job/--root--.html">targets</a> (thing or thing group ARNs), carrying the inline JSON <a href="../../http4k-connect-amazon-iot/org.http4k.connect.amazon.iot.action/-create-job/--root--.html">document</a>. A duplicate jobId is refused with ResourceAlreadyExistsException (409).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1550726850%2FClasslikes%2F-621821628" anchor-label="CreateJobData" id="-1550726850%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-create-job-data/index.html"><span>Create</span><wbr><span>Job</span><wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1550726850%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-create-job-data/index.html">CreateJobData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>targets<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>document<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>targetSelection<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-target-selection/index.html">TargetSelection</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>timeoutConfig<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-timeout-config/index.html">TimeoutConfig</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-445515267%2FClasslikes%2F-621821628" anchor-label="CreateStream" id="-445515267%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-create-stream/index.html"><span>Create</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-445515267%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-create-stream/index.html">CreateStream</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>streamId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-stream-id/index.html">StreamId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>files<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.iot.model/-stream-file/index.html">StreamFile</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>roleArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.iot/-iot-action/index.html">IotAction</a><span class="token operator">&lt;</span><a href="-created-stream/index.html">CreatedStream</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Creates a stream of <a href="../../http4k-connect-amazon-iot/org.http4k.connect.amazon.iot.action/-create-stream/--root--.html">files</a> (1 to 50) which devices pull over MQTT file delivery. <a href="../../http4k-connect-amazon-iot/org.http4k.connect.amazon.iot.action/-create-stream/--root--.html">roleArn</a> is the role IoT assumes to read the S3 objects, and is required. A duplicate streamId is refused with ResourceAlreadyExistsException (409).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1297889421%2FClasslikes%2F-621821628" anchor-label="CreateStreamData" id="-1297889421%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-create-stream-data/index.html"><span>Create</span><wbr><span>Stream</span><wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1297889421%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-create-stream-data/index.html">CreateStreamData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>files<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.iot.model/-stream-file/index.html">StreamFile</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>roleArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="835105143%2FClasslikes%2F-621821628" anchor-label="DeleteJob" id="835105143%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-delete-job/index.html"><span>Delete</span><wbr><span><span>Job</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="835105143%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-delete-job/index.html">DeleteJob</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>jobId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>force<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.iot/-iot-action/index.html">IotAction</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">A job which is not in a terminal state (COMPLETED or CANCELED) can only be deleted with <a href="../../http4k-connect-amazon-iot/org.http4k.connect.amazon.iot.action/-delete-job/--root--.html">force</a> true; otherwise AWS answers with InvalidStateTransitionException (409).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-699383954%2FClasslikes%2F-621821628" anchor-label="DeleteStream" id="-699383954%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-delete-stream/index.html"><span>Delete</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-699383954%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-delete-stream/index.html">DeleteStream</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>streamId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-stream-id/index.html">StreamId</a></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.iot/-iot-action/index.html">IotAction</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Deletes the stream. A stream a job still refers to is refused with DeleteConflictException (409); unlike DeleteJob there is no force parameter.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-431801195%2FClasslikes%2F-621821628" anchor-label="DescribedJob" id="-431801195%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-described-job/index.html"><span>Described</span><wbr><span><span>Job</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-431801195%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-described-job/index.html">DescribedJob</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>job<span class="token operator">: </span><a href="-job/index.html">Job</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>documentSource<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="50658389%2FClasslikes%2F-621821628" anchor-label="DescribedJobExecution" id="50658389%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-described-job-execution/index.html"><span>Described</span><wbr><span>Job</span><wbr><span><span>Execution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="50658389%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-described-job-execution/index.html">DescribedJobExecution</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>execution<span class="token operator">: </span><a href="-job-execution/index.html">JobExecution</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1066497936%2FClasslikes%2F-621821628" anchor-label="DescribedStream" id="1066497936%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-described-stream/index.html"><span>Described</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1066497936%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-described-stream/index.html">DescribedStream</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>streamInfo<span class="token operator">: </span><a href="-stream-info/index.html">StreamInfo</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-592813927%2FClasslikes%2F-621821628" anchor-label="DescribeEndpoint" id="-592813927%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-describe-endpoint/index.html"><span>Describe</span><wbr><span><span>Endpoint</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-592813927%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-describe-endpoint/index.html">DescribeEndpoint</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>endpointType<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.iot/-iot-action/index.html">IotAction</a><span class="token operator">&lt;</span><a href="-iot-endpoint/index.html">IotEndpoint</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Returns the account-specific IoT endpoint. Valid <a href="../../http4k-connect-amazon-iot/org.http4k.connect.amazon.iot.action/-describe-endpoint/--root--.html">endpointType</a> values are <code class="lang-kotlin">iot:Data</code>, <code class="lang-kotlin">iot:Data-ATS</code>, <code class="lang-kotlin">iot:CredentialProvider</code> and <code class="lang-kotlin">iot:Jobs</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="241110167%2FClasslikes%2F-621821628" anchor-label="DescribeJob" id="241110167%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-describe-job/index.html"><span>Describe</span><wbr><span><span>Job</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="241110167%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-describe-job/index.html">DescribeJob</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>jobId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.iot/-iot-action/index.html">IotAction</a><span class="token operator">&lt;</span><a href="-described-job/index.html">DescribedJob</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1573260947%2FClasslikes%2F-621821628" anchor-label="DescribeJobExecution" id="1573260947%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-describe-job-execution/index.html"><span>Describe</span><wbr><span>Job</span><wbr><span><span>Execution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1573260947%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-describe-job-execution/index.html">DescribeJobExecution</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>thingName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-thing-name/index.html">ThingName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>jobId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>executionNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.iot/-iot-action/index.html">IotAction</a><span class="token operator">&lt;</span><a href="-described-job-execution/index.html">DescribedJobExecution</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1138454450%2FClasslikes%2F-621821628" anchor-label="DescribeStream" id="-1138454450%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-describe-stream/index.html"><span>Describe</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1138454450%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-describe-stream/index.html">DescribeStream</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>streamId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-stream-id/index.html">StreamId</a></span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.iot/-iot-action/index.html">IotAction</a><span class="token operator">&lt;</span><a href="-described-stream/index.html">DescribedStream</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="74740454%2FClasslikes%2F-621821628" anchor-label="IotEndpoint" id="74740454%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-iot-endpoint/index.html"><span>Iot</span><wbr><span><span>Endpoint</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="74740454%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-iot-endpoint/index.html">IotEndpoint</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>endpointAddress<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="624338988%2FClasslikes%2F-621821628" anchor-label="Job" id="624338988%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-job/index.html"><span><span>Job</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="624338988%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-job/index.html">Job</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>jobArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>jobId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>targets<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>targetSelection<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-target-selection/index.html">TargetSelection</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>status<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-status/index.html">JobStatus</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>forceCanceled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>comment<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>createdAt<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>lastUpdatedAt<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>completedAt<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>timeoutConfig<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-timeout-config/index.html">TimeoutConfig</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The subset of the AWS Job object which this module supports. Note that the job document is not part of this shape: devices read it through the jobs data plane, and the control plane only exposes it via GetJobDocument (unsupported here).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1358189922%2FClasslikes%2F-621821628" anchor-label="JobExecution" id="-1358189922%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-job-execution/index.html"><span>Job</span><wbr><span><span>Execution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1358189922%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-job-execution/index.html">JobExecution</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>jobId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>status<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-execution-status/index.html">JobExecutionStatus</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>forceCanceled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>statusDetails<span class="token operator">: </span><a href="-job-execution-status-details/index.html">JobExecutionStatusDetails</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>thingArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>queuedAt<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>startedAt<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>lastUpdatedAt<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>executionNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>versionNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>approximateSecondsBeforeTimedOut<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Unlike the jobs data plane, the control plane wraps the status details map in a <code class="lang-kotlin">detailsMap</code> attribute.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1732434988%2FClasslikes%2F-621821628" anchor-label="JobExecutionsForThing" id="1732434988%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-job-executions-for-thing/index.html"><span>Job</span><wbr><span>Executions</span><wbr><span>For</span><wbr><span><span>Thing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1732434988%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-job-executions-for-thing/index.html">JobExecutionsForThing</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>executionSummaries<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-job-execution-summary-for-thing/index.html">JobExecutionSummaryForThing</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>nextToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2111238380%2FClasslikes%2F-621821628" anchor-label="JobExecutionStatusDetails" id="-2111238380%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-job-execution-status-details/index.html"><span>Job</span><wbr><span>Execution</span><wbr><span>Status</span><wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2111238380%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-job-execution-status-details/index.html">JobExecutionStatusDetails</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>detailsMap<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="920240222%2FClasslikes%2F-621821628" anchor-label="JobExecutionSummary" id="920240222%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-job-execution-summary/index.html"><span>Job</span><wbr><span>Execution</span><wbr><span><span>Summary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="920240222%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-job-execution-summary/index.html">JobExecutionSummary</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>status<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-execution-status/index.html">JobExecutionStatus</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>queuedAt<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>startedAt<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>lastUpdatedAt<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>executionNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>retryAttempt<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="696801593%2FClasslikes%2F-621821628" anchor-label="JobExecutionSummaryForThing" id="696801593%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-job-execution-summary-for-thing/index.html"><span>Job</span><wbr><span>Execution</span><wbr><span>Summary</span><wbr><span>For</span><wbr><span><span>Thing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="696801593%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-job-execution-summary-for-thing/index.html">JobExecutionSummaryForThing</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>jobId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>jobExecutionSummary<span class="token operator">: </span><a href="-job-execution-summary/index.html">JobExecutionSummary</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2129581974%2FClasslikes%2F-621821628" anchor-label="ListJobExecutionsForThing" id="-2129581974%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-list-job-executions-for-thing/index.html"><span>List</span><wbr><span>Job</span><wbr><span>Executions</span><wbr><span>For</span><wbr><span><span>Thing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2129581974%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-list-job-executions-for-thing/index.html">ListJobExecutionsForThing</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>thingName<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-thing-name/index.html">ThingName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>status<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-execution-status/index.html">JobExecutionStatus</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>jobId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>maxResults<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>nextToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.iot/-iot-action/index.html">IotAction</a><span class="token operator">&lt;</span><a href="-job-executions-for-thing/index.html">JobExecutionsForThing</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph"><code class="lang-kotlin">namespaceId</code> (an AWS IoT Greengrass feature) is not supported.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1771499636%2FClasslikes%2F-621821628" anchor-label="ListStreams" id="1771499636%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-list-streams/index.html"><span>List</span><wbr><span><span>Streams</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1771499636%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-list-streams/index.html">ListStreams</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>maxResults<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>nextToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>ascendingOrder<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.iot/-iot-action/index.html">IotAction</a><span class="token operator">&lt;</span><a href="-streams/index.html">Streams</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph"><a href="../../http4k-connect-amazon-iot/org.http4k.connect.amazon.iot.action/-list-streams/--root--.html">ascendingOrder</a> rides as <code class="lang-kotlin">isAscendingOrder</code>, which is the name AWS gives the query parameter.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-860592245%2FClasslikes%2F-621821628" anchor-label="StreamInfo" id="-860592245%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stream-info/index.html"><span>Stream</span><wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-860592245%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-stream-info/index.html">StreamInfo</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>streamId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-stream-id/index.html">StreamId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>streamArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>streamVersion<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>files<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.iot.model/-stream-file/index.html">StreamFile</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>roleArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>createdAt<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>lastUpdatedAt<span class="token operator">: </span><a href="../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="660438966%2FClasslikes%2F-621821628" anchor-label="Streams" id="660438966%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-streams/index.html"><span><span>Streams</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="660438966%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-streams/index.html">Streams</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>streams<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-stream-summary/index.html">StreamSummary</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>nextToken<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1847720451%2FClasslikes%2F-621821628" anchor-label="StreamSummary" id="1847720451%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stream-summary/index.html"><span>Stream</span><wbr><span><span>Summary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1847720451%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-stream-summary/index.html">StreamSummary</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>streamId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-stream-id/index.html">StreamId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>streamArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>streamVersion<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2083612558%2FClasslikes%2F-621821628" anchor-label="UpdatedStream" id="2083612558%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-updated-stream/index.html"><span>Updated</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2083612558%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-updated-stream/index.html">UpdatedStream</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>streamId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-stream-id/index.html">StreamId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>streamArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>streamVersion<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-135812976%2FClasslikes%2F-621821628" anchor-label="UpdateStream" id="-135812976%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-update-stream/index.html"><span>Update</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-135812976%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-update-stream/index.html">UpdateStream</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>streamId<span class="token operator">: </span><a href="../org.http4k.connect.amazon.iot.model/-stream-id/index.html">StreamId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>files<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.iot.model/-stream-file/index.html">StreamFile</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>roleArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span> : <a href="../org.http4k.connect.amazon.iot/-iot-action/index.html">IotAction</a><span class="token operator">&lt;</span><a href="-updated-stream/index.html">UpdatedStream</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">Replaces the stream's files, role or description, and returns the new <a href="-updated-stream/stream-version.html">UpdatedStream.streamVersion</a>. Omitted members are left as they are.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="514454662%2FClasslikes%2F-621821628" anchor-label="UpdateStreamData" id="514454662%2FClasslikes%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-update-stream-data/index.html"><span>Update</span><wbr><span>Stream</span><wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="514454662%2FClasslikes%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="-update-stream-data/index.html">UpdateStreamData</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>files<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../org.http4k.connect.amazon.iot.model/-stream-file/index.html">StreamFile</a><span class="token operator">&gt;</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>roleArn<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>description<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2026 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

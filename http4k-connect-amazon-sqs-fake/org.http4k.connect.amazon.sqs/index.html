@@ -40,7 +40,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">6.57.1.0
+        <div class="library-version" id="library-version">6.58.0.0
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -98,11 +98,26 @@
     <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
   </div>
   <div class="tabbedcontent">
-    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
     <div class="tabs-section-body">
       <div data-togglable="TYPE">
         <h2 class="tableheader">Types</h2>
-        <div class="table"><a data-name="698654156%2FClasslikes%2F254058821" anchor-label="FakeSQS" id="698654156%2FClasslikes%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
+        <div class="table"><a data-name="945737358%2FClasslikes%2F254058821" anchor-label="DeduplicationRecord" id="945737358%2FClasslikes%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-sqs-fake/main" data-filterable-set=":http4k-connect-amazon-sqs-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-deduplication-record/index.html"><span>Deduplication</span><wbr><span><span>Record</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="945737358%2FClasslikes%2F254058821"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-deduplication-record/index.html">DeduplicationRecord</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>messageId<span class="token operator">: </span><a href="../../http4k-connect-amazon-sqs/org.http4k.connect.amazon.sqs.model/-s-q-s-message-id/index.html">SQSMessageId</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sequenceNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sentAt<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Instant.html">Instant</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The checksums are not recorded here, because SQS digests the request it has just received even when it deduplicates that request away.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="698654156%2FClasslikes%2F254058821" anchor-label="FakeSQS" id="698654156%2FClasslikes%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
           <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-sqs-fake/main" data-filterable-set=":http4k-connect-amazon-sqs-fake/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
@@ -112,7 +127,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-fake-s-q-s/index.html">FakeSQS</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">queues<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-sqs/org.http4k.connect.amazon.sqs.model/-s-q-s-message/index.html">SQSMessage</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator"> = </span>Storage.InMemory()<span class="token punctuation">, </span></span><span class="parameter ">awsAccount<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-aws-account/index.html">AwsAccount</a><span class="token operator"> = </span>AwsAccount.of("1234567890")<span class="token punctuation">, </span></span><span class="parameter ">region<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-region/index.html">Region</a><span class="token operator"> = </span>Region.of("ldn-north-1")</span></span><span class="token punctuation">)</span> : <a href="../../http4k-testing-chaos/org.http4k.chaos/-chaotic-http-handler/index.html">ChaoticHttpHandler</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-fake-s-q-s/index.html">FakeSQS</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">queues<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-sqs/org.http4k.connect.amazon.sqs.model/-s-q-s-message/index.html">SQSMessage</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token operator"> = </span>Storage.InMemory()<span class="token punctuation">, </span></span><span class="parameter ">awsAccount<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-aws-account/index.html">AwsAccount</a><span class="token operator"> = </span>AwsAccount.of("1234567890")<span class="token punctuation">, </span></span><span class="parameter ">region<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-region/index.html">Region</a><span class="token operator"> = </span>Region.of("ldn-north-1")<span class="token punctuation">, </span></span><span class="parameter ">deduplication<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="-deduplication-record/index.html">DeduplicationRecord</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Storage.InMemory()<span class="token punctuation">, </span></span><span class="parameter ">queueConfig<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="-queue-config/index.html">QueueConfig</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Storage.InMemory()<span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token operator"> = </span>Clock.systemUTC()</span></span><span class="token punctuation">)</span> : <a href="../../http4k-testing-chaos/org.http4k.chaos/-chaotic-http-handler/index.html">ChaoticHttpHandler</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -132,21 +147,55 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div data-togglable="FUNCTION">
-        <h2 class="tableheader">Functions</h2>
-        <div class="table"><a data-name="-1318296207%2FFunctions%2F254058821" anchor-label="createQueue" id="-1318296207%2FFunctions%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
-          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-amazon-sqs-fake/main" data-filterable-set=":http4k-connect-amazon-sqs-fake/main">
+<a data-name="-1712413127%2FClasslikes%2F254058821" anchor-label="QueueConfig" id="-1712413127%2FClasslikes%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-sqs-fake/main" data-filterable-set=":http4k-connect-amazon-sqs-fake/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
-                  <div><a href="create-queue.html"><span>create</span><wbr><span><span>Queue</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1318296207%2FFunctions%2F254058821"></span>
+                  <div><a href="-queue-config/index.html"><span>Queue</span><wbr><span><span>Config</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1712413127%2FClasslikes%2F254058821"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-aws-rest-json-fake/index.html">AwsRestJsonFake</a><span class="token punctuation">.</span><a href="create-queue.html"><span class="token function">createQueue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">queues<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-sqs/org.http4k.connect.amazon.sqs.model/-s-q-s-message/index.html">SQSMessage</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">awsAccount<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-aws-account/index.html">AwsAccount</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-queue-config/index.html">QueueConfig</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>contentBasedDeduplication<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The queue settings the fake honours. Recorded by CreateQueue, dropped by DeleteQueue.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-1177097473%2FProperties%2F254058821" anchor-label="DeduplicationInterval" id="-1177097473%2FProperties%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-sqs-fake/main" data-filterable-set=":http4k-connect-amazon-sqs-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-deduplication-interval.html"><span>Deduplication</span><wbr><span><span>Interval</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1177097473%2FProperties%2F254058821"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-deduplication-interval.html">DeduplicationInterval</a><span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Duration.html">Duration</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="1068512372%2FFunctions%2F254058821" anchor-label="createQueue" id="1068512372%2FFunctions%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-amazon-sqs-fake/main" data-filterable-set=":http4k-connect-amazon-sqs-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-queue.html"><span>create</span><wbr><span><span>Queue</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1068512372%2FFunctions%2F254058821"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-aws-rest-json-fake/index.html">AwsRestJsonFake</a><span class="token punctuation">.</span><a href="create-queue.html"><span class="token function">createQueue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">queues<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-sqs/org.http4k.connect.amazon.sqs.model/-s-q-s-message/index.html">SQSMessage</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">queueConfig<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="-queue-config/index.html">QueueConfig</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">awsAccount<span class="token operator">: </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-aws-account/index.html">AwsAccount</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -181,17 +230,17 @@
               </div>
             </div>
           </div>
-<a data-name="938561056%2FFunctions%2F254058821" anchor-label="deleteQueue" id="938561056%2FFunctions%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
+<a data-name="181798193%2FFunctions%2F254058821" anchor-label="deleteQueue" id="181798193%2FFunctions%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
           <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-amazon-sqs-fake/main" data-filterable-set=":http4k-connect-amazon-sqs-fake/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="delete-queue.html"><span>delete</span><wbr><span><span>Queue</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="938561056%2FFunctions%2F254058821"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="181798193%2FFunctions%2F254058821"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-aws-rest-json-fake/index.html">AwsRestJsonFake</a><span class="token punctuation">.</span><a href="delete-queue.html"><span class="token function">deleteQueue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">queues<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-sqs/org.http4k.connect.amazon.sqs.model/-s-q-s-message/index.html">SQSMessage</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-aws-rest-json-fake/index.html">AwsRestJsonFake</a><span class="token punctuation">.</span><a href="delete-queue.html"><span class="token function">deleteQueue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">queues<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-sqs/org.http4k.connect.amazon.sqs.model/-s-q-s-message/index.html">SQSMessage</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">deduplication<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="-deduplication-record/index.html">DeduplicationRecord</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Storage.InMemory()<span class="token punctuation">, </span></span><span class="parameter ">queueConfig<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="-queue-config/index.html">QueueConfig</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Storage.InMemory()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -207,6 +256,21 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-aws-rest-json-fake/index.html">AwsRestJsonFake</a><span class="token punctuation">.</span><a href="get-queue-attributes.html"><span class="token function">getQueueAttributes</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">queues<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-sqs/org.http4k.connect.amazon.sqs.model/-s-q-s-message/index.html">SQSMessage</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-531437692%2FFunctions%2F254058821" anchor-label="isFifoQueue" id="-531437692%2FFunctions%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-amazon-sqs-fake/main" data-filterable-set=":http4k-connect-amazon-sqs-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-fifo-queue.html"><span>is</span><wbr><span>Fifo</span><wbr><span><span>Queue</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-531437692%2FFunctions%2F254058821"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="is-fifo-queue.html"><span class="token function">isFifoQueue</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -286,6 +350,21 @@
               </div>
             </div>
           </div>
+<a data-name="1829020791%2FFunctions%2F254058821" anchor-label="md5OfFields" id="1829020791%2FFunctions%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-amazon-sqs-fake/main" data-filterable-set=":http4k-connect-amazon-sqs-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="md5-of-fields.html"><span>md5Of</span><wbr><span><span>Fields</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1829020791%2FFunctions%2F254058821"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-message-fields-dto/index.html">MessageFieldsDto</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="md5-of-fields.html"><span class="token function">md5OfFields</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Null when the map is empty, because SQS omits the field rather than sending an empty digest.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
 <a data-name="-1218323142%2FFunctions%2F254058821" anchor-label="receiveMessage" id="-1218323142%2FFunctions%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
           <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-amazon-sqs-fake/main" data-filterable-set=":http4k-connect-amazon-sqs-fake/main">
             <div class="main-subrow keyValue ">
@@ -301,32 +380,32 @@
               </div>
             </div>
           </div>
-<a data-name="1067171207%2FFunctions%2F254058821" anchor-label="sendMessage" id="1067171207%2FFunctions%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
+<a data-name="-1995239382%2FFunctions%2F254058821" anchor-label="sendMessage" id="-1995239382%2FFunctions%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
           <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-amazon-sqs-fake/main" data-filterable-set=":http4k-connect-amazon-sqs-fake/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="send-message.html"><span>send</span><wbr><span><span>Message</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1067171207%2FFunctions%2F254058821"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1995239382%2FFunctions%2F254058821"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-aws-rest-json-fake/index.html">AwsRestJsonFake</a><span class="token punctuation">.</span><a href="send-message.html"><span class="token function">sendMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">queues<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-sqs/org.http4k.connect.amazon.sqs.model/-s-q-s-message/index.html">SQSMessage</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-aws-rest-json-fake/index.html">AwsRestJsonFake</a><span class="token punctuation">.</span><a href="send-message.html"><span class="token function">sendMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">queues<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-sqs/org.http4k.connect.amazon.sqs.model/-s-q-s-message/index.html">SQSMessage</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">deduplication<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="-deduplication-record/index.html">DeduplicationRecord</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Storage.InMemory()<span class="token punctuation">, </span></span><span class="parameter ">queueConfig<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="-queue-config/index.html">QueueConfig</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Storage.InMemory()<span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token operator"> = </span>Clock.systemUTC()<span class="token punctuation">, </span></span><span class="parameter ">sequenceNumbers<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html">AtomicLong</a><span class="token operator"> = </span>AtomicLong()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
                 </div>
               </div>
             </div>
           </div>
-<a data-name="-370144221%2FFunctions%2F254058821" anchor-label="sendMessageBatch" id="-370144221%2FFunctions%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
+<a data-name="126558222%2FFunctions%2F254058821" anchor-label="sendMessageBatch" id="126558222%2FFunctions%2F254058821" data-filterable-set=":http4k-connect-amazon-sqs-fake/main"></a>
           <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-amazon-sqs-fake/main" data-filterable-set=":http4k-connect-amazon-sqs-fake/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="send-message-batch.html"><span>send</span><wbr><span>Message</span><wbr><span><span>Batch</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-370144221%2FFunctions%2F254058821"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="126558222%2FFunctions%2F254058821"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-aws-rest-json-fake/index.html">AwsRestJsonFake</a><span class="token punctuation">.</span><a href="send-message-batch.html"><span class="token function">sendMessageBatch</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">queues<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-sqs/org.http4k.connect.amazon.sqs.model/-s-q-s-message/index.html">SQSMessage</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-sqs-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../../http4k-connect-amazon-core/org.http4k.connect.amazon/-aws-rest-json-fake/index.html">AwsRestJsonFake</a><span class="token punctuation">.</span><a href="send-message-batch.html"><span class="token function">sendMessageBatch</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">queues<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-amazon-sqs/org.http4k.connect.amazon.sqs.model/-s-q-s-message/index.html">SQSMessage</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">deduplication<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="-deduplication-record/index.html">DeduplicationRecord</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Storage.InMemory()<span class="token punctuation">, </span></span><span class="parameter ">queueConfig<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="-queue-config/index.html">QueueConfig</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Storage.InMemory()<span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token operator"> = </span>Clock.systemUTC()<span class="token punctuation">, </span></span><span class="parameter ">sequenceNumbers<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html">AtomicLong</a><span class="token operator"> = </span>AtomicLong()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
                 </div>
               </div>
             </div>

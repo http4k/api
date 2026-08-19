@@ -1,0 +1,313 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>JobExecution</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../../images/logo-icon.svg">
+<link href="../../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">6.58.0.0
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-connect-amazon-iot/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-connect-amazon-iot/main" data-filter=":http4k-connect-amazon-iot/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="http4k-connect-amazon-iot::org.http4k.connect.amazon.iot.action/JobExecution///PointingToDeclaration//-621821628">
+  <div class="breadcrumbs"><a href="../../index.html">http4k-connect-amazon-iot</a><span class="delimiter">/</span><a href="../index.html">org.http4k.connect.amazon.iot.action</a><span class="delimiter">/</span><span class="current">JobExecution</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Job</span><wbr><span><span>Execution</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="se.ansman.kotshi/JsonSerializable///PointingToDeclaration/"><span class="token annotation builtin">JsonSerializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">JobExecution</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>jobId<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>status<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.iot.model/-job-execution-status/index.html">JobExecutionStatus</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>forceCanceled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>statusDetails<span class="token operator">: </span><a href="../-job-execution-status-details/index.html">JobExecutionStatusDetails</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>thingArn<span class="token operator">: </span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>queuedAt<span class="token operator">: </span><a href="../../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>startedAt<span class="token operator">: </span><a href="../../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>lastUpdatedAt<span class="token operator">: </span><a href="../../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>executionNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>versionNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>approximateSecondsBeforeTimedOut<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/connect/amazon/iot/client/src/main/kotlin/org/http4k/connect/amazon/iot/action/DescribeJobExecution.kt#L48">source</a>)</span></span></div><p class="paragraph">Unlike the jobs data plane, the control plane wraps the status details map in a <code class="lang-kotlin">detailsMap</code> attribute.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="-1414916954%2FConstructors%2F-621821628" anchor-label="JobExecution" id="-1414916954%2FConstructors%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-job-execution.html"><span>Job</span><wbr><span><span>Execution</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1414916954%2FConstructors%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">jobId<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">status<span class="token operator">: </span><a href="../../org.http4k.connect.amazon.iot.model/-job-execution-status/index.html">JobExecutionStatus</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">forceCanceled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">statusDetails<span class="token operator">: </span><a href="../-job-execution-status-details/index.html">JobExecutionStatusDetails</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">thingArn<span class="token operator">: </span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">queuedAt<span class="token operator">: </span><a href="../../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">startedAt<span class="token operator">: </span><a href="../../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">lastUpdatedAt<span class="token operator">: </span><a href="../../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">executionNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">versionNumber<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">approximateSecondsBeforeTimedOut<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-1621036064%2FProperties%2F-621821628" anchor-label="approximateSecondsBeforeTimedOut" id="-1621036064%2FProperties%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="approximate-seconds-before-timed-out.html"><span>approximate</span><wbr><span>Seconds</span><wbr><span>Before</span><wbr><span>Timed</span><wbr><span><span>Out</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1621036064%2FProperties%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="approximate-seconds-before-timed-out.html">approximateSecondsBeforeTimedOut</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1050991112%2FProperties%2F-621821628" anchor-label="executionNumber" id="-1050991112%2FProperties%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="execution-number.html"><span>execution</span><wbr><span><span>Number</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1050991112%2FProperties%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="execution-number.html">executionNumber</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-251690443%2FProperties%2F-621821628" anchor-label="forceCanceled" id="-251690443%2FProperties%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="force-canceled.html"><span>force</span><wbr><span><span>Canceled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-251690443%2FProperties%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="force-canceled.html">forceCanceled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="479734689%2FProperties%2F-621821628" anchor-label="jobId" id="479734689%2FProperties%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="job-id.html"><span>job</span><wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="479734689%2FProperties%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="job-id.html">jobId</a><span class="token operator">: </span><a href="../../org.http4k.connect.amazon.iot.model/-job-id/index.html">JobId</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-684592895%2FProperties%2F-621821628" anchor-label="lastUpdatedAt" id="-684592895%2FProperties%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="last-updated-at.html"><span>last</span><wbr><span>Updated</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-684592895%2FProperties%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="last-updated-at.html">lastUpdatedAt</a><span class="token operator">: </span><a href="../../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1974301349%2FProperties%2F-621821628" anchor-label="queuedAt" id="-1974301349%2FProperties%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="queued-at.html"><span>queued</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1974301349%2FProperties%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="queued-at.html">queuedAt</a><span class="token operator">: </span><a href="../../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1895541317%2FProperties%2F-621821628" anchor-label="startedAt" id="1895541317%2FProperties%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="started-at.html"><span>started</span><wbr><span><span>At</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1895541317%2FProperties%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="started-at.html">startedAt</a><span class="token operator">: </span><a href="../../../http4k-connect-core/org.http4k.connect.model/-timestamp/index.html">Timestamp</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1417328401%2FProperties%2F-621821628" anchor-label="status" id="-1417328401%2FProperties%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="status.html"><span><span>status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1417328401%2FProperties%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="status.html">status</a><span class="token operator">: </span><a href="../../org.http4k.connect.amazon.iot.model/-job-execution-status/index.html">JobExecutionStatus</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-500440471%2FProperties%2F-621821628" anchor-label="statusDetails" id="-500440471%2FProperties%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="status-details.html"><span>status</span><wbr><span><span>Details</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-500440471%2FProperties%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="status-details.html">statusDetails</a><span class="token operator">: </span><a href="../-job-execution-status-details/index.html">JobExecutionStatusDetails</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1144456206%2FProperties%2F-621821628" anchor-label="thingArn" id="-1144456206%2FProperties%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="thing-arn.html"><span>thing</span><wbr><span><span>Arn</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1144456206%2FProperties%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="thing-arn.html">thingArn</a><span class="token operator">: </span><a href="../../../http4k-connect-amazon-core/org.http4k.connect.amazon.core.model/-a-r-n/index.html">ARN</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1703931080%2FProperties%2F-621821628" anchor-label="versionNumber" id="-1703931080%2FProperties%2F-621821628" data-filterable-set=":http4k-connect-amazon-iot/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-amazon-iot/main" data-filterable-set=":http4k-connect-amazon-iot/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="version-number.html"><span>version</span><wbr><span><span>Number</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1703931080%2FProperties%2F-621821628"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-amazon-iot/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="version-number.html">versionNumber</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2026 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
