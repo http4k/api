@@ -40,7 +40,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">6.58.0.0
+        <div class="library-version" id="library-version">6.60.0.0
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -112,7 +112,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-anthropic-fake/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-fake-anthropic-a-i/index.html">FakeAnthropicAI</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">completionGenerators<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="../../http4k-ai-core/org.http4k.ai.model/-model-name/index.html">ModelName</a><span class="token punctuation">, </span><a href="-message-content-generator/index.html">MessageContentGenerator</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyMap()</span></span><span class="token punctuation">)</span> : <a href="../../http4k-testing-chaos/org.http4k.chaos/-chaotic-http-handler/index.html">ChaoticHttpHandler</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-anthropic-fake/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-fake-anthropic-a-i/index.html">FakeAnthropicAI</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">completionGenerators<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="../../http4k-ai-core/org.http4k.ai.model/-model-name/index.html">ModelName</a><span class="token punctuation">, </span><a href="-message-content-generator/index.html">MessageContentGenerator</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyMap()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>models<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="../../http4k-connect-ai-anthropic/org.http4k.connect.anthropic.action/-model-info/index.html">ModelInfo</a><span class="token operator">&gt;</span><span class="token operator"> = </span>DEFAULT_ANTHROPIC_MODELS<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>batches<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="-stored-batch/index.html">StoredBatch</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Storage.InMemory()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>files<span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="-stored-file/index.html">StoredFile</a><span class="token operator">&gt;</span><span class="token operator"> = </span>Storage.InMemory()<span class="token punctuation">, </span></span><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token operator"> = </span>Clock.systemUTC()</span></span><span class="token punctuation">)</span> : <a href="../../http4k-testing-chaos/org.http4k.chaos/-chaotic-http-handler/index.html">ChaoticHttpHandler</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -132,12 +132,57 @@
               </div>
             </div>
           </div>
+<a data-name="1895759654%2FClasslikes%2F906908330" anchor-label="StoredBatch" id="1895759654%2FClasslikes%2F906908330" data-filterable-set=":http4k-connect-ai-anthropic-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-ai-anthropic-fake/main" data-filterable-set=":http4k-connect-ai-anthropic-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stored-batch/index.html"><span>Stored</span><wbr><span><span>Batch</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1895759654%2FClasslikes%2F906908330"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-anthropic-fake/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-stored-batch/index.html">StoredBatch</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>batch<span class="token operator">: </span><a href="../../http4k-connect-ai-anthropic/org.http4k.connect.anthropic.action/-message-batch/index.html">MessageBatch</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>responses<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../http4k-connect-ai-anthropic/org.http4k.connect.anthropic.action/-message-batch-response/index.html">MessageBatchResponse</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1629806438%2FClasslikes%2F906908330" anchor-label="StoredFile" id="1629806438%2FClasslikes%2F906908330" data-filterable-set=":http4k-connect-ai-anthropic-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-ai-anthropic-fake/main" data-filterable-set=":http4k-connect-ai-anthropic-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stored-file/index.html"><span>Stored</span><wbr><span><span>File</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1629806438%2FClasslikes%2F906908330"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-anthropic-fake/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-stored-file/index.html">StoredFile</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>metadata<span class="token operator">: </span><a href="../../http4k-connect-ai-anthropic/org.http4k.connect.anthropic.action/-file-metadata/index.html">FileMetadata</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>content<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div data-togglable="EXTENSION_PROPERTY">
+      <div data-togglable="PROPERTY">
         <h2 class="tableheader">Properties</h2>
-        <div class="table"><a data-name="-89729271%2FProperties%2F906908330" anchor-label="Echo" id="-89729271%2FProperties%2F906908330" data-filterable-set=":http4k-connect-ai-anthropic-fake/main"></a>
+        <div class="table"><a data-name="1412178943%2FProperties%2F906908330" anchor-label="DEFAULT_ANTHROPIC_MODELS" id="1412178943%2FProperties%2F906908330" data-filterable-set=":http4k-connect-ai-anthropic-fake/main"></a>
           <div class="table-row table-row_content" data-filterable-current=":http4k-connect-ai-anthropic-fake/main" data-filterable-set=":http4k-connect-ai-anthropic-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-e-f-a-u-l-t_-a-n-t-h-r-o-p-i-c_-m-o-d-e-l-s.html"><span>DEFAULT_</span><wbr><span>ANTHROPIC_</span><wbr><span>MODELS</span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1412178943%2FProperties%2F906908330"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-ai-anthropic-fake/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="-d-e-f-a-u-l-t_-a-n-t-h-r-o-p-i-c_-m-o-d-e-l-s.html">DEFAULT_ANTHROPIC_MODELS</a><span class="token operator">: </span><a href="../../http4k-connect-storage-core/org.http4k.connect.storage/-storage/index.html">Storage</a><span class="token operator">&lt;</span><a href="../../http4k-connect-ai-anthropic/org.http4k.connect.anthropic.action/-model-info/index.html">ModelInfo</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-89729271%2FProperties%2F906908330" anchor-label="Echo" id="-89729271%2FProperties%2F906908330" data-filterable-set=":http4k-connect-ai-anthropic-fake/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":http4k-connect-ai-anthropic-fake/main" data-filterable-set=":http4k-connect-ai-anthropic-fake/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-echo.html"><span><span>Echo</span></span></a></div>
@@ -152,7 +197,7 @@
             </div>
           </div>
 <a data-name="-496031034%2FProperties%2F906908330" anchor-label="ReverseInput" id="-496031034%2FProperties%2F906908330" data-filterable-set=":http4k-connect-ai-anthropic-fake/main"></a>
-          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-ai-anthropic-fake/main" data-filterable-set=":http4k-connect-ai-anthropic-fake/main">
+          <div class="table-row table-row_content" data-togglable="EXTENSION_PROPERTY" data-filterable-current=":http4k-connect-ai-anthropic-fake/main" data-filterable-set=":http4k-connect-ai-anthropic-fake/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-reverse-input.html"><span>Reverse</span><wbr><span><span>Input</span></span></a></div>
