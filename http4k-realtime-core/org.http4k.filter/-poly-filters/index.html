@@ -40,7 +40,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">6.60.0.0
+        <div class="library-version" id="library-version">6.64.0.0-ee
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -96,7 +96,7 @@
   <div class="breadcrumbs"><a href="../../index.html">http4k-realtime-core</a><span class="delimiter">/</span><a href="../index.html">org.http4k.filter</a><span class="delimiter">/</span><span class="current">PolyFilters</span></div>
   <div class="cover ">
     <h1 class="cover"><span>Poly</span><wbr><span><span>Filters</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">PolyFilters</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/core/realtime-core/src/main/kotlin/org/http4k/filter/PolyFilters.kt#L26">source</a>)</span></span></div><p class="paragraph">Filters that work with PolyHandler (multiple protocols)</p></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">PolyFilters</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/core/realtime-core/src/main/kotlin/org/http4k/filter/PolyFilters.kt#L27">source</a>)</span></span></div><p class="paragraph">Filters that work with PolyHandler (multiple protocols)</p></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
@@ -114,6 +114,21 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-catch-all.html"><span class="token function">CatchAll</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">onErrorHttp<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../../../http4k-core/org.http4k.core/-response/index.html">Response</a><span class="token operator"> = </span>::originalBehaviour<span class="token punctuation">, </span></span><span class="parameter ">onErrorSse<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../../org.http4k.sse/-sse-response/index.html">SseResponse</a><span class="token operator"> = </span>::originalSseBehaviour<span class="token punctuation">, </span></span><span class="parameter ">onErrorWs<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-throwable/index.html">Throwable</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../../org.http4k.websocket/-ws-response/index.html">WsResponse</a><span class="token operator"> = </span>::originalWsBehaviour</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.http4k.core/-poly-filter/index.html">PolyFilter</a></div><div class="brief "><p class="paragraph">Catch all filter for all protocols</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="452344358%2FFunctions%2F1220897459" anchor-label="Compression" id="452344358%2FFunctions%2F1220897459" data-filterable-set=":http4k-realtime-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-realtime-core/main" data-filterable-set=":http4k-realtime-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-compression.html"><span><span>Compression</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="452344358%2FFunctions%2F1220897459"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-compression.html"><span class="token function">Compression</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>encodings<span class="token operator">: </span><a href="../../../http4k-core/org.http4k.core/-content-encoding/index.html">ContentEncoding</a><span class="token punctuation">, </span></span><span class="parameter ">maxDecompressedSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span>MAX_DECOMPRESSED_SIZE.toLong()<span class="token punctuation">, </span></span><span class="parameter ">shouldCompress<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../../http4k-core/org.http4k.core/-response/index.html">Response</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span>{ true }</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../org.http4k.core/-poly-filter/index.html">PolyFilter</a></div><div class="brief "><p class="paragraph">Compression for HTTP and SSE, using the best of the given encodings acceptable to the client.</p></div></div></div>
                 </div>
               </div>
             </div>

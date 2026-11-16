@@ -40,7 +40,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">6.60.0.0
+        <div class="library-version" id="library-version">6.64.0.0-ee
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -143,6 +143,21 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-body-mode/index.html">BodyMode</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-function1/index.html">Function1</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/InputStream.html">InputStream</a><span class="token punctuation">, </span><a href="-body/index.html">Body</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">BodyMode represents a choice between working lazily with streams or eagerly storing the body contents in memory.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1607866800%2FClasslikes%2F-740847589" anchor-label="ContentEncoding" id="1607866800%2FClasslikes%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-content-encoding/index.html"><span>Content</span><wbr><span><span>Encoding</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1607866800%2FClasslikes%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-content-encoding/index.html">ContentEncoding</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="-content-encoding-name/index.html">ContentEncodingName</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>encoder<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/OutputStream.html">OutputStream</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/OutputStream.html">OutputStream</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>decoder<span class="token operator">: </span><span class="token punctuation">(</span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/InputStream.html">InputStream</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/InputStream.html">InputStream</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">A content-coding which can be negotiated by the Compression filters. The encoder must emit everything written so far when flushed, so that it can be used for streaming (eg. SSE). The filters take care of empty bodies, headers, decompression size limits and decoding failures, so the encoder/decoder are just the raw codec streams.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -337,7 +352,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-method/index.html">Method</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-method/index.html">Method</a><span class="token operator">&gt; </span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">enum class </span><a href="-method/index.html">Method</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-method/index.html">Method</a><span class="token operator">&gt; </span></div></div></div>
                 </div>
               </div>
             </div>
@@ -740,6 +755,21 @@
               </div>
             </div>
           </div>
+<a data-name="1218130980%2FFunctions%2F-740847589" anchor-label="Deflate" id="1218130980%2FFunctions%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-deflate.html"><span><span>Deflate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1218130980%2FFunctions%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-content-encoding/-companion/index.html">ContentEncoding.Companion</a><span class="token punctuation">.</span><a href="-deflate.html"><span class="token function">Deflate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">level<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>DEFAULT_COMPRESSION</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-content-encoding/index.html">ContentEncoding</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
 <a data-name="-1260474687%2FFunctions%2F-740847589" anchor-label="extend" id="-1260474687%2FFunctions%2F-740847589" data-filterable-set=":http4k-core/main"></a>
           <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
             <div class="main-subrow keyValue ">
@@ -841,6 +871,21 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="get-first.html">K</a><span class="token punctuation">, </span><a href="get-first.html">V</a><span class="token operator">&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="get-first.html">K</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="get-first.html">V</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="get-first.html"><span class="token function">getFirst</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="get-first.html">K</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="get-first.html">V</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="721759515%2FFunctions%2F-740847589" anchor-label="Gzip" id="721759515%2FFunctions%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-gzip.html"><span><span>Gzip</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="721759515%2FFunctions%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-content-encoding/-companion/index.html">ContentEncoding.Companion</a><span class="token punctuation">.</span><a href="-gzip.html"><span class="token function">Gzip</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">level<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>DEFAULT_COMPRESSION</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-content-encoding/index.html">ContentEncoding</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -991,6 +1036,21 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="preferred.html">Range</a><span class="token operator"> : </span><a href="-simple-range/index.html">SimpleRange</a><span class="token operator">&lt;</span><a href="preferred.html">Option</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><a href="preferred.html">Option</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt; </span><a href="-priority-list/index.html">PriorityList</a><span class="token operator">&lt;</span><a href="preferred.html">Range</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="preferred.html"><span class="token function">preferred</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">offered<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="preferred.html">Option</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="preferred.html">Option</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Selects the client's preferred option from a set of options offered by the server, when the range is a SimpleRange<option>.</option></p></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="preferred.html">Range</a><span class="token punctuation">, </span><a href="preferred.html">Option</a><span class="token operator"> : </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><a href="preferred.html">OptionId</a><span class="token operator">&gt; </span><a href="-priority-list/index.html">PriorityList</a><span class="token operator">&lt;</span><a href="preferred.html">Range</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="preferred.html"><span class="token function">preferred</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">offered<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="preferred.html">Option</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">match<span class="token operator">: </span><span class="token punctuation">(</span><a href="preferred.html">Range</a><span class="token punctuation">, </span><a href="preferred.html">OptionId</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">by<span class="token operator">: </span><span class="token punctuation">(</span><a href="preferred.html">Option</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="preferred.html">OptionId</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="preferred.html">Option</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Selects the client's preferred option from a set of options offered by the server, matching a priority list against the id of the options.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1946413470%2FFunctions%2F-740847589" anchor-label="preferredEncoding" id="-1946413470%2FFunctions%2F-740847589" data-filterable-set=":http4k-core/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-core/main" data-filterable-set=":http4k-core/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="preferred-encoding.html"><span>preferred</span><wbr><span><span>Encoding</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1946413470%2FFunctions%2F-740847589"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="-request/index.html">Request</a><span class="token punctuation">.</span><a href="preferred-encoding.html"><span class="token function">preferredEncoding</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">offered<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-content-encoding/index.html">ContentEncoding</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-content-encoding/index.html">ContentEncoding</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">The client's preferred encoding (by "accept-encoding") from those offered, in order of server preference.</p></div></div></div>
                 </div>
               </div>
             </div>

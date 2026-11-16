@@ -45,7 +45,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-6.60.0.0        </div>
+6.64.0.0-ee        </div>
         <div class="navigation-controls">
                 <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link"
                    href="https://http4k.org"></a>
@@ -84,13 +84,18 @@
     <div class="cover "><span class="github">
 <blockquote>
 <p>
+<strong>This is the http4k Enterprise Edition early access branch</strong> - changes on this branch are commercially licensed until they are included in an http4k Community release, and use requires an http4k Enterprise Edition subscription. See <a href="LICENSE">LICENSE</a>. The open source Community edition is on the <a href="https://github.com/http4k/http4k/tree/master">master</a> branch.</p>
+</blockquote>
+</span><span class="github">
+<blockquote>
+<p>
 <strong>Distribution notice</strong> - from 1 October 2026, new releases of http4k will be published to Maven Central quarterly. Publication to <a href="https://maven.http4k.org">maven.http4k.org</a> continues on the normal 1-2 week cadence. Both channels are supported. Background and current status can be found <strong><a href="https://www.http4k.org/distribution/">here</a></strong>.</p>
 </blockquote>
 </span><hr/>
 <img src="https://http4k.org/images/logo-http4k.png" alt="http4k logo">
 <hr/>
       <p class="paragraph"><a href="https://github.com/http4k/http4k/actions/workflows/build-http4k.yml"><img alt="build" src="https://github.com/http4k/http4k/actions/workflows/build-http4k.yml/badge.svg"></a> <a href="https://mvnrepository.com/artifact/org.http4k"><img alt="download" src="https://img.shields.io/maven-central/v/org.http4k/http4k-core"></a> <a href="https://codecov.io/gh/http4k/http4k"><img src="https://codecov.io/gh/http4k/http4k/branch/master/graph/badge.svg" /></a> <a href="http://www.apache.org/licenses/LICENSE-2.0"><img alt="GitHub license" src="https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat"></a> <a href="https://www.bestpractices.dev/projects/13771"><img alt="OpenSSF Best Practices" src="https://www.bestpractices.dev/projects/13771/badge"></a> <a href="https://plugins.jetbrains.com/plugin/25243-http4k-toolbox"><img alt="intellij-badge" src="https://img.shields.io/jetbrains/plugin/v/25243-http4k-toolbox?label=intellij%20plugin"></a> <a href="https://kotlin.link"><img alt="awesome kotlin" src="https://kotlin.link/awesome-kotlin.svg"></a> <a href="https://opencollective.com/http4k"><img alt="Kotlin Slack" src="https://img.shields.io/badge/chat-kotlin%20slack-orange.svg"></a> <a href="https://opencollective.com/http4k"><img alt="back us!" src="https://opencollective.com/http4k/backers/badge.svg"></a> <a href="https://opencollective.com/http4k"><img alt="sponsor us!" src="https://opencollective.com/http4k/sponsors/badge.svg"></a></p>
-      <p class="paragraph"><a href="https://http4k.org">http4k</a> is a lightweight but fully-featured HTTP toolkit written in pure <a href="https://kotlinlang.org/">Kotlin</a> that enables the serving and consuming of HTTP services in a functional and consistent way. <a href="https://http4k.org">http4k</a> applications are <i>just</i> Kotlin functions. For example, here's a simple echo server:</p>
+      <p class="paragraph"><a href="https://http4k.org">http4k</a> is a lightweight but fully-featured HTTP toolkit written in pure <a href="https://kotlinlang.org/">Kotlin</a> that enables the serving and consuming of HTTP services in a functional and consistent way. <a href="https://http4k.org">http4k</a> applications are <em>just</em> Kotlin functions. For example, here's a simple echo server:</p>
       <div class="sample-container">
         <pre><code class="block lang-kotlin" theme="idea">val app: HttpHandler = { request: Request -&gt; Response(OK).body(request.body) }<br>val server = app.asServer(SunHttp(8000)).start()</code></pre>
 <span class="copy-tooltip">
@@ -106,7 +111,7 @@
           <p class="paragraph">./connect is a lightweight API Client toolkit which includes libraries for connecting to popular third-party cloud   services and AI backends using <a href="https://http4k.org">http4k</a> compatible APIs, along with Fake implementations for usage during local   testing.</p>
         </li>
         <li>
-          <p class="paragraph">./ai provides universal <strong>LLM adapters</strong> for <strong>OpenAI</strong>, <strong>Anthropic</strong>, <strong>Gemini</strong>, <strong>Azure</strong>, and <strong>GitHub Models</strong>, along with <strong>LangChain4J</strong> integration and an <strong>agent framework</strong> - all testable in-memory with Fake implementations.</p>
+          <p class="paragraph">./ai provides universal <strong>LLM adapters</strong> for <strong>OpenAI</strong>, <strong>Anthropic</strong>, <strong>Gemini</strong>, and <strong>Azure</strong>, along with <strong>LangChain4J</strong> integration and an <strong>agent framework</strong> - all testable in-memory with Fake implementations.</p>
         </li>
         <li>
           <p class="paragraph">./pro is a set of premium, commercially licensed modules that solve recurring enterprise problems - including <strong>Wiretap</strong> (OpenTelemetry capture and developer console), <strong>X402/MPP</strong> (machine-to-machine payment protocols), <strong>Verify</strong> (build-time supply-chain verification), <strong>Hot Reload</strong>, and pro-tier <strong>MCP</strong> and <strong>A2A</strong> integrations. Distributed under the <code class="lang-kotlin">org.http4k.pro</code> Maven group.</p>
@@ -239,23 +244,23 @@
           <div><span class="brief-comment"></span></div>
         </div>
       </div>
-<a data-name="-1764615141%2FMain%2F0" anchor-label="http4k-ai-llm-github" id="-1764615141%2FMain%2F0" data-filterable-set=""></a>
-      <div class="table-row table-row_multimodule">
-        <div class="main-subrow ">
-          <div class="w-100"><span class="inline-flex">
-              <div><a href="http4k-ai-llm-github/index.html">http4k-ai-llm-github</a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1764615141%2FMain%2F0"></span>
-                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-              </span></span></div>
-          <div><span class="brief-comment"></span></div>
-        </div>
-      </div>
 <a data-name="245681900%2FMain%2F0" anchor-label="http4k-ai-llm-openai" id="245681900%2FMain%2F0" data-filterable-set=""></a>
       <div class="table-row table-row_multimodule">
         <div class="main-subrow ">
           <div class="w-100"><span class="inline-flex">
               <div><a href="http4k-ai-llm-openai/index.html">http4k-ai-llm-openai</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="245681900%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-622766217%2FMain%2F0" anchor-label="http4k-ai-llm-typesafe" id="-622766217%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-ai-llm-typesafe/index.html">http4k-ai-llm-typesafe</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-622766217%2FMain%2F0"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div><span class="brief-comment"></span></div>
@@ -624,6 +629,17 @@
           <div><span class="brief-comment"></span></div>
         </div>
       </div>
+<a data-name="-829877635%2FMain%2F0" anchor-label="http4k-compression" id="-829877635%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-compression/index.html">http4k-compression</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-829877635%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
 <a data-name="13482749%2FMain%2F0" anchor-label="http4k-config" id="13482749%2FMain%2F0" data-filterable-set=""></a>
       <div class="table-row table-row_multimodule">
         <div class="main-subrow ">
@@ -751,6 +767,28 @@
           <div class="w-100"><span class="inline-flex">
               <div><a href="http4k-connect-ai-openai-fake/index.html">http4k-connect-ai-openai-fake</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1166021039%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="619975130%2FMain%2F0" anchor-label="http4k-connect-ai-typesafe" id="619975130%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ai-typesafe/index.html">http4k-connect-ai-typesafe</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="619975130%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="2049132902%2FMain%2F0" anchor-label="http4k-connect-ai-typesafe-fake" id="2049132902%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-ai-typesafe-fake/index.html">http4k-connect-ai-typesafe-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2049132902%2FMain%2F0"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div><span class="brief-comment"></span></div>
@@ -1587,6 +1625,28 @@
           <div class="w-100"><span class="inline-flex">
               <div><a href="http4k-connect-openfeature-fake/index.html">http4k-connect-openfeature-fake</a></div>
 <span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1582565114%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="-1128031184%2FMain%2F0" anchor-label="http4k-connect-openfga" id="-1128031184%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-openfga/index.html">http4k-connect-openfga</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1128031184%2FMain%2F0"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div><span class="brief-comment"></span></div>
+        </div>
+      </div>
+<a data-name="2067449040%2FMain%2F0" anchor-label="http4k-connect-openfga-fake" id="2067449040%2FMain%2F0" data-filterable-set=""></a>
+      <div class="table-row table-row_multimodule">
+        <div class="main-subrow ">
+          <div class="w-100"><span class="inline-flex">
+              <div><a href="http4k-connect-openfga-fake/index.html">http4k-connect-openfga-fake</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2067449040%2FMain%2F0"></span>
                 <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
               </span></span></div>
           <div><span class="brief-comment"></span></div>

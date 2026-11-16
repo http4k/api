@@ -1,0 +1,428 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>org.http4k.connect.openfga.endpoints</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<link href="../../images/logo-icon.svg">
+<link href="../../styles/dokka.css" rel="Stylesheet"></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    http4k
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">6.64.0.0-ee
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true" data-filter=":http4k-connect-openfga-fake/main">jvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":http4k-connect-openfga-fake/main" data-filter=":http4k-connect-openfga-fake/main">
+                                <span class="checkbox--icon"></span>
+                                jvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+                <a class="navigation-controls--btn navigation-controls--btn_homepage" id="homepage-link" href="https://http4k.org"></a>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    http4k
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="http4k-connect-openfga-fake::org.http4k.connect.openfga.endpoints////PointingToDeclaration//478236683">
+  <div class="breadcrumbs"><a href="../index.html">http4k-connect-openfga-fake</a><span class="delimiter">/</span><span class="current">org.http4k.connect.openfga.endpoints</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-568667970%2FFunctions%2F478236683" anchor-label="batchCheck" id="-568667970%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="batch-check.html"><span>batch</span><wbr><span><span>Check</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-568667970%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="batch-check.html"><span class="token function">batchCheck</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-906941506%2FFunctions%2F478236683" anchor-label="check" id="-906941506%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="check.html"><span><span>check</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-906941506%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="check.html"><span class="token function">check</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1475777895%2FFunctions%2F478236683" anchor-label="createStore" id="-1475777895%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-store.html"><span>create</span><wbr><span><span>Store</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1475777895%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="create-store.html"><span class="token function">createStore</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token punctuation">, </span></span><span class="parameter ">nextId<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1597030252%2FFunctions%2F478236683" anchor-label="deleteStore" id="1597030252%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete-store.html"><span>delete</span><wbr><span><span>Store</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1597030252%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="delete-store.html"><span class="token function">deleteStore</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="419832507%2FFunctions%2F478236683" anchor-label="getStore" id="419832507%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-store.html"><span>get</span><wbr><span><span>Store</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="419832507%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="get-store.html"><span class="token function">getStore</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-976914420%2FFunctions%2F478236683" anchor-label="listObjects" id="-976914420%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="list-objects.html"><span>list</span><wbr><span><span>Objects</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-976914420%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="list-objects.html"><span class="token function">listObjects</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1951424576%2FFunctions%2F478236683" anchor-label="listStores" id="-1951424576%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="list-stores.html"><span>list</span><wbr><span><span>Stores</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1951424576%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="list-stores.html"><span class="token function">listStores</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1083241408%2FFunctions%2F478236683" anchor-label="listUsers" id="-1083241408%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="list-users.html"><span>list</span><wbr><span><span>Users</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1083241408%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="list-users.html"><span class="token function">listUsers</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1866635738%2FFunctions%2F478236683" anchor-label="read" id="-1866635738%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read.html"><span><span>read</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1866635738%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="read.html"><span class="token function">read</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="748552119%2FFunctions%2F478236683" anchor-label="readAssertions" id="748552119%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-assertions.html"><span>read</span><wbr><span><span>Assertions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="748552119%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="read-assertions.html"><span class="token function">readAssertions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2041669194%2FFunctions%2F478236683" anchor-label="readAuthorizationModel" id="-2041669194%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-authorization-model.html"><span>read</span><wbr><span>Authorization</span><wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2041669194%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="read-authorization-model.html"><span class="token function">readAuthorizationModel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-279485%2FFunctions%2F478236683" anchor-label="readAuthorizationModels" id="-279485%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-authorization-models.html"><span>read</span><wbr><span>Authorization</span><wbr><span><span>Models</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-279485%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="read-authorization-models.html"><span class="token function">readAuthorizationModels</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1156922813%2FFunctions%2F478236683" anchor-label="readChanges" id="-1156922813%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-changes.html"><span>read</span><wbr><span><span>Changes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1156922813%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="read-changes.html"><span class="token function">readChanges</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1542967571%2FFunctions%2F478236683" anchor-label="streamedListObjects" id="-1542967571%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="streamed-list-objects.html"><span>streamed</span><wbr><span>List</span><wbr><span><span>Objects</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1542967571%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="streamed-list-objects.html"><span class="token function">streamedListObjects</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-309352697%2FFunctions%2F478236683" anchor-label="withEvaluation" id="-309352697%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="with-evaluation.html"><span>with</span><wbr><span><span>Evaluation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-309352697%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="with-evaluation.html"><span class="token function">withEvaluation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token punctuation">, </span></span><span class="parameter ">model<span class="token operator">: </span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-authorization-model-id/index.html">AuthorizationModelId</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">fn<span class="token operator">: </span><span class="token punctuation">(</span><a href="../org.http4k.connect.openfga/-evaluation/index.html">Evaluation</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../../http4k-core/org.http4k.core/-response/index.html">Response</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-response/index.html">Response</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1160290985%2FFunctions%2F478236683" anchor-label="withModel" id="1160290985%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="with-model.html"><span>with</span><wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1160290985%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="with-model.html"><span class="token function">withModel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token punctuation">, </span></span><span class="parameter ">fn<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../../http4k-core/org.http4k.core/-response/index.html">Response</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-response/index.html">Response</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1396205071%2FFunctions%2F478236683" anchor-label="withStore" id="-1396205071%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="with-store.html"><span>with</span><wbr><span><span>Store</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1396205071%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="with-store.html"><span class="token function">withStore</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">request<span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-request/index.html">Request</a><span class="token punctuation">, </span></span><span class="parameter ">fn<span class="token operator">: </span><span class="token punctuation">(</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="../../http4k-core/org.http4k.core/-response/index.html">Response</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-response/index.html">Response</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1124155135%2FFunctions%2F478236683" anchor-label="write" id="1124155135%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write.html"><span><span>write</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1124155135%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="write.html"><span class="token function">write</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">clock<span class="token operator">: </span><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/time/Clock.html">Clock</a><span class="token punctuation">, </span></span><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1566467558%2FFunctions%2F478236683" anchor-label="writeAssertions" id="1566467558%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write-assertions.html"><span>write</span><wbr><span><span>Assertions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1566467558%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="write-assertions.html"><span class="token function">writeAssertions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="878355545%2FFunctions%2F478236683" anchor-label="writeAuthorizationModel" id="878355545%2FFunctions%2F478236683" data-filterable-set=":http4k-connect-openfga-fake/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-connect-openfga-fake/main" data-filterable-set=":http4k-connect-openfga-fake/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write-authorization-model.html"><span>write</span><wbr><span>Authorization</span><wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="878355545%2FFunctions%2F478236683"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-connect-openfga-fake/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="write-authorization-model.html"><span class="token function">writeAuthorizationModel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nextId<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">stores<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-map/index.html">MutableMap</a><span class="token operator">&lt;</span><a href="../../http4k-connect-openfga/org.http4k.connect.openfga.model/-store-id/index.html">StoreId</a><span class="token punctuation">, </span><a href="../org.http4k.connect.openfga/-fga-store/index.html">FgaStore</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.routing/-routing-http-handler/index.html">RoutingHttpHandler</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>(c) 2026 http4k</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -40,7 +40,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">6.60.0.0
+        <div class="library-version" id="library-version">6.64.0.0-ee
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -96,7 +96,7 @@
   <div class="breadcrumbs"><a href="../../index.html">http4k-config</a><span class="delimiter">/</span><a href="../index.html">org.http4k.config</a><span class="delimiter">/</span><span class="current">Environment</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Environment</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-config/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Environment</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/core/config/src/main/kotlin/org/http4k/config/Environment.kt#L12">source</a>)</span></span></div><p class="paragraph">This models the runtime environment of the shell where the app is running. Optionally pass a separator to use for multi-values otherwise a standard comma is used - this means you MUST override the separator if you have single values which contain commas, otherwise singular environment keys will just retrieve the first value.</p><h4 class="tableheader">Inheritors</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":http4k-config/main" data-filterable-set=":http4k-config/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-map-environment/index.html">MapEnvironment</a></div></span></div><div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-config/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Environment</a><span class="source-link-wrapper"><span class="source-link" data-element-type="source-link">(<a href="https://github.com/http4k/http4k/tree/master/core/config/src/main/kotlin/org/http4k/config/Environment.kt#L10">source</a>)</span></span></div><p class="paragraph">This models the runtime environment of the shell where the app is running.</p><h4 class="tableheader">Inheritors</h4><div class="table"><div class="table-row table-row_content" data-filterable-current=":http4k-config/main" data-filterable-set=":http4k-config/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-map-environment/index.html">MapEnvironment</a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
@@ -132,7 +132,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-config/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="separator.html">separator</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-config/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">val </span><a href="separator.html"><strike>separator</strike></a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -197,6 +197,21 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-config/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="overrides.html"><span class="token function">overrides</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">that<span class="token operator">: </span><a href="index.html">Environment</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Environment</a></div><div class="brief "><p class="paragraph">Overlays the configuration set in this Environment on top of the values in the passed Environment. Used to chain: eg. Local File -&gt; System Properties -&gt; Env Properties -&gt; Defaults</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="441963484%2FFunctions%2F-785848706" anchor-label="separator" id="441963484%2FFunctions%2F-785848706" data-filterable-set=":http4k-config/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":http4k-config/main" data-filterable-set=":http4k-config/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="separator.html"><span><span>separator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="441963484%2FFunctions%2F-785848706"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-config/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="separator.html"><span class="token function"><strike>separator</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
                 </div>
               </div>
             </div>

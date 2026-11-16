@@ -40,7 +40,7 @@
             </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
-        <div class="library-version" id="library-version">6.60.0.0
+        <div class="library-version" id="library-version">6.64.0.0-ee
         </div>
         <div class="navigation-controls">
         <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
@@ -142,7 +142,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-test-sse-client/index.html">TestSseClient</a> : <a href="../org.http4k.sse/-sse-client/index.html">SseClient</a></div><div class="brief "><p class="paragraph">A class that is used for <i>offline</i> testing of a routed Sse, without starting up a Server.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-test-sse-client/index.html">TestSseClient</a> : <a href="../org.http4k.sse/-sse-client/index.html">SseClient</a></div><div class="brief "><p class="paragraph">A class that is used for <em>offline</em> testing of a routed Sse, without starting up a Server.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -187,7 +187,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-test-ws-client/index.html">TestWsClient</a> : <a href="../org.http4k.websocket/-ws-client/index.html">WsClient</a></div><div class="brief "><p class="paragraph">A class that is used for <i>offline</i> testing of a routed Websocket, without starting up a Server. Calls are routed synchronously to the receiving Websocket, and error are propagated to the caller.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="-test-ws-client/index.html">TestWsClient</a> : <a href="../org.http4k.websocket/-ws-client/index.html">WsClient</a></div><div class="brief "><p class="paragraph">A class that is used for <em>offline</em> testing of a routed Websocket, without starting up a Server. Calls are routed synchronously to the receiving Websocket, and error are propagated to the caller.</p></div></div></div>
                 </div>
               </div>
             </div>
@@ -266,7 +266,7 @@
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../org.http4k.core/-poly-handler/index.html">PolyHandler</a><span class="token punctuation">.</span><a href="to-http-handler.html"><span class="token function">toHttpHandler</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a></div><div class="brief "><p class="paragraph">Converts a <a href="../org.http4k.core/-poly-handler/index.html">PolyHandler</a> into an <a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a>, dispatching SSE requests to the SSE handler (forwarded as a true byte stream via piped streams so persistent streams do not block) and all other requests to the HTTP handler.</p></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":http4k-realtime-core/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="../org.http4k.core/-poly-handler/index.html">PolyHandler</a><span class="token punctuation">.</span><a href="to-http-handler.html"><span class="token function">toHttpHandler</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a></div><div class="brief "><p class="paragraph">Converts a <a href="../org.http4k.core/-poly-handler/index.html">PolyHandler</a> into an <a href="../../http4k-core/org.http4k.core/-http-handler/index.html">HttpHandler</a>, as a server would serve it. A request that accepts <code class="lang-kotlin">text/event-stream</code> goes to the SSE handler, and its messages are streamed in the response body as they are sent; any other request, or one that no SSE route handles, goes to the HTTP handler. Closing the body closes the SSE connection.</p></div></div></div>
                 </div>
               </div>
             </div>
